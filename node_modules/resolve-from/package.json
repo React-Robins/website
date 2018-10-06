@@ -1,7 +1,7 @@
 {
   "name": "resolve-from",
-  "version": "3.0.0",
-  "description": "Resolve the path of a module like `require.resolve()` but from a given path",
+  "version": "1.0.1",
+  "description": "Resolve the path of a module like require.resolve() but from a given path",
   "license": "MIT",
   "repository": "sindresorhus/resolve-from",
   "author": {
@@ -10,7 +10,7 @@
     "url": "sindresorhus.com"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=0.10.0"
   },
   "scripts": {
     "test": "xo && ava"
@@ -25,7 +25,6 @@
     "module",
     "from",
     "like",
-    "import",
     "path"
   ],
   "devDependencies": {

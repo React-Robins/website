@@ -2,11 +2,20 @@ var plugins = [{
       plugin: require('/Users/monica/Dev/React-Ladies/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/monica/Dev/React-Ladies/node_modules/gatsby-plugin-emotion/gatsby-ssr'),
+      plugin: require('/Users/monica/Dev/React-Ladies/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
+      plugin: require('/Users/monica/Dev/React-Ladies/node_modules/gatsby-remark-autolink-headers/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
+      plugin: require('/Users/monica/Dev/React-Ladies/node_modules/gatsby-plugin-typography/gatsby-ssr'),
+      options: {"plugins":[],"pathToConfigModule":"src/utils/typography.js"},
+    },{
+      plugin: require('/Users/monica/Dev/React-Ladies/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
       options: {"plugins":[]},
     },{
       plugin: require('/Users/monica/Dev/React-Ladies/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"Cara - Gatsby Starter Portfolio","short_name":"Cara","description":"Playful & Colorful One-Page website with Parallax effect","start_url":"/","background_color":"#a0d8f1","theme_color":"#e07628","display":"fullscreen","icons":[{"src":"/favicons/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},{"src":"/favicons/android-chrome-512x512.png","sizes":"512x512","type":"image/png"}]},
+      options: {"plugins":[],"name":"Minimal Blog","short_name":"Minimal Blog - Gatsby Starter","description":"Minimal Blog with big typography","start_url":"/","background_color":"#2b2e3c","theme_color":"#3498DB","display":"standalone","icon":"src/favicon.png"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

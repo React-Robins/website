@@ -19,14 +19,14 @@ SVGO имеет расширяемую архитектуру, в которой
 Сегодня у нас есть:
 
 | Plugin | Description |
-| ------ | ----------- | 
+| ------ | ----------- |
 | [cleanupAttrs](https://github.com/svg/svgo/blob/master/plugins/cleanupAttrs.js) | удаление переносов строк и лишних пробелов |
 | [removeDoctype](https://github.com/svg/svgo/blob/master/plugins/removeDoctype.js) | удаление doctype |
 | [removeXMLProcInst](https://github.com/svg/svgo/blob/master/plugins/removeXMLProcInst.js) | удаление XML-инструкций |
 | [removeComments](https://github.com/svg/svgo/blob/master/plugins/removeComments.js) | удаление комментариев |
 | [removeMetadata](https://github.com/svg/svgo/blob/master/plugins/removeMetadata.js) | удаление `<metadata>` |
-| [removeTitle](https://github.com/svg/svgo/blob/master/plugins/removeTitle.js) | удаление `<title>` (выключено по умолчанию) |
-| [removeDesc](https://github.com/svg/svgo/blob/master/plugins/removeDesc.js) | удаление `<desc>` (по умолчанию только незначимых) |
+| [removeTitle](https://github.com/svg/svgo/blob/master/plugins/removeTitle.js) | удаление `<title>` |
+| [removeDesc](https://github.com/svg/svgo/blob/master/plugins/removeDesc.js) | удаление `<desc>` |
 | [removeUselessDefs](https://github.com/svg/svgo/blob/master/plugins/removeUselessDefs.js) | удаление элементов в `<defs>` без `id` |
 | [removeXMLNS](https://github.com/svg/svgo/blob/master/plugins/removeXMLNS.js) | удаление атрибута xmlns (для заинлайненных svg, выключено по умолчанию) |
 | [removeEditorsNSData](https://github.com/svg/svgo/blob/master/plugins/removeEditorsNSData.js) | удаление пространств имён различных редакторов, их элементов и атрибутов |
@@ -55,13 +55,13 @@ SVGO имеет расширяемую архитектуру, в которой
 | [mergePaths](https://github.com/svg/svgo/blob/master/plugins/mergePaths.js) | склеивание нескольких Path в одну кривую |
 | [convertShapeToPath](https://github.com/svg/svgo/blob/master/plugins/convertShapeToPath.js) | конвертирование простых форм в Path |
 | [sortAttrs](https://github.com/svg/svgo/blob/master/plugins/sortAttrs.js) | сортировка атрибутов элементов для удобочитаемости (выключено по умолчанию) |
-| [transformsWithOnePath](https://github.com/svg/svgo/blob/master/plugins/transformsWithOnePath.js) | применение трансформаций, обрезка по реальной ширине, вертикальное  |выравнивание по центру и изменение размеров SVG с одним Path внутри
-| [removeDimensions](https://github.com/svg/svgo/blob/master/plugins/removeDimensions.js) | удаляет атрибуты width/height при наличии viewBox (выключено по умолчанию) |
+| [removeDimensions](https://github.com/svg/svgo/blob/master/plugins/removeDimensions.js) | удаляет атрибуты width/height при наличии viewBox (противоречит removeViewBox — плагин должен быть выключен) (выключено по умолчанию) |
 | [removeAttrs](https://github.com/svg/svgo/blob/master/plugins/removeAttrs.js) | удаляет атрибуты по указанному паттерну (выключено по умолчанию) |
 | [removeElementsByAttr](https://github.com/svg/svgo/blob/master/plugins/removeElementsByAttr.js) | удаляет элементы по указанным ID или классам (выключено по умолчанию) |
 | [addClassesToSVGElement](https://github.com/svg/svgo/blob/master/plugins/addClassesToSVGElement.js) | добавляет имена классов корневому элементу `<svg>` (выключено по умолчанию) |
 | [addAttributesToSVGElement](https://github.com/svg/svgo/blob/master/plugins/addAttributesToSVGElement.js) | добавляет атрибуты корневому элементу `<svg>` (выключено  |по умолчанию)
 | [removeStyleElement](https://github.com/svg/svgo/blob/master/plugins/removeStyleElement.js) | удаляет элементы `<style>` (выключено по умолчанию) |
+| [removeScriptElement](https://github.com/svg/svgo/blob/master/plugins/removeScriptElement.js) | удаляет элементы `<script>` (выключено по умолчанию) |
 
 Хотите узнать, как это работает и как написать свой плагин? [Конечно же, да!](https://github.com/svg/svgo/blob/master/docs/how-it-works/ru.md).
 
@@ -72,8 +72,12 @@ SVGO имеет расширяемую архитектуру, в которой
 $ [sudo] npm install -g svgo
 ```
 
+## Выполнение:
+
+### Командная строка
+
 ```
-Выполнение:
+Запуск:
   svgo [OPTIONS] [ARGS]
 
 Параметры:
@@ -96,55 +100,89 @@ $ [sudo] npm install -g svgo
 
 Аргументы:
   INPUT : Аналогично --input
-  OUTPUT : Аналогично --output
 ```
 
 * с файлами:
 
-        $ svgo test.svg
+    ```sh
+    $ svgo test.svg
+    ```
 
     или:
 
-        $ svgo test.svg test.min.svg
+    ```sh
+    $ svgo *.svg
+    ```
+
+    ```sh
+    $ svgo test.svg -o test.min.svg
+    ```
+
+    ```sh
+    $ svgo test.svg other.svg third.svg
+    ```
+
+    ```sh
+    $ svgo test.svg other.svg third.svg -o test.min.svg -o other.min.svg -o third.min.svg
+    ```
 
 * со STDIN / STDOUT:
 
-        $ cat test.svg | svgo -i - -o - > test.min.svg
+    ```sh
+    $ cat test.svg | svgo -i - -o - > test.min.svg
+    ```
 
 * с папками
 
-        $ svgo -f ../path/to/folder/with/svg/files
+    ```sh
+    $ svgo -f ../path/to/folder/with/svg/files
+    ```
 
     или:
 
-        $ svgo -f ../path/to/folder/with/svg/files -o ../path/to/folder/with/svg/output
+    ```sh
+    $ svgo -f ../path/to/folder/with/svg/files -o ../path/to/folder/with/svg/output
+    ```
+
+    ```sh
+    $ svgo *.svg -o ../path/to/folder/with/svg/output
+    ```
 
 * со строками:
 
-        $ svgo -s '<svg version="1.1">test</svg>' -o test.min.svg
+    ```sh
+    $ svgo -s '<svg version="1.1">test</svg>' -o test.min.svg
+    ```
 
     или даже с Data URI base64:
 
-        $ svgo -s 'data:image/svg+xml;base64,…' -o test.min.svg
+    ```sh
+    $ svgo -s 'data:image/svg+xml;base64,…' -o test.min.svg
+    ```
 
 * с SVGZ:
 
     из `.svgz` в `.svg`:
 
-        $ gunzip -c test.svgz | svgo -i - -o test.min.svg
+    ```sh
+    $ gunzip -c test.svgz | svgo -i - -o test.min.svg
+    ```
 
     из `.svg` в `.svgz`:
 
-        $ svgo test.svg -o - | gzip -cfq9 > test.svgz
+    ```sh
+    $ svgo test.svg -o - | gzip -cfq9 > test.svgz
+    ```
 
-* с помощью GUI – [svgo-gui](https://github.com/svg/svgo-gui)
+### Другие способы использования SVGO
+
 * в виде веб-приложения - [SVGOMG](https://jakearchibald.github.io/svgomg/)
 * как модуль Node.js – [examples](https://github.com/svg/svgo/tree/master/examples)
 * как таск для Grunt – [grunt-svgmin](https://github.com/sindresorhus/grunt-svgmin)
 * как таск для Gulp – [gulp-svgmin](https://github.com/ben-eb/gulp-svgmin)
 * как таск для Mimosa – [mimosa-minify-svg](https://github.com/dbashford/mimosa-minify-svg)
 * как действие папки в OSX – [svgo-osx-folder-action](https://github.com/svg/svgo-osx-folder-action)
-* через загрузчик в webpack – [image-webpack-loader](https://github.com/tcoopman/image-webpack-loader)
+* через загрузчик webpack – [image-webpack-loader](https://github.com/tcoopman/image-webpack-loader)
 * с помощью бота в Telegram – [svgo_bot](https://github.com/maksugr/svgo_bot)
 * как плагин PostCSS - [postcss-svgo](https://github.com/ben-eb/postcss-svgo)
 
