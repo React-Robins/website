@@ -1,0 +1,1395 @@
+{
+  "nodes": {
+    "SitePage /dev-404-page/": {
+      "jsonName": "dev-404-page-5f9",
+      "internalComponentName": "ComponentDev404Page",
+      "path": "/dev-404-page/",
+      "component": "/Users/monica/Dev/React-Ladies/.cache/dev-404-page.js",
+      "componentChunkName": "component---cache-dev-404-page-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin dev-404-page",
+      "pluginCreatorId": "Plugin dev-404-page",
+      "componentPath": "/Users/monica/Dev/React-Ladies/.cache/dev-404-page.js",
+      "id": "SitePage /dev-404-page/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "8fc56ea42db9ca591ca07beed294fb31",
+        "description": "Plugin dev-404-page",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin dev-404-page": {
+      "resolve": "/Users/monica/Dev/React-Ladies/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "id": "Plugin dev-404-page",
+      "name": "dev-404-page",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createPagesStatefully"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/monica/Dev/React-Ladies/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "packageJson": {
+        "name": "dev-404-page",
+        "description": "Internal plugin to add a 404 page in development with helpful information",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "0f029e1c863dd1151a4220729ea2b4f8",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin load-babel-config": {
+      "resolve": "/Users/monica/Dev/React-Ladies/node_modules/gatsby/dist/internal-plugins/load-babel-config",
+      "id": "Plugin load-babel-config",
+      "name": "load-babel-config",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onPreBootstrap"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/monica/Dev/React-Ladies/node_modules/gatsby/dist/internal-plugins/load-babel-config",
+      "packageJson": {
+        "name": "load-babel-config",
+        "description": "Internal plugin that handles loading Babel configs",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "a3347765e79e04a8934c07d4bec1a0a3",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin internal-data-bridge": {
+      "resolve": "/Users/monica/Dev/React-Ladies/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "id": "Plugin internal-data-bridge",
+      "name": "internal-data-bridge",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "sourceNodes",
+        "onCreatePage"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/monica/Dev/React-Ladies/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "packageJson": {
+        "name": "internal-data-bridge",
+        "description": "An internal Gatsby plugin which creates data nodes from internal data",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "a68e2caba5cbe970c31150c5b0547383",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin prod-404": {
+      "resolve": "/Users/monica/Dev/React-Ladies/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "id": "Plugin prod-404",
+      "name": "prod-404",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreatePage"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/monica/Dev/React-Ladies/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "packageJson": {
+        "name": "prod-404",
+        "description": "Internal plugin to detect various flavors of 404 pages and ensure there's a 404.html path created as well to ensure compatability with static hosts",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "ef2be137b32f6bd9105d9e8d43167404",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin query-runner": {
+      "resolve": "/Users/monica/Dev/React-Ladies/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "id": "Plugin query-runner",
+      "name": "query-runner",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreatePage"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/monica/Dev/React-Ladies/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "packageJson": {
+        "name": "query-runner",
+        "description": "Internal plugin for running queries",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "7df005f8c418315a8f2c0d23063b561b",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-react-helmet": {
+      "resolve": "/Users/monica/Dev/React-Ladies/node_modules/gatsby-plugin-react-helmet",
+      "id": "Plugin gatsby-plugin-react-helmet",
+      "name": "gatsby-plugin-react-helmet",
+      "version": "3.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/Users/monica/Dev/React-Ladies/node_modules/gatsby-plugin-react-helmet",
+      "packageJson": {
+        "name": "gatsby-plugin-react-helmet",
+        "description": "Manage document head data with react-helmet. Provides drop-in server rendering support for Gatsby.",
+        "version": "3.0.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "favicon",
+          "react-helmet",
+          "seo",
+          "document",
+          "head",
+          "title",
+          "meta",
+          "link",
+          "script",
+          "base",
+          "noscript",
+          "style"
+        ],
+        "author": "Kyle Mathews <matthews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          },
+          {
+            "name": "react-helmet",
+            "version": ">=5.1.3"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "d8db75a3d7da956fe3a7594076843b6f",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-emotion": {
+      "resolve": "/Users/monica/Dev/React-Ladies/node_modules/gatsby-plugin-emotion",
+      "id": "Plugin gatsby-plugin-emotion",
+      "name": "gatsby-plugin-emotion",
+      "version": "2.0.5",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreateBabelConfig"
+      ],
+      "browserAPIs": [
+        "onClientEntry"
+      ],
+      "ssrAPIs": [
+        "replaceRenderer"
+      ],
+      "pluginFilepath": "/Users/monica/Dev/React-Ladies/node_modules/gatsby-plugin-emotion",
+      "packageJson": {
+        "name": "gatsby-plugin-emotion",
+        "description": "Gatsby plugin to add support for Emotion",
+        "version": "2.0.5",
+        "main": "index.js",
+        "keywords": [
+          "emotion",
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Tegan Churchill <churchill.tegan@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "emotion",
+            "version": "7 || 8 || 9"
+          },
+          {
+            "name": "emotion-server",
+            "version": "7 || 8 || 9"
+          },
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "a25bde152f6e7e03c0ed4e0f2735c654",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-source-filesystem": {
+      "resolve": "/Users/monica/Dev/React-Ladies/node_modules/gatsby-source-filesystem",
+      "id": "Plugin gatsby-source-filesystem",
+      "name": "gatsby-source-filesystem",
+      "version": "2.0.1",
+      "pluginOptions": {
+        "plugins": [],
+        "path": "/Users/monica/Dev/React-Ladies/src/images/",
+        "name": "images"
+      },
+      "nodeAPIs": [
+        "sourceNodes",
+        "setFieldsOnGraphQLNodeType"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/monica/Dev/React-Ladies/node_modules/gatsby-source-filesystem",
+      "packageJson": {
+        "name": "gatsby-source-filesystem",
+        "description": "Gatsby plugin which parses files within a directory for further parsing by other plugins",
+        "version": "2.0.1",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "better-queue",
+            "version": "^3.8.7"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "chokidar",
+            "version": "^1.7.0"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^5.0.0"
+          },
+          {
+            "name": "got",
+            "version": "^7.1.0"
+          },
+          {
+            "name": "md5-file",
+            "version": "^3.1.1"
+          },
+          {
+            "name": "mime",
+            "version": "^2.2.0"
+          },
+          {
+            "name": "pretty-bytes",
+            "version": "^4.0.2"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "valid-url",
+            "version": "^1.0.9"
+          },
+          {
+            "name": "xstate",
+            "version": "^3.1.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "bbef46a4422251374ee0b5d68b03c20f",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-transformer-sharp": {
+      "resolve": "/Users/monica/Dev/React-Ladies/node_modules/gatsby-transformer-sharp",
+      "id": "Plugin gatsby-transformer-sharp",
+      "name": "gatsby-transformer-sharp",
+      "version": "2.1.1",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreateNode",
+        "setFieldsOnGraphQLNodeType",
+        "onPreExtractQueries"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/monica/Dev/React-Ladies/node_modules/gatsby-transformer-sharp",
+      "packageJson": {
+        "name": "gatsby-transformer-sharp",
+        "description": "Gatsby transformer plugin for images using Sharp",
+        "version": "2.1.1",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "image",
+          "sharp"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^4.0.2"
+          },
+          {
+            "name": "potrace",
+            "version": "^2.1.1"
+          },
+          {
+            "name": "probe-image-size",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "sharp",
+            "version": "^0.20.2"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          },
+          {
+            "name": "gatsby-plugin-sharp",
+            "version": "^2.0.0-beta.3"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "369fe8ba40ba5f0a2595ce09cbc46b0d",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-sharp": {
+      "resolve": "/Users/monica/Dev/React-Ladies/node_modules/gatsby-plugin-sharp",
+      "id": "Plugin gatsby-plugin-sharp",
+      "name": "gatsby-plugin-sharp",
+      "version": "2.0.5",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/monica/Dev/React-Ladies/node_modules/gatsby-plugin-sharp",
+      "packageJson": {
+        "name": "gatsby-plugin-sharp",
+        "description": "Wrapper of the Sharp image manipulation library for Gatsby plugins",
+        "version": "2.0.5",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "image",
+          "sharp"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "async",
+            "version": "^2.1.2"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "fs-exists-cached",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "imagemin",
+            "version": "^6.0.0"
+          },
+          {
+            "name": "imagemin-pngquant",
+            "version": "^6.0.0"
+          },
+          {
+            "name": "imagemin-webp",
+            "version": "^4.1.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.10"
+          },
+          {
+            "name": "mini-svg-data-uri",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "potrace",
+            "version": "^2.1.1"
+          },
+          {
+            "name": "probe-image-size",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "progress",
+            "version": "^1.1.8"
+          },
+          {
+            "name": "sharp",
+            "version": "^0.20.2"
+          },
+          {
+            "name": "svgo",
+            "version": "^0.7.2"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "8447da37677a77c604a23ee083c0faba",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-manifest": {
+      "resolve": "/Users/monica/Dev/React-Ladies/node_modules/gatsby-plugin-manifest",
+      "id": "Plugin gatsby-plugin-manifest",
+      "name": "gatsby-plugin-manifest",
+      "version": "2.0.2",
+      "pluginOptions": {
+        "plugins": [],
+        "name": "Cara - Gatsby Starter Portfolio",
+        "short_name": "Cara",
+        "description": "Playful & Colorful One-Page website with Parallax effect",
+        "start_url": "/",
+        "background_color": "#a0d8f1",
+        "theme_color": "#e07628",
+        "display": "fullscreen",
+        "icons": [
+          {
+            "src": "/favicons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+          },
+          {
+            "src": "/favicons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+          }
+        ]
+      },
+      "nodeAPIs": [
+        "onPostBootstrap"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/Users/monica/Dev/React-Ladies/node_modules/gatsby-plugin-manifest",
+      "packageJson": {
+        "name": "gatsby-plugin-manifest",
+        "description": "Gatsby plugin which adds a manifest.webmanifest to make sites progressive web apps",
+        "version": "2.0.2",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "favicon",
+          "icons",
+          "manifest.webmanifest",
+          "progressive-web-app",
+          "pwa"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "sharp",
+            "version": "^0.20.2"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "0f1249c740ac1aab02b3224d6352f41d",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-offline": {
+      "resolve": "/Users/monica/Dev/React-Ladies/node_modules/gatsby-plugin-offline",
+      "id": "Plugin gatsby-plugin-offline",
+      "name": "gatsby-plugin-offline",
+      "version": "2.0.5",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createPages",
+        "onPostBuild"
+      ],
+      "browserAPIs": [
+        "registerServiceWorker",
+        "onPrefetchPathname",
+        "onServiceWorkerActive"
+      ],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/monica/Dev/React-Ladies/node_modules/gatsby-plugin-offline",
+      "packageJson": {
+        "name": "gatsby-plugin-offline",
+        "description": "Gatsby plugin which sets up a site to be able to run offline",
+        "version": "2.0.5",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "offline",
+          "precache",
+          "service-worker"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cheerio",
+            "version": "^1.0.0-rc.2"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.10"
+          },
+          {
+            "name": "workbox-build",
+            "version": "^3.4.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-beta"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "939ab8eebd370d40e4a6fa3c798bfaa1",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-netlify": {
+      "resolve": "/Users/monica/Dev/React-Ladies/node_modules/gatsby-plugin-netlify",
+      "id": "Plugin gatsby-plugin-netlify",
+      "name": "gatsby-plugin-netlify",
+      "version": "2.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreateWebpackConfig",
+        "onPostBuild"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/monica/Dev/React-Ladies/node_modules/gatsby-plugin-netlify",
+      "packageJson": {
+        "name": "gatsby-plugin-netlify",
+        "description": "A Gatsby plugin which generates a _headers file for netlify",
+        "version": "2.0.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "http/2-server-push",
+          "netlify"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^4.0.2"
+          },
+          {
+            "name": "kebab-hash",
+            "version": "^0.1.2"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.10"
+          },
+          {
+            "name": "webpack-assets-manifest",
+            "version": "^3.0.2"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "31532899659e5ae62d163bb0cf2db69d",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin default-site-plugin": {
+      "resolve": "/Users/monica/Dev/React-Ladies",
+      "id": "Plugin default-site-plugin",
+      "name": "default-site-plugin",
+      "version": "10b502b42b5636a0b2eb133c818cf01f",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreateBabelConfig"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/monica/Dev/React-Ladies",
+      "packageJson": {
+        "name": "gatsby-starter-portfolio-cara",
+        "description": "Gatsby Starter Portfolio Cara",
+        "version": "2.0.0",
+        "keywords": [
+          "gatsby",
+          "starter",
+          "portfolio"
+        ],
+        "author": "LekoArts <hello@lekoarts.de>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-plugin-tailwind",
+            "version": "^0.1.10"
+          },
+          {
+            "name": "emotion",
+            "version": "^9.2.9"
+          },
+          {
+            "name": "emotion-server",
+            "version": "^9.2.9"
+          },
+          {
+            "name": "gatsby",
+            "version": "^2.0.0"
+          },
+          {
+            "name": "gatsby-image",
+            "version": "^2.0.5"
+          },
+          {
+            "name": "gatsby-plugin-emotion",
+            "version": "^2.0.5"
+          },
+          {
+            "name": "gatsby-plugin-manifest",
+            "version": "^2.0.2"
+          },
+          {
+            "name": "gatsby-plugin-netlify",
+            "version": "^2.0.0"
+          },
+          {
+            "name": "gatsby-plugin-offline",
+            "version": "^2.0.5"
+          },
+          {
+            "name": "gatsby-plugin-react-helmet",
+            "version": "^3.0.0"
+          },
+          {
+            "name": "gatsby-plugin-sharp",
+            "version": "^2.0.5"
+          },
+          {
+            "name": "gatsby-source-filesystem",
+            "version": "^2.0.1"
+          },
+          {
+            "name": "gatsby-transformer-sharp",
+            "version": "^2.1.1"
+          },
+          {
+            "name": "postcss",
+            "version": "^7.0.2"
+          },
+          {
+            "name": "postcss-cli",
+            "version": "^6.0.0"
+          },
+          {
+            "name": "prop-types",
+            "version": "^15.6.2"
+          },
+          {
+            "name": "react",
+            "version": "^16.5.1"
+          },
+          {
+            "name": "react-dom",
+            "version": "^16.5.1"
+          },
+          {
+            "name": "react-emotion",
+            "version": "^9.2.9"
+          },
+          {
+            "name": "react-helmet",
+            "version": "^5.2.0"
+          },
+          {
+            "name": "react-spring",
+            "version": "^5.7.2"
+          },
+          {
+            "name": "tailwindcss",
+            "version": "^0.6.5"
+          },
+          {
+            "name": "typeface-cantata-one",
+            "version": "^0.0.54"
+          },
+          {
+            "name": "typeface-open-sans",
+            "version": "^0.0.54"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-eslint",
+            "version": "^9.0.0"
+          },
+          {
+            "name": "eslint",
+            "version": "^5.6.0"
+          },
+          {
+            "name": "eslint-config-airbnb",
+            "version": "^17.1.0"
+          },
+          {
+            "name": "eslint-config-prettier",
+            "version": "^3.0.1"
+          },
+          {
+            "name": "eslint-plugin-import",
+            "version": "^2.14.0"
+          },
+          {
+            "name": "eslint-plugin-jsx-a11y",
+            "version": "^6.1.1"
+          },
+          {
+            "name": "eslint-plugin-prettier",
+            "version": "^2.6.2"
+          },
+          {
+            "name": "eslint-plugin-react",
+            "version": "^7.11.1"
+          },
+          {
+            "name": "prettier",
+            "version": "^1.14.2"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "c5c7199eb0134a3830a0c6ecd93b3499",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-page-creator": {
+      "resolve": "/Users/monica/Dev/React-Ladies/node_modules/gatsby-plugin-page-creator",
+      "id": "Plugin gatsby-plugin-page-creator",
+      "name": "gatsby-plugin-page-creator",
+      "version": "2.0.0",
+      "pluginOptions": {
+        "plugins": [],
+        "path": "/Users/monica/Dev/React-Ladies/src/pages",
+        "pathCheck": false
+      },
+      "nodeAPIs": [
+        "createPagesStatefully"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/monica/Dev/React-Ladies/node_modules/gatsby-plugin-page-creator",
+      "packageJson": {
+        "name": "gatsby-plugin-page-creator",
+        "description": "Gatsby plugin that automatically creates pages from React components in specified directories",
+        "version": "2.0.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "chokidar",
+            "version": "^1.7.0"
+          },
+          {
+            "name": "fs-exists-cached",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "glob",
+            "version": "^7.1.1"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.10"
+          },
+          {
+            "name": "parse-filepath",
+            "version": "^1.0.1"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "34f59fdf8f7af505f665a14ab6b0113e",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Site": {
+      "siteMetadata": {
+        "siteUrl": "https://portfolio-cara.netlify.com"
+      },
+      "port": "8000",
+      "host": "localhost",
+      "pathPrefix": "",
+      "polyfill": true,
+      "buildTime": "2018-10-06T15:10:36.358Z",
+      "id": "Site",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "a3592dcca3b97de3a8fa1a531afcca17",
+        "type": "Site",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "026762de-3185-59cd-b31c-3d37c81fcd91": {
+      "id": "026762de-3185-59cd-b31c-3d37c81fcd91",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "76440a25f2bd22a15470052168860ebf",
+        "type": "Directory",
+        "description": "Directory \"src/images\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/monica/Dev/React-Ladies/src/images/",
+      "relativePath": "",
+      "extension": "",
+      "size": 128,
+      "prettySize": "128 B",
+      "modifiedTime": "2018-10-06T15:06:01.782Z",
+      "accessTime": "2018-10-06T15:10:42.115Z",
+      "changeTime": "2018-10-06T15:06:01.782Z",
+      "birthTime": "2018-10-06T15:06:01.782Z",
+      "root": "/",
+      "dir": "/Users/monica/Dev/React-Ladies/src",
+      "base": "images",
+      "ext": "",
+      "name": "images",
+      "relativeDirectory": "..",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 4,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 10528405,
+      "blocks": 0,
+      "atimeMs": 1538838642115.4097,
+      "mtimeMs": 1538838361782.1033,
+      "ctimeMs": 1538838361782.1033,
+      "birthtimeMs": 1538838361781.5513,
+      "atime": "2018-10-06T15:10:42.115Z",
+      "mtime": "2018-10-06T15:06:01.782Z",
+      "ctime": "2018-10-06T15:06:01.782Z",
+      "birthtime": "2018-10-06T15:06:01.782Z"
+    },
+    "af20cfb2-fa99-5556-9002-c1b411540e9a": {
+      "id": "af20cfb2-fa99-5556-9002-c1b411540e9a",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "9bec4885c09a08972dd775e16122acaf",
+        "type": "File",
+        "mediaType": "image/svg+xml",
+        "description": "File \"src/images/triangle.svg\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/monica/Dev/React-Ladies/src/images/triangle.svg",
+      "relativePath": "triangle.svg",
+      "extension": "svg",
+      "size": 259,
+      "prettySize": "259 B",
+      "modifiedTime": "2018-10-06T15:06:01.782Z",
+      "accessTime": "2018-10-06T15:08:29.029Z",
+      "changeTime": "2018-10-06T15:06:01.782Z",
+      "birthTime": "2018-10-06T15:06:01.782Z",
+      "root": "/",
+      "dir": "/Users/monica/Dev/React-Ladies/src/images",
+      "base": "triangle.svg",
+      "ext": ".svg",
+      "name": "triangle",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 10528407,
+      "blocks": 8,
+      "atimeMs": 1538838509028.972,
+      "mtimeMs": 1538838361782.167,
+      "ctimeMs": 1538838361782.167,
+      "birthtimeMs": 1538838361782.0964,
+      "atime": "2018-10-06T15:08:29.029Z",
+      "mtime": "2018-10-06T15:06:01.782Z",
+      "ctime": "2018-10-06T15:06:01.782Z",
+      "birthtime": "2018-10-06T15:06:01.782Z"
+    },
+    "2f6b77d6-9df6-509a-89d4-830e80424061": {
+      "id": "2f6b77d6-9df6-509a-89d4-830e80424061",
+      "children": [
+        "28d3d069-c677-51df-b617-49710cd13b8d"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "c99035c8ff4376bb578c17e597c4baed",
+        "type": "File",
+        "mediaType": "image/jpeg",
+        "description": "File \"src/images/avatar.jpg\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "images",
+      "absolutePath": "/Users/monica/Dev/React-Ladies/src/images/avatar.jpg",
+      "relativePath": "avatar.jpg",
+      "extension": "jpg",
+      "size": 55738,
+      "prettySize": "55.7 kB",
+      "modifiedTime": "2018-10-06T15:06:01.782Z",
+      "accessTime": "2018-10-06T15:08:29.029Z",
+      "changeTime": "2018-10-06T15:06:01.782Z",
+      "birthTime": "2018-10-06T15:06:01.782Z",
+      "root": "/",
+      "dir": "/Users/monica/Dev/React-Ladies/src/images",
+      "base": "avatar.jpg",
+      "ext": ".jpg",
+      "name": "avatar",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4194304,
+      "ino": 10528406,
+      "blocks": 112,
+      "atimeMs": 1538838509028.9368,
+      "mtimeMs": 1538838361781.9712,
+      "ctimeMs": 1538838361781.9712,
+      "birthtimeMs": 1538838361781.6257,
+      "atime": "2018-10-06T15:08:29.029Z",
+      "mtime": "2018-10-06T15:06:01.782Z",
+      "ctime": "2018-10-06T15:06:01.782Z",
+      "birthtime": "2018-10-06T15:06:01.782Z"
+    },
+    "28d3d069-c677-51df-b617-49710cd13b8d": {
+      "id": "28d3d069-c677-51df-b617-49710cd13b8d",
+      "children": [],
+      "parent": "2f6b77d6-9df6-509a-89d4-830e80424061",
+      "internal": {
+        "contentDigest": "c99035c8ff4376bb578c17e597c4baed",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "SitePage /": {
+      "jsonName": "index",
+      "internalComponentName": "ComponentIndex",
+      "path": "/",
+      "component": "/Users/monica/Dev/React-Ladies/src/pages/index.jsx",
+      "componentChunkName": "component---src-pages-index-jsx",
+      "context": {},
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
+      "componentPath": "/Users/monica/Dev/React-Ladies/src/pages/index.jsx",
+      "id": "SitePage /",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "8e403a8d9eb2bdfb347baad547fbe214",
+        "description": "Plugin gatsby-plugin-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    }
+  },
+  "status": {
+    "plugins": {},
+    "PLUGINS_HASH": "00d4b1f85dfb04cdf8e1c7fe8587314f"
+  },
+  "componentDataDependencies": {
+    "nodes": {},
+    "connections": {}
+  },
+  "jsonDataPaths": {
+    "index": "173/path---index-6a9-NZuapzHg3X9TaN1iIixfv1W23E",
+    "dev-404-page-5f9": "920/path---dev-404-page-5-f-9-fab-NZuapzHg3X9TaN1iIixfv1W23E"
+  },
+  "components": {
+    "/Users/monica/Dev/React-Ladies/.cache/dev-404-page.js": {
+      "query": "",
+      "componentPath": "/Users/monica/Dev/React-Ladies/.cache/dev-404-page.js"
+    },
+    "/Users/monica/Dev/React-Ladies/src/pages/index.jsx": {
+      "query": "",
+      "componentPath": "/Users/monica/Dev/React-Ladies/src/pages/index.jsx"
+    }
+  },
+  "staticQueryComponents": {}
+}

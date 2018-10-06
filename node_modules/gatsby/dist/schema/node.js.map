@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/schema/node.js"],"names":["module","exports","globalId"],"mappings":";;AACA;;AAEAA,MAAM,CAACC,OAAP,GAAiB,mCAAgBC,QAAQ,IAAI,IAA5B,CAAjB","sourcesContent":["// @flow\nimport { nodeDefinitions } from \"graphql-relay\"\n\nmodule.exports = nodeDefinitions(globalId => null)\n"],"file":"node.js"}

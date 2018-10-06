@@ -1,0 +1,39 @@
+{
+  "name": "camelcase-css",
+  "description": "Convert a dash-separated CSS property to a camelCased DOM property.",
+  "version": "1.0.1",
+  "license": "MIT",
+  "homepage": "https://github.com/stevenvachon/camelcase-css",
+  "author": {
+    "name": "Steven Vachon",
+    "email": "contact@svachon.com",
+    "url": "http://www.svachon.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stevenvachon/camelcase-css.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stevenvachon/camelcase-css/issues"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  },
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "scripts": {
+    "test": "mocha test.js --reporter spec --check-leaks --bail --no-exit"
+  },
+  "files": [
+    "index.js",
+    "license"
+  ],
+  "keywords": [
+    "camelcase",
+    "case",
+    "css",
+    "dom"
+  ]
+}

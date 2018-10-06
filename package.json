@@ -1,0 +1,57 @@
+{
+  "name": "gatsby-starter-portfolio-cara",
+  "description": "Gatsby Starter Portfolio Cara",
+  "version": "2.0.0",
+  "author": "LekoArts <hello@lekoarts.de>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-plugin-tailwind": "^0.1.10",
+    "emotion": "^9.2.9",
+    "emotion-server": "^9.2.9",
+    "gatsby": "^2.0.0",
+    "gatsby-image": "^2.0.5",
+    "gatsby-plugin-emotion": "^2.0.5",
+    "gatsby-plugin-manifest": "^2.0.2",
+    "gatsby-plugin-netlify": "^2.0.0",
+    "gatsby-plugin-offline": "^2.0.5",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-sharp": "^2.0.5",
+    "gatsby-source-filesystem": "^2.0.1",
+    "gatsby-transformer-sharp": "^2.1.1",
+    "postcss": "^7.0.2",
+    "postcss-cli": "^6.0.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-emotion": "^9.2.9",
+    "react-helmet": "^5.2.0",
+    "react-spring": "^5.7.2",
+    "tailwindcss": "^0.6.5",
+    "typeface-cantata-one": "^0.0.54",
+    "typeface-open-sans": "^0.0.54"
+  },
+  "keywords": [
+    "gatsby",
+    "starter",
+    "portfolio"
+  ],
+  "scripts": {
+    "develop": "gatsby develop -o",
+    "build": "gatsby build",
+    "lint": "eslint . --ext .js,.jsx --ignore-path .gitignore",
+    "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
+    "predevelop": "postcss tailwind.css -o tailwind.custom.css",
+    "prebuild": "postcss tailwind.css -o tailwind.custom.css"
+  },
+  "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-react": "^7.11.1",
+    "prettier": "^1.14.2"
+  }
+}

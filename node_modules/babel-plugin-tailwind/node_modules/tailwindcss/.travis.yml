@@ -1,0 +1,12 @@
+language: php
+php:
+  - '7.1'
+
+cache:
+  directories:
+    - $HOME/.composer/cache
+    - $HOME/.cache/yarn
+
+script:
+  - yarn
+  - yarn run test
