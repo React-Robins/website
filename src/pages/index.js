@@ -48,7 +48,7 @@ const IndexPage = ({
         <h1>React Ladies</h1>
         <p>
           We're a group of women and non-binary ReactJS enthusiasts in New York
-          City.
+          City (and beyond).
         </p>
         <Link to="/contact">
           <Button big>
@@ -65,7 +65,7 @@ const IndexPage = ({
         </Link>
       </Hero>
       <Content>
-        <SectionTitle>Latest stories</SectionTitle>
+        <SectionTitle>Latest</SectionTitle>
         {postEdges.map(post => (
           <Article
             title={post.node.frontmatter.title}

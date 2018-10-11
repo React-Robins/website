@@ -1156,8 +1156,8 @@
       "version": "2.0.2",
       "pluginOptions": {
         "plugins": [],
-        "name": "Minimal Blog",
-        "short_name": "Minimal Blog - Gatsby Starter",
+        "name": "React Ladies",
+        "short_name": "React Ladies - a Meetup for women and non-binary ReactJS engineers",
         "description": "Minimal Blog with big typography",
         "start_url": "/",
         "background_color": "#2b2e3c",
@@ -1229,7 +1229,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "a0b39dacfc1b24f48330c244cfe5c6d5",
+        "contentDigest": "eedeecd8b5b52d0bcb1635a13bd9cc03",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -1517,6 +1517,10 @@
             "version": "^5.2.0"
           },
           {
+            "name": "react-router",
+            "version": "^4.3.1"
+          },
+          {
             "name": "react-typography",
             "version": "^0.16.13"
           },
@@ -1683,12 +1687,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-10-06T19:10:31.601Z",
+      "buildTime": "2018-10-11T11:56:46.279Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "a75ee569ba7da505363337a6f4eda567",
+        "contentDigest": "6085202422c62269f72b1095e323d33c",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -1698,7 +1702,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "d21fe15a5ebd724632c04b2c92d7107e",
+        "contentDigest": "d8e03ba100c3a927f400622bd211193d",
         "type": "Directory",
         "description": "Directory \"blog\"",
         "owner": "gatsby-source-filesystem"
@@ -1707,11 +1711,11 @@
       "absolutePath": "/Users/monica/Dev/React-Ladies/blog",
       "relativePath": "",
       "extension": "",
-      "size": 224,
-      "prettySize": "224 B",
-      "modifiedTime": "2018-10-06T19:08:44.711Z",
-      "accessTime": "2018-10-06T19:10:36.299Z",
-      "changeTime": "2018-10-06T19:10:00.940Z",
+      "size": 128,
+      "prettySize": "128 B",
+      "modifiedTime": "2018-10-06T19:47:21.244Z",
+      "accessTime": "2018-10-11T11:56:53.631Z",
+      "changeTime": "2018-10-06T19:47:21.244Z",
       "birthTime": "2018-10-06T19:08:44.711Z",
       "root": "/",
       "dir": "/Users/monica/Dev/React-Ladies",
@@ -1721,223 +1725,47 @@
       "relativeDirectory": "..",
       "dev": 16777220,
       "mode": 16877,
-      "nlink": 7,
+      "nlink": 4,
       "uid": 501,
       "gid": 20,
       "rdev": 0,
       "blksize": 4194304,
       "ino": 10765750,
       "blocks": 0,
-      "atimeMs": 1538853036298.6516,
-      "mtimeMs": 1538852924711.4968,
-      "ctimeMs": 1538853000940.3845,
+      "atimeMs": 1539259013630.9001,
+      "mtimeMs": 1538855241243.5664,
+      "ctimeMs": 1538855241243.5664,
       "birthtimeMs": 1538852924710.6968,
-      "atime": "2018-10-06T19:10:36.299Z",
-      "mtime": "2018-10-06T19:08:44.711Z",
-      "ctime": "2018-10-06T19:10:00.940Z",
+      "atime": "2018-10-11T11:56:53.631Z",
+      "mtime": "2018-10-06T19:47:21.244Z",
+      "ctime": "2018-10-06T19:47:21.244Z",
       "birthtime": "2018-10-06T19:08:44.711Z"
     },
-    "c98d589c-0650-5501-b850-8a5ca94ac44f": {
-      "id": "c98d589c-0650-5501-b850-8a5ca94ac44f",
+    "8caf7cad-8f58-5122-95d3-6cf15866af3d": {
+      "id": "8caf7cad-8f58-5122-95d3-6cf15866af3d",
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "dce7dc770b69ce8f6154e5f2f01f8b21",
+        "contentDigest": "32b16efcfb67d18b19a206a3d351c06b",
         "type": "Directory",
-        "description": "Directory \"blog/2018-01-01\"",
+        "description": "Directory \"blog/2018-10-06\"",
         "owner": "gatsby-source-filesystem"
       },
       "sourceInstanceName": "post",
-      "absolutePath": "/Users/monica/Dev/React-Ladies/blog/2018-01-01",
-      "relativePath": "2018-01-01",
-      "extension": "",
-      "size": 96,
-      "prettySize": "96 B",
-      "modifiedTime": "2018-10-06T19:08:44.711Z",
-      "accessTime": "2018-10-06T19:10:36.305Z",
-      "changeTime": "2018-10-06T19:08:44.711Z",
-      "birthTime": "2018-10-06T19:08:44.711Z",
-      "root": "/",
-      "dir": "/Users/monica/Dev/React-Ladies/blog",
-      "base": "2018-01-01",
-      "ext": "",
-      "name": "2018-01-01",
-      "relativeDirectory": "",
-      "dev": 16777220,
-      "mode": 16877,
-      "nlink": 3,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4194304,
-      "ino": 10765751,
-      "blocks": 0,
-      "atimeMs": 1538853036304.754,
-      "mtimeMs": 1538852924710.8025,
-      "ctimeMs": 1538852924710.8025,
-      "birthtimeMs": 1538852924710.7517,
-      "atime": "2018-10-06T19:10:36.305Z",
-      "mtime": "2018-10-06T19:08:44.711Z",
-      "ctime": "2018-10-06T19:08:44.711Z",
-      "birthtime": "2018-10-06T19:08:44.711Z"
-    },
-    "7268c866-170f-5ce8-9d70-be89c01bc16d": {
-      "id": "7268c866-170f-5ce8-9d70-be89c01bc16d",
-      "children": [],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "19207d74149fbec5bfb8ad67ce96916d",
-        "type": "Directory",
-        "description": "Directory \"blog/2018-01-02\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "post",
-      "absolutePath": "/Users/monica/Dev/React-Ladies/blog/2018-01-02",
-      "relativePath": "2018-01-02",
-      "extension": "",
-      "size": 96,
-      "prettySize": "96 B",
-      "modifiedTime": "2018-10-06T19:08:44.711Z",
-      "accessTime": "2018-10-06T19:10:36.305Z",
-      "changeTime": "2018-10-06T19:08:44.711Z",
-      "birthTime": "2018-10-06T19:08:44.711Z",
-      "root": "/",
-      "dir": "/Users/monica/Dev/React-Ladies/blog",
-      "base": "2018-01-02",
-      "ext": "",
-      "name": "2018-01-02",
-      "relativeDirectory": "",
-      "dev": 16777220,
-      "mode": 16877,
-      "nlink": 3,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4194304,
-      "ino": 10765753,
-      "blocks": 0,
-      "atimeMs": 1538853036304.8042,
-      "mtimeMs": 1538852924710.9639,
-      "ctimeMs": 1538852924710.9639,
-      "birthtimeMs": 1538852924710.9211,
-      "atime": "2018-10-06T19:10:36.305Z",
-      "mtime": "2018-10-06T19:08:44.711Z",
-      "ctime": "2018-10-06T19:08:44.711Z",
-      "birthtime": "2018-10-06T19:08:44.711Z"
-    },
-    "63344d61-d3f2-5d9a-9caa-256d0ba39dad": {
-      "id": "63344d61-d3f2-5d9a-9caa-256d0ba39dad",
-      "children": [],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "39096ce1dec78b64d1c50b8e3bc15a92",
-        "type": "Directory",
-        "description": "Directory \"blog/2018-01-03\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "post",
-      "absolutePath": "/Users/monica/Dev/React-Ladies/blog/2018-01-03",
-      "relativePath": "2018-01-03",
-      "extension": "",
-      "size": 96,
-      "prettySize": "96 B",
-      "modifiedTime": "2018-10-06T19:08:44.711Z",
-      "accessTime": "2018-10-06T19:10:36.305Z",
-      "changeTime": "2018-10-06T19:08:44.711Z",
-      "birthTime": "2018-10-06T19:08:44.711Z",
-      "root": "/",
-      "dir": "/Users/monica/Dev/React-Ladies/blog",
-      "base": "2018-01-03",
-      "ext": "",
-      "name": "2018-01-03",
-      "relativeDirectory": "",
-      "dev": 16777220,
-      "mode": 16877,
-      "nlink": 3,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4194304,
-      "ino": 10765755,
-      "blocks": 0,
-      "atimeMs": 1538853036304.9082,
-      "mtimeMs": 1538852924711.1304,
-      "ctimeMs": 1538852924711.1304,
-      "birthtimeMs": 1538852924711.0884,
-      "atime": "2018-10-06T19:10:36.305Z",
-      "mtime": "2018-10-06T19:08:44.711Z",
-      "ctime": "2018-10-06T19:08:44.711Z",
-      "birthtime": "2018-10-06T19:08:44.711Z"
-    },
-    "8d62c418-1703-5c6b-860e-829bdde546fb": {
-      "id": "8d62c418-1703-5c6b-860e-829bdde546fb",
-      "children": [],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "75428bcc7aa83d63995c4e9462596c56",
-        "type": "Directory",
-        "description": "Directory \"blog/2018-01-04\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "post",
-      "absolutePath": "/Users/monica/Dev/React-Ladies/blog/2018-01-04",
-      "relativePath": "2018-01-04",
-      "extension": "",
-      "size": 96,
-      "prettySize": "96 B",
-      "modifiedTime": "2018-10-06T19:08:44.711Z",
-      "accessTime": "2018-10-06T19:10:36.305Z",
-      "changeTime": "2018-10-06T19:08:44.711Z",
-      "birthTime": "2018-10-06T19:08:44.711Z",
-      "root": "/",
-      "dir": "/Users/monica/Dev/React-Ladies/blog",
-      "base": "2018-01-04",
-      "ext": "",
-      "name": "2018-01-04",
-      "relativeDirectory": "",
-      "dev": 16777220,
-      "mode": 16877,
-      "nlink": 3,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4194304,
-      "ino": 10765757,
-      "blocks": 0,
-      "atimeMs": 1538853036304.9224,
-      "mtimeMs": 1538852924711.2852,
-      "ctimeMs": 1538852924711.2852,
-      "birthtimeMs": 1538852924711.2444,
-      "atime": "2018-10-06T19:10:36.305Z",
-      "mtime": "2018-10-06T19:08:44.711Z",
-      "ctime": "2018-10-06T19:08:44.711Z",
-      "birthtime": "2018-10-06T19:08:44.711Z"
-    },
-    "21184c70-58b5-5c75-b566-ad3776127433": {
-      "id": "21184c70-58b5-5c75-b566-ad3776127433",
-      "children": [],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "a9ac4fce51605e2d55d651b1116fced3",
-        "type": "Directory",
-        "description": "Directory \"blog/2018-01-05\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "post",
-      "absolutePath": "/Users/monica/Dev/React-Ladies/blog/2018-01-05",
-      "relativePath": "2018-01-05",
+      "absolutePath": "/Users/monica/Dev/React-Ladies/blog/2018-10-06",
+      "relativePath": "2018-10-06",
       "extension": "",
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2018-10-06T19:08:44.712Z",
-      "accessTime": "2018-10-06T19:10:36.305Z",
-      "changeTime": "2018-10-06T19:08:44.712Z",
+      "accessTime": "2018-10-11T11:56:53.634Z",
+      "changeTime": "2018-10-06T19:47:21.244Z",
       "birthTime": "2018-10-06T19:08:44.711Z",
       "root": "/",
       "dir": "/Users/monica/Dev/React-Ladies/blog",
-      "base": "2018-01-05",
+      "base": "2018-10-06",
       "ext": "",
-      "name": "2018-01-05",
+      "name": "2018-10-06",
       "relativeDirectory": "",
       "dev": 16777220,
       "mode": 16877,
@@ -1948,138 +1776,44 @@
       "blksize": 4194304,
       "ino": 10765759,
       "blocks": 0,
-      "atimeMs": 1538853036304.9673,
+      "atimeMs": 1539259013633.5525,
       "mtimeMs": 1538852924711.559,
-      "ctimeMs": 1538852924711.559,
+      "ctimeMs": 1538855241243.566,
       "birthtimeMs": 1538852924711.49,
-      "atime": "2018-10-06T19:10:36.305Z",
+      "atime": "2018-10-11T11:56:53.634Z",
       "mtime": "2018-10-06T19:08:44.712Z",
-      "ctime": "2018-10-06T19:08:44.712Z",
+      "ctime": "2018-10-06T19:47:21.244Z",
       "birthtime": "2018-10-06T19:08:44.711Z"
     },
-    "39747627-f973-5e87-b8fb-28e91a9e2992": {
-      "id": "39747627-f973-5e87-b8fb-28e91a9e2992",
+    "0310a64e-f318-54a0-9f4d-ca43980809a4": {
+      "id": "0310a64e-f318-54a0-9f4d-ca43980809a4",
       "children": [
-        "688b3e08-03ae-52ef-bc27-1306ed83adff"
+        "8e5299e2-314e-5c3c-a12a-0cfa996b7b62"
       ],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "466d5ad33c6d7c978c157d6959f4130e",
+        "contentDigest": "786706d7637cb88f8e81045d65d4eea5",
         "type": "File",
         "mediaType": "text/markdown",
-        "description": "File \"blog/2018-01-02/index.md\"",
+        "description": "File \"blog/2018-10-06/index.md\"",
         "owner": "gatsby-source-filesystem"
       },
       "sourceInstanceName": "post",
-      "absolutePath": "/Users/monica/Dev/React-Ladies/blog/2018-01-02/index.md",
-      "relativePath": "2018-01-02/index.md",
+      "absolutePath": "/Users/monica/Dev/React-Ladies/blog/2018-10-06/index.md",
+      "relativePath": "2018-10-06/index.md",
       "extension": "md",
-      "size": 3296,
-      "prettySize": "3.3 kB",
-      "modifiedTime": "2018-10-06T19:08:44.711Z",
-      "accessTime": "2018-10-06T19:08:44.720Z",
-      "changeTime": "2018-10-06T19:08:44.711Z",
-      "birthTime": "2018-10-06T19:08:44.711Z",
-      "root": "/",
-      "dir": "/Users/monica/Dev/React-Ladies/blog/2018-01-02",
-      "base": "index.md",
-      "ext": ".md",
-      "name": "index",
-      "relativeDirectory": "2018-01-02",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4194304,
-      "ino": 10765754,
-      "blocks": 8,
-      "atimeMs": 1538852924719.723,
-      "mtimeMs": 1538852924711.0276,
-      "ctimeMs": 1538852924711.0276,
-      "birthtimeMs": 1538852924710.9595,
-      "atime": "2018-10-06T19:08:44.720Z",
-      "mtime": "2018-10-06T19:08:44.711Z",
-      "ctime": "2018-10-06T19:08:44.711Z",
-      "birthtime": "2018-10-06T19:08:44.711Z"
-    },
-    "36e16abe-6492-5e7e-8bda-b965eec5e13b": {
-      "id": "36e16abe-6492-5e7e-8bda-b965eec5e13b",
-      "children": [
-        "3869b4a9-803d-5ca7-9422-9febf9de5e31"
-      ],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "f85e7339d16e832b0a06ac1fc6c4f381",
-        "type": "File",
-        "mediaType": "text/markdown",
-        "description": "File \"blog/2018-01-01/index.md\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "post",
-      "absolutePath": "/Users/monica/Dev/React-Ladies/blog/2018-01-01/index.md",
-      "relativePath": "2018-01-01/index.md",
-      "extension": "md",
-      "size": 2751,
-      "prettySize": "2.75 kB",
-      "modifiedTime": "2018-10-06T19:08:44.711Z",
-      "accessTime": "2018-10-06T19:08:44.718Z",
-      "changeTime": "2018-10-06T19:08:44.711Z",
-      "birthTime": "2018-10-06T19:08:44.711Z",
-      "root": "/",
-      "dir": "/Users/monica/Dev/React-Ladies/blog/2018-01-01",
-      "base": "index.md",
-      "ext": ".md",
-      "name": "index",
-      "relativeDirectory": "2018-01-01",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4194304,
-      "ino": 10765752,
-      "blocks": 8,
-      "atimeMs": 1538852924717.587,
-      "mtimeMs": 1538852924710.8572,
-      "ctimeMs": 1538852924710.8572,
-      "birthtimeMs": 1538852924710.798,
-      "atime": "2018-10-06T19:08:44.718Z",
-      "mtime": "2018-10-06T19:08:44.711Z",
-      "ctime": "2018-10-06T19:08:44.711Z",
-      "birthtime": "2018-10-06T19:08:44.711Z"
-    },
-    "9c19b322-e7af-562b-b5b1-cc466160f267": {
-      "id": "9c19b322-e7af-562b-b5b1-cc466160f267",
-      "children": [
-        "d70e6b3d-2f3e-544c-b464-00e1beb2c50d"
-      ],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "1498b9eb731deabc498365c48e6e83af",
-        "type": "File",
-        "mediaType": "text/markdown",
-        "description": "File \"blog/2018-01-05/index.md\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "post",
-      "absolutePath": "/Users/monica/Dev/React-Ladies/blog/2018-01-05/index.md",
-      "relativePath": "2018-01-05/index.md",
-      "extension": "md",
-      "size": 1754,
-      "prettySize": "1.75 kB",
-      "modifiedTime": "2018-10-06T19:08:44.712Z",
-      "accessTime": "2018-10-06T19:08:44.722Z",
-      "changeTime": "2018-10-06T19:08:44.712Z",
+      "size": 863,
+      "prettySize": "863 B",
+      "modifiedTime": "2018-10-06T19:32:14.579Z",
+      "accessTime": "2018-10-06T19:48:03.546Z",
+      "changeTime": "2018-10-06T19:32:14.579Z",
       "birthTime": "2018-10-06T19:08:44.712Z",
       "root": "/",
-      "dir": "/Users/monica/Dev/React-Ladies/blog/2018-01-05",
+      "dir": "/Users/monica/Dev/React-Ladies/blog/2018-10-06",
       "base": "index.md",
       "ext": ".md",
       "name": "index",
-      "relativeDirectory": "2018-01-05",
+      "relativeDirectory": "2018-10-06",
       "dev": 16777220,
       "mode": 33188,
       "nlink": 1,
@@ -2089,463 +1823,61 @@
       "blksize": 4194304,
       "ino": 10765760,
       "blocks": 8,
-      "atimeMs": 1538852924722.496,
-      "mtimeMs": 1538852924711.6665,
-      "ctimeMs": 1538852924711.6665,
+      "atimeMs": 1538855283546.3372,
+      "mtimeMs": 1538854334579.2317,
+      "ctimeMs": 1538854334579.2317,
       "birthtimeMs": 1538852924711.5525,
-      "atime": "2018-10-06T19:08:44.722Z",
-      "mtime": "2018-10-06T19:08:44.712Z",
-      "ctime": "2018-10-06T19:08:44.712Z",
+      "atime": "2018-10-06T19:48:03.546Z",
+      "mtime": "2018-10-06T19:32:14.579Z",
+      "ctime": "2018-10-06T19:32:14.579Z",
       "birthtime": "2018-10-06T19:08:44.712Z"
     },
-    "eaf43261-5b1c-513c-9963-2d43a0b0fbde": {
-      "id": "eaf43261-5b1c-513c-9963-2d43a0b0fbde",
-      "children": [
-        "2c4eba30-617b-51db-a11b-285403d7c456"
-      ],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "b2cf0a3a2abfc749ff764ea4802c5f98",
-        "type": "File",
-        "mediaType": "text/markdown",
-        "description": "File \"blog/2018-01-03/index.md\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "post",
-      "absolutePath": "/Users/monica/Dev/React-Ladies/blog/2018-01-03/index.md",
-      "relativePath": "2018-01-03/index.md",
-      "extension": "md",
-      "size": 3268,
-      "prettySize": "3.27 kB",
-      "modifiedTime": "2018-10-06T19:08:44.711Z",
-      "accessTime": "2018-10-06T19:08:44.721Z",
-      "changeTime": "2018-10-06T19:08:44.711Z",
-      "birthTime": "2018-10-06T19:08:44.711Z",
-      "root": "/",
-      "dir": "/Users/monica/Dev/React-Ladies/blog/2018-01-03",
-      "base": "index.md",
-      "ext": ".md",
-      "name": "index",
-      "relativeDirectory": "2018-01-03",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4194304,
-      "ino": 10765756,
-      "blocks": 8,
-      "atimeMs": 1538852924720.7346,
-      "mtimeMs": 1538852924711.1829,
-      "ctimeMs": 1538852924711.1829,
-      "birthtimeMs": 1538852924711.1255,
-      "atime": "2018-10-06T19:08:44.721Z",
-      "mtime": "2018-10-06T19:08:44.711Z",
-      "ctime": "2018-10-06T19:08:44.711Z",
-      "birthtime": "2018-10-06T19:08:44.711Z"
-    },
-    "0f68f404-355a-5caa-a9ab-3b47ad108289": {
-      "id": "0f68f404-355a-5caa-a9ab-3b47ad108289",
-      "children": [
-        "74138147-12c8-585d-8200-a86d447c2939"
-      ],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "520c7decda64eb66d61fb6df563e85b1",
-        "type": "File",
-        "mediaType": "text/markdown",
-        "description": "File \"blog/2018-01-04/index.md\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "post",
-      "absolutePath": "/Users/monica/Dev/React-Ladies/blog/2018-01-04/index.md",
-      "relativePath": "2018-01-04/index.md",
-      "extension": "md",
-      "size": 4858,
-      "prettySize": "4.86 kB",
-      "modifiedTime": "2018-10-06T19:08:44.711Z",
-      "accessTime": "2018-10-06T19:08:44.723Z",
-      "changeTime": "2018-10-06T19:08:44.711Z",
-      "birthTime": "2018-10-06T19:08:44.711Z",
-      "root": "/",
-      "dir": "/Users/monica/Dev/React-Ladies/blog/2018-01-04",
-      "base": "index.md",
-      "ext": ".md",
-      "name": "index",
-      "relativeDirectory": "2018-01-04",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4194304,
-      "ino": 10765758,
-      "blocks": 16,
-      "atimeMs": 1538852924722.7007,
-      "mtimeMs": 1538852924711.3303,
-      "ctimeMs": 1538852924711.3303,
-      "birthtimeMs": 1538852924711.2808,
-      "atime": "2018-10-06T19:08:44.723Z",
-      "mtime": "2018-10-06T19:08:44.711Z",
-      "ctime": "2018-10-06T19:08:44.711Z",
-      "birthtime": "2018-10-06T19:08:44.711Z"
-    },
-    "688b3e08-03ae-52ef-bc27-1306ed83adff": {
-      "id": "688b3e08-03ae-52ef-bc27-1306ed83adff",
+    "8e5299e2-314e-5c3c-a12a-0cfa996b7b62": {
+      "id": "8e5299e2-314e-5c3c-a12a-0cfa996b7b62",
       "children": [],
-      "parent": "39747627-f973-5e87-b8fb-28e91a9e2992",
+      "parent": "0310a64e-f318-54a0-9f4d-ca43980809a4",
       "internal": {
-        "content": "\n# Heading 1\n\nZwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim.\n\nSylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich.\n\n## Zwei flinke Boxer\n\nFalsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark.\n\n> \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern.\n\n### Heading 3\n\nZwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß.\n",
+        "content": "\nReact Ladies currently accepting lightning talk submissions for our November 2018 Meetup in NYC. We strongly encourage peakers of all experience levels to consider submitting a short 5-7 minute presentation.\n\n<script src=\"https://static.airtable.com/js/embed/embed_snippet_v1.js\"></script>\n\n<iframe class=\"airtable-embed airtable-dynamic-height\" src=\"https://airtable.com/embed/shrphJUHyS1h6UK0Y?backgroundColor=gray\"\n        frameborder=\"0\" onmousewheel=\"\" width=\"100%\" height=\"1681\" style=\"background: transparent; border: 1px solid #ccc;\"></iframe>\n\n_The date for our next Meetup is still being finalized but if you know of any companies that would be excited to host the first, large gathering of women and non-binary React JS developers and enthusiast in NYC please reach out._\n",
         "type": "MarkdownRemark",
-        "contentDigest": "29698dad50ce4d4d572880d148488d47",
+        "contentDigest": "7193de6bd39e84cbd4eb003c9e69971e",
         "owner": "gatsby-transformer-remark",
         "fieldOwners": {
           "slug": "default-site-plugin"
         }
       },
       "frontmatter": {
-        "title": "Alper Musig Clare",
-        "date": "2018-01-02",
-        "category": "Technology",
-        "_PARENT": "39747627-f973-5e87-b8fb-28e91a9e2992"
-      },
-      "excerpt": "",
-      "rawMarkdownBody": "\n# Heading 1\n\nZwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim.\n\nSylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich.\n\n## Zwei flinke Boxer\n\nFalsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark.\n\n> \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern.\n\n### Heading 3\n\nZwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß.\n",
-      "fileAbsolutePath": "/Users/monica/Dev/React-Ladies/blog/2018-01-02/index.md",
-      "fields": {
-        "slug": "/alper-musig-clare"
-      }
-    },
-    "3869b4a9-803d-5ca7-9422-9febf9de5e31": {
-      "id": "3869b4a9-803d-5ca7-9422-9febf9de5e31",
-      "children": [],
-      "parent": "36e16abe-6492-5e7e-8bda-b965eec5e13b",
-      "internal": {
-        "content": "\n[View raw (TEST.md)](https://raw.github.com/adamschwartz/github-markdown-kitchen-sink/master/README.md)\n\nThis is a paragraph.\n\n    This is a paragraph.\n\n\n\nHeader 1\n========\n\nHeader 2\n--------\n\n    Header 1\n    ========\n\n    Header 2\n    --------\n\n\n\n# Header 1\n## Header 2\n### Header 3\n#### Header 4\n##### Header 5\n###### Header 6\n\n    # Header 1\n    ## Header 2\n    ### Header 3\n    #### Header 4\n    ##### Header 5\n    ###### Header 6\n\n\n\n# Header 1 #\n## Header 2 ##\n### Header 3 ###\n#### Header 4 ####\n##### Header 5 #####\n###### Header 6 ######\n\n    # Header 1 #\n    ## Header 2 ##\n    ### Header 3 ###\n    #### Header 4 ####\n    ##### Header 5 #####\n    ###### Header 6 ######\n\n\n\n> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.\n\n    > Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.\n\n\n\n> ## This is a header.\n> 1. This is the first list item.\n> 2. This is the second list item.\n>\n> Here's some example code:\n>\n>     Markdown.generate();\n\n    > ## This is a header.\n    > 1. This is the first list item.\n    > 2. This is the second list item.\n    >\n    > Here's some example code:\n    >\n    >     Markdown.generate();\n\n\n\n\n- Red\n- Green\n- Blue\n\n\n+ Red\n+ Green\n+ Blue\n\n\n* Red\n* Green\n* Blue\n\n\n```markdown\n- Red\n- Green\n- Blue\n\n+ Red\n+ Green\n+ Blue\n\n* Red\n* Green\n* Blue\n```\n\n\n\n1. Buy flour and salt\n1. Mix together with water\n1. Bake\n\n```markdown\n1. Buy flour and salt\n1. Mix together with water\n1. Bake\n```\n\n\n\nParagraph:\n\n    Code\n\n<!-- -->\n\n    Paragraph:\n\n        Code\n\n\n\n* * *\n\n***\n\n*****\n\n- - -\n\n---------------------------------------\n\n    * * *\n\n    ***\n\n    *****\n\n    - - -\n\n    ---------------------------------------\n\n\n\nThis is [an example](http://example.com \"Example\") link.\n\n[This link](http://example.com) has no title attr.\n\nThis is [an example] [id] reference-style link.\n\n[id]: http://example.com \"Optional Title\"\n\n    This is [an example](http://example.com \"Example\") link.\n\n    [This link](http://example.com) has no title attr.\n\n    This is [an example] [id] reference-style link.\n\n    [id]: http://example.com \"Optional Title\"\n\n\n\n*single asterisks*\n\n_single underscores_\n\n**double asterisks**\n\n__double underscores__\n\n    *single asterisks*\n\n    _single underscores_\n\n    **double asterisks**\n\n    __double underscores__\n\n\n\nThis paragraph has some `code` in it.\n\n    This paragraph has some `code` in it.\n\n\n\n![Alt Text](http://placehold.it/200x50 \"Image Title\")\n\n    ![Alt Text](http://placehold.it/200x50 \"Image Title\")\n",
-        "type": "MarkdownRemark",
-        "contentDigest": "63b7d4be2dc58ecb6d2290955d9ee631",
-        "owner": "gatsby-transformer-remark",
-        "fieldOwners": {
-          "slug": "default-site-plugin"
-        }
-      },
-      "frontmatter": {
-        "title": "Scittle Luo",
-        "date": "2018-01-01",
-        "category": "General",
-        "_PARENT": "36e16abe-6492-5e7e-8bda-b965eec5e13b"
-      },
-      "excerpt": "",
-      "rawMarkdownBody": "\n[View raw (TEST.md)](https://raw.github.com/adamschwartz/github-markdown-kitchen-sink/master/README.md)\n\nThis is a paragraph.\n\n    This is a paragraph.\n\n\n\nHeader 1\n========\n\nHeader 2\n--------\n\n    Header 1\n    ========\n\n    Header 2\n    --------\n\n\n\n# Header 1\n## Header 2\n### Header 3\n#### Header 4\n##### Header 5\n###### Header 6\n\n    # Header 1\n    ## Header 2\n    ### Header 3\n    #### Header 4\n    ##### Header 5\n    ###### Header 6\n\n\n\n# Header 1 #\n## Header 2 ##\n### Header 3 ###\n#### Header 4 ####\n##### Header 5 #####\n###### Header 6 ######\n\n    # Header 1 #\n    ## Header 2 ##\n    ### Header 3 ###\n    #### Header 4 ####\n    ##### Header 5 #####\n    ###### Header 6 ######\n\n\n\n> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.\n\n    > Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.\n\n\n\n> ## This is a header.\n> 1. This is the first list item.\n> 2. This is the second list item.\n>\n> Here's some example code:\n>\n>     Markdown.generate();\n\n    > ## This is a header.\n    > 1. This is the first list item.\n    > 2. This is the second list item.\n    >\n    > Here's some example code:\n    >\n    >     Markdown.generate();\n\n\n\n\n- Red\n- Green\n- Blue\n\n\n+ Red\n+ Green\n+ Blue\n\n\n* Red\n* Green\n* Blue\n\n\n```markdown\n- Red\n- Green\n- Blue\n\n+ Red\n+ Green\n+ Blue\n\n* Red\n* Green\n* Blue\n```\n\n\n\n1. Buy flour and salt\n1. Mix together with water\n1. Bake\n\n```markdown\n1. Buy flour and salt\n1. Mix together with water\n1. Bake\n```\n\n\n\nParagraph:\n\n    Code\n\n<!-- -->\n\n    Paragraph:\n\n        Code\n\n\n\n* * *\n\n***\n\n*****\n\n- - -\n\n---------------------------------------\n\n    * * *\n\n    ***\n\n    *****\n\n    - - -\n\n    ---------------------------------------\n\n\n\nThis is [an example](http://example.com \"Example\") link.\n\n[This link](http://example.com) has no title attr.\n\nThis is [an example] [id] reference-style link.\n\n[id]: http://example.com \"Optional Title\"\n\n    This is [an example](http://example.com \"Example\") link.\n\n    [This link](http://example.com) has no title attr.\n\n    This is [an example] [id] reference-style link.\n\n    [id]: http://example.com \"Optional Title\"\n\n\n\n*single asterisks*\n\n_single underscores_\n\n**double asterisks**\n\n__double underscores__\n\n    *single asterisks*\n\n    _single underscores_\n\n    **double asterisks**\n\n    __double underscores__\n\n\n\nThis paragraph has some `code` in it.\n\n    This paragraph has some `code` in it.\n\n\n\n![Alt Text](http://placehold.it/200x50 \"Image Title\")\n\n    ![Alt Text](http://placehold.it/200x50 \"Image Title\")\n",
-      "fileAbsolutePath": "/Users/monica/Dev/React-Ladies/blog/2018-01-01/index.md",
-      "fields": {
-        "slug": "/scittle-luo"
-      }
-    },
-    "d70e6b3d-2f3e-544c-b464-00e1beb2c50d": {
-      "id": "d70e6b3d-2f3e-544c-b464-00e1beb2c50d",
-      "children": [],
-      "parent": "9c19b322-e7af-562b-b5b1-cc466160f267",
-      "internal": {
-        "content": "\nZwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim.\n\n```js\n(function() {\n\nvar cache = {};\nvar form = $('form');\nvar minified = true;\n\nvar dependencies = {};\n\nvar treeURL = 'https://api.github.com/repos/PrismJS/prism/git/trees/gh-pages?recursive=1';\nvar treePromise = new Promise(function(resolve) {\n\t$u.xhr({\n\t\turl: treeURL,\n\t\tcallback: function(xhr) {\n\t\t\tif (xhr.status < 400) {\n\t\t\t\tresolve(JSON.parse(xhr.responseText).tree);\n\t\t\t}\n\t\t}\n\t});\n});\n```\n\nZwei flinke Boxer jagen die quir\n\n```md\n# asdfasdfads\n- auesufuaus\n```\n\n```css\ncode[class*=\"language-\"],\npre[class*=\"language-\"] {\n\tcolor: black;\n\tbackground: none;\n\tfont-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;\n\ttext-align: left;\n\twhite-space: pre;\n\tword-spacing: normal;\n\tword-break: normal;\n\tword-wrap: normal;\n\tline-height: 1.5;\n\n\t-moz-tab-size: 4;\n\t-o-tab-size: 4;\n\ttab-size: 4;\n\n\t-webkit-hyphens: none;\n\t-moz-hyphens: none;\n\t-ms-hyphens: none;\n\thyphens: none;\n}\n```",
-        "type": "MarkdownRemark",
-        "contentDigest": "2a27d08ac790dc81f61e6df9108394e2",
-        "owner": "gatsby-transformer-remark",
-        "fieldOwners": {
-          "slug": "default-site-plugin"
-        }
-      },
-      "frontmatter": {
-        "title": "Coding is fun",
-        "date": "2018-01-05",
+        "title": "Submit a lightning talk",
+        "date": "2018-10-06",
         "category": "Coding",
-        "_PARENT": "9c19b322-e7af-562b-b5b1-cc466160f267"
+        "_PARENT": "0310a64e-f318-54a0-9f4d-ca43980809a4"
       },
       "excerpt": "",
-      "rawMarkdownBody": "\nZwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim.\n\n```js\n(function() {\n\nvar cache = {};\nvar form = $('form');\nvar minified = true;\n\nvar dependencies = {};\n\nvar treeURL = 'https://api.github.com/repos/PrismJS/prism/git/trees/gh-pages?recursive=1';\nvar treePromise = new Promise(function(resolve) {\n\t$u.xhr({\n\t\turl: treeURL,\n\t\tcallback: function(xhr) {\n\t\t\tif (xhr.status < 400) {\n\t\t\t\tresolve(JSON.parse(xhr.responseText).tree);\n\t\t\t}\n\t\t}\n\t});\n});\n```\n\nZwei flinke Boxer jagen die quir\n\n```md\n# asdfasdfads\n- auesufuaus\n```\n\n```css\ncode[class*=\"language-\"],\npre[class*=\"language-\"] {\n\tcolor: black;\n\tbackground: none;\n\tfont-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;\n\ttext-align: left;\n\twhite-space: pre;\n\tword-spacing: normal;\n\tword-break: normal;\n\tword-wrap: normal;\n\tline-height: 1.5;\n\n\t-moz-tab-size: 4;\n\t-o-tab-size: 4;\n\ttab-size: 4;\n\n\t-webkit-hyphens: none;\n\t-moz-hyphens: none;\n\t-ms-hyphens: none;\n\thyphens: none;\n}\n```",
-      "fileAbsolutePath": "/Users/monica/Dev/React-Ladies/blog/2018-01-05/index.md",
+      "rawMarkdownBody": "\nReact Ladies currently accepting lightning talk submissions for our November 2018 Meetup in NYC. We strongly encourage peakers of all experience levels to consider submitting a short 5-7 minute presentation.\n\n<script src=\"https://static.airtable.com/js/embed/embed_snippet_v1.js\"></script>\n\n<iframe class=\"airtable-embed airtable-dynamic-height\" src=\"https://airtable.com/embed/shrphJUHyS1h6UK0Y?backgroundColor=gray\"\n        frameborder=\"0\" onmousewheel=\"\" width=\"100%\" height=\"1681\" style=\"background: transparent; border: 1px solid #ccc;\"></iframe>\n\n_The date for our next Meetup is still being finalized but if you know of any companies that would be excited to host the first, large gathering of women and non-binary React JS developers and enthusiast in NYC please reach out._\n",
+      "fileAbsolutePath": "/Users/monica/Dev/React-Ladies/blog/2018-10-06/index.md",
       "fields": {
-        "slug": "/coding-is-fun"
+        "slug": "/submit-a-lightning-talk"
       }
     },
-    "2c4eba30-617b-51db-a11b-285403d7c456": {
-      "id": "2c4eba30-617b-51db-a11b-285403d7c456",
-      "children": [],
-      "parent": "eaf43261-5b1c-513c-9963-2d43a0b0fbde",
-      "internal": {
-        "content": "\nZwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim.\n\nSylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich.\n\n## Zwei flinke Boxer\n\nFalsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark.\n\n> \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern.\n\nZwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß.\n",
-        "type": "MarkdownRemark",
-        "contentDigest": "b6851a89f3aee08aeba6d900aa1ff9d3",
-        "owner": "gatsby-transformer-remark",
-        "fieldOwners": {
-          "slug": "default-site-plugin"
-        }
-      },
-      "frontmatter": {
-        "title": "Jux bei Pforzheim",
-        "date": "2018-01-03",
-        "category": "Technology",
-        "_PARENT": "eaf43261-5b1c-513c-9963-2d43a0b0fbde"
-      },
-      "excerpt": "",
-      "rawMarkdownBody": "\nZwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim.\n\nSylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich.\n\n## Zwei flinke Boxer\n\nFalsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark.\n\n> \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern.\n\nZwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß.\n",
-      "fileAbsolutePath": "/Users/monica/Dev/React-Ladies/blog/2018-01-03/index.md",
-      "fields": {
-        "slug": "/jux-bei-pforzheim"
-      }
-    },
-    "74138147-12c8-585d-8200-a86d447c2939": {
-      "id": "74138147-12c8-585d-8200-a86d447c2939",
-      "children": [],
-      "parent": "0f68f404-355a-5caa-a9ab-3b47ad108289",
-      "internal": {
-        "content": "\nZwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim.\n\nSylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich.\n\n## Zwei flinke Boxer\n\nFalsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark.\n\n> \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern.\n\nZwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß.\n\nZwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß.\n\nSylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich.\n",
-        "type": "MarkdownRemark",
-        "contentDigest": "e9256181327250525bce59d83b7c4534",
-        "owner": "gatsby-transformer-remark",
-        "fieldOwners": {
-          "slug": "default-site-plugin"
-        }
-      },
-      "frontmatter": {
-        "title": "Xylophonmusik",
-        "date": "2018-01-04",
-        "category": "Music",
-        "_PARENT": "0f68f404-355a-5caa-a9ab-3b47ad108289"
-      },
-      "excerpt": "",
-      "rawMarkdownBody": "\nZwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim.\n\nSylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich.\n\n## Zwei flinke Boxer\n\nFalsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark.\n\n> \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern.\n\nZwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß.\n\nZwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß.\n\nSylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. Falsches Üben von Xylophonmusik quält jeden größeren Zwerg. Heizölrückstoßabdämpfung. Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwahrlosten Taxi quer durch Bayern. Zwölf Boxkämpfer jagen Viktor quer über den großen Sylter Deich. Vogel Quax zwickt Johnys Pferd Bim. Sylvia wagt quick den Jux bei Pforzheim. Polyfon zwitschernd aßen Mäxchens Vögel Rüben, Joghurt und Quark. \"Fix, Schwyz! \" quäkt Jürgen blöd vom Paß. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich.\n",
-      "fileAbsolutePath": "/Users/monica/Dev/React-Ladies/blog/2018-01-04/index.md",
-      "fields": {
-        "slug": "/xylophonmusik"
-      }
-    },
-    "SitePage /alper-musig-clare": {
-      "jsonName": "alper-musig-clare-7f2",
-      "internalComponentName": "ComponentAlperMusigClare",
-      "path": "/alper-musig-clare",
+    "SitePage /submit-a-lightning-talk": {
+      "jsonName": "submit-a-lightning-talk-6fa",
+      "internalComponentName": "ComponentSubmitALightningTalk",
+      "path": "/submit-a-lightning-talk",
       "component": "/Users/monica/Dev/React-Ladies/src/templates/post.js",
       "componentChunkName": "component---src-templates-post-js",
       "context": {
-        "slug": "/alper-musig-clare",
-        "prev": {
-          "fields": {
-            "slug": "/scittle-luo"
-          },
-          "frontmatter": {
-            "title": "Scittle Luo",
-            "category": "General"
-          }
-        },
+        "slug": "/submit-a-lightning-talk",
+        "prev": null,
         "next": null
       },
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/monica/Dev/React-Ladies/src/templates/post.js",
-      "id": "SitePage /alper-musig-clare",
+      "id": "SitePage /submit-a-lightning-talk",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "50f6a2c158f3ca9d96e1c1438da82a7a",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /scittle-luo": {
-      "jsonName": "scittle-luo-dfd",
-      "internalComponentName": "ComponentScittleLuo",
-      "path": "/scittle-luo",
-      "component": "/Users/monica/Dev/React-Ladies/src/templates/post.js",
-      "componentChunkName": "component---src-templates-post-js",
-      "context": {
-        "slug": "/scittle-luo",
-        "prev": {
-          "fields": {
-            "slug": "/coding-is-fun"
-          },
-          "frontmatter": {
-            "title": "Coding is fun",
-            "category": "Coding"
-          }
-        },
-        "next": {
-          "fields": {
-            "slug": "/alper-musig-clare"
-          },
-          "frontmatter": {
-            "title": "Alper Musig Clare",
-            "category": "Technology"
-          }
-        }
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/monica/Dev/React-Ladies/src/templates/post.js",
-      "id": "SitePage /scittle-luo",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "559557143c2c660fa8e92de2c9f0c4a4",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /coding-is-fun": {
-      "jsonName": "coding-is-fun-f73",
-      "internalComponentName": "ComponentCodingIsFun",
-      "path": "/coding-is-fun",
-      "component": "/Users/monica/Dev/React-Ladies/src/templates/post.js",
-      "componentChunkName": "component---src-templates-post-js",
-      "context": {
-        "slug": "/coding-is-fun",
-        "prev": {
-          "fields": {
-            "slug": "/jux-bei-pforzheim"
-          },
-          "frontmatter": {
-            "title": "Jux bei Pforzheim",
-            "category": "Technology"
-          }
-        },
-        "next": {
-          "fields": {
-            "slug": "/scittle-luo"
-          },
-          "frontmatter": {
-            "title": "Scittle Luo",
-            "category": "General"
-          }
-        }
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/monica/Dev/React-Ladies/src/templates/post.js",
-      "id": "SitePage /coding-is-fun",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "39976a973d520a59070a1dc09d4a2323",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /jux-bei-pforzheim": {
-      "jsonName": "jux-bei-pforzheim-9e2",
-      "internalComponentName": "ComponentJuxBeiPforzheim",
-      "path": "/jux-bei-pforzheim",
-      "component": "/Users/monica/Dev/React-Ladies/src/templates/post.js",
-      "componentChunkName": "component---src-templates-post-js",
-      "context": {
-        "slug": "/jux-bei-pforzheim",
-        "prev": {
-          "fields": {
-            "slug": "/xylophonmusik"
-          },
-          "frontmatter": {
-            "title": "Xylophonmusik",
-            "category": "Music"
-          }
-        },
-        "next": {
-          "fields": {
-            "slug": "/coding-is-fun"
-          },
-          "frontmatter": {
-            "title": "Coding is fun",
-            "category": "Coding"
-          }
-        }
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/monica/Dev/React-Ladies/src/templates/post.js",
-      "id": "SitePage /jux-bei-pforzheim",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "1d5a202ae216aeeb143523d2eec31f87",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /xylophonmusik": {
-      "jsonName": "xylophonmusik-8b0",
-      "internalComponentName": "ComponentXylophonmusik",
-      "path": "/xylophonmusik",
-      "component": "/Users/monica/Dev/React-Ladies/src/templates/post.js",
-      "componentChunkName": "component---src-templates-post-js",
-      "context": {
-        "slug": "/xylophonmusik",
-        "prev": null,
-        "next": {
-          "fields": {
-            "slug": "/jux-bei-pforzheim"
-          },
-          "frontmatter": {
-            "title": "Jux bei Pforzheim",
-            "category": "Technology"
-          }
-        }
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/monica/Dev/React-Ladies/src/templates/post.js",
-      "id": "SitePage /xylophonmusik",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "c74f6c6430b7ab7ae7a9201ccb33a7c1",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /categories/technology": {
-      "jsonName": "categories-technology-18f",
-      "internalComponentName": "ComponentCategoriesTechnology",
-      "path": "/categories/technology",
-      "component": "/Users/monica/Dev/React-Ladies/src/templates/category.js",
-      "componentChunkName": "component---src-templates-category-js",
-      "context": {
-        "category": "Technology"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/monica/Dev/React-Ladies/src/templates/category.js",
-      "id": "SitePage /categories/technology",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "025cd469341ce086dd367767e6a8c6f1",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /categories/general": {
-      "jsonName": "categories-general-c55",
-      "internalComponentName": "ComponentCategoriesGeneral",
-      "path": "/categories/general",
-      "component": "/Users/monica/Dev/React-Ladies/src/templates/category.js",
-      "componentChunkName": "component---src-templates-category-js",
-      "context": {
-        "category": "General"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/monica/Dev/React-Ladies/src/templates/category.js",
-      "id": "SitePage /categories/general",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "252298aa492017dcb8c66780f67c6ba5",
+        "contentDigest": "e549e79bf99abb1ebbc8576c4d6af326",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -2568,28 +1900,6 @@
       "internal": {
         "type": "SitePage",
         "contentDigest": "d8bf1ed23dab3d8bc1b22bb17c3918b3",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /categories/music": {
-      "jsonName": "categories-music-6e0",
-      "internalComponentName": "ComponentCategoriesMusic",
-      "path": "/categories/music",
-      "component": "/Users/monica/Dev/React-Ladies/src/templates/category.js",
-      "componentChunkName": "component---src-templates-category-js",
-      "context": {
-        "category": "Music"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/monica/Dev/React-Ladies/src/templates/category.js",
-      "id": "SitePage /categories/music",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "f4b5cae2a5c5ee9cd811f49b893a8045",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -2654,6 +1964,26 @@
         "owner": "internal-data-bridge"
       }
     },
+    "SitePage /nyc/": {
+      "jsonName": "nyc-a73",
+      "internalComponentName": "ComponentNyc",
+      "path": "/nyc/",
+      "component": "/Users/monica/Dev/React-Ladies/src/pages/nyc.js",
+      "componentChunkName": "component---src-pages-nyc-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
+      "componentPath": "/Users/monica/Dev/React-Ladies/src/pages/nyc.js",
+      "id": "SitePage /nyc/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "2032b9d8134e565690210c17143a7bc2",
+        "description": "Plugin gatsby-plugin-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
     "SitePage /success/": {
       "jsonName": "success-ca5",
       "internalComponentName": "ComponentSuccess",
@@ -2677,59 +2007,47 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "c9394816b8dae8e620e730b28b255d04"
+    "PLUGINS_HASH": "8c81525853643047b626378541528127"
   },
   "componentDataDependencies": {
     "nodes": {
       "Site": [
         "sq--src-components-layout-js"
       ],
-      "688b3e08-03ae-52ef-bc27-1306ed83adff": [
-        "/alper-musig-clare"
-      ],
-      "3869b4a9-803d-5ca7-9422-9febf9de5e31": [
-        "/scittle-luo"
-      ],
-      "d70e6b3d-2f3e-544c-b464-00e1beb2c50d": [
-        "/coding-is-fun"
-      ],
-      "2c4eba30-617b-51db-a11b-285403d7c456": [
-        "/jux-bei-pforzheim"
-      ],
-      "74138147-12c8-585d-8200-a86d447c2939": [
-        "/xylophonmusik"
+      "8e5299e2-314e-5c3c-a12a-0cfa996b7b62": [
+        "/submit-a-lightning-talk"
       ]
     },
     "connections": {
       "MarkdownRemark": [
         "/",
         "/categories/",
-        "/categories/technology",
-        "/categories/general",
-        "/categories/coding",
-        "/categories/music"
+        "/categories/coding"
       ]
     }
   },
   "jsonDataPaths": {
-    "index": "716/path---index-6a9-EMwhQ5ppcrnoMRymPYjYfsINJKc",
+    "index": "37/path---index-6a9-RsCrsz6R3HTk47GRS4Vcgusuc",
     "dev-404-page-5f9": "920/path---dev-404-page-5-f-9-fab-NZuapzHg3X9TaN1iIixfv1W23E",
     "404-22d": "44/path---404-22-d-bce-NZuapzHg3X9TaN1iIixfv1W23E",
     "sq--src-components-layout-js": 1719855500,
     "page-2-fbc": "53/path---page-2-fbc-5a8-NZuapzHg3X9TaN1iIixfv1W23E",
     "404-html-516": "164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E",
-    "categories-e90": "101/path---categories-e-90-f59-97ULDgfACfdPD27l4e0z4R7kS8",
+    "categories-e90": "439/path---categories-e-90-f59-jhhXhEOPqNY64arVvvlDlAjjuuw",
     "alper-musig-clare-7f2": "351/path---alper-musig-clare-7-f-2-d9a-tM3tXmGW2wsgRL2BheIsIJBRo",
     "scittle-luo-dfd": "379/path---scittle-luo-dfd-8a6-WBOnqqhjtBQCs4tnHiAkZLWGFfU",
-    "coding-is-fun-f73": "969/path---coding-is-fun-f-73-56d-GvrXvLjrUtTACPg0Xifh9kt7X7U",
+    "coding-is-fun-f73": "56/path---coding-is-fun-f-73-56d-xlrBeQBIve9quPqGkTPcFCB2BI",
     "jux-bei-pforzheim-9e2": "653/path---jux-bei-pforzheim-9-e-2-81c-eLwXS4br8qUfH4zTF0uS3SRy7k",
     "xylophonmusik-8b0": "260/path---xylophonmusik-8-b-0-21a-Kmk95PWMEPTKfpv9UMgNiFPmMJE",
     "categories-technology-18f": "609/path---categories-technology-18-f-ae1-vMfktGzpjIIqbM1faNFzriQYc",
     "categories-general-c55": "546/path---categories-general-c-55-984-WMMAFJJvuIwdqpfgdrAGYpCcA",
     "contact-26a": "686/path---contact-26-a-cd9-NZuapzHg3X9TaN1iIixfv1W23E",
-    "categories-coding-902": "874/path---categories-coding-902-d7e-XzBVQLqaR6Y40llNUb5rCGvSM",
+    "categories-coding-902": "912/path---categories-coding-902-d7e-PIItq4gZXQbFOlEkRVAL5oAt1c",
     "categories-music-6e0": "191/path---categories-music-6-e-0-cd1-1vrTAzZ8hq8ocMp8COc7IqSLBI",
-    "success-ca5": "398/path---success-ca-5-7fb-NZuapzHg3X9TaN1iIixfv1W23E"
+    "success-ca5": "398/path---success-ca-5-7fb-NZuapzHg3X9TaN1iIixfv1W23E",
+    "submit-lightning-talk-ef7": "604/path---submit-lightning-talk-ef-7-c38-ph0JHDppvXftxlJK9Qf0Ih4xQ",
+    "submit-a-lightning-talk-6fa": "17/path---submit-a-lightning-talk-6-fa-acb-uFOzJTH308FDD0hl1NxrCdUl6wQ",
+    "nyc-a73": "273/path---nyc-a-73-a1e-NZuapzHg3X9TaN1iIixfv1W23E"
   },
   "components": {
     "/Users/monica/Dev/React-Ladies/src/templates/post.js": {
@@ -2755,6 +2073,10 @@
     "/Users/monica/Dev/React-Ladies/src/pages/index.js": {
       "query": "query IndexQuery {\n  allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {\n    edges {\n      node {\n        fields {\n          slug\n        }\n        frontmatter {\n          title\n          date(formatString: \"DD.MM.YYYY\")\n          category\n        }\n        excerpt(pruneLength: 200)\n        timeToRead\n      }\n    }\n  }\n}\n",
       "componentPath": "/Users/monica/Dev/React-Ladies/src/pages/index.js"
+    },
+    "/Users/monica/Dev/React-Ladies/src/pages/nyc.js": {
+      "query": "",
+      "componentPath": "/Users/monica/Dev/React-Ladies/src/pages/nyc.js"
     },
     "/Users/monica/Dev/React-Ladies/src/pages/success.js": {
       "query": "",

@@ -8,6 +8,7 @@ exports.components = {
   "component---src-pages-categories-js": () => import("/Users/monica/Dev/React-Ladies/src/pages/categories.js" /* webpackChunkName: "component---src-pages-categories-js" */),
   "component---src-pages-contact-js": () => import("/Users/monica/Dev/React-Ladies/src/pages/contact.js" /* webpackChunkName: "component---src-pages-contact-js" */),
   "component---src-pages-index-js": () => import("/Users/monica/Dev/React-Ladies/src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
+  "component---src-pages-nyc-js": () => import("/Users/monica/Dev/React-Ladies/src/pages/nyc.js" /* webpackChunkName: "component---src-pages-nyc-js" */),
   "component---src-pages-success-js": () => import("/Users/monica/Dev/React-Ladies/src/pages/success.js" /* webpackChunkName: "component---src-pages-success-js" */)
 }
 

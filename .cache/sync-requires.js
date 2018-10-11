@@ -9,6 +9,7 @@ exports.components = {
   "component---src-pages-categories-js": preferDefault(require("/Users/monica/Dev/React-Ladies/src/pages/categories.js")),
   "component---src-pages-contact-js": preferDefault(require("/Users/monica/Dev/React-Ladies/src/pages/contact.js")),
   "component---src-pages-index-js": preferDefault(require("/Users/monica/Dev/React-Ladies/src/pages/index.js")),
+  "component---src-pages-nyc-js": preferDefault(require("/Users/monica/Dev/React-Ladies/src/pages/nyc.js")),
   "component---src-pages-success-js": preferDefault(require("/Users/monica/Dev/React-Ladies/src/pages/success.js"))
 }
 

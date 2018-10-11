@@ -15,7 +15,7 @@ var plugins = [{
       options: {"plugins":[]},
     },{
       plugin: require('/Users/monica/Dev/React-Ladies/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"Minimal Blog","short_name":"Minimal Blog - Gatsby Starter","description":"Minimal Blog with big typography","start_url":"/","background_color":"#2b2e3c","theme_color":"#3498DB","display":"standalone","icon":"src/favicon.png"},
+      options: {"plugins":[],"name":"React Ladies","short_name":"React Ladies - a Meetup for women and non-binary ReactJS engineers","description":"Minimal Blog with big typography","start_url":"/","background_color":"#2b2e3c","theme_color":"#3498DB","display":"standalone","icon":"src/favicon.png"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
