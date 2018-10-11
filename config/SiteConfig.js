@@ -7,14 +7,14 @@ module.exports = {
   siteUrl: "https://minimal-blog.netlify.com", // Domain of your site. No trailing slash!
   siteLanguage: "en", // Language Tag on <html> element
   siteBanner: "/social/banner.jpg", // Your image for og:image tag. You can find it in the /static folder
-  favicon: "src/favicon.png", // Your image for favicons. You can find it in the /src folder
+  favicon: "src/images/favicon.png", // Your image for favicons. You can find it in the /src folder
   siteDescription: "Minimal Blog with big typography", // Your site description
-  author: "LekoArts", // Author for schemaORGJSONLD
+  author: "Monica Powell", // Author for schemaORGJSONLD
   siteLogo: "/social/logo.png", // Image for schemaORGJSONLD
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional
-  userTwitter: "@minimal", // Twitter Username - Optional
-  ogSiteName: "minimal", // Facebook Site Name - Optional
+  userTwitter: "@ReactJSLadies", // Twitter Username - Optional
+  ogSiteName: "React Ladies", // Facebook Site Name - Optional
   ogLanguage: "en_US", // Facebook Language
 
   // Manifest and Progress color
