@@ -3,7 +3,8 @@
 
 We're a group of women and non-binary ReactJS enthusiasts in New York City (and beyond).
 
-Gatsby website is currently under-construction 🚧 and contributions are welcome! **Please contribute to the `home-v1` branch.**
+
+Gatsby website is currently under-construction 🚧 and contributions are welcome! Please contribute to the `home-v1` branch.
 
 ![Screenshot of React Ladies Website](https://raw.githubusercontent.com/M0nica/React-Ladies/home-v1/ReactLadies.png)
 

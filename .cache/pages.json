@@ -1,0 +1,42 @@
+[
+    {
+        "componentChunkName": "component---src-pages-index-js",
+        "jsonName": "index",
+        "path": "/"
+    },
+    {
+        "componentChunkName": "component---src-pages-categories-js",
+        "jsonName": "categories-e90",
+        "path": "/categories/"
+    },
+    {
+        "componentChunkName": "component---src-templates-category-js",
+        "jsonName": "categories-coding-902",
+        "path": "/categories/coding"
+    },
+    {
+        "componentChunkName": "component---src-pages-contact-js",
+        "jsonName": "contact-26a",
+        "path": "/contact/"
+    },
+    {
+        "componentChunkName": "component---cache-dev-404-page-js",
+        "jsonName": "dev-404-page-5f9",
+        "path": "/dev-404-page/"
+    },
+    {
+        "componentChunkName": "component---src-pages-nyc-js",
+        "jsonName": "nyc-a73",
+        "path": "/nyc/"
+    },
+    {
+        "componentChunkName": "component---src-templates-post-js",
+        "jsonName": "submit-a-lightning-talk-6fa",
+        "path": "/submit-a-lightning-talk"
+    },
+    {
+        "componentChunkName": "component---src-pages-success-js",
+        "jsonName": "success-ca5",
+        "path": "/success/"
+    }
+]

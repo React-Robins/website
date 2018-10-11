@@ -1,0 +1,33 @@
+{
+  "name": "gray-percentage",
+  "description": "Convenience function to get a gray value by percentage e.g. gray(60) -> hsla(0,0%,100%,0.4)",
+  "version": "2.0.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/KyleAMathews/gray-percentage/issues"
+  },
+  "homepage": "https://github.com/KyleAMathews/gray-percentage",
+  "keywords": [
+    "colors",
+    "css",
+    "gray",
+    "grey"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KyleAMathews/gray-percentage.git"
+  },
+  "scripts": {
+    "test-watch": "NODE_ENV=test node_modules/.bin/mocha -w --recursive --compilers coffee:coffee-script/register -R mocha-unfunk-reporter",
+    "test": "jshint *.json *.js & NODE_ENV=test node_modules/.bin/mocha --recursive --compilers coffee:coffee-script/register -R mocha-unfunk-reporter"
+  },
+  "devDependencies": {
+    "chai": "^2.1.0",
+    "coffee-script": "^1.9.1",
+    "mocha": "^2.1.0",
+    "mocha-unfunk-reporter": "^0.4.0",
+    "pre-commit": "^1.0.5"
+  }
+}
