@@ -41,10 +41,12 @@ Install dependencies
 ```npm install```
 
 then:
+```gatsby develop``` — Gatsby will start a hot-reloading development environment accessible at localhost:8000
+Try editing the JavaScript pages in src/pages. Saved changes will live reload in the browser.
 
-```
-npm run build
-```
+```gatsby build``` — Gatsby will perform an optimized production build for your site generating static HTML and per-route JavaScript code bundles.
+
+```gatsby serve``` — Gatsby starts a local HTML server for testing your built site.
 
 Copy the content of the ``public`` folder to your webhost or use a website like Netlify which automates that for you.
 
