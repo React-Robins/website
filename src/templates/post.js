@@ -7,7 +7,7 @@ import kebabCase from 'lodash/kebabCase';
 import { Layout, Wrapper, Header, Subline, SEO, PrevNext } from 'components';
 import { media } from '../utils/media';
 import config from '../../config/SiteConfig';
-import '../utils/prismjs-theme.css';
+import '../css/prismjs-theme.css';
 
 const Content = styled.article`
   grid-column: 2;

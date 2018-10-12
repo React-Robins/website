@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-minimal-blog",
-  "description": "Gatsby Starter - Minimal Blog",
+  "name": "react-ladies",
+  "description": "React Ladies Website",
   "version": "2.0.0",
-  "author": "LekoArts <hello@lekoarts.de>",
+  "author": "Monica Powell <monica@aboutmonica.com>",
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.4.0",
     "@fortawesome/react-fontawesome": "^0.1.3",
