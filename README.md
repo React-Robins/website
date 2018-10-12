@@ -38,7 +38,7 @@ Check your development environment! You'll need [Node.js](https://nodejs.org/en/
 
 Install dependencies 
 
-```yarn install```
+```npm install```
 
 then:
 
