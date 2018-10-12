@@ -5,6 +5,8 @@ import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 import styled, { ThemeProvider, injectGlobal } from "styled-components";
 import { SEO } from "components";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitterSquare, faMeetup } from "@fortawesome/free-brands-svg-icons"
 import theme from "../../config/Theme";
 import { media } from "../utils/media";
 
@@ -86,6 +88,12 @@ const Layout = ({ children }) => (
             <a href="http://www.aboutmonica.com">Monica Powell</a>. <br />
             <a href="https://github.com/M0nica/React-Ladies">
               GitHub Repository
+            </a>{" "}<br />
+            <a href="https://twitter.com/ReactJSLadies">
+              <FontAwesomeIcon icon={faTwitterSquare} /> ReactJSLadies
+            </a>{" "}<br />
+            <a href="https://www.meetup.com/React-Ladies/">
+              <FontAwesomeIcon icon={faMeetup} /> React-Ladies
             </a>{" "}
             <br />
             <span>Last build: {data.site.buildTime}</span>
