@@ -33,7 +33,14 @@ Check your development environment! You'll need [Node.js](https://nodejs.org/en/
 - [Check your development environment](https://www.gatsbyjs.org/tutorial/part-zero/)
 
 
+
 ### Building your site
+
+Install dependencies 
+
+```yarn install```
+
+then:
 
 ```
 npm run build
