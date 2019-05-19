@@ -4,9 +4,7 @@
 We're a group of women and non-binary ReactJS enthusiasts in New York City (and beyond).
 
 
-# gatsby-absurd
-
-An absurd Gatsby starter. The collection of illustrations, [absurd.design](https://absurd.design/) by [Diana Valeanu](https://twitter.com/diana_valeanu) is a very fascinating and beautiful project with some pretty thoughtful concepts. Experimentation on how that could be put together on a site ended up as this starter.
+ ![](src/images/react-ladies-screenshot.png)
 
 [Live Demo](https://gatsby-absurd.netlify.com/)
 
@@ -39,3 +37,10 @@ The component `src/components/common/SEO.js` handles all meta data and SEO conte
 ## Styling
 
 This project uses [styled-components]() to handle styling: `src/styles/theme.js` defines the styling base and `src/styles/GlobalStyles.js` includes basic element styles along with the CSS Reset.
+
+# Credit
+
+Monica Powell edited this website. Addt'l contributors are welcome :-)
+
+This site was built from the gatsby-absurd starter theme. The collection of illustrations, [absurd.design](https://absurd.design/) by [Diana Valeanu](https://twitter.com/diana_valeanu) is a very fascinating and beautiful project with some pretty thoughtful concepts. 
+
