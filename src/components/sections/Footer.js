@@ -12,7 +12,7 @@ import TwitterIcon from '@static/icons/twitter.svg';
 const SOCIAL = [
   {
     icon: GithubIcon,
-    link: 'https://github.com/M0nica/react-ladies-site',
+    link: 'https://github.com/M0nica/react-ladies',
   },
 
   {
