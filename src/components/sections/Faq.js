@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { Section, Container } from '@components/global';
-import { Link } from 'gatsby';
+import { Section, Container, StyledLink } from '@components/global';
 
 import FaqItem from '@common/FaqItem';
 
@@ -21,8 +20,9 @@ const FAQS = [
     content: () => (
       <>
         You can submit a talk for an upcoming event &nbsp;
-        <Link to="/submit-talk/">here</Link>
-        &nbsp; or fill out <Link to="/partnerships/">this form</Link> if you are
+        <StyledLink to="/submit-talk/">here</StyledLink>
+        &nbsp; or fill out{' '}
+        <StyledLink to="/partnerships/">this form</StyledLink> if you are
         interesting in becoming a co-organizer or are looking for other ways to
         get more involved.
       </>
@@ -47,9 +47,9 @@ const FAQS = [
     content: () => (
       <>
         React Ladies is currently looking for partners to provide food and venue
-        space for upcoming events. Please fill ou{' '}
-        <Link to="/partnerships/">this form</Link>
-        if you'd like to learn more about partnership opportunities.
+        space for upcoming events. Please fill out &nbsp;
+        <StyledLink to="/partnerships/">this form</StyledLink>
+        &nbsp; if you'd like to learn more about partnership opportunities.
       </>
     ),
   },

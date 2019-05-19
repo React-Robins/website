@@ -1,4 +1,12 @@
 import styled from 'styled-components';
+import { Link } from 'gatsby';
+
+export const StyledLink = styled(Link)`
+  color: #564f62;
+  &:hover {
+    color: #82729b;
+  }
+`;
 
 export const Container = styled.div`
   max-width: 1200px;
