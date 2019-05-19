@@ -6,8 +6,6 @@ We're a group of women and non-binary ReactJS enthusiasts in New York City (and 
 
  ![](src/images/react-ladies-screenshot.png)
 
-[Live Demo](https://gatsby-absurd.netlify.com/)
-
 ## Installation
 
 Install the dependencies:
