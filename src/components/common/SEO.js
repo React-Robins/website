@@ -3,12 +3,12 @@ import Helmet from 'react-helmet';
 
 const SEO_DATA = {
   description: 'An absurd gatsby starter',
-  title: 'Absurd',
+  title: 'React Ladies',
   url: '',
-  author: 'ajayns',
-  keywords: ['gatsby', 'site', 'absurd'],
+  author: 'Monica Powell',
+  keywords: ['gatsby', 'site'],
   twitter: {
-    id: '@ajayns08',
+    id: '@waterproofheart',
     img: '',
   },
   facebook: {

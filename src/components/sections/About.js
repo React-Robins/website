@@ -11,7 +11,7 @@ const About = () => (
       query {
         art_fast: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "fast" }
+          name: { eq: "build" }
         ) {
           childImageSharp {
             fluid(maxWidth: 760) {
@@ -48,12 +48,13 @@ const About = () => (
         <Container>
           <Grid>
             <div>
-              <h2>Speed past the competition</h2>
+              <h2>Who are we?</h2>
               <p>
-                Gatsby.js builds the fastest possible website. Instead of
-                waiting to generate pages when requested, pre-build pages and
-                lift them into a global cloud of servers — ready to be delivered
-                instantly to your users wherever they are.
+                React Ladies is a supportive community for women and non-binary
+                React enthusiasts with any level of programming experience to
+                grow as technologists and meet other React developers. We center
+                our events around JavaScript and other technologies within the
+                React ecosystem
               </p>
             </div>
             <Art>

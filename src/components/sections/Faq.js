@@ -7,58 +7,46 @@ import ExternalLink from '@common/ExternalLink';
 
 const FAQS = [
   {
-    title: 'What tech does Gatsby use?',
+    title: 'Who should join React Ladies?',
     content: () => (
       <>
-        Enjoy the power of the latest web technologies – React.js , Webpack ,
-        modern JavaScript and CSS and more — all set up and waiting for you to
-        start building
+        Our community is for women and non-binary folks with any experience with
+        or interest in React. All current and aspiring React developers are
+        welcome. Bring your laptop and a friend!
       </>
     ),
   },
   {
-    title: 'Where can you source data from?',
+    title: 'How can I get involved with React Ladies?',
     content: () => (
       <>
-        Gatsby’s rich data plugin ecosystem lets you build sites with the data
-        you want — from one or many sources: Pull data from headless CMSs, SaaS
-        services, APIs, databases, your file system, and more directly into your
-        pages using GraphQL.
+        You can submit a talk for an upcoming event here:
+        http://www.reactladies.com/nyc/ or reach out to
+        monica[at]aboutmonica.com if you have other ideas for getting involved.
       </>
     ),
   },
   {
-    title: 'How do I scale Gatsby sites?',
+    title: 'What is the React Ladies Code of Conduct?',
     content: () => (
       <>
-        Gatsby.js is Internet Scale. Forget complicated deploys with databases
-        and servers and their expensive, time-consuming setup costs,
-        maintenance, and scaling fears. Gatsby.js builds your site as “static”
-        files which can be deployed easily on dozens of services.
+        React Ladies is dedicated to providing a harassment-free experience for
+        everyone, regardless of gender, gender identity and expression, age,
+        sexual orientation, disability, physical appearance, body size, race,
+        ethnicity, religion (or lack thereof), or technology choices. We do not
+        tolerate harassment of participants in any form. Participants violating
+        these rules may be removed from this community at the discretion of the
+        organizers. (Adapted from JS Conf Code of Conduct)
       </>
     ),
   },
   {
-    title: 'How does do I future-proof my website?',
+    title: 'How can my company partner with React Ladies?',
     content: () => (
       <>
-        Do not build a website with last decade’s tech. The future of the web is
-        mobile, JavaScript and APIs—the{` `}
-        <ExternalLink href="https://jamstack.org/">JAMstack</ExternalLink>.
-        Every website is a web app and every web app is a website. Gatsby.js is
-        the universal JavaScript framework you’ve been waiting for.
-      </>
-    ),
-  },
-  {
-    title: 'What exactly does Gatsby build?',
-    content: () => (
-      <>
-        Gatsby.js is a static PWA (Progressive Web App) generator. You get code
-        and data splitting out-of-the-box. Gatsby loads only the critical HTML,
-        CSS, data, and JavaScript so your site loads as fast as possible. Once
-        loaded, Gatsby prefetches resources for other pages so clicking around
-        the site feels incredibly fast.
+        React Ladies is currently looking for partners to provide food and venue
+        space for upcoming events. Please reach out to monica[at]aboutmonica.com
+        if you'd like to learn more about partnership opportunities.
       </>
     ),
   },
