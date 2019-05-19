@@ -98,7 +98,12 @@ const StyledAnchorLink = styled(AnchorLink)`
 
   &:hover {
     color: ${props => props.theme.color.black.regular};
+    background-color: #fff;
   }
+
+  border-radius: 35px;
+  background-color: #e9e5ef;
+  padding: 15px 32px;
 `;
 
 export default Header;

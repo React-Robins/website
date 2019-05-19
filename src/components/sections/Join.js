@@ -102,10 +102,13 @@ const Button = styled.button`
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  margin-top: 1em;
   font-size: 16px;
   &:hover {
     background: #413a4c;
   }
+  border-radius: 35px;
+}
 `;
 const Grid = styled.div`
   display: grid;
@@ -121,9 +124,7 @@ const Grid = styled.div`
     `
     text-align: left;
     grid-template-columns: 2fr 3fr;
-  `}
-
-  h2 {
+  `} h2 {
     margin-bottom: 16px;
   }
 
@@ -142,7 +143,7 @@ const Grid = styled.div`
         ${Art} {
           order: 2;
         }
-    `}
+    `};
   }
 `;
 
