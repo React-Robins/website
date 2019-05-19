@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Section, Container } from '@components/global';
+import { Link } from 'gatsby';
 
 import FaqItem from '@common/FaqItem';
 import ExternalLink from '@common/ExternalLink';
@@ -20,9 +21,11 @@ const FAQS = [
     title: 'How can I get involved with React Ladies?',
     content: () => (
       <>
-        You can submit a talk for an upcoming event here:
-        http://www.reactladies.com/nyc/ or reach out to
-        monica[at]aboutmonica.com if you have other ideas for getting involved.
+        You can submit a talk for an upcoming event &nbsp;
+        <Link to="/submit-talk/">here</Link>
+        &nbsp; or fill out <Link to="/partnerships/">this form</Link> if you are
+        interesting in becoming a co-organizer or are looking for other ways to
+        get more involved.
       </>
     ),
   },
@@ -45,7 +48,8 @@ const FAQS = [
     content: () => (
       <>
         React Ladies is currently looking for partners to provide food and venue
-        space for upcoming events. Please reach out to monica[at]aboutmonica.com
+        space for upcoming events. Please fill ou{' '}
+        <Link to="/partnerships/">this form</Link>
         if you'd like to learn more about partnership opportunities.
       </>
     ),

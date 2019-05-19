@@ -13,15 +13,12 @@ import TwitterIcon from '@static/icons/twitter.svg';
 const SOCIAL = [
   {
     icon: GithubIcon,
-    link: 'https://github.com/ajayns/gatsby-absurd',
+    link: 'https://github.com/M0nica/react-ladies-site',
   },
-  {
-    icon: InstagramIcon,
-    link: 'https://instagram.com/ajay_ns',
-  },
+
   {
     icon: TwitterIcon,
-    link: 'https://twitter.com/ajayns08',
+    link: 'https://twitter.com/ReactJSLadies',
   },
 ];
 
@@ -43,12 +40,6 @@ const Footer = () => (
     `}
     render={data => (
       <React.Fragment>
-        <Art>
-          <Img
-            fluid={data.art_pot.childImageSharp.fluid}
-            style={{ width: 480, maxWidth: '100%', marginBottom: -16 }}
-          />
-        </Art>
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
@@ -58,6 +49,14 @@ const Footer = () => (
                 {` `}
                 <ExternalLink href="https://twitter.com/diana_valeanu">
                   @diana_valeanu
+                </ExternalLink>
+                &nbsp; and &nbsp;
+                <ExternalLink href="https://twitter.com/ninalimpi">
+                  @ninalimpi
+                </ExternalLink>
+                <br />{' '}
+                <ExternalLink href="https://twitter.com/waterproofheart">
+                  React JS Ladies &copy;
                 </ExternalLink>
               </span>
             </Copyright>

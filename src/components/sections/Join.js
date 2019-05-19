@@ -1,17 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
-import { StaticQuery, graphql } from 'gatsby';
+import { StaticQuery, graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
+import ExternalLink from '@common/ExternalLink';
 
 import { Section, Container } from '@components/global';
 
-const About = () => (
+const Join = () => (
   <StaticQuery
     query={graphql`
       query {
         art_fast: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "build" }
+          name: { eq: "chatting" }
         ) {
           childImageSharp {
             fluid(maxWidth: 760) {
@@ -22,7 +23,7 @@ const About = () => (
 
         art_learn: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "learn_yourself" }
+          name: { eq: "community" }
         ) {
           childImageSharp {
             fluid(maxWidth: 760) {
@@ -44,22 +45,48 @@ const About = () => (
       }
     `}
     render={data => (
-      <Section id="about">
+      <Section id="join" accent>
         <Container>
+          <h1>Get Involved</h1>
           <Grid>
             <div>
-              <h2>Who are we?</h2>
+              <h2>Connect Online</h2>
               <p>
-                React Ladies is a supportive community for women and non-binary
-                React enthusiasts with any level of programming experience to
-                grow as technologists and meet other React developers. We center
-                our events around JavaScript and other technologies within the
-                React ecosystem.
+                Want to be a part of a growing online community of women and
+                non-binary React developers? Apply to be added to the React
+                Ladies Slack.
               </p>
+
+              <div>
+                <Link to="/slack/">
+                  {' '}
+                  <Button>Join Slack</Button>
+                </Link>
+              </div>
             </div>
+
             <Art>
               <Img fluid={data.art_fast.childImageSharp.fluid} />
             </Art>
+          </Grid>
+          <Grid inverse>
+            <Art>
+              <Img fluid={data.art_learn.childImageSharp.fluid} />
+            </Art>
+            <div>
+              <h2>Connect In Person</h2>
+              <p>
+                Join us on Meetup to be the first to hear about our upcoming
+                events in New York City centered around JavaScript and other
+                technologies within the React ecosystem.
+              </p>
+
+              <div>
+                <ExternalLink href="http://meetup.com/React-Ladies">
+                  <Button>Join Meetup</Button>
+                </ExternalLink>
+              </div>
+            </div>
           </Grid>
         </Container>
       </Section>
@@ -67,6 +94,19 @@ const About = () => (
   />
 );
 
+const Button = styled.button`
+  background-color: #82729b;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  &:hover {
+    background: #413a4c;
+  }
+`;
 const Grid = styled.div`
   display: grid;
   grid-template-columns: 3fr 2fr;
@@ -112,4 +152,4 @@ const Art = styled.figure`
   width: 100%;
 `;
 
-export default About;
+export default Join;

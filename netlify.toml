@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/nyc"
+  to = "/submit-talk"
+  status = 200
+  force = true
