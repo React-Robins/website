@@ -24,11 +24,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Absurd`,
-        short_name: `absurd`,
+        name: `React Ladies`,
+        short_name: `React Ladies`,
         start_url: `/`,
-        background_color: `#8bd8ed`,
-        theme_color: `#8bd8ed`,
+        background_color: `#cab4e6`,
+        theme_color: `#cab4e6`,
         display: `minimal-ui`,
         icon: `static/favicon.svg`,
       },

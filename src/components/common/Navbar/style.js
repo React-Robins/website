@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 
 import { Container } from '@components/global';
 
@@ -65,6 +66,16 @@ export const MobileMenu = styled.div`
 export const Brand = styled.div`
   font-family: ${props => props.theme.font.primary};
   ${props => props.theme.font_size.large};
+`;
+
+export const StyledLink = styled(Link)`
+  font-family: ${props => props.theme.font.primary};
+  ${props => props.theme.font_size.large};
+  text-decoration: none;
+  color: #564f62;
+  &:hover {
+    color: #82729b;
+  }
 `;
 
 export const Mobile = styled.div`
