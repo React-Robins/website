@@ -1,61 +1,56 @@
-const config = require('./config/SiteConfig');
-
-const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix;
+const path = require("path");
 
 module.exports = {
-  pathPrefix: config.pathPrefix,
-  siteMetadata: {
-    siteUrl: config.siteUrl + pathPrefix,
-  },
   plugins: [
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-styled-components',
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-svgr`,
+    `gatsby-plugin-styled-components`,
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: 'post',
-        path: `${__dirname}/blog`,
-      },
+        name: `team`,
+        path: `${__dirname}/src/images/team`
+      }
     },
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        plugins: [
-          {
-            resolve: 'gatsby-remark-external-links',
-            options: {
-              target: '_blank',
-              rel: 'nofollow noopener noreferrer',
-            },
-          },
-          'gatsby-remark-prismjs',
-          'gatsby-remark-autolink-headers',
-        ],
-      },
+        name: `art`,
+        path: `${__dirname}/src/images/art`
+      }
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `React Ladies`,
+        short_name: `React Ladies`,
+        start_url: `/`,
+        background_color: `#cab4e6`,
+        theme_color: `#cab4e6`,
+        display: `minimal-ui`,
+        icon: `static/favicon.svg`
+      }
     },
     {
-      resolve: 'gatsby-plugin-typography',
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        pathToConfigModule: 'src/utils/typography.js',
-      },
+        fonts: [`average`, `prata\:400,700`]
+      }
     },
-    'gatsby-plugin-catch-links',
-    'gatsby-plugin-sitemap',
-    'gatsby-plugin-lodash',
     {
-      resolve: 'gatsby-plugin-manifest',
+      resolve: `gatsby-plugin-alias-imports`,
       options: {
-        name: config.siteTitle,
-        short_name: config.siteTitleAlt,
-        description: config.siteDescription,
-        start_url: config.pathPrefix,
-        background_color: config.backgroundColor,
-        theme_color: config.themeColor,
-        display: 'standalone',
-        icon: config.favicon,
-      },
-    },
-    'gatsby-plugin-offline',
-    'gatsby-plugin-netlify',
-  ],
+        alias: {
+          "@components": path.resolve(__dirname, "src/components"),
+          "@common": path.resolve(__dirname, "src/components/common"),
+          "@images": path.resolve(__dirname, "src/images"),
+          "@sections": path.resolve(__dirname, "src/components/sections"),
+          "@styles": path.resolve(__dirname, "src/styles/"),
+          "@static": path.resolve(__dirname, "static/")
+        }
+      }
+    }
+  ]
 };
