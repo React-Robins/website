@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 const SEO_DATA = {
-  description: 'A community for women and non-binary ReactJS engineers',
+  description: 'React Ladies is a supportive community for women and non-binary React enthusiasts to grow as technologists and meet other React developers.',
   title: 'React Ladies',
   url: 'www.reactladies.com',
   author: 'Monica Powell',
