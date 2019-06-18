@@ -7,6 +7,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 // document schemas
 import attendee from './documents/attendee'
 import speaker from './documents/speaker'
+import sponsor from './documents/sponsor'
 import siteSettings from './documents/siteSettings'
 
 // Then we give our schema to the builder and provide the result to Sanity
@@ -20,6 +21,7 @@ export default createSchema({
     // in the studio.
     siteSettings,
     speaker,
+    sponsor,
     attendee
 
     // When added to this list, object types can be used as
