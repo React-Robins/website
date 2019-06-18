@@ -9,6 +9,11 @@ export default {
       title: 'Name'
     },
     {
+      name: 'job',
+      type: 'string',
+      title: 'Job'
+    },
+    {
       name: 'ghLink',
       type: 'string',
       title: 'Github URL'
