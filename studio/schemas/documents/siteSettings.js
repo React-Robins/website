@@ -16,21 +16,24 @@ export default {
       description: 'Describe your blog for search engines and social media.'
     },
     {
-      name: 'keywords',
+      name: 'location',
+      type: 'string',
+      title: 'Location'
+    },
+    {
+      name: 'date',
+      type: 'date',
+      title: 'Date'
+    },
+    {
+      name: 'organizers',
       type: 'array',
       title: 'Keywords',
-      description: 'Add keywords that describes your blog.',
-      of: [{type: 'string'}],
+      description: 'The meetup organizers',
+      of: [{ type: 'string' }],
       options: {
         layout: 'tags'
       }
-    },
-    {
-      name: 'author',
-      type: 'reference',
-      description: 'Publish an author and set a reference to them here.',
-      title: 'Author',
-      to: [{type: 'author'}]
     }
   ]
 }
