@@ -26,7 +26,7 @@ export default () =>
         .title('Speakers')
         .icon(MdPerson)
         .schemaType('speaker')
-        .child(S.documentTypeList('speakers').title('Speakers')),
+        .child(S.documentTypeList('speaker').title('Speakers')),
       // This returns an array of all the document types
       // defined in schema.js. We filter out those that we have
       // defined the structure above
