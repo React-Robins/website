@@ -1,0 +1,71 @@
+@import '../styles/custom-media.css';
+@import '../styles/custom-properties.css';
+
+.root {
+  display: blog;
+  color: inherit;
+  text-decoration: none;
+}
+
+.inList {
+  composes: root;
+
+  @media (--media-min-medium) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2em;
+  }
+}
+
+.inGrid {
+  composes: root;
+}
+
+.leadMediaThumb {
+  position: relative;
+  padding-bottom: 66.666%;
+  background: var(--color-very-light-gray);
+
+  @nest & img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.text {
+  /* empty */
+}
+
+.title {
+  @media (hover: hover) {
+    @nest .root:hover & {
+      text-decoration: underline;
+    }
+  }
+
+  @media (--media-min-medium) {
+    @nest .inList & {
+      margin-top: 0;
+    }
+  }
+}
+
+.excerpt {
+  @nest & p {
+    margin: 0.5em 0;
+  }
+
+  @nest & strong {
+    font-weight: 600;
+  }
+}
+
+.date {
+  font-size: var(--font-small-size);
+  line-height: var(--font-small-line-height);
+  color: var(--color-gray);
+}
