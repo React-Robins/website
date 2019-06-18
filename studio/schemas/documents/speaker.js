@@ -14,6 +14,11 @@ export default {
       title: 'Job'
     },
     {
+      name: 'photo',
+      type: 'image',
+      title: 'Photo'
+    },
+    {
       name: 'ghLink',
       type: 'string',
       title: 'Github URL'
