@@ -1,4 +1,5 @@
 import React from 'react'
+import format from 'date-fns/format'
 import {graphql} from 'gatsby'
 import Container from '../components/container'
 import GraphQLErrorList from '../components/graphql-error-list'
@@ -31,7 +32,7 @@ export const query = graphql`
   }
 
   query IndexPageQuery {
-    site: sanitySiteSettings(_id: {regex: "/(drafts.|)siteSettings/"}) {
+    site: sanitySiteSettings {
       title
       description
       location
@@ -82,6 +83,26 @@ const IndexPage = props => {
       <SEO title={site.title} description={site.description} />
       <Container>
         <h1 hidden>Welcome to {site.title}</h1>
+        <div
+          css={`
+            display: flex;
+            flex-direction: column;
+            font-size: 16px;
+            line-height: 32px;
+            text-align: center;
+          `}
+        >
+          <span>
+            Location:{' '}
+            <a href='https://goo.gl/maps/VV6YUwPJaT79ESGG9' target='_blank'>
+              <b>{site.location}</b>
+            </a>
+          </span>
+
+          <span>
+            Date & Time: <b>{format(site.date, ['DD/MM HH:mm'])} </b>
+          </span>
+        </div>
         {/* <ul>
           {data.speakers.edges &&
             data.speakers.edges.map(({node: speaker}) => (
