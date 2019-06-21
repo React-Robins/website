@@ -60,8 +60,8 @@ const Footer = () => (
               </span>
             </Copyright>
             <SocialIcons>
-              {SOCIAL.map(({ icon, link }) => (
-                <ExternalLink href={link}>
+              {SOCIAL.map(({ icon, link }, index) => (
+                <ExternalLink key={index} href={link}>
                   <img src={icon} alt="link" />
                 </ExternalLink>
               ))}

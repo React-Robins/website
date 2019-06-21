@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Scrollspy from 'react-scrollspy';
+import { Link } from 'gatsby';
 
 import { Container } from '@components/global';
 import {
@@ -39,6 +40,12 @@ class Navbar extends Component {
     </AnchorLink>
   );
 
+  getNavAnchorLinkExternal = item => (
+    <Link to={`/#${item.toLowerCase()}`} onClick={this.closeMobileMenu}>
+      {item}
+    </Link>
+  );
+
   getNavList = ({ mobile = false }) => (
     <NavListWrapper mobile={mobile}>
       <Scrollspy
@@ -48,7 +55,9 @@ class Navbar extends Component {
         offset={-64}
       >
         {NAV_ITEMS.map(navItem => (
-          <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>
+          <NavItem key={navItem}>
+            {this.props.external ? this.getNavAnchorLinkExternal(navItem) : this.getNavAnchorLink(navItem)}
+          </NavItem>
         ))}
       </Scrollspy>
     </NavListWrapper>
