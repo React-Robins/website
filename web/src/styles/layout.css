@@ -8,9 +8,13 @@ html {
 
 body {
   -webkit-font-smoothing: antialiased;
-  background: var(--color-white);
-  color: var(--color-black);
+  background: var(--bg);
+  color: var(--color);
   margin: 0;
+}
+
+a {
+  color: var(--color);
 }
 
 html,
@@ -18,4 +22,17 @@ body,
 body > div,
 body > div > div {
   height: 100%;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
 }
