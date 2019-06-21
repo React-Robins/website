@@ -6,7 +6,7 @@ import { Container } from '@components/global';
 
 const SubmitTalk = () => (
   <Layout>
-    <Navbar external />
+    <Navbar />
     <Container>
       <h1>Submit a Lightning Talk</h1>
       <iframe

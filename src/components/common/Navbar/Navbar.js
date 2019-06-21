@@ -40,7 +40,7 @@ class Navbar extends Component {
     </AnchorLink>
   );
 
-  getNavAnchorLinkExternal = item => (
+  getNavLink = item => (
     <Link to={`/#${item.toLowerCase()}`} onClick={this.closeMobileMenu}>
       {item}
     </Link>
@@ -56,7 +56,7 @@ class Navbar extends Component {
       >
         {NAV_ITEMS.map(navItem => (
           <NavItem key={navItem}>
-            {this.props.external ? this.getNavAnchorLinkExternal(navItem) : this.getNavAnchorLink(navItem)}
+            {this.props.scrollable ? this.getNavAnchorLink(navItem) : this.getNavLink(navItem)}
           </NavItem>
         ))}
       </Scrollspy>

@@ -6,7 +6,7 @@ import { Container } from '@components/global';
 
 const Partnerships = () => (
   <Layout>
-    <Navbar external />
+    <Navbar />
     <Container>
       <h1>Partner with React Ladies</h1>
       <iframe

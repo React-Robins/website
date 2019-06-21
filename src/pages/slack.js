@@ -6,7 +6,7 @@ import { Container } from '@components/global';
 
 const JoinSlack = () => (
   <Layout>
-    <Navbar external />
+    <Navbar />
     <Container>
       <h1>Join Our Online Slack Community</h1>
       <iframe
