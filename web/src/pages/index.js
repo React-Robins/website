@@ -121,7 +121,7 @@ const IndexPage = props => {
           `}
         >
           Okay laura can I sleep now? 🌈
-        </h1>
+
       </Container>
     </Layout>
   )
