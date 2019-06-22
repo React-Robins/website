@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
 import Figure from '../components/Figure'
+import Sponsors from '../components/Sponsors'
 
 export const query = graphql`
   fragment SanityImage on SanityImage {
@@ -72,7 +73,7 @@ const Info = styled.div`
 `
 
 const SpeakerPhoto = styled.div`
-  width: 125px;
+  width: 150px;
   position: relative;
 
   &:hover {
@@ -98,9 +99,12 @@ const SpeakerPhoto = styled.div`
 `
 
 const Speakers = styled.ul`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  display: flex;
+  text-align: center;
+
+  li {
+    margin: 20px;
+  }
 `
 
 const IndexPage = ({data = {}}) => {
@@ -134,6 +138,7 @@ const IndexPage = ({data = {}}) => {
               </li>
             ))}
         </Speakers>
+        <Sponsors />
       </main>
     </Layout>
   )
