@@ -1,8 +1,0 @@
-@import '../styles/custom-media.css';
-@import '../styles/custom-properties.css';
-
-.content {
-  width: 80%;
-  max-width: 1280px;
-  margin: auto;
-}

@@ -1,8 +1,6 @@
 import React from 'react'
 import format from 'date-fns/format'
 import {graphql} from 'gatsby'
-import Container from '../components/container'
-import GraphQLErrorList from '../components/graphql-error-list'
 import styled from 'styled-components'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
@@ -39,6 +37,15 @@ export const query = graphql`
       date
       organizers
     }
+    thanks: allSanityThanks {
+      edges {
+        node {
+          id
+          link
+          name
+        }
+      }
+    }
     speakers: allSanitySpeaker {
       edges {
         node {
@@ -55,43 +62,56 @@ export const query = graphql`
   }
 `
 
-const SpeakerPhoto = styled.div`
-  width: 125px;
+const Info = styled.div`
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 40px;
 `
 
-const IndexPage = props => {
-  const {data, errors} = props
+const SpeakerPhoto = styled.div`
+  width: 125px;
+  position: relative;
 
-  if (errors) {
-    return (
-      <Layout>
-        <GraphQLErrorList errors={errors} />
-      </Layout>
-    )
+  &:hover {
+    :after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        rgba(255, 0, 0, 1),
+        rgba(255, 255, 0, 1),
+        rgba(0, 255, 0, 1),
+        rgba(0, 255, 255, 1),
+        rgba(0, 0, 255, 1),
+        rgba(255, 0, 255, 1),
+        rgba(255, 0, 0, 1)
+      );
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.3;
+    }
   }
+`
 
-  const site = (data || {}).site
+const Speakers = styled.ul`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+`
 
-  if (!site) {
-    throw new Error(
-      'Missing "Site settings". Open the studio at http://localhost:3333 and add some content to "Site settings" and restart the development server.'
-    )
-  }
+const IndexPage = ({data = {}}) => {
+  const site = data.site
 
   return (
     <Layout>
       <SEO title={site.title} description={site.description} />
-      <Container>
+      <main>
         <h1 hidden>Welcome to {site.title}</h1>
-        <div
-          css={`
-            display: flex;
-            flex-direction: column;
-            font-size: 16px;
-            line-height: 32px;
-            text-align: center;
-          `}
-        >
+        <Info>
           <span>
             Location:{' '}
             <a href='https://goo.gl/maps/VV6YUwPJaT79ESGG9' target='_blank'>
@@ -102,8 +122,8 @@ const IndexPage = props => {
           <span>
             Date & Time: <b>{format(site.date, ['DD/MM HH:mm'])} </b>
           </span>
-        </div>
-        <ul>
+        </Info>
+        <Speakers>
           {data.speakers.edges &&
             data.speakers.edges.map(({node: speaker}) => (
               <li key={speaker._id}>
@@ -113,8 +133,8 @@ const IndexPage = props => {
                 <h3>{speaker.name}</h3>
               </li>
             ))}
-        </ul>
-      </Container>
+        </Speakers>
+      </main>
     </Layout>
   )
 }

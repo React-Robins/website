@@ -1,0 +1,19 @@
+@import '../../styles/custom-media.css';
+@import '../../styles/custom-properties.css';
+
+.root {
+  position: relative;
+  z-index: 100;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 1em;
+  display: flex;
+
+  @media (--media-min-small) {
+    padding: 1.5em 1.5em;
+  }
+}

@@ -1,7 +1,7 @@
 import {Link} from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
-import logo from '../assets/gayjs.png'
+import logo from '../../assets/gayjs.png'
 
 const Nav = styled.nav`
   display: flex;
