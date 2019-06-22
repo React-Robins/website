@@ -103,7 +103,7 @@ const IndexPage = props => {
             Date & Time: <b>{format(site.date, ['DD/MM HH:mm'])} </b>
           </span>
         </div>
-        {/* <ul>
+        <ul>
           {data.speakers.edges &&
             data.speakers.edges.map(({node: speaker}) => (
               <li key={speaker._id}>
@@ -113,7 +113,7 @@ const IndexPage = props => {
                 <h3>{speaker.name}</h3>
               </li>
             ))}
-        </ul> */}
+        </ul>
       </Container>
     </Layout>
   )
