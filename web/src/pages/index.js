@@ -114,14 +114,6 @@ const IndexPage = props => {
               </li>
             ))}
         </ul> */}
-        <h1
-          css={`
-            text-align: center;
-            display: block;
-          `}
-        >
-          Okay laura can I sleep now? 🌈
-
       </Container>
     </Layout>
   )
