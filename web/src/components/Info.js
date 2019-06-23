@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import styled from 'styled-components'
+import styled, {keyframes} from 'styled-components'
 import format from 'date-fns/format'
 
 import Flag from './icons/flag'
@@ -63,7 +63,7 @@ const RsvpButton = styled(Button)`
     transform: scale(1.025);
   }
 
-  span {
+  strong {
     text-decoration: underline;
   }
 `
@@ -95,9 +95,37 @@ const Form = styled.form`
   }
 `
 
-const Submit = styled(Button)``
+const blink = keyframes`
+  from {
+    opacity: 0;
+    transform: scale(1)
 
-//
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1.2)
+  }
+`
+
+const Blinker = styled.span`
+  animation: ${blink} 0.5s ${p => p.delay / 10}s linear infinite alternate;
+  display: inline-block;
+`
+
+const bounc = keyframes`
+  from {
+    transform: scale(1)
+  }
+  to {
+    transform: scale(1.1)
+  }
+`
+
+const Bouncer = styled.strong`
+  animation: ${bounc} 0.5s linear infinite alternate;
+  display: inline-block;
+`
 
 export default ({site}) => {
   const [open, setOpen] = useState(false)
@@ -138,7 +166,11 @@ export default ({site}) => {
           </a>
         </span>
 
-        <span>{format(site.date, ['HH:mm Do [of] MMMM '])}</span>
+        <span>
+          <a href='https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS&location=Adalbertstra%C3%9Fe+8%2C+10999+Berlin&dates=20190723T170000Z%2F20190723T193000Z'>
+            {format(site.date, ['HH:mm Do [of] MMMM '])}
+          </a>
+        </span>
         <Calendar />
       </Info>
       {!open ? (
@@ -152,8 +184,15 @@ export default ({site}) => {
               : {}
           }
         >
-          {'>>>>'} {!submitted ? <strong>RSVP NOW</strong> : <strong>YOU ARE AWESOME</strong>}{' '}
-          {'<<<<'}
+          <Blinker delay={0}>{'>'}</Blinker>
+          <Blinker delay={1}>{'>'}</Blinker>
+          <Blinker delay={2}>{'>'}</Blinker>
+          <Blinker delay={3}>{'>'}</Blinker>{' '}
+          {!submitted ? <Bouncer>RSVP NOW</Bouncer> : <Bouncer>YOU ARE AWESOME</Bouncer>}{' '}
+          <Blinker delay={3}>{'<'}</Blinker>
+          <Blinker delay={2}>{'<'}</Blinker>
+          <Blinker delay={1}>{'<'}</Blinker>
+          <Blinker delay={0}>{'<'}</Blinker>
         </RsvpButton>
       ) : (
         <Form
@@ -178,7 +217,7 @@ export default ({site}) => {
             <input required id='gh' value={gh} onChange={e => setGH(e.target.value)} type='text' />
           </div>
 
-          <Submit onClick={createUser}>I AM IN 🎉</Submit>
+          <Button onClick={createUser}>I AM IN 🎉</Button>
         </Form>
       )}
     </>
