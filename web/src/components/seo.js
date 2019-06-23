@@ -35,16 +35,16 @@ function SEO ({description, lang, meta, keywords, title, image}) {
                 content: title
               },
               {
+                property: 'og:site_name',
+                content: title
+              },
+              {
                 property: 'og:description',
                 content: metaDescription
               },
               {
                 property: 'og:type',
                 content: 'website'
-              },
-              {
-                property: 'og:image',
-                content: metaImage
               },
               {
                 name: 'twitter:card',
@@ -66,6 +66,14 @@ function SEO ({description, lang, meta, keywords, title, image}) {
                 name: 'twitter:image',
                 content:
                   'https://rawcdn.githack.com/SaraVieira/queerjs/c97e919e49430435a96c2b9193ea814b795acb68/web/src/assets/gayjs.png'
+              },
+              {
+                name: 'twitter:site',
+                content: 'https://queerjs.com'
+              },
+              {
+                name: 'og:url',
+                content: 'https://queerjs.com'
               },
               {
                 name: 'image',
