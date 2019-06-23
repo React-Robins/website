@@ -25,6 +25,7 @@ function SEO ({description, lang, meta, keywords, title, image}) {
             htmlAttributes={{lang}}
             title={title}
             titleTemplate={title === siteTitle ? '%s' : `%s | ${siteTitle}`}
+            >
             meta={[
               {
                 name: 'description',
@@ -61,6 +62,14 @@ function SEO ({description, lang, meta, keywords, title, image}) {
               {
                 name: 'twitter:description',
                 content: metaDescription
+              },
+              {
+                name: 'image',
+                content: 'https://rawcdn.githack.com/SaraVieira/queerjs/c97e919e49430435a96c2b9193ea814b795acb68/web/src/assets/gayjs.png'
+              },
+                            {
+                name: 'og:image',
+                content: 'https://rawcdn.githack.com/SaraVieira/queerjs/c97e919e49430435a96c2b9193ea814b795acb68/web/src/assets/gayjs.png'
               }
             ].concat(meta)}
           />
