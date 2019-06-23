@@ -8,11 +8,11 @@ const catalanStripes = ['red', 'yellow', 'red', 'yellow', 'red', 'yellow', 'red'
 
 const allStripes = [gayStripes, transStripes, catalanStripes]
 
-export default ({className}) => {
+export default ({className, ...props}) => {
   const [stripes, setStripes] = useState(0)
   return (
     <div className={className} onClick={() => setStripes(s => (allStripes[s + 1] ? s + 1 : 0))}>
-      <Rainbow stripes={allStripes[stripes]} />
+      <Rainbow {...props} stripes={allStripes[stripes]} />
     </div>
   )
 }
