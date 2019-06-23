@@ -20,7 +20,7 @@ const useStripesInCtx = () => {
   return [allStripes[stripes], {cycle}]
 }
 
-const RainbowContext = createContext(null)
+const RainbowContext = createContext([gayStripes, {}])
 
 const RainbowProvider = ({children}) => (
   <RainbowContext.Provider value={useStripesInCtx()}>{children}</RainbowContext.Provider>
