@@ -8,16 +8,11 @@ const catalanStripes = ['red', 'yellow', 'red', 'yellow', 'red', 'yellow', 'red'
 
 const allStripes = [gayStripes, transStripes, catalanStripes]
 
-const Wrapper = styled.div`
-  width: 200px;
-  height: 600px;
-`
-
-export default () => {
+export default ({className}) => {
   const [stripes, setStripes] = useState(0)
   return (
-    <Wrapper onClick={() => setStripes(s => (allStripes[s + 1] ? s + 1 : 0))}>
+    <div className={className} onClick={() => setStripes(s => (allStripes[s + 1] ? s + 1 : 0))}>
       <Rainbow stripes={allStripes[stripes]} />
-    </Wrapper>
+    </div>
   )
 }

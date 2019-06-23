@@ -51,11 +51,19 @@ const Main = styled.div`
   margin: auto;
 `
 
+const Rainbow = styled(RainbowWithClicker)`
+  position: fixed;
+  width: 2em;
+  left: 0;
+  top: 0;
+  bottom: 0;
+`
+
 const Layout = ({children, siteTitle}) => (
   <ThemeProvider theme={theme}>
     <>
       <Global />
-      <RainbowWithClicker />
+      <Rainbow />
       <Header siteTitle={siteTitle} />
       <Main>{children}</Main>
     </>
