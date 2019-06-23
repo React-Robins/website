@@ -50,13 +50,13 @@ figure {
 }
 `
 
-const Main = styled.div`
-  width: 960px;
-  max-width: 80%;
+const Wrapper = styled.div`
+  width: 80%;
+  max-width: 720px;
   margin: auto;
 `
 
-const Rainbow = styled(RainbowWithClicker)`
+const SideRainbow = styled(RainbowWithClicker)`
   position: fixed;
   width: 2em;
   left: 0;
@@ -67,10 +67,12 @@ const Rainbow = styled(RainbowWithClicker)`
 const Layout = ({children, siteTitle}) => (
   <ThemeProvider theme={theme}>
     <>
+      <SideRainbow />
       <Global />
-      <Rainbow />
-      <Header siteTitle={siteTitle} />
-      <Main>{children}</Main>
+      <Wrapper>
+        <Header siteTitle={siteTitle} />
+        <main>{children}</main>
+      </Wrapper>
     </>
   </ThemeProvider>
 )
