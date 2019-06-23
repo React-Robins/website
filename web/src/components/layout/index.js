@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../header'
 import styled, {ThemeProvider, createGlobalStyle} from 'styled-components'
 import otherFont from '../../fonts/neutra-text/style.css'
+import RainbowWithClicker from '../rainbow/RainbowWithClicker'
 
 const theme = {
   darkPurple: '#1E1126',
@@ -54,6 +55,7 @@ const Layout = ({children, siteTitle}) => (
   <ThemeProvider theme={theme}>
     <>
       <Global />
+      <RainbowWithClicker />
       <Header siteTitle={siteTitle} />
       <Main>{children}</Main>
     </>
