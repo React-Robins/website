@@ -16,34 +16,21 @@ const Grid = styled.ul`
     background: ${props => props.theme.white};
     display: block;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+`
+
+const SponsorImage = styled.img`
+  max-height: 80px;
+  max-width: 200px;
 `
 
 export default () => {
   const {
     allSanitySponsor: {edges}
   } = useStaticQuery(graphql`
-    fragment SponsorImage on SanityImage {
-      crop {
-        _key
-        _type
-        top
-        bottom
-        left
-        right
-      }
-      hotspot {
-        _key
-        _type
-        x
-        y
-        height
-        width
-      }
-      asset {
-        _id
-      }
-    }
     query {
       allSanitySponsor {
         edges {
@@ -51,7 +38,9 @@ export default () => {
             name
             link
             media {
-              ...SponsorImage
+              asset {
+                url
+              }
             }
           }
         }
@@ -64,7 +53,7 @@ export default () => {
       {edges.map(({node: sponsor}) => (
         <li>
           <a target='_blank' href={sponsor.link}>
-            <Figure node={sponsor.media} alt={sponsor.name} />
+            <SponsorImage src={sponsor.media.asset.url} alt={sponsor.name} />
           </a>
         </li>
       ))}
