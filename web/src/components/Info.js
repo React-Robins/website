@@ -86,6 +86,7 @@ const Submit = styled.button`
   transition: all 200ms ease;
   cursor: pointer;
   border-radius: 4px;
+  font-size: 16px;
 
   &:hover {
     transform: scale(1.1);
@@ -163,7 +164,7 @@ export default ({site}) => {
             <input required id='gh' value={gh} onChange={e => setGH(e.target.value)} type='text' />
           </div>
 
-          <Submit onClick={createUser}>ADD HUMAN</Submit>
+          <Submit onClick={createUser}>I AM IN 🎉</Submit>
         </Form>
       )}
     </>
