@@ -19,17 +19,17 @@ const Logo = styled.img`
 `
 
 const Title = styled(Link)`
-  font-size: 32px;
+  font-size: 36px;
   color: ${props => props.theme.white};
   letter-spacing: -1.2px;
   text-decoration: none;
 `
 
 const Subtitle = styled.h2`
-  font-size: 24px;
+  font-size: 28px;
   color: ${props => props.theme.lightGrey};
   letter-spacing: -1.2px;
-  max-width: 300px;
+  max-width: 350px;
 `
 
 const Header = ({siteTitle}) => (
