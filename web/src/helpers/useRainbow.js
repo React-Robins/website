@@ -1,45 +1,22 @@
-import React, { createContext, useContext, useState, useEffect } from 'react'
-
-import {
-    getSetting,
-    storeSetting,
-    Settings,
-    defaultSettings,
-} from 'src/helpers/settings'
+import React, {createContext, useContext, useState} from 'react'
 
 const gayStripes = ['#FF5D7D', '#FF764E', '#FFC144', '#88DF8E', '#00CCF2', '#B278D3']
 const transStripes = ['hotpink', 'aliceblue', 'white', 'aliceblue', 'hotpink']
 const catalanStripes = ['red', 'yellow', 'red', 'yellow', 'red', 'yellow', 'red', 'yellow']
 
-const useStoredSettings = (): SettingsFromContext => {
-    const [state, setState] = useState(defaultSettings)
-    const setSetting = (setting: keyof Settings, value: string | boolean) => {
-        setState(settings => ({ ...settings, [setting]: value }))
-        storeSetting(setting, value)
-    }
-    useEffect(() => {
-        for (let setting of Object.keys(state)) {
-            //@ts-ignore
-            getSetting(setting).then(value => {
-                setState(currentState => ({
-                    ...currentState,
-                    [setting]: value,
-                }))
-            })
-        }
-    }, []) // eslint-disable-line react-hooks/exhaustive-deps
-    return [state, setSetting]
+const allStripes = [gayStripes, transStripes, catalanStripes]
+
+const useStripesInCtx = () => {
+  const [stripes, setStripes] = useState(0)
+  const cycle = () => setStripes(s => (allStripes[s + 1] ? s + 1 : 0))
+  return [allStripes[stripes], {cycle}]
 }
 
-const SettingsContext = createContext<SettingsFromContext>(
-    {} as SettingsFromContext,
-)
+const RainbowContext = createContext(null)
 
-const SettingsProvider = ({ children }: { children: React.ReactNode }) => (
-    <SettingsContext.Provider value={useStoredSettings()}>
-        {children}
-    </SettingsContext.Provider>
+const RainbowProvider = ({children}) => (
+  <RainbowContext.Provider value={useStripesInCtx()}>{children}</RainbowContext.Provider>
 )
-const useSettings = (): SettingsFromContext => useContext(SettingsContext)
+const useRainbow = () => useContext(RainbowContext)
 
-export { SettingsProvider, useSettings }
+export {RainbowProvider, useRainbow}
