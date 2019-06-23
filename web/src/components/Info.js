@@ -11,7 +11,6 @@ const Info = styled.div`
   flex-direction: row;
   border: 3px solid ${props => props.theme.white};
   align-items: center;
-  font-size: 16px;
   margin-bottom: 10px;
   font-family: 'Roboto Mono';
   position: relative;
@@ -33,15 +32,20 @@ const Info = styled.div`
 `
 
 const Button = styled.button`
-  height: 52px;
+  padding: 1em;
   background: ${props => props.theme.white};
   -webkit-appearance: none;
   border: none;
   width: 100%;
   font-family: 'Roboto Mono';
   font-weight: 600;
-  font-size: 18px;
   margin-bottom: 50px;
+  font-size: 1em;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.025);
+  }
 
   span {
     text-decoration: underline;
@@ -49,17 +53,14 @@ const Button = styled.button`
 `
 
 const Form = styled.form`
-  background: ${props => props.theme.white};
+  color: ${props => props.theme.white};
   -webkit-appearance: none;
-  border: none;
+  border: 3px solid ${props => props.theme.white};
   width: 100%;
   font-family: 'Roboto Mono';
   font-weight: 600;
-  font-size: 18px;
   margin-bottom: 50px;
-  color: ${props => props.theme.darkPurple};
-  padding: 20px;
-  min-height: 52px;
+  padding: 1em;
   display: flex;
   flex-direction: column;
   align-items: baseline;
@@ -79,17 +80,18 @@ const Form = styled.form`
 
 const Submit = styled.button`
   border: none;
-  padding: 8px 12px;
-  color: ${props => props.theme.white};
   font-weight: 600;
-  background: ${props => props.theme.darkPurple};
-  transition: all 200ms ease;
   cursor: pointer;
-  border-radius: 4px;
-  font-size: 16px;
+  background: ${props => props.theme.white};
+  -webkit-appearance: none;
+  border: none;
+  width: 100%;
+  font-family: 'Roboto Mono';
+  font-weight: 600;
+  cursor: pointer;
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.025);
   }
 `
 
