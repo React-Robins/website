@@ -6,7 +6,8 @@ import RainbowWithClicker from '../rainbow/RainbowWithClicker'
 
 const theme = {
   darkPurple: '#1E1126',
-  white: '#FFFFFF'
+  white: '#FFFFFF',
+  lightGrey: '#e6e2ff'
 }
 
 const Global = createGlobalStyle`
@@ -18,6 +19,10 @@ body {
     -webkit-font-smoothing: antialiased;
   color:  ${props => props.theme.white};
   margin: 0;
+}
+
+body * {
+  box-sizing: border-box;
 }
 
 a {
@@ -46,8 +51,8 @@ figure {
 `
 
 const Main = styled.div`
-  width: 80%;
-  max-width: 1280px;
+  width: 960px;
+  max-width: 80%;
   margin: auto;
 `
 

@@ -1,11 +1,11 @@
 import React from 'react'
-import format from 'date-fns/format'
 import {graphql} from 'gatsby'
 import styled from 'styled-components'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
 import Figure from '../components/Figure'
 import Sponsors from '../components/Sponsors'
+import Info from '../components/Info'
 
 export const query = graphql`
   fragment SanityImage on SanityImage {
@@ -63,15 +63,6 @@ export const query = graphql`
   }
 `
 
-const Info = styled.div`
-  display: flex;
-  flex-direction: column;
-  font-size: 16px;
-  line-height: 32px;
-  text-align: center;
-  margin-bottom: 40px;
-`
-
 const SpeakerPhoto = styled.div`
   width: 150px;
   position: relative;
@@ -115,18 +106,7 @@ const IndexPage = ({data = {}}) => {
       <SEO title={site.title} description={site.description} />
       <main>
         <h1 hidden>Welcome to {site.title}</h1>
-        <Info>
-          <span>
-            Location:{' '}
-            <a href='https://goo.gl/maps/VV6YUwPJaT79ESGG9' target='_blank'>
-              <b>{site.location}</b>
-            </a>
-          </span>
-
-          <span>
-            Date & Time: <b>{format(site.date, ['DD/MM HH:mm'])} </b>
-          </span>
-        </Info>
+        <Info site={site} />
         <Speakers>
           {data.speakers.edges &&
             data.speakers.edges.map(({node: speaker}) => (
