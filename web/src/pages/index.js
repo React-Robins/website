@@ -106,6 +106,10 @@ const Speakers = styled.ul`
   }
 `
 
+const Heading = styled.h2`
+  font-size: 32px;
+`
+
 const IndexPage = ({data = {}}) => {
   const site = data.site
 
@@ -115,18 +119,24 @@ const IndexPage = ({data = {}}) => {
       <main>
         <h1 hidden>Welcome to {site.title}</h1>
         <Info site={site} />
-        <Speakers>
-          {data.speakers.edges &&
-            data.speakers.edges.map(({node: speaker}) => (
-              <li key={speaker._id}>
-                <SpeakerPhoto>
-                  <Figure node={speaker.photo} />
-                </SpeakerPhoto>
-                <h3>{speaker.name}</h3>
-              </li>
-            ))}
-        </Speakers>
-        <Sponsors />
+        <div>
+          <Heading>Speakers</Heading>
+          <Speakers>
+            {data.speakers.edges &&
+              data.speakers.edges.map(({node: speaker}) => (
+                <li key={speaker._id}>
+                  <SpeakerPhoto>
+                    <Figure node={speaker.photo} />
+                  </SpeakerPhoto>
+                  <h3>{speaker.name}</h3>
+                </li>
+              ))}
+          </Speakers>
+        </div>
+        <div>
+          <Heading>Sponsors</Heading>
+          <Sponsors />
+        </div>
       </main>
     </Layout>
   )
