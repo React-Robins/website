@@ -11,6 +11,10 @@ const Nav = styled.nav`
   margin: auto;
   margin-top: 60px;
   margin-bottom: 30px;
+
+  @media screen and (max-width: 400px) {
+    flex-direction: column-reverse;
+  }
 `
 
 const Logo = styled.img`
@@ -23,6 +27,10 @@ const Title = styled(Link)`
   color: ${props => props.theme.white};
   letter-spacing: -1.2px;
   text-decoration: none;
+
+  @media screen and (max-width: 400px) {
+    margin-top: 20px;
+  }
 `
 
 const Subtitle = styled.h2`
