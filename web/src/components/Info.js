@@ -59,15 +59,16 @@ const Form = styled.form`
   margin-bottom: 50px;
   color: ${props => props.theme.darkPurple};
   padding: 20px;
-  height: 52px;
+  min-height: 52px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: baseline;
 
   input {
     padding: 8px 12px;
     border: 1px solid ${props => props.theme.lightGrey};
     border-radius: 4px;
+    margin: 10px;
   }
 
   label {
@@ -78,7 +79,7 @@ const Form = styled.form`
 
 const Submit = styled.button`
   border: none;
-  padding: 2px 12px;
+  padding: 8px 12px;
   color: ${props => props.theme.white};
   font-weight: 600;
   background: ${props => props.theme.darkPurple};
