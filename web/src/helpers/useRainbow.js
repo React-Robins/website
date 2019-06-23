@@ -1,10 +1,18 @@
 import React, {createContext, useContext, useState} from 'react'
 
-const gayStripes = ['#FF5D7D', '#FF764E', '#FFC144', '#88DF8E', '#00CCF2', '#B278D3']
-const transStripes = ['hotpink', 'aliceblue', 'white', 'aliceblue', 'hotpink']
-const catalanStripes = ['red', 'yellow', 'red', 'yellow', 'red', 'yellow', 'red', 'yellow']
+const gayStripes = ['#FF0000', '#FF5500', '#FDFF00', '#008400', '#2200FF', '#550087', '#D000FF']
+const transStripes = ['#55CDFC', '#F7A8B8', '#DDD', '#F7A8B8', '#55CDFC']
+const biStripes = ['#D9006F', '#D9006F', '#744D98', '#0033AB', '#0033AB']
+const aceStripes = ['#000000', '#A3A3A3', '#DDD', '#810082']
+const panStripes = ['#FF008E', '#FFD800', '#00B3FF']
+const lesbianStripes = ['#B60063', '#C84896', '#E253AB', '#DDD', '#F0A7D2', '#D73F4F', '#990200']
 
-const allStripes = [gayStripes, transStripes, catalanStripes]
+const allStripes = [
+  gayStripes,
+  ...[transStripes, panStripes, biStripes, aceStripes, lesbianStripes].sort(
+    () => 0.5 - Math.random()
+  )
+]
 
 const useStripesInCtx = () => {
   const [stripes, setStripes] = useState(0)
