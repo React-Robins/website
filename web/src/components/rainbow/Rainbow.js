@@ -22,7 +22,7 @@ const SubWrapper = styled.div`
   display: flex;
   flex-direction: column;
   transform: scaleY(${({length}) => max / length});
-  transition: 1s;
+  transition: 0.2s;
   z-index: 9;
 `
 
@@ -31,7 +31,7 @@ const Stripe = styled.div`
   flex: 1 1 0;
   width: 100%;
   background-color: ${({color}) => color};
-  transition: 1s;
+  transition: 0.4s;
 `
 
 const OverStripes = styled.div`

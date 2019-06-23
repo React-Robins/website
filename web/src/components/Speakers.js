@@ -1,6 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
 import Figure from './Figure'
+import RainbowWithClicker from './rainbow/RainbowWithClicker'
+
+const InlineRainbow = styled(RainbowWithClicker)`
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  z-index: 999;
+  transition: 0.2s;
+  mix-blend-mode: overlay;
+  will-change: transform;
+`
 
 const SpeakerPhoto = styled.div`
   position: relative;
@@ -10,23 +24,8 @@ const SpeakerPhoto = styled.div`
 
   &:hover {
     transform: scale(1.1) rotate(-5deg);
-    :after {
-      content: '';
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(
-        rgba(255, 0, 0, 1),
-        rgba(255, 255, 0, 1),
-        rgba(0, 255, 0, 1),
-        rgba(0, 255, 255, 1),
-        rgba(0, 0, 255, 1),
-        rgba(255, 0, 255, 1),
-        rgba(255, 0, 0, 1)
-      );
-      position: absolute;
-      top: 0;
-      left: 0;
-      opacity: 0.3;
+    ${InlineRainbow} {
+      opacity: 1;
     }
   }
 `
@@ -54,6 +53,7 @@ const Speakers = ({speakers}) => {
       {speakers.map(speaker => (
         <li key={speaker._id}>
           <SpeakerPhoto>
+            <InlineRainbow />
             <Figure node={speaker.photo} />
           </SpeakerPhoto>
           <Unstyled>{speaker.name}</Unstyled>
