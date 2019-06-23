@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../header'
-import styled, { ThemeProvider, createGlobalStyle } from 'styled-components'
+import styled, {ThemeProvider, createGlobalStyle} from 'styled-components'
 import otherFont from '../../fonts/neutra-text/style.css'
 import RainbowWithClicker from '../rainbow/RainbowWithClicker'
 
@@ -62,9 +62,12 @@ const SideRainbow = styled(RainbowWithClicker)`
   left: 0;
   top: 0;
   bottom: 0;
+  @media (min-width: 720px) {
+    width: 8vw;
+  }
 `
 
-const Layout = ({ children, siteTitle }) => (
+const Layout = ({children, siteTitle}) => (
   <ThemeProvider theme={theme}>
     <>
       <SideRainbow />

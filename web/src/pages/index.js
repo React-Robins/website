@@ -3,10 +3,10 @@ import {graphql} from 'gatsby'
 import styled from 'styled-components'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
-import Figure from '../components/Figure'
 import Sponsors from '../components/Sponsors'
 import Info from '../components/Info'
 import Attendees from '../components/Attendees'
+import Speakers from '../components/Speakers'
 import Thanks from '../components/Thanks'
 import Panel from '../components/Panel'
 
@@ -94,22 +94,10 @@ const SpeakerPhoto = styled.div`
     }
   }
 `
-
-const Speakers = styled.ul`
-  display: grid;
-  grid-gap: 40px;
-  text-align: center;
-  @media (min-width: 400px) {
-    grid-template-columns: 1fr 1fr;
-  }
-  @media (min-width: 800px) {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-`
-
-const Unstyled = styled.h3`
-  font-size: 1em;
-  font-weight: 600;
+const Footer = styled.footer`
+  color: ${props => props.theme.lightGrey};
+  font-size: 0.8em;
+  margin: 80px 0 40px;
 `
 
 const IndexPage = ({data = {}}) => {
@@ -122,17 +110,9 @@ const IndexPage = ({data = {}}) => {
         <h1 hidden>Welcome to {site.title}</h1>
         <Info site={site} />
         <Panel heading='Speakers'>
-          <Speakers>
-            {data.speakers.edges &&
-              data.speakers.edges.map(({node: speaker}) => (
-                <li key={speaker._id}>
-                  <SpeakerPhoto>
-                    <Figure node={speaker.photo} />
-                  </SpeakerPhoto>
-                  <Unstyled>{speaker.name}</Unstyled>
-                </li>
-              ))}
-          </Speakers>
+          {data.speakers.edges && (
+            <Speakers speakers={data.speakers.edges.map(({node}) => node)} />
+          )}
         </Panel>
         <Panel heading='Attendees'>
           <Attendees />
