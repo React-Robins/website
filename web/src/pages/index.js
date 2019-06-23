@@ -64,10 +64,13 @@ export const query = graphql`
 `
 
 const SpeakerPhoto = styled.div`
-  width: 150px;
   position: relative;
+  border-radius: 100%;
+  overflow: hidden;
+  transition: 0.2s;
 
   &:hover {
+    transform: scale(1.1) rotate(-5deg);
     :after {
       content: '';
       width: 100%;
@@ -90,9 +93,14 @@ const SpeakerPhoto = styled.div`
 `
 
 const Speakers = styled.ul`
-  display: flex;
+  display: grid;
   text-align: center;
-
+  @media (min-width: 400px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: 800px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   li {
     margin: 20px;
   }
