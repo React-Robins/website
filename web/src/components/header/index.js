@@ -1,7 +1,8 @@
 import {Link} from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
-import logo from '../../assets/gayjs.png'
+import logo from './logo.svg'
+import RainbowWithClicker from '../rainbow/RainbowWithClicker'
 
 const Nav = styled.nav`
   display: flex;
@@ -38,7 +39,11 @@ const Header = ({siteTitle}) => (
       <Title to='/'>{siteTitle}</Title>
       <Subtitle>A meetup for everyone where Queer Speakers take the stage</Subtitle>
     </div>
-    <Logo src={logo} alt='Queer JS' />
+    <div>
+      <RainbowWithClicker stripes={['red']}>
+        <Logo src={logo} alt='Queer JS' />
+      </RainbowWithClicker>
+    </div>
   </Nav>
 )
 
