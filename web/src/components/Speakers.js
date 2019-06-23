@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Figure from './Figure'
 import RainbowWithClicker from './rainbow/RainbowWithClicker'
+import shuffle from '../helpers/shuffle'
 
 const InlineRainbow = styled(RainbowWithClicker)`
   position: absolute;
@@ -50,7 +51,7 @@ const Unstyled = styled.h3`
 const Speakers = ({speakers}) => {
   return (
     <SpeakersGrid>
-      {speakers.map(speaker => (
+      {shuffle(speakers).map(speaker => (
         <li key={speaker._id}>
           <SpeakerPhoto>
             <InlineRainbow />

@@ -2,8 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import {StaticQuery, graphql} from 'gatsby'
-import {imageUrlFor} from '../lib/image-url'
-import {buildImageObj} from '../lib/helpers'
 
 function SEO ({description, lang, meta, keywords, title, image}) {
   return (
@@ -12,13 +10,6 @@ function SEO ({description, lang, meta, keywords, title, image}) {
       render={data => {
         const metaDescription = description || (data.site && data.site.description) || ''
         const siteTitle = (data.site && data.site.title) || ''
-        const metaImage =
-          (image &&
-            image.asset &&
-            imageUrlFor(buildImageObj(image))
-              .width(1200)
-              .url()) ||
-          ''
 
         return (
           <Helmet
