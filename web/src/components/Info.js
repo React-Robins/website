@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import format from 'date-fns/format'
 
@@ -39,6 +39,22 @@ const Button = styled.button`
   width: 100%;
   font-family: 'Roboto Mono';
   font-weight: 600;
+  font-size: 1em;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.025);
+  }
+`
+
+const RsvpButton = styled(Button)`
+  padding: 1em;
+  background: ${props => props.theme.white};
+  -webkit-appearance: none;
+  border: none;
+  width: 100%;
+  font-family: 'Roboto Mono';
+  font-weight: 600;
   margin-bottom: 50px;
   font-size: 1em;
   cursor: pointer;
@@ -60,16 +76,17 @@ const Form = styled.form`
   font-family: 'Roboto Mono';
   font-weight: 600;
   margin-bottom: 50px;
-  padding: 1em;
+  padding: 4em;
   display: flex;
   flex-direction: column;
-  align-items: baseline;
+  align-items: stretch;
 
   input {
     padding: 8px 12px;
     border: 1px solid ${props => props.theme.lightGrey};
-    border-radius: 4px;
-    margin: 10px;
+    margin: 5px 0 20px;
+    width: 100%;
+    display: block;
   }
 
   label {
@@ -78,26 +95,11 @@ const Form = styled.form`
   }
 `
 
-const Submit = styled.button`
-  border: none;
-  font-weight: 600;
-  cursor: pointer;
-  background: ${props => props.theme.white};
-  -webkit-appearance: none;
-  border: none;
-  width: 100%;
-  font-family: 'Roboto Mono';
-  font-weight: 600;
-  cursor: pointer;
-
-  &:hover {
-    transform: scale(1.025);
-  }
-`
+const Submit = styled(Button)``
 
 //
 
-export default ({site}) => {
+export default ({ site }) => {
   const [open, setOpen] = useState(false)
   const [name, setName] = useState('')
   const [gh, setGH] = useState('')
@@ -131,7 +133,7 @@ export default ({site}) => {
         <Flag />
         <span>
           Location:{' '}
-          <a href='https://goo.gl/maps/VV6YUwPJaT79ESGG9' target='_blank'>
+          <a href="https://goo.gl/maps/VV6YUwPJaT79ESGG9" target="_blank">
             {site.location}
           </a>
         </span>
@@ -140,9 +142,9 @@ export default ({site}) => {
         <Calendar />
       </Info>
       {!open ? (
-        <Button onClick={() => setOpen(true)}>
+        <RsvpButton onClick={() => setOpen(true)}>
           {'>>>>'} {!submitted ? <span>RSVP NOW</span> : <span>YOU ARE AWESOME</span>} {'<<<<'}
-        </Button>
+        </RsvpButton>
       ) : (
         <Form
           onSubmit={e => {
@@ -152,18 +154,18 @@ export default ({site}) => {
           }}
         >
           <div>
-            <label htmlFor='name'>Name</label>
+            <label htmlFor="name">Name</label>
             <input
               required
               value={name}
               onChange={e => setName(e.target.value)}
-              id='name'
-              type='text'
+              id="name"
+              type="text"
             />
           </div>
           <div>
-            <label htmlFor='gh'>Github Username</label>
-            <input required id='gh' value={gh} onChange={e => setGH(e.target.value)} type='text' />
+            <label htmlFor="gh">Github Username</label>
+            <input required id="gh" value={gh} onChange={e => setGH(e.target.value)} type="text" />
           </div>
 
           <Submit onClick={createUser}>I AM IN 🎉</Submit>
