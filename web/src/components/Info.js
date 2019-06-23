@@ -22,11 +22,10 @@ const Info = styled.div`
 
   span {
     width: 50%;
-    padding: 15px;
+    padding: 1em 1.5em;
 
     &:last-of-type {
       border-left: 3px solid ${props => props.theme.white};
-      padding-left: 40px;
     }
   }
 `
