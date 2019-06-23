@@ -147,11 +147,17 @@ export default ({site}) => {
         >
           <div>
             <label htmlFor='name'>Name</label>
-            <input value={name} onChange={e => setName(e.target.value)} id='name' type='text' />
+            <input
+              required
+              value={name}
+              onChange={e => setName(e.target.value)}
+              id='name'
+              type='text'
+            />
           </div>
           <div>
             <label htmlFor='gh'>Github Username</label>
-            <input id='gh' value={gh} onChange={e => setGH(e.target.value)} type='text' />
+            <input required id='gh' value={gh} onChange={e => setGH(e.target.value)} type='text' />
           </div>
 
           <Submit onClick={createUser}>ADD HUMAN</Submit>

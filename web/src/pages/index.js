@@ -6,6 +6,8 @@ import Layout from '../containers/layout'
 import Figure from '../components/Figure'
 import Sponsors from '../components/Sponsors'
 import Info from '../components/Info'
+import Attendees from '../components/Attendees'
+import Panel from '../components/Panel'
 
 export const query = graphql`
   fragment SanityImage on SanityImage {
@@ -115,22 +117,6 @@ const Unstyled = styled.h3`
   font-weight: 600;
 `
 
-const Panel = ({heading, children}) => {
-  const PanelDiv = styled.section`
-    margin: 60px 0 30px;
-  `
-  const Heading = styled.h2`
-    font-size: 32px;
-    font-family: 'NeutraText-Bold';
-  `
-  return (
-    <PanelDiv>
-      {heading && <Heading>{heading}</Heading>}
-      {children}
-    </PanelDiv>
-  )
-}
-
 const IndexPage = ({data = {}}) => {
   const site = data.site
 
@@ -153,6 +139,10 @@ const IndexPage = ({data = {}}) => {
               ))}
           </Speakers>
         </Panel>
+        <Panel heading='Attendees'>
+          <Attendees />
+        </Panel>
+
         <Panel heading='Sponsors'>
           <Sponsors />
         </Panel>
