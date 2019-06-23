@@ -10,6 +10,7 @@ const query = graphql`
         node {
           id
           ghLink
+          name
         }
       }
     }
@@ -34,7 +35,7 @@ export default () => {
     <Attendees>
       {shuffle(attendees.edges).map(({node: a}) => (
         <li key={a.id}>
-          <a href={`https://github.com/${a.ghLink}.png`} target='_blank'>
+          <a href={`https://github.com/${a.ghLink}.png`} target='_blank' title={a.name}>
             <img src={`https://github.com/${a.ghLink}.png`} alt={a.name} width='50' />
           </a>
         </li>

@@ -22,6 +22,10 @@ const Thanks = styled.ul`
   color: ${props => props.theme.lightGrey};
   font-size: 0.8em;
   margin: 20px 0 40px;
+
+  li {
+    margin-bottom: 10px;
+  }
 `
 
 export default () => {
