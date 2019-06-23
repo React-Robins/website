@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components'
 import format from 'date-fns/format'
 
@@ -99,7 +99,7 @@ const Submit = styled(Button)``
 
 //
 
-export default ({ site }) => {
+export default ({site}) => {
   const [open, setOpen] = useState(false)
   const [name, setName] = useState('')
   const [gh, setGH] = useState('')
@@ -133,7 +133,7 @@ export default ({ site }) => {
         <Flag />
         <span>
           Location:{' '}
-          <a href="https://goo.gl/maps/VV6YUwPJaT79ESGG9" target="_blank">
+          <a href='https://goo.gl/maps/VV6YUwPJaT79ESGG9' target='_blank'>
             {site.location}
           </a>
         </span>
@@ -142,8 +142,18 @@ export default ({ site }) => {
         <Calendar />
       </Info>
       {!open ? (
-        <RsvpButton onClick={() => setOpen(true)}>
-          {'>>>>'} {!submitted ? <span>RSVP NOW</span> : <span>YOU ARE AWESOME</span>} {'<<<<'}
+        <RsvpButton
+          onClick={() => setOpen(true)}
+          style={
+            submitted
+              ? {
+                pointerEvents: 'none'
+              }
+              : {}
+          }
+        >
+          {'>>>>'} {!submitted ? <strong>RSVP NOW</strong> : <strong>YOU ARE AWESOME</strong>}{' '}
+          {'<<<<'}
         </RsvpButton>
       ) : (
         <Form
@@ -154,18 +164,18 @@ export default ({ site }) => {
           }}
         >
           <div>
-            <label htmlFor="name">Name</label>
+            <label htmlFor='name'>Name</label>
             <input
               required
               value={name}
               onChange={e => setName(e.target.value)}
-              id="name"
-              type="text"
+              id='name'
+              type='text'
             />
           </div>
           <div>
-            <label htmlFor="gh">Github Username</label>
-            <input required id="gh" value={gh} onChange={e => setGH(e.target.value)} type="text" />
+            <label htmlFor='gh'>Github Username</label>
+            <input required id='gh' value={gh} onChange={e => setGH(e.target.value)} type='text' />
           </div>
 
           <Submit onClick={createUser}>I AM IN 🎉</Submit>
