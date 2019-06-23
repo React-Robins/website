@@ -27,14 +27,21 @@ const Thanks = styled.ul`
 export default () => {
   const {allSanityThanks: thanks} = useStaticQuery(query)
   return (
-    <Thanks>
-      {shuffle(thanks.edges).map(({node: a}) => (
-        <li key={a.id}>
-          <a href={a.link} target='_blank'>
-            {a.name} for {a.reason}
-          </a>
-        </li>
-      ))}
-    </Thanks>
+    <>
+      <Thanks>
+        {shuffle(thanks.edges).map(({node: a}) => (
+          <li key={a.id}>
+            <a href={a.link} target='_blank'>
+              {a.name} for {a.reason}
+            </a>
+          </li>
+        ))}
+      </Thanks>
+      <br />
+      Organized by{' '}
+      <a href='https://twitter.com/NikkitaFTW' target='_blank'>
+        Sara Vieira
+      </a>
+    </>
   )
 }

@@ -89,7 +89,7 @@ const IndexPage = ({data = {}}) => {
             This is a meetup where anyone is welcome to attend and support the speakers and the idea
             but all the speakers will be Queer.
             <br />
-            Join us! There will be food 🌈
+            Join us! There will be food and stickers 🌈
           </p>
         </Panel>
         <Panel heading='Speakers'>
