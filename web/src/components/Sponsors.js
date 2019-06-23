@@ -1,6 +1,5 @@
 import React from 'react'
 import {useStaticQuery, graphql} from 'gatsby'
-import Figure from './Figure'
 import styled from 'styled-components'
 
 const Grid = styled.ul`

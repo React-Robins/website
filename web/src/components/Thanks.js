@@ -40,6 +40,10 @@ export default () => {
           </li>
         ))}
       </Thanks>
+      We will follow the{' '}
+      <a target='_blank' href='http://co-up.de/code-of-conduct.html'>
+        Co.up Code of Conduct
+      </a>
       <br />
       Organized by{' '}
       <a href='https://twitter.com/NikkitaFTW' target='_blank'>
