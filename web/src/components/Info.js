@@ -108,15 +108,17 @@ export default ({site}) => {
   })
 
   const createUser = () => {
-    const doc = {
-      _type: 'attendee',
-      name: name,
-      ghLink: gh
-    }
+    if (name && gh) {
+      const doc = {
+        _type: 'attendee',
+        name: name,
+        ghLink: gh
+      }
 
-    client.create(doc).then(res => {
-      console.log(`Human was created, document ID is ${res._id}`)
-    })
+      client.create(doc).then(res => {
+        console.log(`Human was created, document ID is ${res._id}`)
+      })
+    }
   }
 
   return (
