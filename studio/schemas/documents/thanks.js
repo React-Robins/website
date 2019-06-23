@@ -12,6 +12,11 @@ export default {
       name: 'link',
       type: 'string',
       title: 'Link'
+    },
+    {
+      name: 'reason',
+      type: 'string',
+      title: 'Reason'
     }
   ],
   preview: {
