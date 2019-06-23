@@ -74,6 +74,24 @@ const IndexPage = ({data = {}}) => {
       <main>
         <h1 hidden>Welcome to {site.title}</h1>
         <Info site={site} />
+        <Panel heading='What?'>
+          <p
+            css={`
+              font-family: 'NeutraText-Bold';
+              font-size: 18px;
+              line-height: 28px;
+            `}
+          >
+            This idea started when a random dude on twitter said he doesn't think "React Girls" is a
+            good idea because he's gay and wouldn't want to be in a conference with only gay people.
+            So now welcome to QueerJS.
+            <br />
+            This is a meetup where anyone is welcome to attend and support the speakers and the idea
+            but all the speakers will be Queer.
+            <br />
+            Join us! There will be food 🌈
+          </p>
+        </Panel>
         <Panel heading='Speakers'>
           {data.speakers.edges && <Speakers speakers={data.speakers.edges.map(({node}) => node)} />}
         </Panel>

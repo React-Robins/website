@@ -1,12 +1,12 @@
 import React from 'react'
 import Rainbow from './Rainbow'
 
-import { useRainbow } from '../../helpers/useRainbow'
+import {useRainbow} from '../../helpers/useRainbow'
 
-export default ({ className, ...props }) => {
-  const [stripes, { cycle }] = useRainbow()
+export default ({className, ...props}) => {
+  const [stripes, {cycle}] = useRainbow()
   return (
-    <div style={{ cursor: 'pointer' }} className={className} onClick={() => cycle()}>
+    <div style={{cursor: 'pointer'}} className={className} onClick={() => cycle()}>
       <Rainbow {...props} stripes={stripes} />
     </div>
   )
