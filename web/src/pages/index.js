@@ -3,11 +3,11 @@ import {graphql} from 'gatsby'
 import styled from 'styled-components'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
-import Figure from '../components/Figure'
 import Sponsors from '../components/Sponsors'
 import Info from '../components/Info'
 import Attendees from '../components/Attendees'
 import Speakers from '../components/Speakers'
+import Thanks from '../components/Thanks'
 import Panel from '../components/Panel'
 
 export const query = graphql`
@@ -94,7 +94,6 @@ const SpeakerPhoto = styled.div`
     }
   }
 `
-
 const Footer = styled.footer`
   color: ${props => props.theme.lightGrey};
   font-size: 0.8em;
@@ -123,8 +122,8 @@ const IndexPage = ({data = {}}) => {
           <Sponsors />
         </Panel>
       </main>
-      <Panel>
-        <Footer>Icons by this guy</Footer>
+      <Panel heading='Special Thanks'>
+        <Thanks />
       </Panel>
     </Layout>
   )
