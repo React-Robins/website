@@ -19,6 +19,7 @@ const Logo = styled.img`
 
 const Title = styled(Link)`
   font-size: 36px;
+  font-family: 'NeutraText-Bold';
   color: ${props => props.theme.white};
   letter-spacing: -1.2px;
   text-decoration: none;
@@ -26,6 +27,7 @@ const Title = styled(Link)`
 
 const Subtitle = styled.h2`
   font-size: 28px;
+  font-family: 'NeutraText-Bold';
   color: ${props => props.theme.lightGrey};
   letter-spacing: -1.2px;
   max-width: 350px;

@@ -10,7 +10,6 @@ const Info = styled.div`
   flex-direction: row;
   border: 3px solid ${props => props.theme.white};
   align-items: center;
-  font-size: 16px;
   margin-bottom: 40px;
   font-family: 'Roboto Mono';
   position: relative;
@@ -31,13 +30,13 @@ const Info = styled.div`
   }
 `
 
-export default ({site}) => {
+export default ({ site }) => {
   return (
     <Info>
       <Flag />
       <span>
         Location:{' '}
-        <a href='https://goo.gl/maps/VV6YUwPJaT79ESGG9' target='_blank'>
+        <a href="https://goo.gl/maps/VV6YUwPJaT79ESGG9" target="_blank">
           {site.location}
         </a>
       </span>

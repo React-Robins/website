@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../header'
-import styled, {ThemeProvider, createGlobalStyle} from 'styled-components'
+import styled, { ThemeProvider, createGlobalStyle } from 'styled-components'
 import otherFont from '../../fonts/neutra-text/style.css'
 import RainbowWithClicker from '../rainbow/RainbowWithClicker'
 
@@ -14,7 +14,7 @@ const Global = createGlobalStyle`
 ${otherFont}
 
 body {
-  font-family: 'NeutraText-Bold';
+  font-family: 'Roboto Mono';
   background: ${props => props.theme.darkPurple};
     -webkit-font-smoothing: antialiased;
   color:  ${props => props.theme.white};
@@ -64,7 +64,7 @@ const SideRainbow = styled(RainbowWithClicker)`
   bottom: 0;
 `
 
-const Layout = ({children, siteTitle}) => (
+const Layout = ({ children, siteTitle }) => (
   <ThemeProvider theme={theme}>
     <>
       <SideRainbow />
