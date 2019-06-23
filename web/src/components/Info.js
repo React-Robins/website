@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import styled from 'styled-components'
+import React, {useState} from 'react'
+import styled, {keyframes} from 'styled-components'
 import format from 'date-fns/format'
 
 import Flag from './icons/flag'
@@ -63,7 +63,7 @@ const RsvpButton = styled(Button)`
     transform: scale(1.025);
   }
 
-  span {
+  strong {
     text-decoration: underline;
   }
 `
@@ -95,11 +95,39 @@ const Form = styled.form`
   }
 `
 
-const Submit = styled(Button)``
+const blink = keyframes`
+  from {
+    opacity: 0;
+    transform: scale(1)
 
-//
+  }
 
-export default ({ site }) => {
+  to {
+    opacity: 1;
+    transform: scale(1.2)
+  }
+`
+
+const Blinker = styled.span`
+  animation: ${blink} 0.5s ${p => p.delay / 10}s linear infinite alternate;
+  display: inline-block;
+`
+
+const bounc = keyframes`
+  from {
+    transform: scale(1)
+  }
+  to {
+    transform: scale(1.1)
+  }
+`
+
+const Bouncer = styled.strong`
+  animation: ${bounc} 0.5s linear infinite alternate;
+  display: inline-block;
+`
+
+export default ({site}) => {
   const [open, setOpen] = useState(false)
   const [name, setName] = useState('')
   const [gh, setGH] = useState('')
@@ -133,17 +161,38 @@ export default ({ site }) => {
         <Flag />
         <span>
           Location:{' '}
-          <a href="https://goo.gl/maps/VV6YUwPJaT79ESGG9" target="_blank">
+          <a href='https://goo.gl/maps/VV6YUwPJaT79ESGG9' target='_blank'>
             {site.location}
           </a>
         </span>
 
-        <span>{format(site.date, ['HH:mm Do [of] MMMM '])}</span>
+        <span>
+          <a href='https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS&location=Adalbertstra%C3%9Fe+8%2C+10999+Berlin&dates=20190723T170000Z%2F20190723T193000Z'>
+            {format(site.date, ['HH:mm Do [of] MMMM '])}
+          </a>
+        </span>
         <Calendar />
       </Info>
       {!open ? (
-        <RsvpButton onClick={() => setOpen(true)}>
-          {'>>>>'} {!submitted ? <span>RSVP NOW</span> : <span>YOU ARE AWESOME</span>} {'<<<<'}
+        <RsvpButton
+          onClick={() => setOpen(true)}
+          style={
+            submitted
+              ? {
+                pointerEvents: 'none'
+              }
+              : {}
+          }
+        >
+          <Blinker delay={0}>{'>'}</Blinker>
+          <Blinker delay={1}>{'>'}</Blinker>
+          <Blinker delay={2}>{'>'}</Blinker>
+          <Blinker delay={3}>{'>'}</Blinker>{' '}
+          {!submitted ? <Bouncer>RSVP NOW</Bouncer> : <Bouncer>YOU ARE AWESOME</Bouncer>}{' '}
+          <Blinker delay={3}>{'<'}</Blinker>
+          <Blinker delay={2}>{'<'}</Blinker>
+          <Blinker delay={1}>{'<'}</Blinker>
+          <Blinker delay={0}>{'<'}</Blinker>
         </RsvpButton>
       ) : (
         <Form
@@ -154,21 +203,21 @@ export default ({ site }) => {
           }}
         >
           <div>
-            <label htmlFor="name">Name</label>
+            <label htmlFor='name'>Name</label>
             <input
               required
               value={name}
               onChange={e => setName(e.target.value)}
-              id="name"
-              type="text"
+              id='name'
+              type='text'
             />
           </div>
           <div>
-            <label htmlFor="gh">Github Username</label>
-            <input required id="gh" value={gh} onChange={e => setGH(e.target.value)} type="text" />
+            <label htmlFor='gh'>Github Username</label>
+            <input required id='gh' value={gh} onChange={e => setGH(e.target.value)} type='text' />
           </div>
 
-          <Submit onClick={createUser}>I AM IN 🎉</Submit>
+          <Button onClick={createUser}>I AM IN 🎉</Button>
         </Form>
       )}
     </>
