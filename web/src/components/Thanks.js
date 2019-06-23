@@ -1,7 +1,6 @@
 import React from 'react'
 import {graphql, useStaticQuery} from 'gatsby'
 import styled from 'styled-components'
-import shuffle from '../helpers/shuffle'
 
 const query = graphql`
   {
@@ -33,7 +32,7 @@ export default () => {
   return (
     <>
       <Thanks>
-        {shuffle(thanks.edges).map(({node: a}) => (
+        {thanks.edges.map(({node: a}) => (
           <li key={a.id}>
             <a href={a.link} target='_blank'>
               {a.name} for {a.reason}
