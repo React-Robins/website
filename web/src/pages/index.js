@@ -1,6 +1,5 @@
 import React from 'react'
 import {graphql} from 'gatsby'
-import styled from 'styled-components'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
 import Sponsors from '../components/Sponsors'
@@ -66,40 +65,6 @@ export const query = graphql`
   }
 `
 
-const SpeakerPhoto = styled.div`
-  position: relative;
-  border-radius: 100%;
-  overflow: hidden;
-  transition: 0.2s;
-
-  &:hover {
-    transform: scale(1.1) rotate(-5deg);
-    :after {
-      content: '';
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(
-        rgba(255, 0, 0, 1),
-        rgba(255, 255, 0, 1),
-        rgba(0, 255, 0, 1),
-        rgba(0, 255, 255, 1),
-        rgba(0, 0, 255, 1),
-        rgba(255, 0, 255, 1),
-        rgba(255, 0, 0, 1)
-      );
-      position: absolute;
-      top: 0;
-      left: 0;
-      opacity: 0.3;
-    }
-  }
-`
-const Footer = styled.footer`
-  color: ${props => props.theme.lightGrey};
-  font-size: 0.8em;
-  margin: 80px 0 40px;
-`
-
 const IndexPage = ({data = {}}) => {
   const site = data.site
 
@@ -110,9 +75,7 @@ const IndexPage = ({data = {}}) => {
         <h1 hidden>Welcome to {site.title}</h1>
         <Info site={site} />
         <Panel heading='Speakers'>
-          {data.speakers.edges && (
-            <Speakers speakers={data.speakers.edges.map(({node}) => node)} />
-          )}
+          {data.speakers.edges && <Speakers speakers={data.speakers.edges.map(({node}) => node)} />}
         </Panel>
         <Panel heading='Attendees'>
           <Attendees />
