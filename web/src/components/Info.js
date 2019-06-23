@@ -16,10 +16,6 @@ const Info = styled.div`
   position: relative;
   justify-content: space-between;
 
-  a {
-    text-decoration: none;
-  }
-
   span {
     width: 50%;
     padding: 1em 1.5em;
