@@ -7,6 +7,7 @@ import Figure from '../components/Figure'
 import Sponsors from '../components/Sponsors'
 import Info from '../components/Info'
 import Attendees from '../components/Attendees'
+import Thanks from '../components/Thanks'
 import Panel from '../components/Panel'
 
 export const query = graphql`
@@ -106,12 +107,6 @@ const Speakers = styled.ul`
   }
 `
 
-const Footer = styled.footer`
-  color: ${props => props.theme.lightGrey};
-  font-size: 0.8em;
-  margin: 80px 0 40px;
-`
-
 const Unstyled = styled.h3`
   font-size: 1em;
   font-weight: 600;
@@ -147,8 +142,8 @@ const IndexPage = ({data = {}}) => {
           <Sponsors />
         </Panel>
       </main>
-      <Panel>
-        <Footer>Icons by this guy</Footer>
+      <Panel heading='Special Thanks'>
+        <Thanks />
       </Panel>
     </Layout>
   )
