@@ -1,10 +1,11 @@
 import {graphql, StaticQuery} from 'gatsby'
 import React from 'react'
 import Layout from '../components/layout'
+import {RainbowProvider} from '../helpers/useRainbow'
 
 const query = graphql`
   query SiteTitleQuery {
-    site: sanitySiteSettings(_id: {regex: "/(drafts.|)siteSettings/"}) {
+    site: sanitySiteSettings(_id: { regex: "/(drafts.|)siteSettings/" }) {
       title
     }
   }
@@ -12,12 +13,14 @@ const query = graphql`
 
 function LayoutContainer (props) {
   return (
-    <StaticQuery
-      query={query}
-      render={data => {
-        return <Layout {...props} siteTitle={data.site.title} />
-      }}
-    />
+    <RainbowProvider>
+      <StaticQuery
+        query={query}
+        render={data => {
+          return <Layout {...props} siteTitle={data.site.title} />
+        }}
+      />
+    </RainbowProvider>
   )
 }
 

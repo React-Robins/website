@@ -1,6 +1,23 @@
 import React from 'react'
 import {useStaticQuery, graphql} from 'gatsby'
 import Figure from './Figure'
+import styled from 'styled-components'
+
+const Grid = styled.ul`
+  display: grid;
+  grid-gap: 20px;
+  @media (min-width: 400px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media (min-width: 800px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  li {
+    background: ${props => props.theme.white};
+    display: block;
+    padding: 20px;
+  }
+`
 
 export default () => {
   const {
@@ -43,12 +60,14 @@ export default () => {
   `)
 
   return (
-    <ul>
+    <Grid>
       {edges.map(({node: sponsor}) => (
-        <a target='_blank' href={sponsor.link}>
-          <Figure node={sponsor.media} alt={sponsor.name} />
-        </a>
+        <li>
+          <a target='_blank' href={sponsor.link}>
+            <Figure node={sponsor.media} alt={sponsor.name} />
+          </a>
+        </li>
       ))}
-    </ul>
+    </Grid>
   )
 }

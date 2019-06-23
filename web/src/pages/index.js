@@ -64,10 +64,13 @@ export const query = graphql`
 `
 
 const SpeakerPhoto = styled.div`
-  width: 150px;
   position: relative;
+  border-radius: 100%;
+  overflow: hidden;
+  transition: 0.2s;
 
   &:hover {
+    transform: scale(1.1) rotate(-5deg);
     :after {
       content: '';
       width: 100%;
@@ -90,13 +93,43 @@ const SpeakerPhoto = styled.div`
 `
 
 const Speakers = styled.ul`
-  display: flex;
+  display: grid;
+  grid-gap: 40px;
   text-align: center;
-
-  li {
-    margin: 20px;
+  @media (min-width: 400px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: 800px) {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 `
+
+const Footer = styled.footer`
+  color: ${props => props.theme.lightGrey};
+  font-size: 0.8em;
+  margin: 80px 0 40px;
+`
+
+const Unstyled = styled.h3`
+  font-size: 1em;
+  font-weight: 600;
+`
+
+const Panel = ({heading, children}) => {
+  const PanelDiv = styled.section`
+    margin: 60px 0 30px;
+  `
+  const Heading = styled.h2`
+    font-size: 32px;
+    font-family: 'NeutraText-Bold';
+  `
+  return (
+    <PanelDiv>
+      {heading && <Heading>{heading}</Heading>}
+      {children}
+    </PanelDiv>
+  )
+}
 
 const IndexPage = ({data = {}}) => {
   const site = data.site
@@ -107,19 +140,26 @@ const IndexPage = ({data = {}}) => {
       <main>
         <h1 hidden>Welcome to {site.title}</h1>
         <Info site={site} />
-        <Speakers>
-          {data.speakers.edges &&
-            data.speakers.edges.map(({node: speaker}) => (
-              <li key={speaker._id}>
-                <SpeakerPhoto>
-                  <Figure node={speaker.photo} />
-                </SpeakerPhoto>
-                <h3>{speaker.name}</h3>
-              </li>
-            ))}
-        </Speakers>
-        <Sponsors />
+        <Panel heading='Speakers'>
+          <Speakers>
+            {data.speakers.edges &&
+              data.speakers.edges.map(({node: speaker}) => (
+                <li key={speaker._id}>
+                  <SpeakerPhoto>
+                    <Figure node={speaker.photo} />
+                  </SpeakerPhoto>
+                  <Unstyled>{speaker.name}</Unstyled>
+                </li>
+              ))}
+          </Speakers>
+        </Panel>
+        <Panel heading='Sponsors'>
+          <Sponsors />
+        </Panel>
       </main>
+      <Panel>
+        <Footer>Icons by this guy</Footer>
+      </Panel>
     </Layout>
   )
 }
