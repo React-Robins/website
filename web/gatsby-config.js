@@ -13,6 +13,19 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     'gatsby-plugin-react-helmet',
     {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: 'Roboto Mono',
+              variants: ['300', '400', '500']
+            }
+          ]
+        }
+      }
+    },
+    {
       resolve: 'gatsby-source-sanity',
       options: {
         ...clientConfig.sanity,
