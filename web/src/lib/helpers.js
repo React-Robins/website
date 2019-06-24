@@ -13,7 +13,7 @@ export function filterOutDocsWithoutSlugs ({slug}) {
   return (slug || {}).current
 }
 
-export function filterOutDocsPublishedInTheFuture({publishedAt}) {
+export function filterOutDocsPublishedInTheFuture ({publishedAt}) {
   return !isFuture(publishedAt)
 }
 
@@ -21,7 +21,7 @@ export function getBlogUrl (publishedAt, slug) {
   return `/blog/${format(publishedAt, 'YYYY/MM')}/${slug.current || slug}/`
 }
 
-export function buildImageObj (source = { asset: {}}) {
+export function buildImageObj (source = {asset: {}}) {
   const imageObj = {
     asset: {_ref: source.asset._ref || source.asset._id}
   }
@@ -32,7 +32,7 @@ export function buildImageObj (source = { asset: {}}) {
   return imageObj
 }
 
-export function toPlainText(blocks) {
+export function toPlainText (blocks) {
   return blocks
     .map(block => {
       if (block._type !== 'block' || !block.children) {

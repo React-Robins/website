@@ -11,7 +11,7 @@ export default () => (
       position: absolute;
       left: -21px;
       top: -26px;
-      transition: all 200ms ease;
+      transition: transform 200ms ease;
 
       &:hover {
         transform: rotate(720deg);

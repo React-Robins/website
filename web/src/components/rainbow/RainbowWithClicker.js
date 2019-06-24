@@ -5,9 +5,5 @@ import {useRainbow} from '../../helpers/useRainbow'
 
 export default ({className, ...props}) => {
   const [stripes, {cycle}] = useRainbow()
-  return (
-    <div style={{cursor: 'pointer'}} className={className} onClick={() => cycle()}>
-      <Rainbow {...props} stripes={stripes} />
-    </div>
-  )
+  return <Rainbow {...props} stripes={stripes} style={{cursor: 'pointer'}} className={className} onClick={() => cycle()} />
 }
