@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react'
 import { Stripe, SubWrapper, Wrapper } from './elements'
 
-export const max = 8
+export const max = 37
 
 export default ({ stripes, children, ...other }) => {
   const streeps = useMemo(() => new Array(max).fill(undefined), [max])
