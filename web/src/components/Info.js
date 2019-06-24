@@ -208,13 +208,7 @@ export default ({site}) => {
           </label>
           <label htmlFor='gh'>
             Github Username
-            <input
-              required
-              id='gh'
-              type='text'
-              value={gh}
-              onChange={e => setGH(e.target.value)}
-            />
+            <input required id='gh' type='text' value={gh} onChange={e => setGH(e.target.value)} />
           </label>
 
           <Button onClick={createUser}>I AM IN 🎉</Button>

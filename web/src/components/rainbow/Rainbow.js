@@ -30,7 +30,7 @@ const Wrapper = styled.div`
   width: auto;
   height: 100%;
   position: relative;
-  
+
   > :not(${SubWrapper}) {
     position: relative;
   }
@@ -42,7 +42,9 @@ export default ({stripes, children, ...other}) => {
   return (
     <Wrapper {...other}>
       <SubWrapper length={stripes.length}>
-        {streeps.map((_, i) => <Stripe key={i} color={stripes[i] || 'black'} />)}
+        {streeps.map((_, i) => (
+          <Stripe key={i} color={stripes[i] || 'black'} />
+        ))}
       </SubWrapper>
       {children}
     </Wrapper>

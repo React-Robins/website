@@ -12,9 +12,9 @@ const lesbianStripes = ['#B60063', '#C84896', '#E253AB', '#DDD', '#F0A7D2', '#D7
 
 const allStripes = [
   gayStripes,
-  ...[transStripes, panStripes, biStripes, aceStripes, lesbianStripes]/* .sort(
+  ...[transStripes, panStripes, biStripes, aceStripes, lesbianStripes].sort(
     () => 0.5 - Math.random()
-  ) */
+  )
 ]
 
 const useStripesInCtx = () => {
@@ -25,8 +25,9 @@ const useStripesInCtx = () => {
 
 const RainbowContext = createContext([gayStripes, {}])
 
-const RainbowProvider = ({children}) =>
+const RainbowProvider = ({children}) => (
   <RainbowContext.Provider value={useStripesInCtx()}>{children}</RainbowContext.Provider>
+)
 
 const useRainbow = () => useContext(RainbowContext)
 

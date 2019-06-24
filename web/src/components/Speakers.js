@@ -25,7 +25,7 @@ const SpeakerPhoto = styled.div`
 
   &:hover {
     transform: scale(1.1) rotate(-5deg);
-    
+
     > ${InlineRainbow} {
       opacity: 1;
     }
@@ -61,7 +61,11 @@ const Speakers = ({speakers}) => {
     <SpeakersGrid>
       {shuffle(speakers).map(speaker => (
         <li key={speaker._id}>
-          <UnstyledLink href={`https://twitter.com/${speaker.twitterLink}`} target='_blank' title={speaker.name}>
+          <UnstyledLink
+            href={`https://twitter.com/${speaker.twitterLink}`}
+            target='_blank'
+            title={speaker.name}
+          >
             <SpeakerPhoto>
               <InlineRainbow />
               <Figure node={speaker.photo} />

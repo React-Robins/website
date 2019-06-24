@@ -31,7 +31,9 @@ export function RGBToHSL (r, g, b) {
   h = Math.round(h * 60)
 
   // Make negative hues positive behind 360°
-  if (h < 0) { h += 360 }
+  if (h < 0) {
+    h += 360
+  }
 
   // Calculate lightness
   l = (cmax + cmin) / 2
@@ -88,5 +90,5 @@ export function toPastel (hex) {
   return [hex]
     .map(hexToRGB)
     .map(([r, g, b]) => RGBToHSL(r, g, b))
-    .map(([h, s, l]) => hslString(h, s * 0.9, l + ((100 - l)) * 0.2))[0]
+    .map(([h, s, l]) => hslString(h, s * 0.9, l + (100 - l) * 0.2))[0]
 }

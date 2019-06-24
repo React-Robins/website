@@ -40,8 +40,7 @@ export default () => {
           </li>
         ))}
       </Thanks>
-      We will follow the{' '}
-      {/* They should fix their broken cert, we shouldn't default to http */}
+      We will follow the {/* They should fix their broken cert, we shouldn't default to http */}
       <a target='_blank' href='https://co-up.de/code-of-conduct.html'>
         Co.up Code of Conduct
       </a>
