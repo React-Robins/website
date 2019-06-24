@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import Figure from './Figure'
 import RainbowWithClicker from './rainbow/RainbowWithClicker'
-import shuffle from '../helpers/shuffle'
 
 const InlineRainbow = styled(RainbowWithClicker)`
   position: absolute;
@@ -59,7 +58,7 @@ const UnstyledLink = styled.a`
 const Speakers = ({ speakers }) => {
   return (
     <SpeakersGrid>
-      {shuffle(speakers).map(speaker => (
+      {speakers.map(speaker => (
         <li key={speaker.id}>
           <UnstyledLink
             href={`https://twitter.com/${speaker.twitterLink}`}
