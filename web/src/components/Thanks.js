@@ -1,5 +1,5 @@
 import React from 'react'
-import {graphql, useStaticQuery} from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 
 const query = graphql`
@@ -28,25 +28,25 @@ const Thanks = styled.ul`
 `
 
 export default () => {
-  const {allSanityThanks: thanks} = useStaticQuery(query)
+  const { allSanityThanks: thanks } = useStaticQuery(query)
   return (
     <>
       <Thanks>
-        {thanks.edges.map(({node: a}) => (
+        {thanks.edges.map(({ node: a }) => (
           <li key={a.id}>
-            <a href={a.link} target='_blank'>
+            <a href={a.link} target="_blank" rel="noopener noreferrer">
               {a.name} for {a.reason}
             </a>
           </li>
         ))}
       </Thanks>
       We will follow the {/* They should fix their broken cert, we shouldn't default to http */}
-      <a target='_blank' href='https://co-up.de/code-of-conduct.html'>
+      <a target="_blank" href="https://co-up.de/code-of-conduct.html" rel="noopener noreferrer">
         Co.up Code of Conduct
       </a>
       <br />
       Organized by{' '}
-      <a href='https://twitter.com/NikkitaFTW' target='_blank'>
+      <a href="https://twitter.com/NikkitaFTW" target="_blank" rel="noopener noreferrer">
         Sara Vieira
       </a>
     </>

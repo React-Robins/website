@@ -1,5 +1,5 @@
 import React from 'react'
-import {useStaticQuery, graphql} from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
 const Grid = styled.ul`
@@ -27,7 +27,7 @@ const SponsorImage = styled.img`
 
 export default () => {
   const {
-    allSanitySponsor: {edges}
+    allSanitySponsor: { edges }
   } = useStaticQuery(graphql`
     query {
       allSanitySponsor {
@@ -48,9 +48,9 @@ export default () => {
 
   return (
     <Grid>
-      {edges.map(({node: sponsor}) => (
+      {edges.map(({ node: sponsor }) => (
         <li>
-          <a target='_blank' href={sponsor.link}>
+          <a target="_blank" href={sponsor.link} rel="noopener noreferrer">
             <SponsorImage src={sponsor.media.asset.url} alt={sponsor.name} />
           </a>
         </li>

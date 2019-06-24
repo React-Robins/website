@@ -1,10 +1,10 @@
 import React from 'react'
-import {graphql} from 'gatsby'
+import { graphql } from 'gatsby'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
 import Sponsors from '../components/Sponsors'
 import Info from '../components/Info'
-import Attendees from '../components/Attendees'
+import Attendees from '../components/Attendees/'
 import Speakers from '../components/Speakers'
 import Thanks from '../components/Thanks'
 import Panel from '../components/Panel'
@@ -65,7 +65,7 @@ export const query = graphql`
   }
 `
 
-const IndexPage = ({data = {}}) => {
+const IndexPage = ({ data = {} }) => {
   const site = data.site
 
   return (
@@ -74,7 +74,7 @@ const IndexPage = ({data = {}}) => {
       <main>
         <h1 hidden>Welcome to {site.title}</h1>
         <Info site={site} />
-        <Panel heading='What?'>
+        <Panel heading="What?">
           <p
             css={`
               font-family: 'NeutraText-Bold';
@@ -92,18 +92,20 @@ const IndexPage = ({data = {}}) => {
             Join us! There will be food and stickers 🌈
           </p>
         </Panel>
-        <Panel heading='Speakers'>
-          {data.speakers.edges && <Speakers speakers={data.speakers.edges.map(({node}) => node)} />}
+        <Panel heading="Speakers">
+          {data.speakers.edges && (
+            <Speakers speakers={data.speakers.edges.map(({ node }) => node)} />
+          )}
         </Panel>
-        <Panel heading='Attendees'>
+        <Panel heading="Attendees">
           <Attendees />
         </Panel>
 
-        <Panel heading='Sponsors'>
+        <Panel heading="Sponsors">
           <Sponsors />
         </Panel>
       </main>
-      <Panel heading='Special Thanks'>
+      <Panel heading="Special Thanks">
         <Thanks />
       </Panel>
     </Layout>

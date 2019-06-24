@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-import styled, {keyframes} from 'styled-components'
+import React, { useState } from 'react'
+import styled, { keyframes } from 'styled-components'
 import format from 'date-fns/format'
 
 import Flag from './icons/flag'
@@ -121,7 +121,7 @@ const Bouncer = styled.strong`
   display: inline-block;
 `
 
-export default ({site}) => {
+export default ({ site }) => {
   const [open, setOpen] = useState(false)
   const [name, setName] = useState('')
   const [gh, setGH] = useState('')
@@ -155,13 +155,13 @@ export default ({site}) => {
         <Flag />
         <span>
           Location:{' '}
-          <a href='https://goo.gl/maps/VV6YUwPJaT79ESGG9' target='_blank'>
+          <a href="https://goo.gl/maps/VV6YUwPJaT79ESGG9" target="_blank" rel="noopener noreferrer">
             {site.location}
           </a>
         </span>
 
         <span>
-          <a href='https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS&location=Adalbertstra%C3%9Fe+8%2C+10999+Berlin&dates=20190723T170000Z%2F20190723T193000Z'>
+          <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS&location=Adalbertstra%C3%9Fe+8%2C+10999+Berlin&dates=20190723T170000Z%2F20190723T193000Z">
             {format(site.date, ['HH:mm Do [of] MMMM '])}
           </a>
         </span>
@@ -173,8 +173,8 @@ export default ({site}) => {
           style={
             submitted
               ? {
-                pointerEvents: 'none'
-              }
+                  pointerEvents: 'none'
+                }
               : {}
           }
         >
@@ -196,19 +196,19 @@ export default ({site}) => {
             setSubmitted(true)
           }}
         >
-          <label htmlFor='name'>
+          <label htmlFor="name">
             Name
             <input
               required
-              id='name'
-              type='text'
+              id="name"
+              type="text"
               value={name}
               onChange={e => setName(e.target.value)}
             />
           </label>
-          <label htmlFor='gh'>
+          <label htmlFor="gh">
             Github Username
-            <input required id='gh' type='text' value={gh} onChange={e => setGH(e.target.value)} />
+            <input required id="gh" type="text" value={gh} onChange={e => setGH(e.target.value)} />
           </label>
 
           <Button onClick={createUser}>I AM IN 🎉</Button>

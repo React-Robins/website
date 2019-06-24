@@ -56,14 +56,15 @@ const UnstyledLink = styled.a`
   text-decoration: none;
 `
 
-const Speakers = ({speakers}) => {
+const Speakers = ({ speakers }) => {
   return (
     <SpeakersGrid>
       {shuffle(speakers).map(speaker => (
         <li key={speaker._id}>
           <UnstyledLink
             href={`https://twitter.com/${speaker.twitterLink}`}
-            target='_blank'
+            target="_blank"
+            rel="noopener noreferrer"
             title={speaker.name}
           >
             <SpeakerPhoto>
