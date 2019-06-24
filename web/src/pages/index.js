@@ -52,7 +52,7 @@ export const query = graphql`
     speakers: allSanitySpeaker {
       edges {
         node {
-          _id
+          id
           job
           name
           twitterLink

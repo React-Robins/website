@@ -60,7 +60,7 @@ const Speakers = ({ speakers }) => {
   return (
     <SpeakersGrid>
       {shuffle(speakers).map(speaker => (
-        <li key={speaker._id}>
+        <li key={speaker.id}>
           <UnstyledLink
             href={`https://twitter.com/${speaker.twitterLink}`}
             target="_blank"
