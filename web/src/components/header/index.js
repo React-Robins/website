@@ -43,15 +43,13 @@ const Subtitle = styled.h2`
 
 const Header = ({siteTitle}) => (
   <Nav>
-    <div>
+    <section>
       <Title to='/'>{siteTitle}</Title>
       <Subtitle>A meetup for everyone where Queer Speakers take the stage</Subtitle>
-    </div>
-    <div>
-      <RainbowWithClicker stripes={['red']}>
-        <Logo src={logo} alt='Queer JS' />
-      </RainbowWithClicker>
-    </div>
+    </section>
+    <RainbowWithClicker stripes={['red']}>
+      <Logo src={logo} alt='Queer JS' />
+    </RainbowWithClicker>
   </Nav>
 )
 

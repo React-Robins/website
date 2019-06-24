@@ -36,7 +36,7 @@ export default () => {
       {shuffle(attendees.edges).map(({node: a}) => (
         <li key={a.id}>
           <a href={`https://github.com/${a.ghLink}`} target='_blank' title={a.name}>
-            <img src={`https://github.com/${a.ghLink}.png`} alt={a.name} width='50' />
+            <img src={`https://github.com/${a.ghLink}.png?size=50`} alt={a.name} width='50' />
           </a>
         </li>
       ))}

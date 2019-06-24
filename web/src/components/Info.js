@@ -20,7 +20,7 @@ const Info = styled.div`
     width: 50%;
     padding: 1em 1.5em;
 
-    &:last-of-type {
+    &:not(:first-of-type) {
       border-left: 3px solid ${props => props.theme.white};
     }
   }
@@ -86,7 +86,6 @@ const Form = styled.form`
 
   label {
     text-decoration: underline;
-    margin-right: 10px;
   }
 `
 
@@ -197,20 +196,26 @@ export default ({site}) => {
             setSubmitted(true)
           }}
         >
-          <div>
-            <label htmlFor='name'>Name</label>
+          <label htmlFor='name'>
+            Name
             <input
               required
-              value={name}
-              onChange={e => setName(e.target.value)}
               id='name'
               type='text'
+              value={name}
+              onChange={e => setName(e.target.value)}
             />
-          </div>
-          <div>
-            <label htmlFor='gh'>Github Username</label>
-            <input required id='gh' value={gh} onChange={e => setGH(e.target.value)} type='text' />
-          </div>
+          </label>
+          <label htmlFor='gh'>
+            Github Username
+            <input
+              required
+              id='gh'
+              type='text'
+              value={gh}
+              onChange={e => setGH(e.target.value)}
+            />
+          </label>
 
           <Button onClick={createUser}>I AM IN 🎉</Button>
         </Form>

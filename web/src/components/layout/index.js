@@ -19,10 +19,11 @@ body {
     -webkit-font-smoothing: antialiased;
   color:  ${props => props.theme.white};
   margin: 0;
+  box-sizing: border-box;
 }
 
-body * {
-  box-sizing: border-box;
+*, *:before,*:after {
+  box-sizing: inherit;
 }
 
 a {
@@ -50,7 +51,7 @@ figure {
 }
 `
 
-const Wrapper = styled.div`
+const Wrapper = styled.main`
   width: 80%;
   max-width: 720px;
   margin: auto;
@@ -74,7 +75,7 @@ const Layout = ({children, siteTitle}) => (
       <Global />
       <Wrapper>
         <Header siteTitle={siteTitle} />
-        <main>{children}</main>
+        {children}
       </Wrapper>
     </>
   </ThemeProvider>

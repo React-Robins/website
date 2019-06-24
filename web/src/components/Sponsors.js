@@ -13,7 +13,6 @@ const Grid = styled.ul`
   }
   li {
     background: ${props => props.theme.white};
-    display: block;
     padding: 20px;
     display: flex;
     align-items: center;

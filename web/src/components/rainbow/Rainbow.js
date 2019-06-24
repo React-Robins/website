@@ -3,57 +3,48 @@ import styled from 'styled-components'
 
 const max = 8
 
-const Wrapper = styled.div`
-  overflow: hidden;
+const Stripe = styled.div`
+  height: auto;
+  flex: 1 1 0;
   width: 100%;
-  height: 100%;
-  position: relative;
+  background-color: ${({color}) => color};
+  transition: transform 0.2s, background-color 0.4s;
+  margin: -0.5px 0;
 `
 
 const SubWrapper = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  bottom: 0;
-  right: 0;
   transform-origin: top;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   transform: scaleY(${({length}) => max / length});
-  transition: 0.2s;
-  z-index: 9;
+  transition: transform 0.2s;
 `
 
-const Stripe = styled.div`
-  height: auto;
-  flex: 1 1 0;
-  width: 100%;
-  background-color: ${({color}) => color};
-  transition: 0.4s;
-`
-
-const OverStripes = styled.div`
+const Wrapper = styled.div`
+  overflow: hidden;
+  width: auto;
+  height: 100%;
   position: relative;
-  z-index: 10;
+  
+  > :not(${SubWrapper}) {
+    position: relative;
+  }
 `
 
-export default ({stripes, children}) => {
+export default ({stripes, children, ...other}) => {
   const streeps = useMemo(() => new Array(max).fill(undefined), [max])
 
   return (
-    <Wrapper>
-      <OverStripes>{children}</OverStripes>
+    <Wrapper {...other}>
       <SubWrapper length={stripes.length}>
-        {streeps.map((_, i) => {
-          if (stripes[i]) {
-            return <Stripe key={i} color={stripes[i]} />
-          } else {
-            return <Stripe key={i} />
-          }
-        })}
+        {streeps.map((_, i) => <Stripe key={i} color={stripes[i] || 'black'} />)}
       </SubWrapper>
+      {children}
     </Wrapper>
   )
 }

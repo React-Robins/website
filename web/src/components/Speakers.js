@@ -10,10 +10,10 @@ const InlineRainbow = styled(RainbowWithClicker)`
   left: 0;
   bottom: 0;
   right: 0;
-  opacity: 0;
+  opacity: 0.01;
   z-index: 999;
   transition: 0.2s;
-  mix-blend-mode: overlay;
+  mix-blend-mode: multiply;
   will-change: transform;
 `
 
@@ -25,8 +25,12 @@ const SpeakerPhoto = styled.div`
 
   &:hover {
     transform: scale(1.1) rotate(-5deg);
-    ${InlineRainbow} {
+    
+    > ${InlineRainbow} {
       opacity: 1;
+    }
+    > :not(${InlineRainbow}) {
+      filter: grayscale(80%);
     }
   }
 `
@@ -48,16 +52,22 @@ const Unstyled = styled.h3`
   font-weight: 600;
 `
 
+const UnstyledLink = styled.a`
+  text-decoration: none;
+`
+
 const Speakers = ({speakers}) => {
   return (
     <SpeakersGrid>
       {shuffle(speakers).map(speaker => (
         <li key={speaker._id}>
-          <SpeakerPhoto>
-            <InlineRainbow />
-            <Figure node={speaker.photo} />
-          </SpeakerPhoto>
-          <Unstyled>{speaker.name}</Unstyled>
+          <UnstyledLink href={`https://twitter.com/${speaker.twitterLink}`} target='_blank' title={speaker.name}>
+            <SpeakerPhoto>
+              <InlineRainbow />
+              <Figure node={speaker.photo} />
+            </SpeakerPhoto>
+            <Unstyled>{speaker.name}</Unstyled>
+          </UnstyledLink>
         </li>
       ))}
     </SpeakersGrid>
