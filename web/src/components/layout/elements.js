@@ -1,4 +1,4 @@
-import styled, {createGlobalStyle} from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 import otherFont from '../../fonts/neutra-text/style.css'
 import RainbowWithClicker from '../rainbow/RainbowWithClicker'
 

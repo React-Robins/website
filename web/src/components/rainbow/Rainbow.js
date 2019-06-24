@@ -1,9 +1,9 @@
-import React, {useMemo} from 'react'
-import {Stripe, SubWrapper, Wrapper} from './elements'
+import React, { useMemo } from 'react'
+import { Stripe, SubWrapper, Wrapper } from './elements'
 
 export const max = 8
 
-export default ({stripes, children, ...other}) => {
+export default ({ stripes, children, ...other }) => {
   const streeps = useMemo(() => new Array(max).fill(undefined), [max])
 
   return (

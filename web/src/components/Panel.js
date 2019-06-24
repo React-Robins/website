@@ -9,7 +9,7 @@ const Heading = styled.h2`
   font-family: 'NeutraText-Bold';
 `
 
-const Panel = ({heading, children}) => (
+const Panel = ({ heading, children }) => (
   <PanelSection>
     {heading && <Heading>{heading}</Heading>}
     {children}

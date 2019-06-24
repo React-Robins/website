@@ -1,11 +1,11 @@
 import styled from 'styled-components'
-import {max} from './Rainbow'
+import { max } from './Rainbow'
 
 export const Stripe = styled.div`
   height: auto;
   flex: 1 1 0;
   width: 100%;
-  background-color: ${({color}) => color};
+  background-color: ${({ color }) => color};
   transition: transform 0.2s, background-color 0.4s;
   margin: -0.5px 0;
 `
@@ -19,7 +19,7 @@ export const SubWrapper = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-  transform: scaleY(${({length}) => max / length});
+  transform: scaleY(${({ length }) => max / length});
   transition: transform 0.2s;
 `
 

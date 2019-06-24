@@ -1,4 +1,4 @@
-import {Link} from 'gatsby'
+import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 export const Nav = styled.nav`

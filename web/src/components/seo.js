@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import {StaticQuery, graphql} from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
 
-function SEO ({description, lang, meta, keywords, title, image}) {
+function SEO({ description, lang, meta, keywords, title, image }) {
   return (
     <StaticQuery
       query={detailsQuery}
@@ -13,7 +13,7 @@ function SEO ({description, lang, meta, keywords, title, image}) {
 
         return (
           <Helmet
-            htmlAttributes={{lang}}
+            htmlAttributes={{ lang }}
             title={title}
             titleTemplate={title === siteTitle ? '%s' : `%s | ${siteTitle}`}
             meta={[
