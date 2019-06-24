@@ -41,7 +41,8 @@ export default () => {
         ))}
       </Thanks>
       We will follow the{' '}
-      <a target='_blank' href='http://co-up.de/code-of-conduct.html'>
+      {/* They should fix their broken cert, we shouldn't default to http */}
+      <a target='_blank' href='https://co-up.de/code-of-conduct.html'>
         Co.up Code of Conduct
       </a>
       <br />
