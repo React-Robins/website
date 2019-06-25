@@ -24,6 +24,14 @@
         "projectId": "atggkqis",
         "dataset": "london"
       }
+    },
+    {
+      "name": "paris",
+      "title": "Paris",
+      "api": {
+        "projectId": "atggkqis",
+        "dataset": "paris"
+      }
     }
   ],
   "plugins": [

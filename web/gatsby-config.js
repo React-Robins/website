@@ -26,7 +26,17 @@ module.exports = {
       resolve: 'gatsby-source-sanity',
       options: {
         projectId: process.env.GATSBY_SANITY_PROJECT_ID || 'atggkqis',
-        dataset: process.env.GATSBY_SANITY_DATASET || 'production',
+        dataset: 'production',
+        token: process.env.SANITY_READ_TOKEN,
+        watchMode: !isProd,
+        overlayDrafts: !isProd
+      }
+    },
+    {
+      resolve: 'gatsby-source-sanity',
+      options: {
+        projectId: process.env.GATSBY_SANITY_PROJECT_ID || 'atggkqis',
+        dataset: 'paris',
         token: process.env.SANITY_READ_TOKEN,
         watchMode: !isProd,
         overlayDrafts: !isProd
