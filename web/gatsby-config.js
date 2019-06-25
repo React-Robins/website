@@ -3,13 +3,10 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV || 'development'}`
 })
 
-const clientConfig = require('./client-config')
-
 const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
   plugins: [
-    'gatsby-plugin-postcss',
     `gatsby-plugin-styled-components`,
     'gatsby-plugin-react-helmet',
     {
