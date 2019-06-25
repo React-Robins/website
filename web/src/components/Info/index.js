@@ -7,7 +7,7 @@ import Calendar from '../icons/calendar'
 import { Info, Button, RsvpButton, Form, Blinker, Bouncer } from './elements'
 import client from '../../helpers/sanity'
 
-export default ({ site }) => {
+export default ({ site, dataset }) => {
   const [open, setOpen] = useState(false)
   const [name, setName] = useState('')
   const [gh, setGH] = useState('')
@@ -21,9 +21,11 @@ export default ({ site }) => {
         ghLink: gh
       }
 
-      client.create(doc).then(res => {
-        console.log(`Human was created, document ID is ${res._id}`)
-      })
+      client(dataset)
+        .create(doc)
+        .then(res => {
+          console.log(`Human was created, document ID is ${res._id}`)
+        })
     }
   }
 

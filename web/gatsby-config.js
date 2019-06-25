@@ -23,24 +23,25 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-source-sanity',
+      resolve: 'gatsby-source-graphql',
       options: {
-        projectId: process.env.GATSBY_SANITY_PROJECT_ID || 'atggkqis',
-        dataset: 'production',
-        token: process.env.SANITY_READ_TOKEN,
-        watchMode: !isProd,
-        overlayDrafts: !isProd
-      }
-    },
-    {
-      resolve: 'gatsby-source-sanity',
-      options: {
-        projectId: process.env.GATSBY_SANITY_PROJECT_ID || 'atggkqis',
-        dataset: 'paris',
-        token: process.env.SANITY_READ_TOKEN,
-        watchMode: !isProd,
-        overlayDrafts: !isProd
+        // This type will contain remote schema Query type
+        typeName: 'Berlin',
+        // This is field under which it's accessible
+        fieldName: 'berlin',
+        // Url to query from
+        url: 'https://atggkqis.api.sanity.io/v1/graphql/production/default'
       }
     }
+    // {
+    //   resolve: 'gatsby-source-sanity',
+    //   options: {
+    //     projectId: process.env.GATSBY_SANITY_PROJECT_ID || 'atggkqis',
+    //     dataset: 'production',
+    //     token: process.env.SANITY_READ_TOKEN,
+    //     watchMode: !isProd,
+    //     overlayDrafts: !isProd
+    //   }
+    // },
   ]
 }

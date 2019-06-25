@@ -1,29 +1,10 @@
 import React from 'react'
-import { graphql } from 'gatsby'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
 import Panel from '../components/Panel'
 
-export const query = graphql`
-  {
-    site: sanitySiteSettings {
-      title
-      description
-      location
-      date
-      organizers
-    }
-    organizer: sanityOrganizer(main: { eq: true }) {
-      name
-      phoneNumber
-      twitterHandle
-      email
-    }
-  }
-`
-
-const IndexPage = ({ data = {} }) => {
-  const { site, organizer } = data
+const CodeOfConduct = ({ location }) => {
+  const { site, organizer } = location.state
 
   return (
     <Layout>
@@ -45,7 +26,7 @@ const IndexPage = ({ data = {} }) => {
               from all participants to help ensuring a safe environment for everybody.
             </p>
             <p>
-              Need Help? Contact {organizer.name} {organizer.phoneNumber}
+              Need Help? Contact {organizer[0].name} {organizer[0].phoneNumber}
             </p>
 
             <h2>The Quick Version</h2>
@@ -86,8 +67,8 @@ const IndexPage = ({ data = {} }) => {
               please notify a QueerJS organizer as soon as possible.
             </p>
             <p>
-              If you can’t find the organizer, reach out to {organizer.name} at
-              {organizer.email} / {organizer.phoneNumber} / {organizer.twitterHandle}
+              If you can’t find the organizer, reach out to {organizer[0].name} at
+              {organizer[0].email} / {organizer[0].phoneNumber} / {organizer[0].twitterHandle}
             </p>
             <p>
               Conference staff will be happy to help participants and assist those experiencing
@@ -107,4 +88,4 @@ const IndexPage = ({ data = {} }) => {
   )
 }
 
-export default IndexPage
+export default CodeOfConduct

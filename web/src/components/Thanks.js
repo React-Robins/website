@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql, useStaticQuery, Link } from 'gatsby'
+import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 const Thanks = styled.ul`
@@ -13,11 +13,11 @@ const Thanks = styled.ul`
   }
 `
 
-export default ({ thanks, organizers }) => {
+export default ({ thanks, organizers, mainOrganizer, site }) => {
   return (
     <>
       <Thanks>
-        {thanks.edges.map(({ node: a }) => (
+        {thanks.map(a => (
           <li key={a.id}>
             <a href={a.link} target="_blank" rel="noopener noreferrer">
               {a.name} for {a.reason}
@@ -25,10 +25,14 @@ export default ({ thanks, organizers }) => {
           </li>
         ))}
       </Thanks>
-      We have a <Link to="/code-of-conduct">Code of Conduct</Link>.
+      We have a{' '}
+      <Link state={{ organizer: mainOrganizer, site: site }} to="/code-of-conduct">
+        Code of Conduct
+      </Link>
+      .
       <br />
       Organized by{' '}
-      {organizers.edges.map(({ node: organizer }, i) => (
+      {organizers.map((organizer, i) => (
         <>
           <a
             href={`https://twitter.com/${organizer.twitterHandle}`}
@@ -37,7 +41,7 @@ export default ({ thanks, organizers }) => {
           >
             {organizer.name}
           </a>
-          {i !== organizers.edges.length - 1 ? ' and ' : null}
+          {i !== organizers.length - 1 ? ' and ' : null}
         </>
       ))}
     </>

@@ -5,8 +5,10 @@ import { RainbowProvider } from '../helpers/useRainbow'
 
 const query = graphql`
   query SiteTitleQuery {
-    site: sanitySiteSettings(_id: { regex: "/(drafts.|)siteSettings/" }) {
-      title
+    berlin {
+      site: SiteSettings(id: "siteSettings") {
+        title
+      }
     }
   }
 `
@@ -17,7 +19,7 @@ function LayoutContainer(props) {
       <StaticQuery
         query={query}
         render={data => {
-          return <Layout {...props} siteTitle={data.site.title} />
+          return <Layout {...props} siteTitle={data.berlin.site.title} />
         }}
       />
     </RainbowProvider>

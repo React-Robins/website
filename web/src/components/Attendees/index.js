@@ -6,7 +6,7 @@ import shuffle from '../../helpers/shuffle'
 export default ({ attendees }) => {
   return (
     <Attendees>
-      {shuffle(attendees.edges).map(({ node: a }) => (
+      {shuffle(attendees).map(a => (
         <li key={a.id}>
           <a
             href={`https://github.com/${a.ghLink}`}

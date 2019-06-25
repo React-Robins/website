@@ -10,7 +10,7 @@ import Thanks from '../components/Thanks'
 import Panel from '../components/Panel'
 
 export const query = graphql`
-  fragment SanityImage on SanityImage {
+  fragment Berlin_Image on Berlin_Image {
     crop {
       _key
       _type
@@ -33,72 +33,53 @@ export const query = graphql`
   }
 
   query IndexPageQuery {
-    site: sanitySiteSettings {
-      title
-      description
-      location
-      date
-      organizers
-    }
-    organizers: allSanityOrganizer {
-      edges {
-        node {
-          id
-          name
-          email
-        }
+    berlin {
+      site: SiteSettings(id: "siteSettings") {
+        title
+        description
+        location
+        date
+        organizers
       }
-    }
-    thanks: allSanityThanks {
-      edges {
-        node {
-          name
-          link
-          reason
-        }
+      mainOrganizer: allOrganizers {
+        name
+        main
+        phoneNumber
+        twitterHandle
+        email
       }
-    }
-    thanks: allSanityThanks {
-      edges {
-        node {
-          id
-          link
-          name
-        }
+      organizers: allOrganizers {
+        id: _id
+        name
+        email
       }
-    }
-    attendees: allSanityAttendee {
-      edges {
-        node {
-          id
-          ghLink
-          name
-        }
+      thanks: allThanks {
+        id: _id
+        link
+        name
+        reason
       }
-    }
-    sponsors: allSanitySponsor {
-      edges {
-        node {
-          name
-          link
-          media {
-            asset {
-              url
-            }
+      attendees: allAttendees {
+        id: _id
+        ghLink
+        name
+      }
+      sponsors: allSponsors {
+        name
+        link
+        media {
+          asset {
+            url
           }
         }
       }
-    }
-    speakers: allSanitySpeaker {
-      edges {
-        node {
-          id
-          job
-          name
-          twitterLink
-          photo {
-            ...SanityImage
-          }
+      speakers: allSpeakers {
+        id: _id
+        job
+        name
+        twitterLink
+        photo {
+          ...Berlin_Image
         }
       }
     }
@@ -106,14 +87,16 @@ export const query = graphql`
 `
 
 const IndexPage = ({ data = {} }) => {
-  const { site, organizers, thanks, speakers, attendees, sponsors } = data
+  const {
+    berlin: { site, organizers, mainOrganizer, thanks, speakers, attendees, sponsors }
+  } = data
 
   return (
     <Layout>
       <SEO title={site.title} description={site.description} />
       <main>
         <h1 hidden>Welcome to {site.title}</h1>
-        <Info site={site} />
+        <Info site={site} dataset="production" />
         <Panel heading="What?">
           <p
             css={`
@@ -133,7 +116,7 @@ const IndexPage = ({ data = {} }) => {
           </p>
         </Panel>
         <Panel heading="Speakers">
-          {speakers.edges && <Speakers speakers={speakers.edges.map(({ node }) => node)} />}
+          <Speakers speakers={speakers} />}
         </Panel>
         <Panel heading="Attendees">
           <Attendees attendees={attendees} />
@@ -144,7 +127,12 @@ const IndexPage = ({ data = {} }) => {
         </Panel>
       </main>
       <Panel heading="Special Thanks">
-        <Thanks organizers={organizers} thanks={thanks} />
+        <Thanks
+          organizers={organizers}
+          thanks={thanks}
+          site={site}
+          mainOrganizer={mainOrganizer.find(o => o.main)}
+        />
       </Panel>
     </Layout>
   )

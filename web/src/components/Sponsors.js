@@ -27,7 +27,7 @@ const SponsorImage = styled.img`
 export default ({ sponsors }) => {
   return (
     <Grid>
-      {sponsors.edges.map(({ node: sponsor }) => (
+      {sponsors.map(sponsor => (
         <li>
           <a target="_blank" href={sponsor.link} rel="noopener noreferrer">
             <SponsorImage src={sponsor.media.asset.url} alt={sponsor.name} />
