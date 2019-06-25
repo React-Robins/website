@@ -3,6 +3,10 @@
   "project": {
     "name": "QueerJS"
   },
+  "api": {
+    "projectId": "atggkqis",
+    "dataset": "production"
+  },
   "__experimental_spaces": [
     {
       "name": "berlin",

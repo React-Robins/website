@@ -8,8 +8,6 @@ export default {
           {
             name: 'netlify',
             options: {
-              description:
-                'NOTE: Because these sites are static builds, they need to be re-deployed to see the changes when documents are published.',
               sites: [
                 {
                   buildHookId: '5d08e89eff604c1edbcd9bf8',
