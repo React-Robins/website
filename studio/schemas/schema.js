@@ -9,6 +9,7 @@ import attendee from './documents/attendee'
 import speaker from './documents/speaker'
 import sponsor from './documents/sponsor'
 import thanks from './documents/thanks'
+import organizer from './documents/organizer'
 import siteSettings from './documents/siteSettings'
 
 // Then we give our schema to the builder and provide the result to Sanity
@@ -24,7 +25,8 @@ export default createSchema({
     speaker,
     sponsor,
     attendee,
-    thanks
+    thanks,
+    organizer
 
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas

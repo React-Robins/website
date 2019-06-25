@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery, Link } from 'gatsby'
 import styled from 'styled-components'
 
 const query = graphql`
@@ -40,10 +40,7 @@ export default () => {
           </li>
         ))}
       </Thanks>
-      We will follow the {/* They should fix their broken cert, we shouldn't default to http */}
-      <a target="_blank" href="https://co-up.de/code-of-conduct.html" rel="noopener noreferrer">
-        Co.up Code of Conduct
-      </a>
+      We have a <Link to="/code-of-conduct">Code of Conduct</Link>.
       <br />
       Organized by{' '}
       <a href="https://twitter.com/NikkitaFTW" target="_blank" rel="noopener noreferrer">
