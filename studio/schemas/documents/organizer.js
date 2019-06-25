@@ -9,7 +9,7 @@ export default {
       title: 'Name'
     },
     {
-      name: 'twitter-handle',
+      name: 'twitterHandle',
       type: 'string',
       title: 'Twitter Handle'
     },
