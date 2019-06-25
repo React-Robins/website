@@ -32,6 +32,17 @@ module.exports = {
         // Url to query from
         url: 'https://atggkqis.api.sanity.io/v1/graphql/production/default'
       }
+    },
+    {
+      resolve: 'gatsby-source-graphql',
+      options: {
+        // This type will contain remote schema Query type
+        typeName: 'Paris',
+        // This is field under which it's accessible
+        fieldName: 'paris',
+        // Url to query from
+        url: 'https://atggkqis.api.sanity.io/v1/graphql/paris/default'
+      }
     }
     // {
     //   resolve: 'gatsby-source-sanity',

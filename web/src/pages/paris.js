@@ -10,7 +10,7 @@ import Thanks from '../components/Thanks'
 import Panel from '../components/Panel'
 
 export const query = graphql`
-  fragment Berlin_Image on Berlin_Image {
+  fragment Paris_Image on Paris_Image {
     crop {
       _key
       _type
@@ -33,7 +33,7 @@ export const query = graphql`
   }
 
   query {
-    berlin {
+    paris {
       site: SiteSettings(id: "siteSettings") {
         title
         description
@@ -79,7 +79,7 @@ export const query = graphql`
         name
         twitterLink
         photo {
-          ...Berlin_Image
+          ...Paris_Image
         }
       }
     }
@@ -88,7 +88,7 @@ export const query = graphql`
 
 const IndexPage = ({ data = {} }) => {
   const {
-    berlin: { site, organizers, mainOrganizer, thanks, speakers, attendees, sponsors }
+    paris: { site, organizers, mainOrganizer, thanks, speakers, attendees, sponsors }
   } = data
 
   return (
@@ -96,7 +96,7 @@ const IndexPage = ({ data = {} }) => {
       <SEO title={site.title} description={site.description} />
       <main>
         <h1 hidden>Welcome to {site.title}</h1>
-        <Info site={site} dataset="production" />
+        <Info site={site} dataset="paris" />
         <Panel heading="What?">
           <p
             css={`
