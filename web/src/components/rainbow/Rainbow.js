@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react'
 import { Stripe, SubWrapper, Wrapper } from './elements'
 
-export const max = 37
+const max = 10
 
 export default ({ stripes, children, ...other }) => {
   const streeps = useMemo(() => new Array(max).fill(undefined), [max])
@@ -9,9 +9,10 @@ export default ({ stripes, children, ...other }) => {
   return (
     <Wrapper {...other}>
       <SubWrapper length={stripes.length}>
-        {streeps.map((_, i) => (
-          <Stripe key={i} color={stripes[i] || 'black'} />
-        ))}
+        {streeps.map((_, i) => {
+          const { color, size } = stripes[i] || { color: 'black', size: 0 }
+          return <Stripe key={i} color={color} size={size} />
+        })}
       </SubWrapper>
       {children}
     </Wrapper>
