@@ -28,7 +28,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-sanity',
       options: {
-        ...clientConfig.sanity,
+        projectId: process.env.GATSBY_SANITY_PROJECT_ID || 'atggkqis',
+        dataset: process.env.GATSBY_SANITY_DATASET || 'production',
         token: process.env.SANITY_READ_TOKEN,
         watchMode: !isProd,
         overlayDrafts: !isProd
