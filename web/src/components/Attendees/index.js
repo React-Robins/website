@@ -1,25 +1,9 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
 
 import { Attendees } from './elements'
 import shuffle from '../../helpers/shuffle'
 
-const query = graphql`
-  {
-    allSanityAttendee {
-      edges {
-        node {
-          id
-          ghLink
-          name
-        }
-      }
-    }
-  }
-`
-
-export default () => {
-  const { allSanityAttendee: attendees } = useStaticQuery(query)
+export default ({ attendees }) => {
   return (
     <Attendees>
       {shuffle(attendees.edges).map(({ node: a }) => (

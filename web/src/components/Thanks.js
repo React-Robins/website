@@ -2,29 +2,6 @@ import React from 'react'
 import { graphql, useStaticQuery, Link } from 'gatsby'
 import styled from 'styled-components'
 
-const query = graphql`
-  {
-    organizers: allSanityOrganizer {
-      edges {
-        node {
-          id
-          name
-          email
-        }
-      }
-    }
-    allSanityThanks {
-      edges {
-        node {
-          name
-          link
-          reason
-        }
-      }
-    }
-  }
-`
-
 const Thanks = styled.ul`
   list-style: none;
   color: ${props => props.theme.lightGrey};
@@ -36,8 +13,7 @@ const Thanks = styled.ul`
   }
 `
 
-export default () => {
-  const { allSanityThanks: thanks, organizers } = useStaticQuery(query)
+export default ({ thanks, organizers }) => {
   return (
     <>
       <Thanks>

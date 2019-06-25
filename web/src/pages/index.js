@@ -40,12 +40,52 @@ export const query = graphql`
       date
       organizers
     }
+    organizers: allSanityOrganizer {
+      edges {
+        node {
+          id
+          name
+          email
+        }
+      }
+    }
+    thanks: allSanityThanks {
+      edges {
+        node {
+          name
+          link
+          reason
+        }
+      }
+    }
     thanks: allSanityThanks {
       edges {
         node {
           id
           link
           name
+        }
+      }
+    }
+    attendees: allSanityAttendee {
+      edges {
+        node {
+          id
+          ghLink
+          name
+        }
+      }
+    }
+    sponsors: allSanitySponsor {
+      edges {
+        node {
+          name
+          link
+          media {
+            asset {
+              url
+            }
+          }
         }
       }
     }
@@ -66,7 +106,7 @@ export const query = graphql`
 `
 
 const IndexPage = ({ data = {} }) => {
-  const site = data.site
+  const { site, organizers, thanks, speakers, attendees, sponsors } = data
 
   return (
     <Layout>
@@ -93,20 +133,18 @@ const IndexPage = ({ data = {} }) => {
           </p>
         </Panel>
         <Panel heading="Speakers">
-          {data.speakers.edges && (
-            <Speakers speakers={data.speakers.edges.map(({ node }) => node)} />
-          )}
+          {speakers.edges && <Speakers speakers={speakers.edges.map(({ node }) => node)} />}
         </Panel>
         <Panel heading="Attendees">
-          <Attendees />
+          <Attendees attendees={attendees} />
         </Panel>
 
         <Panel heading="Sponsors">
-          <Sponsors />
+          <Sponsors sponsors={sponsors} />
         </Panel>
       </main>
       <Panel heading="Special Thanks">
-        <Thanks />
+        <Thanks organizers={organizers} thanks={thanks} />
       </Panel>
     </Layout>
   )
