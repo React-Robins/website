@@ -19,7 +19,7 @@ export default {
       title: 'Email'
     },
     {
-      name: 'phone-number',
+      name: 'phoneNumber',
       type: 'string',
       title: 'Phone Number'
     },
