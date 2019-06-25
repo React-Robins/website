@@ -13,11 +13,17 @@ export const query = graphql`
       date
       organizers
     }
+    organizer: sanityOrganizer(main: { eq: true }) {
+      name
+      phoneNumber
+      twitterHandle
+      email
+    }
   }
 `
 
 const IndexPage = ({ data = {} }) => {
-  const site = data.site
+  const { site, organizer } = data
 
   return (
     <Layout>
@@ -38,7 +44,9 @@ const IndexPage = ({ data = {} }) => {
               Organizers will enforce this code throughout the event. We are expecting cooperation
               from all participants to help ensuring a safe environment for everybody.
             </p>
-            <p>Need Help? Contact Sara +351 91 729 6830</p>
+            <p>
+              Need Help? Contact {organizer.name} {organizer.phoneNumber}
+            </p>
 
             <h2>The Quick Version</h2>
             <p>
@@ -78,8 +86,8 @@ const IndexPage = ({ data = {} }) => {
               please notify a QueerJS organizer as soon as possible.
             </p>
             <p>
-              If you can’t find the organizer, reach out to Sara at hey@iamsaravieira.com / +351 91
-              729 6830 / @NikkitaFTW
+              If you can’t find the organizer, reach out to {organizer.name} at
+              {organizer.email} / {organizer.phoneNumber} / {organizer.twitterHandle}
             </p>
             <p>
               Conference staff will be happy to help participants and assist those experiencing

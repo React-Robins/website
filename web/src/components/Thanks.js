@@ -4,6 +4,15 @@ import styled from 'styled-components'
 
 const query = graphql`
   {
+    organizers: allSanityOrganizer {
+      edges {
+        node {
+          id
+          name
+          email
+        }
+      }
+    }
     allSanityThanks {
       edges {
         node {
@@ -28,7 +37,7 @@ const Thanks = styled.ul`
 `
 
 export default () => {
-  const { allSanityThanks: thanks } = useStaticQuery(query)
+  const { allSanityThanks: thanks, organizers } = useStaticQuery(query)
   return (
     <>
       <Thanks>
@@ -43,9 +52,18 @@ export default () => {
       We have a <Link to="/code-of-conduct">Code of Conduct</Link>.
       <br />
       Organized by{' '}
-      <a href="https://twitter.com/NikkitaFTW" target="_blank" rel="noopener noreferrer">
-        Sara Vieira
-      </a>
+      {organizers.edges.map(({ node: organizer }, i) => (
+        <>
+          <a
+            href={`https://twitter.com/${organizer.twitterHandle}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {organizer.name}
+          </a>
+          {i !== organizers.edges.length - 1 ? ' and ' : null}
+        </>
+      ))}
     </>
   )
 }
