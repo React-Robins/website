@@ -47,6 +47,11 @@ ul {
 figure {
   margin: 0;
 }
+
+.gatsby-image-wrapper > div {
+    position: relative;
+       padding-bottom: 100% !important;
+}
 `
 
 export const Wrapper = styled.main`
