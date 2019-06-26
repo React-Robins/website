@@ -14,7 +14,11 @@ export default ({ attendees }) => {
             title={a.name}
             rel="noopener noreferrer"
           >
-            <img src={`https://github.com/${a.ghLink}.png?size=50`} alt={a.name} width="50" />
+            <img
+              src={`https://github.com/${a.ghLink.trim()}.png?size=50`}
+              alt={a.name}
+              width="50"
+            />
           </a>
         </li>
       ))}
