@@ -62,8 +62,8 @@ const UsedBy = () => (
           <div>
             <h1>Used by biggest in tech</h1>
             <LogoGrid>
-              {LOGOS.map(({ logo, link }) => (
-                <ExternalLink href={link}>{logo()}</ExternalLink>
+              {LOGOS.map(({ logo, link }, index) => (
+                <ExternalLink key={index} href={link}>{logo()}</ExternalLink>
               ))}
             </LogoGrid>
           </div>

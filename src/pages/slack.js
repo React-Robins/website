@@ -10,10 +10,9 @@ const JoinSlack = () => (
     <Container>
       <h1>Join Our Online Slack Community</h1>
       <iframe
-        class="airtable-embed"
+        className="airtable-embed"
         src="https://airtable.com/embed/shr05ToMIvHWsUvbs?backgroundColor=orange"
-        frameborder="0"
-        onmousewheel=""
+        frameBorder="0"
         width="100%"
         height="533"
         title="react-ladies-slack-form"

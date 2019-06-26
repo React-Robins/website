@@ -10,10 +10,9 @@ const SubmitTalk = () => (
     <Container>
       <h1>Submit a Lightning Talk</h1>
       <iframe
-        class="airtable-embed"
+        clasName="airtable-embed"
         src="https://airtable.com/embed/shrphJUHyS1h6UK0Y?backgroundColor=gray"
-        frameborder="0"
-        onmousewheel=""
+        frameBorder="0"
         width="100%"
         height="533"
         title="react-ladies-submit-talk-form"

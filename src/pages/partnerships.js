@@ -10,10 +10,9 @@ const Partnerships = () => (
     <Container>
       <h1>Partner with React Ladies</h1>
       <iframe
-        class="airtable-embed"
+        className="airtable-embed"
         src="https://airtable.com/embed/shrKdwBV29CyooYhU?backgroundColor=purple"
-        frameborder="0"
-        onmousewheel=""
+        frameBorder="0"
         width="100%"
         height="533"
         title="react-ladies-partnership-form"
