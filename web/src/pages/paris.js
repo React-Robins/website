@@ -52,6 +52,7 @@ export const query = graphql`
         id: _id
         name
         email
+        twitterHandle
       }
       thanks: allThanks {
         id: _id
