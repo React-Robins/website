@@ -9,9 +9,28 @@ const Header = ({ siteTitle }) => (
     <section>
       <Title to="/">{siteTitle}</Title>
       <Subtitle>A meetup for everyone where Queer Speakers take the stage</Subtitle>
-      {/* <a href="https://opencollective.com/queerjs/donate" target="_blank">
-        <img src="https://opencollective.com/queerjs/donate/button@2x.png?color=blue" width="300" />
-      </a> */}
+      <a
+        css={`
+          text-decoration: none;
+
+          > div {
+            padding: 10px;
+          }
+        `}
+        href="https://opencollective.com/queerjs/donate"
+        target="_blank"
+      >
+        <RainbowWithClicker stripes={['red']}>
+          <span
+            css={`
+              color: #1e1126;
+              font-weight: bold;
+            `}
+          >
+            Donate to our open collective
+          </span>
+        </RainbowWithClicker>
+      </a>
     </section>
     <RainbowWithClicker stripes={['red']}>
       <Logo src={logo} alt="Queer JS" />

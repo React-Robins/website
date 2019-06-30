@@ -106,12 +106,11 @@ const IndexPage = ({ data = {} }) => {
               line-height: 28px;
             `}
           >
-            This idea started when a random dude on twitter said he doesn't think "React Girls" is a
-            good idea because he's gay and wouldn't want to be in a conference with only gay people.
-            So now welcome to QueerJS.
-            <br />
             This is a meetup where anyone is welcome to attend and support the speakers and the idea
             but all the speakers will be Queer.
+            <br />
+            This meetup exists to give a voice to everyone, to make a safe space where everyone is
+            welcome.
             <br />
             Join us! There will be food and stickers 🌈
           </p>
