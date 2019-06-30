@@ -19,6 +19,7 @@ const Header = ({ siteTitle }) => (
         `}
         href="https://opencollective.com/queerjs/donate"
         target="_blank"
+        rel="noopener noreferrer"
       >
         <RainbowWithClicker stripes={['red']}>
           <span
