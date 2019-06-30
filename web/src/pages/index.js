@@ -118,7 +118,7 @@ const IndexPage = ({ data = {} }) => {
         <Panel heading="Speakers">
           <Speakers speakers={speakers} />
         </Panel>
-        <Panel heading="Attendees">
+        <Panel heading={`Attendees (${attendees.length})`}>
           <Attendees attendees={attendees} />
         </Panel>
 
