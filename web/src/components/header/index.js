@@ -17,7 +17,7 @@ const Header = ({ siteTitle }) => (
             padding: 10px;
           }
         `}
-        href="https://opencollective.com/queerjs/donate"
+        href="https://opencollective.com/queerjs"
         target="_blank"
         rel="noopener noreferrer"
       >
