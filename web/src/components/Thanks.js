@@ -13,7 +13,7 @@ const Thanks = styled.ul`
   }
 `
 
-export default ({ thanks, organizers, mainOrganizer, site }) => {
+export default ({ thanks, mainOrganizer, site }) => {
   return (
     <>
       <Thanks>
@@ -31,19 +31,10 @@ export default ({ thanks, organizers, mainOrganizer, site }) => {
       </Link>
       .
       <br />
-      Organized by{' '}
-      {organizers.map((organizer, i) => (
-        <>
-          <a
-            href={`https://twitter.com/${organizer.twitterHandle}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {organizer.name}
-          </a>
-          {i !== organizers.length - 1 ? ' and ' : null}
-        </>
-      ))}
+      Organized by a{' '}
+      <Link state={{ site: site }} to="/organizers">
+        bunch of humans
+      </Link>
     </>
   )
 }

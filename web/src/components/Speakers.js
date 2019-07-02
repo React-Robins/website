@@ -58,19 +58,24 @@ const UnstyledLink = styled.a`
 const Speakers = ({ speakers }) => {
   return (
     <SpeakersGrid>
-      {speakers.map(speaker => (
-        <li key={speaker.id}>
+      {speakers.map(human => (
+        <li key={human.id}>
           <UnstyledLink
-            href={`https://twitter.com/${speaker.twitterLink}`}
+            href={`https://twitter.com/${human.twitterLink}`}
             target="_blank"
             rel="noopener noreferrer"
-            title={speaker.name}
+            title={human.name}
           >
             <SpeakerPhoto>
-              <InlineRainbow />
-              <Figure node={speaker.photo} />
+              <InlineRainbow flag={human.colors} />
+              {human.image ? (
+                <img width="221" height="221" src={human.image} />
+              ) : (
+                <Figure node={human.photo} />
+              )}
             </SpeakerPhoto>
-            <Unstyled>{speaker.name}</Unstyled>
+            <Unstyled>{human.name}</Unstyled>
+            {human.location && <Unstyled>{human.location}</Unstyled>}
           </UnstyledLink>
         </li>
       ))}

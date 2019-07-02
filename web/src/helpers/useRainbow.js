@@ -27,14 +27,16 @@ const pastelizeStripe = ({ color, size }) => {
 const toSizedPastelStrip = stripe => pastelizeStripe(toSizedStripe(stripe))
 
 // stolen from flag
-const gayStripes = ['#FF5D7D', '#FF764E', '#FFC144', '#88DF8E', '#00CCF2', '#B278D3'].map(
+export const gayStripes = ['#FF5D7D', '#FF764E', '#FFC144', '#88DF8E', '#00CCF2', '#B278D3'].map(
   toSizedStripe
 )
-const transStripes = ['#55CDFC', '#F7A8B8', '#DDD', '#F7A8B8', '#55CDFC'].map(toSizedPastelStrip)
-const biStripes = [sizedStripe('#D9006F', 2), '#744D98', sizedStripe('#0033AB', 2)].map(
+export const transStripes = ['#55CDFC', '#F7A8B8', '#DDD', '#F7A8B8', '#55CDFC'].map(
   toSizedPastelStrip
 )
-const aceStripes = ['#000000', '#A3A3A3', '#DDD', '#810082'].map(toSizedPastelStrip)
+export const biStripes = [sizedStripe('#D9006F', 2), '#744D98', sizedStripe('#0033AB', 2)].map(
+  toSizedPastelStrip
+)
+export const aceStripes = ['#000000', '#A3A3A3', '#DDD', '#810082'].map(toSizedPastelStrip)
 const panStripes = ['#FF008E', '#FFD800', '#00B3FF'].map(toSizedPastelStrip)
 const [blackStripe, blueStripe, redStripe, whiteStripe] = [
   sizedStripe('#000000', 4),
@@ -55,6 +57,9 @@ const leatherStripes = [
   blackStripe
 ].map(toSizedPastelStrip)
 const bearStripes = ['#4e2801', '#ca4e05', '#fdd951', '#fde2ac', '#EEE', '#424242', '#000000'].map(
+  toSizedPastelStrip
+)
+export const fluidStripes = ['#FE75A4', '#FFFFFF', '#A90FC0', '#000000', '#303CBE'].map(
   toSizedPastelStrip
 )
 
@@ -78,7 +83,8 @@ const allStripes = [
     aceStripes,
     lesbianStripes,
     leatherStripes,
-    bearStripes
+    bearStripes,
+    fluidStripes
   ].sort(() => 0.5 - Math.random())
 ]
 
