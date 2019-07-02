@@ -37,6 +37,14 @@ const organizers = [
     image: 'https://pbs.twimg.com/profile_images/1002524944968880129/5TejN8df_200x200.jpg',
     location: 'Amsterdam, Netherlands 🇳🇱',
     colors: fluidStripes
+  },
+  {
+    id: 5,
+    name: 'Carolyn Stransky',
+    twitterLink: 'carolstran',
+    image: 'https://newdevs.org/images/coach_carolyn.png',
+    location: 'Berlin, Germany 🇩🇪',
+    colors: []
   }
 ]
 
