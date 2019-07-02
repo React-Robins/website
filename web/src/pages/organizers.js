@@ -44,7 +44,7 @@ const organizers = [
     twitterLink: 'carolstran',
     image: 'https://newdevs.org/images/coach_carolyn.png',
     location: 'Berlin, Germany 🇩🇪',
-    colors: []
+    colors: biStripes
   }
 ]
 
