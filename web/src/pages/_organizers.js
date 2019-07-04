@@ -63,7 +63,7 @@ export default {
   ],
   'San Francisco': [
     {
-      name: 'Alejandra',
+      name: 'Alejandra Villa',
       twitterLink: 'AlxSavage',
       image: 'https://pbs.twimg.com/profile_images/1102602157990297601/FDgnWlcd_400x400.jpg',
       colors: gayStripes
