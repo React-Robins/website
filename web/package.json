@@ -14,7 +14,7 @@
     "@sanity/image-url": "0.140.12",
     "date-fns": "1.30.1",
     "dotenv": "8.0.0",
-    "gatsby": "2.13.3",
+    "gatsby": "2.12.0",
     "gatsby-plugin-react-helmet": "3.1.0",
     "gatsby-source-sanity": "5.0.0",
     "react": "16.8.6",
