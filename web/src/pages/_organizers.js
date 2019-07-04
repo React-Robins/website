@@ -52,7 +52,7 @@ export default {
       name: 'Ignacio Villanueva',
       twitterLink: 'IgnaciodeNuevo',
       image: 'https://pbs.twimg.com/profile_images/1050497062448586752/8F9sTc4s_400x400.jpg',
-      colors: []
+      colors: biStripes
     },
     {
       name: 'Calabria',
