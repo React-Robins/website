@@ -46,7 +46,7 @@ export default {
       name: 'Daniel Ehrenberg',
       twitterLink: 'littledan',
       image: 'https://pbs.twimg.com/profile_images/1117445887335096320/4NHfCPH2_400x400.jpg',
-      colors: []
+      colors: gayStripes
     },
     {
       name: 'Ignacio Villanueva',
