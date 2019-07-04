@@ -88,7 +88,13 @@ export default ({ site, dataset }) => {
           </label>
           <label htmlFor="gh">
             Github Username
-            <input required id="gh" type="text" value={gh} onChange={e => setGH(e.target.value.trim())} />
+            <input
+              required
+              id="gh"
+              type="text"
+              value={gh}
+              onChange={e => setGH(e.target.value.trim())}
+            />
           </label>
 
           <Button onClick={createUser}>I AM IN 🎉</Button>

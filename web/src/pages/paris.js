@@ -10,28 +10,6 @@ import Thanks from '../components/Thanks'
 import Panel from '../components/Panel'
 
 export const query = graphql`
-  fragment Paris_Image on Paris_Image {
-    crop {
-      _key
-      _type
-      top
-      bottom
-      left
-      right
-    }
-    hotspot {
-      _key
-      _type
-      x
-      y
-      height
-      width
-    }
-    asset {
-      _id
-    }
-  }
-
   query {
     paris {
       site: SiteSettings(id: "siteSettings") {
@@ -80,7 +58,9 @@ export const query = graphql`
         name
         twitterLink
         photo {
-          ...Paris_Image
+          asset {
+            _id
+          }
         }
       }
     }
