@@ -1,4 +1,10 @@
-import { gayStripes, aceStripes, biStripes, fluidStripes } from '../helpers/useRainbow'
+import {
+  gayStripes,
+  aceStripes,
+  biStripes,
+  fluidStripes,
+  lesbianStripes
+} from '../helpers/useRainbow'
 
 export default {
   main: [
@@ -58,7 +64,7 @@ export default {
       name: 'Calabria',
       twitterLink: 'Zurribulle',
       image: 'https://pbs.twimg.com/profile_images/879004825496633344/Xwi4sQFe_400x400.jpg',
-      colors: []
+      colors: lesbianStripes
     }
   ],
   'San Francisco': [
