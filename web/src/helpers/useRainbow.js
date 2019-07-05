@@ -64,7 +64,7 @@ export const fluidStripes = ['#FE75A4', '#FFFFFF', '#A90FC0', '#000000', '#303CB
 )
 
 // pastel enough
-const lesbianStripes = [
+export const lesbianStripes = [
   '#B60063',
   '#C84896',
   '#E253AB',
