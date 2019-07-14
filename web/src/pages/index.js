@@ -93,6 +93,12 @@ const IndexPage = ({ data = {} }) => {
             welcome.
             <br />
             Join us! There will be food and stickers 🌈
+            <br />
+            <br />
+            <b>
+              All the talks will be livestream, if you don't wish to be in any of the videos please
+              let us any of the organizers know
+            </b>
           </p>
         </Panel>
         <Panel heading="Speakers">
