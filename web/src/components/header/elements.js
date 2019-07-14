@@ -9,7 +9,7 @@ export const Nav = styled.nav`
   margin-top: 60px;
   margin-bottom: 30px;
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 600px) {
     flex-direction: column-reverse;
   }
 `
@@ -25,8 +25,9 @@ export const Title = styled(Link)`
   letter-spacing: -1.2px;
   text-decoration: none;
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 600px) {
     margin-top: 20px;
+    display: block;
   }
 `
 
