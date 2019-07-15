@@ -35,15 +35,13 @@ export default ({ site, dataset }) => {
         <Flag />
         <span>
           Location:{' '}
-          <a href="https://goo.gl/maps/VV6YUwPJaT79ESGG9" target="_blank" rel="noopener noreferrer">
+          <a href={site.googleMapsLink} target="_blank" rel="noopener noreferrer">
             {site.location}
           </a>
         </span>
 
         <span>
-          <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS&location=Adalbertstra%C3%9Fe+8%2C+10999+Berlin&dates=20190723T170000Z%2F20190723T193000Z">
-            {format(site.date, ['HH:mm Do [of] MMMM '])}
-          </a>
+          <a href={site.calendarLink}>{format(site.date, ['HH:mm Do [of] MMMM '])}</a>
         </span>
         <Calendar />
       </Info>

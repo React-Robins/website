@@ -18,6 +18,9 @@ export const query = graphql`
         location
         date
         organizers
+        googleMapsLink
+calendarLink
+cfp
       }
       mainOrganizer: allOrganizers {
         name
