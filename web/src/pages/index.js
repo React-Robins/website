@@ -19,8 +19,8 @@ export const query = graphql`
         date
         organizers
         googleMapsLink
-calendarLink
-cfp
+        calendarLink
+        cfp
       }
       mainOrganizer: allOrganizers {
         name
@@ -105,7 +105,7 @@ const IndexPage = ({ data = {} }) => {
           </p>
         </Panel>
         <Panel heading="Speakers">
-          <Speakers speakers={speakers} />
+          <Speakers cfp={site.cfp} speakers={speakers} />
         </Panel>
         <Panel heading={`Attendees (${attendees.length})`}>
           <Attendees attendees={attendees} />

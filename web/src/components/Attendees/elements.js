@@ -9,5 +9,6 @@ export const Attendees = styled.ul`
   img {
     border-radius: 50%;
     margin-left: -4px;
+    margin-top: -4px;
   }
 `
