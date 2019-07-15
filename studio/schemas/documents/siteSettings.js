@@ -36,6 +36,11 @@ export default {
       title: 'Calendar Link(https://jennamolby.com/tools/google-calendar-link-generator/)'
     },
     {
+      name: 'cfp',
+      type: 'boolean',
+      title: 'Is CFP open?'
+    },
+    {
       name: 'organizers',
       type: 'array',
       title: 'Keywords',
