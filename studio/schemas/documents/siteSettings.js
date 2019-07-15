@@ -43,7 +43,7 @@ export default {
     {
       name: 'organizers',
       type: 'array',
-      title: 'Keywords',
+      title: 'Organizers',
       description: 'The meetup organizers',
       of: [{type: 'string'}],
       options: {
