@@ -30,14 +30,35 @@ const toSizedPastelStrip = stripe => pastelizeStripe(toSizedStripe(stripe))
 export const gayStripes = ['#FF5D7D', '#FF764E', '#FFC144', '#88DF8E', '#00CCF2', '#B278D3'].map(
   toSizedStripe
 )
-export const transStripes = ['#55CDFC', '#F7A8B8', '#DDD', '#F7A8B8', '#55CDFC'].map(
+export const aceStripes = ['#000000', '#A3A3A3', '#DDD', '#810082'].map(toSizedPastelStrip)
+const [smallBlackStripe, greyStripe, smallWhiteStripe, greenStripe] = [
+  '#000',
+  sizedStripe('#BBC3C6', 2),
+  sizedStripe('#FEFEFE', 2),
+  sizedStripe('#B7F582', 2)
+]
+const agenderStripes = [
+  smallBlackStripe, 
+  greyStripe, 
+  smallWhiteStripe, 
+  greenStripe, 
+  smallWhiteStripe, 
+  greyStripe, 
+  smallBlackStripe
+].map(toSizedPastelStrip)
+const aromanticStripes = ['#3BA441', '#A8D378', '#FEFEFE', '#A9A9A9', '#000'].map(
+  toSizedPastelStrip
+)
+const bearStripes = ['#4e2801', '#ca4e05', '#fdd951', '#fde2ac', '#EEE', '#424242', '#000000'].map(
   toSizedPastelStrip
 )
 export const biStripes = [sizedStripe('#D9006F', 2), '#744D98', sizedStripe('#0033AB', 2)].map(
   toSizedPastelStrip
 )
-export const aceStripes = ['#000000', '#A3A3A3', '#DDD', '#810082'].map(toSizedPastelStrip)
-const panStripes = ['#FF008E', '#FFD800', '#00B3FF'].map(toSizedPastelStrip)
+export const fluidStripes = ['#FE75A4', '#FFFFFF', '#A90FC0', '#000000', '#303CBE'].map(
+  toSizedPastelStrip
+)
+const genderqueerStripes = ['#B999DD', '#FEFEFE', '#6A8C3A'].map(toSizedPastelStrip)
 const [blackStripe, blueStripe, redStripe, whiteStripe] = [
   sizedStripe('#000000', 4),
   sizedStripe('#0000c0', 4),
@@ -56,14 +77,15 @@ const leatherStripes = [
   blueStripe,
   blackStripe
 ].map(toSizedPastelStrip)
-const bearStripes = ['#4e2801', '#ca4e05', '#fdd951', '#fde2ac', '#EEE', '#424242', '#000000'].map(
+const nonBinaryStripes = ['#FDF333', '#FEFEFE', '#9858CF', '#2D2D2D'].map(toSizedPastelStrip)
+const panStripes = ['#FF008E', '#FFD800', '#00B3FF'].map(toSizedPastelStrip)
+const phillyStripes = ['#000', '#794F18', '#E40400', '#FE8C00', '#FFED00', '#008126', '#064EFF', '#750687'].map(
   toSizedPastelStrip
 )
-export const fluidStripes = ['#FE75A4', '#FFFFFF', '#A90FC0', '#000000', '#303CBE'].map(
-  toSizedPastelStrip
-)
-const phillyStripes = ['#000', '#794F18', '#E40400', '#FE8C00', '#FFED00', '#008126', '#064EFF', '#750687'].map(toSizedPastelStrip)
 const polyStripes = ['#F71BB9', '#08D569', '#1C91F6'].map(toSizedPastelStrip)
+export const transStripes = ['#55CDFC', '#F7A8B8', '#DDD', '#F7A8B8', '#55CDFC'].map(
+  toSizedPastelStrip
+)
 
 // pastel enough
 export const lesbianStripes = [
@@ -79,16 +101,20 @@ export const lesbianStripes = [
 const allStripes = [
   gayStripes,
   ...[
-    transStripes,
-    panStripes,
-    biStripes,
     aceStripes,
-    lesbianStripes,
-    leatherStripes,
+    agenderStripes,
+    aromanticStripes,
     bearStripes,
+    biStripes,
     fluidStripes,
+    genderqueerStripes,
+    leatherStripes,
+    lesbianStripes,
+    nonBinaryStripes,
+    panStripes,
     phillyStripes,
-    polyStripes
+    polyStripes,
+    transStripes
   ].sort(() => 0.5 - Math.random())
 ]
 
