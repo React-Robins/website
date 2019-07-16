@@ -11,7 +11,7 @@ const capitalize = s => {
   return s.charAt(0).toUpperCase() + s.slice(1)
 }
 
-const CodeOfConduct = ({ location }) => {
+const OrganizersPage = ({ location }) => {
   const { site } = location.state || {
     site: {
       title: 'QueerJS',
@@ -56,4 +56,4 @@ const CodeOfConduct = ({ location }) => {
   )
 }
 
-export default CodeOfConduct
+export default OrganizersPage
