@@ -74,5 +74,13 @@ export default {
       image: 'https://pbs.twimg.com/profile_images/1102602157990297601/FDgnWlcd_400x400.jpg',
       colors: gayStripes
     }
+  ],
+  'Stockholm': [
+    {
+      name: 'Aveline Estié',
+      twitterLink: 'Avilene_',
+      image: 'https://pbs.twimg.com/profile_images/1124036186438238208/yaEwBUi__400x400.jpg',
+      colors: biStripes
+    }
   ]
 }
