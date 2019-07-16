@@ -62,6 +62,8 @@ const bearStripes = ['#4e2801', '#ca4e05', '#fdd951', '#fde2ac', '#EEE', '#42424
 export const fluidStripes = ['#FE75A4', '#FFFFFF', '#A90FC0', '#000000', '#303CBE'].map(
   toSizedPastelStrip
 )
+const phillyStripes = ['#000', '#794F18', '#E40400', '#FE8C00', '#FFED00', '#008126', '#064EFF', '#750687'].map(toSizedPastelStrip)
+const polyStripes = ['#F71BB9', '#08D569', '#1C91F6'].map(toSizedPastelStrip)
 
 // pastel enough
 export const lesbianStripes = [
@@ -84,7 +86,9 @@ const allStripes = [
     lesbianStripes,
     leatherStripes,
     bearStripes,
-    fluidStripes
+    fluidStripes,
+    phillyStripes,
+    polyStripes
   ].sort(() => 0.5 - Math.random())
 ]
 
