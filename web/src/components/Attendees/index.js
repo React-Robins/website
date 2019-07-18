@@ -9,7 +9,7 @@ export default ({ attendees }) => {
       {shuffle(attendees).map(a => {
        // Pretty ugly but this way we do not get duplicate https://github.com urls
        const ghLink = `https://github.com/${a.ghLink.trim().replace('https://github.com/', '')}`;
-        <li key={a.id}>
+        return (<li key={a.id}>
           <a
             href={ghLink}
             target="_blank"
@@ -22,8 +22,8 @@ export default ({ attendees }) => {
               width="50"
             />
           </a>
-        </li>
-      ))}
+        </li>);
+      })}
     </Attendees>
   )
 }
