@@ -6,16 +6,18 @@ import shuffle from '../../helpers/shuffle'
 export default ({ attendees }) => {
   return (
     <Attendees>
-      {shuffle(attendees).map(a => (
+      {shuffle(attendees).map(a => {
+       // Pretty ugly but this way we do not get duplicate https://github.com urls
+       const ghLink = `https://github.com/${a.ghLink.trim().replace('https://github.com/', '')}`;
         <li key={a.id}>
           <a
-            href={`https://github.com/${a.ghLink}`}
+            href={ghLink}
             target="_blank"
             title={a.name}
             rel="noopener noreferrer"
           >
             <img
-              src={`https://github.com/${a.ghLink.trim()}.png?size=50`}
+              src={`${ghLink}.png?size=50`}
               alt={a.name}
               width="50"
             />
