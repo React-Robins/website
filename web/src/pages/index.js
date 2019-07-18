@@ -36,7 +36,7 @@ export const query = graphql`
 
 const IndexPage = ({ data = {} }) => {
   const {
-    berlin: { site, organizers, mainOrganizer, thanks }
+    berlin: { site, mainOrganizer }
   } = data
 
   const futureMeetups = cities.filter(city => isFuture(city.date))
