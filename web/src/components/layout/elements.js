@@ -1,6 +1,7 @@
 import styled, { createGlobalStyle } from 'styled-components'
 import otherFont from '../../fonts/neutra-text/style.css'
 import RainbowWithClicker from '../rainbow/RainbowWithClicker'
+import animate from 'animate.css'
 
 export const theme = {
   darkPurple: '#1E1126',
@@ -10,6 +11,7 @@ export const theme = {
 
 export const Global = createGlobalStyle`
 ${otherFont}
+${animate}
 
 body {
   font-family: 'Roboto Mono';
