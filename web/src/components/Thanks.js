@@ -32,7 +32,13 @@ export default ({ thanks, mainOrganizer, site }) => {
       .
       <br />
       Organized by a{' '}
-      <Link state={{ site: site }} to="/organizers">
+      <Link
+        css={`
+          padding-bottom: 40px;
+        `}
+        state={{ site: site }}
+        to="/organizers"
+      >
         bunch of humans
       </Link>
     </>

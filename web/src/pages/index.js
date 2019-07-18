@@ -8,6 +8,8 @@ import Panel from '../components/Panel'
 import cities from './_cities'
 import City from '../components/City'
 
+import { isFuture } from 'date-fns'
+
 export const query = graphql`
   query {
     berlin {
@@ -37,23 +39,42 @@ const IndexPage = ({ data = {} }) => {
     berlin: { site, organizers, mainOrganizer, thanks }
   } = data
 
+  const futureMeetups = cities.filter(city => isFuture(city.date))
+  const pastMeetups = cities.filter(city => !isFuture(city.date))
+
   return (
     <Layout>
       <SEO title={site.title} description={site.description} />
       <main>
         <h1 hidden>Welcome to {site.title}</h1>
       </main>
-      <Panel heading="Cities">
-        {cities.map(city => (
-          <City {...city} key={city.city} />
-        ))}
-        {/* <Thanks
-          organizers={organizers}
-          thanks={thanks}
-          site={site}
-          mainOrganizer={mainOrganizer.find(o => o.main)}
-        /> */}
-      </Panel>
+      {futureMeetups.length ? (
+        <Panel heading="Upcoming Meetups">
+          {futureMeetups.map(city => (
+            <City {...city} key={city.city} />
+          ))}
+        </Panel>
+      ) : null}
+      {pastMeetups.length ? (
+        <Panel heading="Past Meetups">
+          {pastMeetups.map(city => (
+            <City {...city} key={city.city} past />
+          ))}
+        </Panel>
+      ) : null}
+
+      <Thanks
+        organizers={[]}
+        thanks={[
+          {
+            link: 'https://www.flaticon.com',
+            name: 'Thank you to flaticon',
+            reason: 'icons'
+          }
+        ]}
+        site={site}
+        mainOrganizer={mainOrganizer.find(o => o.main)}
+      />
     </Layout>
   )
 }

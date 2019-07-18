@@ -10,11 +10,21 @@ import ITNGIcon from '../assets/icons/barcelona/itnig.svg'
 import BarcelonaIcon from '../assets/icons/barcelona/barcelona.svg'
 import BarcelonaHoverIcon from '../assets/icons/barcelona/barcelona-hover.svg'
 
+import WebflowIcon from '../assets/icons/sf/webflow.svg'
+import SfIcon from '../assets/icons/sf/sf.svg'
+import SfHoverIcon from '../assets/icons/sf/sf-hover.svg'
+
+import LondonIcon from '../assets/icons/london/london.svg'
+import LondonHoverIcon from '../assets/icons/london/london-hover.svg'
+import MicrosoftIcon from '../assets/icons/london/microsoft.svg'
+
+const makeDate = (d, m, y) => new Date(y, m - 1, d)
+
 const cities = [
   {
     city: 'Berlin',
     link: '/berlin',
-    date: '23rd July',
+    date: makeDate(23, 7, 2019),
     icon: BerlinIcon,
     iconHover: BerlinHoverIcon,
     hostIcon: CoupIcon,
@@ -23,7 +33,7 @@ const cities = [
   {
     city: 'Barcelona',
     link: '/barcelona',
-    date: '3rd Septmeber',
+    date: makeDate(4, 9, 2019),
     icon: BarcelonaIcon,
     iconHover: BarcelonaHoverIcon,
 
@@ -33,11 +43,29 @@ const cities = [
   {
     city: 'Stockholm',
     link: '/stockholm',
-    date: '8th November',
+    date: makeDate(8, 10, 2019),
     icon: StockholmIcon,
     iconHover: StockholmHoverIcon,
     hostIcon: KlarnaIcon,
     hostName: 'Klarna'
+  },
+  {
+    city: 'San Francisco',
+    link: '/san-francisco',
+    date: makeDate(2, 11, 2019),
+    icon: SfIcon,
+    iconHover: SfHoverIcon,
+    hostIcon: WebflowIcon,
+    hostName: 'Webflow'
+  },
+  {
+    city: 'London',
+    link: '/London',
+    date: makeDate(20, 9, 2019),
+    icon: LondonIcon,
+    iconHover: LondonHoverIcon,
+    hostIcon: MicrosoftIcon,
+    hostName: 'Microsoft'
   }
 ]
 
