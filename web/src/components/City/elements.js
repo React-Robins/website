@@ -5,10 +5,11 @@ export const Wrapper = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  margin-bottom: 40px;
+  padding-top: 40px;
   padding-bottom: 40px;
-  border-bottom: 3px solid #605367;
+  border: 3px solid #605367;
   justify-content: center;
+  margin-bottom: -3px;
 `
 export const sizes = css`
   width: 190px;
@@ -19,6 +20,14 @@ export const CityInfo = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 40px;
+  flex-basis: 50%;
+  align-items: flex-start;
+`
+
+export const CityIcon = styled.div`
+  flex-basis: 50%;
+  text-align: center;
+  ${sizes}
 `
 
 export const Name = styled.h2`
@@ -34,19 +43,19 @@ export const Name = styled.h2`
 `
 
 export const MeetupDate = styled.p`
-  font-size: 30px;
+  font-size: 1em;
   font-weight: bold;
   margin: 0;
   ${props =>
     props.past &&
     `
     color: #605367
-  `}
+  `};
 `
 
 export const Host = styled.img`
-  height: 50px;
-  margin-top: 10px;
+  height: 40px;
+  margin-top: 20px;
 
   ${props =>
     props.past &&
