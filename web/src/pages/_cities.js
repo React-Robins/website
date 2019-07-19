@@ -60,7 +60,7 @@ const cities = [
   },
   {
     city: 'London',
-    link: '/London',
+    link: '/london',
     date: makeDate(20, 9, 2019),
     icon: LondonIcon,
     iconHover: LondonHoverIcon,
