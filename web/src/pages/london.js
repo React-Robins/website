@@ -74,13 +74,14 @@ const IndexPage = ({ data = {} }) => {
   const {
     london: { site, organizers, mainOrganizer, thanks, speakers, attendees, sponsors }
   } = data
+  const dataset = 'london'
 
   return (
     <Layout>
       <SEO title={site.title} description={site.description} />
       <main>
         <h1 hidden>Welcome to {site.title}</h1>
-        <Info site={site} dataset="london" />
+        <Info site={site} dataset={dataset} />
         <Panel heading="What?">
           <p
             css={`
@@ -99,7 +100,7 @@ const IndexPage = ({ data = {} }) => {
           </p>
         </Panel>
         <Panel heading="Speakers">
-          <Speakers dataset="london" cfp={site.cfp} speakers={speakers} />
+          <Speakers dataset={dataset} cfp={site.cfp} speakers={speakers} />
         </Panel>
         <Panel heading={`Attendees (${attendees.length})`}>
           <Attendees attendees={attendees} />
