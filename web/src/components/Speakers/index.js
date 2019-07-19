@@ -4,7 +4,7 @@ import RainbowWithClicker from '../rainbow/RainbowWithClicker'
 
 import { InlineRainbow, SpeakerPhoto, CFP, SpeakersGrid, Unstyled, UnstyledLink } from './elements'
 
-const Speakers = ({ speakers, cfp }) => {
+const Speakers = ({ speakers, cfp, dataset }) => {
   return (
     <SpeakersGrid>
       {speakers.map(human => (
@@ -20,7 +20,7 @@ const Speakers = ({ speakers, cfp }) => {
               {human.image ? (
                 <img width="221" height="221" src={human.image} />
               ) : (
-                <Figure node={human.photo} />
+                <Figure dataset={dataset} node={human.photo} />
               )}
             </SpeakerPhoto>
             <Unstyled>{human.name}</Unstyled>
