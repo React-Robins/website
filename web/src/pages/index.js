@@ -39,8 +39,10 @@ const IndexPage = ({ data = {} }) => {
     berlin: { site, mainOrganizer }
   } = data
 
-  const futureMeetups = cities.filter(city => isFuture(city.date))
-  const pastMeetups = cities.filter(city => !isFuture(city.date))
+  const sortedCities = cities.sort(({ date }, { date: otherDate }) => date - otherDate)
+
+  const futureMeetups = sortedCities.filter(city => isFuture(city.date))
+  const pastMeetups = sortedCities.filter(city => !isFuture(city.date))
 
   return (
     <Layout>
