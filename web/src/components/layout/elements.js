@@ -64,7 +64,7 @@ export const Wrapper = styled.main`
 
 export const SideRainbow = styled(RainbowWithClicker)`
   position: fixed;
-  width: 2em;
+  width: 1em;
   left: 0;
   top: 0;
   bottom: 0;
