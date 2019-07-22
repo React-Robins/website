@@ -38,12 +38,12 @@ const [smallBlackStripe, greyStripe, smallWhiteStripe, greenStripe] = [
   sizedStripe('#B7F582', 2)
 ]
 const agenderStripes = [
-  smallBlackStripe, 
-  greyStripe, 
-  smallWhiteStripe, 
-  greenStripe, 
-  smallWhiteStripe, 
-  greyStripe, 
+  smallBlackStripe,
+  greyStripe,
+  smallWhiteStripe,
+  greenStripe,
+  smallWhiteStripe,
+  greyStripe,
   smallBlackStripe
 ].map(toSizedPastelStrip)
 const aromanticStripes = ['#3BA441', '#A8D378', '#FEFEFE', '#A9A9A9', '#000'].map(
@@ -79,9 +79,16 @@ const leatherStripes = [
 ].map(toSizedPastelStrip)
 const nonBinaryStripes = ['#FDF333', '#FEFEFE', '#9858CF', '#2D2D2D'].map(toSizedPastelStrip)
 const panStripes = ['#FF008E', '#FFD800', '#00B3FF'].map(toSizedPastelStrip)
-const phillyStripes = ['#000', '#794F18', '#E40400', '#FE8C00', '#FFED00', '#008126', '#064EFF', '#750687'].map(
-  toSizedPastelStrip
-)
+const phillyStripes = [
+  '#000',
+  '#794F18',
+  '#E40400',
+  '#FE8C00',
+  '#FFED00',
+  '#008126',
+  '#064EFF',
+  '#750687'
+].map(toSizedPastelStrip)
 const polyStripes = ['#F71BB9', '#08D569', '#1C91F6'].map(toSizedPastelStrip)
 export const transStripes = ['#55CDFC', '#F7A8B8', '#DDD', '#F7A8B8', '#55CDFC'].map(
   toSizedPastelStrip
@@ -98,30 +105,30 @@ export const lesbianStripes = [
   '#990200'
 ].map(toSizedStripe)
 
-const allStripes = [
-  gayStripes,
+export const allStripes = [
+  { stripes: gayStripes, name: 'Gay' },
   ...[
-    aceStripes,
-    agenderStripes,
-    aromanticStripes,
-    bearStripes,
-    biStripes,
-    fluidStripes,
-    genderqueerStripes,
-    leatherStripes,
-    lesbianStripes,
-    nonBinaryStripes,
-    panStripes,
-    phillyStripes,
-    polyStripes,
-    transStripes
+    { stripes: aceStripes, name: 'Asexual' },
+    { stripes: agenderStripes, name: 'Agender' },
+    { stripes: aromanticStripes, name: 'Aromantic' },
+    { stripes: bearStripes, name: 'Bear' },
+    { stripes: biStripes, name: 'Bisexual' },
+    { stripes: fluidStripes, name: 'Genderfluid' },
+    { stripes: genderqueerStripes, name: 'Genderqueer' },
+    { stripes: leatherStripes, name: 'Leather' },
+    { stripes: lesbianStripes, name: 'Lesbian' },
+    { stripes: nonBinaryStripes, name: 'Non-Binary' },
+    { stripes: panStripes, name: 'Pansexual' },
+    { stripes: phillyStripes, name: `Philly's pride flag` },
+    { stripes: polyStripes, name: 'Poly' },
+    { stripes: transStripes, name: 'Trans' }
   ].sort(() => 0.5 - Math.random())
 ]
 
 const useStripesInCtx = () => {
   const [stripes, setStripes] = useState(0)
   const cycle = () => setStripes(s => (s + 1) % allStripes.length)
-  return [allStripes[stripes], { cycle }]
+  return [allStripes[stripes].stripes, { cycle }]
 }
 
 const RainbowContext = createContext([gayStripes, {}])

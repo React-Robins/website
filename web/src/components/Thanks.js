@@ -41,6 +41,10 @@ export default ({ thanks, mainOrganizer, site }) => {
       >
         bunch of humans
       </Link>
+      <br />
+      <Link state={{ site: site }} to="/flags">
+        What's with all the flags?
+      </Link>
     </>
   )
 }
