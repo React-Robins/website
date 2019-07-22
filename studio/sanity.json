@@ -26,6 +26,30 @@
       }
     },
     {
+      "name": "barcelona",
+      "title": "Barcelona",
+      "api": {
+        "projectId": "atggkqis",
+        "dataset": "barcelona"
+      }
+    },
+    {
+      "name": "stockholm",
+      "title": "Stockholm",
+      "api": {
+        "projectId": "atggkqis",
+        "dataset": "stockholm"
+      }
+    },
+    {
+      "name": "sf",
+      "title": "SF",
+      "api": {
+        "projectId": "atggkqis",
+        "dataset": "sf"
+      }
+    },
+    {
       "name": "paris",
       "title": "Paris",
       "api": {
