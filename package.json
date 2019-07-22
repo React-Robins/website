@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@sanity/base": "^0.141.6",
+    "@sanity/components": "^0.141.6",
     "@sanity/core": "^0.141.6"
   }
 }
