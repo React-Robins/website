@@ -109,24 +109,72 @@ export const lesbianStripes = [
 ].map(toSizedStripe)
 
 export const allStripes = [
-  { stripes: gayStripes, name: 'Gay' },
+  {
+    stripes: gayStripes,
+    name: 'Rainbow',
+    wiki: 'https://en.wikipedia.org/wiki/Rainbow_flag_(LGBT_movement)'
+  },
   ...[
-    { stripes: aceStripes, name: 'Asexual' },
-    { stripes: agenderStripes, name: 'Agender' },
-    { stripes: aromanticStripes, name: 'Aromantic' },
-    { stripes: bearStripes, name: 'Bear' },
-    { stripes: biStripes, name: 'Bisexual' },
-    { stripes: fluidStripes, name: 'Genderfluid' },
-    { stripes: genderqueerStripes, name: 'Genderqueer' },
-    { stripes: leatherStripes, name: 'Leather' },
-    { stripes: lesbianStripes, name: 'Lesbian' },
-    { stripes: nonBinaryStripes, name: 'Non-Binary' },
-    { stripes: panStripes, name: 'Pansexual' },
-    { stripes: phillyStripes, name: `Philly's pride flag` },
-    { stripes: polyStripes, name: 'Poly' },
-    { stripes: transStripes, name: 'Trans' },
-    { stripes: lazyBiBoy, name: 'Lazy bisexual (boy)' },
-    { stripes: lazyBiGirl, name: 'Lazy bisexual (girl)' }
+    { stripes: aceStripes, name: 'Asexual', wiki: 'https://en.wikipedia.org/wiki/Asexuality' },
+    { stripes: agenderStripes, name: 'Agender', wiki: 'https://en.wikipedia.org/wiki/Agender' },
+    {
+      stripes: aromanticStripes,
+      name: 'Aromantic',
+      wiki: 'https://en.wikipedia.org/wiki/Romantic_orientation#Aromanticism'
+    },
+    {
+      stripes: bearStripes,
+      name: 'Bear',
+      wiki: 'https://en.wikipedia.org/wiki/Bear_flag_(gay_culture)'
+    },
+    { stripes: biStripes, name: 'Bisexual', wiki: 'https://en.wikipedia.org/wiki/Bisexuality' },
+    {
+      stripes: fluidStripes,
+      name: 'Genderfluid',
+      wiki: 'https://en.wikipedia.org/wiki/Genderfluid'
+    },
+    {
+      stripes: genderqueerStripes,
+      name: 'Genderqueer',
+      wiki: 'https://en.wikipedia.org/wiki/Genderqueer'
+    },
+    {
+      stripes: leatherStripes,
+      name: 'Leather',
+      wiki: 'https://en.wikipedia.org/wiki/Leather_Pride_flag'
+    },
+    {
+      stripes: lesbianStripes,
+      name: 'Lesbian',
+      wiki: 'https://en.wikipedia.org/wiki/LGBT_symbols#Lesbianism'
+    },
+    {
+      stripes: nonBinaryStripes,
+      name: 'Non-Binary',
+      wiki: 'https://en.wikipedia.org/wiki/Non-binary_gender'
+    },
+    { stripes: panStripes, name: 'Pansexual', wiki: 'https://en.wikipedia.org/wiki/Pansexuality' },
+    {
+      stripes: phillyStripes,
+      name: `Philly's pride flag`,
+      wiki: 'https://en.wikipedia.org/wiki/LGBT_symbols#cite_ref-Philadelphia_93-0'
+    },
+    { stripes: polyStripes, name: 'Poly', wiki: 'https://en.wikipedia.org/wiki/Polyamory' },
+    {
+      stripes: transStripes,
+      name: 'Trans',
+      wiki: 'https://en.wikipedia.org/wiki/Transgender_flags'
+    },
+    {
+      stripes: lazyBiBoy,
+      name: 'Lazy bisexual',
+      wiki: 'https://twitter.com/freezydorito/status/1152168216120221697'
+    },
+    {
+      stripes: lazyBiGirl,
+      name: 'Lazy bisexual',
+      wiki: 'https://twitter.com/freezydorito/status/1152168216120221697'
+    }
   ].sort(() => 0.5 - Math.random())
 ]
 

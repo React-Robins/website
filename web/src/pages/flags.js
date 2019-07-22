@@ -16,7 +16,8 @@ const Flag = styled(Rainbow)`
   margin-bottom: 1em;
 `
 
-const Box = styled.li`
+const Box = styled.a`
+  display: block;
   border: 3px solid #605367;
   justify-content: center;
   margin-bottom: -3px;
@@ -48,7 +49,7 @@ const OrganizersPage = ({ location }) => {
         <Panel heading="All the flags">
           <ul>
             {allStripes.map(stripe => (
-              <Box>
+              <Box href={stripe.wiki} target="_blank">
                 <Flag stripes={stripe.stripes} />
                 <Title>{stripe.name}</Title>
               </Box>
