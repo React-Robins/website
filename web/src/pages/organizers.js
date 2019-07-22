@@ -46,7 +46,7 @@ const OrganizersPage = ({ location }) => {
                 >
                   {capitalize(location)}
                 </h2>
-                <Speakers speakers={organizers[location]} />
+                <Speakers organizers speakers={organizers[location]} />
               </>
             )
           })}

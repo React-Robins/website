@@ -1,7 +1,7 @@
 import React from 'react'
 import useHover from '../../helpers/useHover'
 
-import { format, isFuture } from 'date-fns'
+import { format } from 'date-fns'
 
 import { Wrapper, sizes, CityInfo, CityIcon, Name, MeetupDate, Host } from './elements'
 
