@@ -52,6 +52,9 @@ const aromanticStripes = ['#3BA441', '#A8D378', '#FEFEFE', '#A9A9A9', '#000'].ma
 const bearStripes = ['#4e2801', '#ca4e05', '#fdd951', '#fde2ac', '#EEE', '#424242', '#000000'].map(
   toSizedPastelStrip
 )
+const lazyBiBoy = [sizedStripe('#D9006F', 2), '#744D98'].map(toSizedPastelStrip)
+const lazyBiGirl = ['#744D98', sizedStripe('#0033AB', 2)].map(toSizedPastelStrip)
+
 export const biStripes = [sizedStripe('#D9006F', 2), '#744D98', sizedStripe('#0033AB', 2)].map(
   toSizedPastelStrip
 )
@@ -121,7 +124,9 @@ export const allStripes = [
     { stripes: panStripes, name: 'Pansexual' },
     { stripes: phillyStripes, name: `Philly's pride flag` },
     { stripes: polyStripes, name: 'Poly' },
-    { stripes: transStripes, name: 'Trans' }
+    { stripes: transStripes, name: 'Trans' },
+    { stripes: lazyBiBoy, name: 'Lazy bisexual (boy)' },
+    { stripes: lazyBiGirl, name: 'Lazy bisexual (girl)' }
   ].sort(() => 0.5 - Math.random())
 ]
 
