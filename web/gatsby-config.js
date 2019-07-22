@@ -33,6 +33,14 @@ module.exports = {
     {
       resolve: 'gatsby-source-graphql',
       options: {
+        typeName: 'Barcelona',
+        fieldName: 'barcelona',
+        url: 'https://atggkqis.api.sanity.io/v1/graphql/barcelona/default'
+      }
+    },
+    {
+      resolve: 'gatsby-source-graphql',
+      options: {
         typeName: 'London',
         fieldName: 'london',
         url: 'https://atggkqis.api.sanity.io/v1/graphql/london/default'
