@@ -21,7 +21,7 @@ const Speakers = ({ speakers, cfp, dataset, organizers }) => {
                 <img
                   width="221"
                   height="221"
-                  src={`https://twitter.com/${human.twitterLink}/profile_image?size=original`}
+                  src={`https://avatars.io/twitter/${human.twitterLink}`}
                   alt={human.name}
                 />
               ) : (
