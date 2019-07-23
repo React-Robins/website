@@ -41,6 +41,14 @@ module.exports = {
     {
       resolve: 'gatsby-source-graphql',
       options: {
+        typeName: 'sf',
+        fieldName: 'sf',
+        url: 'https://atggkqis.api.sanity.io/v1/graphql/sf/default'
+      }
+    },
+    {
+      resolve: 'gatsby-source-graphql',
+      options: {
         typeName: 'Stockholm',
         fieldName: 'stockholm',
         url: 'https://atggkqis.api.sanity.io/v1/graphql/stockholm/default'
