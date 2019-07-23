@@ -8,7 +8,6 @@ import Attendees from '../components/Attendees'
 import Speakers from '../components/Speakers'
 import Thanks from '../components/Thanks'
 import Panel from '../components/Panel'
-
 export const query = graphql`
   query {
     sf {
