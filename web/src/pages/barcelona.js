@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
 import Sponsors from '../components/Sponsors'
-import Info from '../components/Info/'
+import Info from '../components/Info'
 import Attendees from '../components/Attendees'
 import Speakers from '../components/Speakers'
 import Thanks from '../components/Thanks'
@@ -11,13 +11,16 @@ import Panel from '../components/Panel'
 
 export const query = graphql`
   query {
-    paris {
+    barcelona {
       site: SiteSettings(id: "siteSettings") {
         title
         description
         location
         date
         organizers
+        googleMapsLink
+        calendarLink
+        cfp
       }
       mainOrganizer: allOrganizers {
         name
@@ -69,15 +72,16 @@ export const query = graphql`
 
 const IndexPage = ({ data = {} }) => {
   const {
-    paris: { site, organizers, mainOrganizer, thanks, speakers, attendees, sponsors }
+    barcelona: { site, organizers, mainOrganizer, thanks, speakers, attendees, sponsors }
   } = data
+  const dataset = 'barcelona'
 
   return (
     <Layout>
       <SEO title={site.title} description={site.description} />
       <main>
         <h1 hidden>Welcome to {site.title}</h1>
-        <Info site={site} dataset="paris" />
+        <Info site={site} dataset={dataset} />
         <Panel heading="What?">
           <p
             css={`
@@ -86,20 +90,19 @@ const IndexPage = ({ data = {} }) => {
               line-height: 28px;
             `}
           >
-            This idea started when a random dude on twitter said he doesn't think "React Girls" is a
-            good idea because he's gay and wouldn't want to be in a conference with only gay people.
-            So now welcome to QueerJS.
-            <br />
             This is a meetup where anyone is welcome to attend and support the speakers and the idea
             but all the speakers will be Queer.
+            <br />
+            This meetup exists to give a voice to everyone, to make a safe space where everyone is
+            welcome.
             <br />
             Join us! There will be food and stickers 🌈
           </p>
         </Panel>
         <Panel heading="Speakers">
-          <Speakers speakers={speakers} />
+          <Speakers dataset={dataset} cfp={site.cfp} speakers={speakers} />
         </Panel>
-        <Panel heading="Attendees">
+        <Panel heading={`Attendees (${attendees.length})`}>
           <Attendees attendees={attendees} />
         </Panel>
 

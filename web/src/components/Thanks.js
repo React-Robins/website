@@ -32,8 +32,18 @@ export default ({ thanks, mainOrganizer, site }) => {
       .
       <br />
       Organized by a{' '}
-      <Link state={{ site: site }} to="/organizers">
+      <Link
+        css={`
+          padding-bottom: 40px;
+        `}
+        state={{ site: site }}
+        to="/organizers"
+      >
         bunch of humans
+      </Link>
+      <br />
+      <Link state={{ site: site }} to="/flags">
+        What's with all the flags?
       </Link>
     </>
   )

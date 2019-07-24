@@ -4,7 +4,7 @@ import RainbowWithClicker from '../rainbow/RainbowWithClicker'
 
 import { InlineRainbow, SpeakerPhoto, CFP, SpeakersGrid, Unstyled, UnstyledLink } from './elements'
 
-const Speakers = ({ speakers, cfp }) => {
+const Speakers = ({ speakers, cfp, dataset, organizers }) => {
   return (
     <SpeakersGrid>
       {speakers.map(human => (
@@ -17,10 +17,15 @@ const Speakers = ({ speakers, cfp }) => {
           >
             <SpeakerPhoto>
               <InlineRainbow flag={human.colors} />
-              {human.image ? (
-                <img width="221" height="221" src={human.image} />
+              {organizers ? (
+                <img
+                  width="221"
+                  height="221"
+                  src={`https://avatars.io/twitter/${human.twitterLink}`}
+                  alt={human.name}
+                />
               ) : (
-                <Figure node={human.photo} />
+                <Figure dataset={dataset} node={human.photo} />
               )}
             </SpeakerPhoto>
             <Unstyled>{human.name}</Unstyled>
