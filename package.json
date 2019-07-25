@@ -25,6 +25,7 @@
     "@sanity/default-layout": "^0.141.6",
     "@sanity/default-login": "^0.141.5",
     "@sanity/desk-tool": "^0.141.6",
-    "sanity-plugin-dashboard-widget-document-list": "^0.0.8"
+    "sanity-plugin-dashboard-widget-document-list": "^0.0.8",
+    "sanity-plugin-dashboard-widget-netlify": "^1.0.1"
   }
 }
