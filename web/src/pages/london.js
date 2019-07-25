@@ -100,8 +100,18 @@ const IndexPage = ({ data = {} }) => {
           </p>
         </Panel>
         <Panel heading="Speakers">
-          <Speakers dataset={dataset} cfp={site.cfp} speakers={speakers} />
+          <Speakers dataset={dataset} cfp={site.cfp} speakers={speakers.filter(s => !s.mc)} />
         </Panel>
+        {speakers.filter(s => s.mc).length ? (
+          <Panel heading="MC">
+            <Speakers
+              noSpeak
+              dataset={dataset}
+              cfp={site.cfp}
+              speakers={speakers.filter(s => s.mc)}
+            />
+          </Panel>
+        ) : null}
         <Panel heading={`Attendees (${attendees.length})`}>
           <Attendees attendees={attendees} />
         </Panel>

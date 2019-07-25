@@ -4,7 +4,7 @@ import RainbowWithClicker from '../rainbow/RainbowWithClicker'
 
 import { InlineRainbow, SpeakerPhoto, CFP, SpeakersGrid, Unstyled, UnstyledLink } from './elements'
 
-const Speakers = ({ speakers, cfp, dataset, organizers }) => {
+const Speakers = ({ noSpeak, speakers, cfp, dataset, organizers }) => {
   return (
     <SpeakersGrid>
       {speakers.map(human => (
@@ -33,7 +33,7 @@ const Speakers = ({ speakers, cfp, dataset, organizers }) => {
           </UnstyledLink>
         </li>
       ))}
-      {cfp && (
+      {cfp && !noSpeak && (
         <li>
           <UnstyledLink
             href="https://github.com/queerjs/queerjs-talk-proposals/issues/new/choose"
