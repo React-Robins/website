@@ -48,8 +48,8 @@ const OrganizersPage = ({ location }) => {
         <h1 hidden>Welcome to {site.title}</h1>
         <Panel heading="All the flags">
           <ul>
-            {allStripes.map(stripe => (
-              <Box href={stripe.wiki} target="_blank">
+            {allStripes.map((stripe, i) => (
+              <Box key={i} href={stripe.wiki} target="_blank">
                 <Flag stripes={stripe.stripes} />
                 <Title>{stripe.name}</Title>
               </Box>
