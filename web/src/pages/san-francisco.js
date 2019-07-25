@@ -56,7 +56,7 @@ export const query = graphql`
       }
       speakers: allSpeakers {
         id: _id
-        job
+        mc
         name
         twitterLink
         photo {
