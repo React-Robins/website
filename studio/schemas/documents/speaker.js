@@ -9,24 +9,19 @@ export default {
       title: 'Name'
     },
     {
-      name: 'job',
-      type: 'string',
-      title: 'Job'
-    },
-    {
       name: 'photo',
       type: 'image',
       title: 'Photo'
     },
     {
-      name: 'ghLink',
-      type: 'string',
-      title: 'Github URL'
-    },
-    {
       name: 'twitterLink',
       type: 'string',
       title: 'Twitter URL'
+    },
+    {
+      name: 'mc',
+      type: 'boolean',
+      title: 'MC'
     }
   ],
   preview: {
