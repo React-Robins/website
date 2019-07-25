@@ -175,7 +175,7 @@ export const allStripes = [
       name: 'Lazy bisexual',
       wiki: 'https://twitter.com/freezydorito/status/1152168216120221697'
     }
-  ].sort(() => 0.5 - Math.random())
+  ]
 ]
 
 const useStripesInCtx = () => {
