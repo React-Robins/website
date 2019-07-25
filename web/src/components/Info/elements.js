@@ -48,6 +48,10 @@ export const RsvpButton = styled(Button)`
   font-size: 1em;
   cursor: pointer;
 
+  a {
+    color: ${props => props.theme.darkPurple};
+  }
+
   &:hover {
     transform: scale(1.025);
   }

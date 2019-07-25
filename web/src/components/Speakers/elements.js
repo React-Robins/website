@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import RainbowWithClicker from '../rainbow/RainbowWithClicker'
+import { Link } from 'gatsby'
 
 export const InlineRainbow = styled(RainbowWithClicker)`
   position: absolute;
@@ -60,6 +61,6 @@ export const Unstyled = styled.h3`
   font-weight: 600;
 `
 
-export const UnstyledLink = styled.a`
+export const UnstyledLink = styled(Link)`
   text-decoration: none;
 `

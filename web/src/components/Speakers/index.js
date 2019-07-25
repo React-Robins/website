@@ -35,12 +35,7 @@ const Speakers = ({ noSpeak, speakers, cfp, dataset, organizers }) => {
       ))}
       {cfp && !noSpeak && (
         <li>
-          <UnstyledLink
-            href="https://github.com/queerjs/queerjs-talk-proposals/issues/new/choose"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Speak at QueerJS"
-          >
+          <UnstyledLink to="/speak" title="Speak at QueerJS">
             <SpeakerPhoto>
               <RainbowWithClicker>
                 <CFP>
