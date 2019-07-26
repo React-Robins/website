@@ -3,7 +3,8 @@ import {
   aceStripes,
   biStripes,
   fluidStripes,
-  lesbianStripes
+  lesbianStripes,
+  phillyStripes
 } from '../helpers/useRainbow'
 
 export default {
@@ -34,6 +35,11 @@ export default {
       name: 'Paul Verbeek-Mast',
       twitterLink: 'paul_v_m',
       colors: fluidStripes
+    },
+    {
+      name: 'Lian Li',
+      twitterLink: 'Chimney42',
+      colors: phillyStripes
     }
   ],
   barcelona: [
