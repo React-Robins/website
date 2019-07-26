@@ -10,6 +10,7 @@ const Speakers = ({ noSpeak, speakers, cfp, dataset, organizers }) => {
       {speakers.map(human => (
         <li key={human.id}>
           <UnstyledLink
+            as="a"
             href={`https://twitter.com/${human.twitterLink}`}
             target="_blank"
             rel="noopener noreferrer"
