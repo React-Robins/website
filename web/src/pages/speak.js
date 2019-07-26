@@ -22,9 +22,10 @@ export default () => {
           We're happy you're here 🌈
         </Panel>
         <Panel heading="How do I submit a talk?">
-          Click the shinny button at the bottom and on the repo and use one our issue templates to
-          guide you through your talk submission. If you need any help with this process because you
-          are new to GitHub, git or speaking in general, ping one of the organizers on{' '}
+          Click the shiny button at the bottom! That will lead you to our GitHub repo and from
+          there, you can use one our of issue templates to guide you through your talk submission.
+          If you need any help with this process because you are new to GitHub, git or speaking in
+          general, ping one of the organizers on{' '}
           <a href="https://discord.gg/jhMwNfK" rel="noopener noreferrer" target="_blank">
             Discord
           </a>{' '}
@@ -55,6 +56,11 @@ export default () => {
             QueerJS website
           </a>{' '}
           for a list of the upcoming (and past) meetups.
+        </Panel>
+        <Panel heading="What if the lineup for the location I want to speak at is full?">
+          It's very, very likely that if we host a QueerJS in a city, we'll do it again in the same
+          city one day. So we'd still encourage you to submit your talk. That way, you'll be at the
+          top of the list for the next edition!
         </Panel>
         <Panel heading="Can you pay for my flights? ">
           Actually, there's a good chance that we can. If you'd like to speak at an upcoming meetup
