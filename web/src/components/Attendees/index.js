@@ -5,7 +5,7 @@ import shuffle from '../../helpers/shuffle'
 
 const dedupeAttendees = (attendeesArray) => {
   const list = [];
-  const deduped = ourList.reduce((acc, current) => {
+  const deduped = attendeesArray.reduce((acc, current) => {
     const cleanGhLink = current.ghLink.startsWith('@') ? current.ghLink.slice(1) : current.ghLink
 
 
