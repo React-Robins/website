@@ -26,6 +26,14 @@
       }
     },
     {
+      "name": "amasterdam",
+      "title": "Amsterdam",
+      "api": {
+        "projectId": "atggkqis",
+        "dataset": "masterdam"
+      }
+    },
+    {
       "name": "barcelona",
       "title": "Barcelona",
       "api": {

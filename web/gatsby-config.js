@@ -61,6 +61,14 @@ module.exports = {
         fieldName: 'london',
         url: 'https://atggkqis.api.sanity.io/v1/graphql/london/default'
       }
+    },
+    {
+      resolve: 'gatsby-source-graphql',
+      options: {
+        typeName: 'Amsterdam',
+        fieldName: 'amsterdam',
+        url: 'https://atggkqis.api.sanity.io/v1/graphql/amsterdam/default'
+      }
     }
     // {
     //   resolve: 'gatsby-source-sanity',
