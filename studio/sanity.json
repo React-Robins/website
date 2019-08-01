@@ -26,11 +26,11 @@
       }
     },
     {
-      "name": "amasterdam",
+      "name": "amsterdam",
       "title": "Amsterdam",
       "api": {
         "projectId": "atggkqis",
-        "dataset": "masterdam"
+        "dataset": "amsterdam"
       }
     },
     {
