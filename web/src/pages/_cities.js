@@ -18,6 +18,10 @@ import LondonIcon from '../assets/icons/london/london.svg'
 import LondonHoverIcon from '../assets/icons/london/london-hover.svg'
 import MicrosoftIcon from '../assets/icons/london/microsoft.svg'
 
+import AmsterdamIcon from '../assets/icons/amsterdam/amsterdam.svg'
+import AmsterdamHoverIcon from '../assets/icons/amsterdam/amsterdam-hover.svg'
+import BookingIcon from '../assets/icons/amsterdam/booking.svg'
+
 const makeDate = (d, m, y) => new Date(y, m - 1, d)
 
 const cities = [
@@ -66,6 +70,15 @@ const cities = [
     iconHover: LondonHoverIcon,
     hostIcon: MicrosoftIcon,
     hostName: 'Microsoft'
+  },
+  {
+    city: 'Amsterdam',
+    link: '/amsterdam',
+    date: makeDate(2, 10, 2019),
+    icon: AmsterdamIcon,
+    iconHover: AmsterdamHoverIcon,
+    hostIcon: BookingIcon,
+    hostName: 'Booking'
   }
 ]
 
