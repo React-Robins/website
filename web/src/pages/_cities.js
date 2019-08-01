@@ -78,7 +78,7 @@ const cities = [
     icon: AmsterdamIcon,
     iconHover: AmsterdamHoverIcon,
     hostIcon: BookingIcon,
-    hostName: 'Booking'
+    hostName: 'Booking.com'
   }
 ]
 
