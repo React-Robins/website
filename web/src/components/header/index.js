@@ -5,11 +5,9 @@ import text from './text.svg'
 import RainbowWithClicker from '../rainbow/RainbowWithClicker'
 import { Nav, LogoWrap, Logo, Codelings, Subtitle, NavRow, NavLink, NavHref } from './elements'
 
-const codelings = `~=~>&&<{=$%~%~= >}>[][ ]~=~>&&~ =~>& &<{==>}  ><{  =$$%  ~ =>  }  >[ ]`
-
 const Header = ({ siteTitle }) => (
   <Nav>
-    <Codelings>{codelings}</Codelings>
+    <Codelings />
     <Subtitle>A meetup for everyone where Queer Speakers take the stage</Subtitle>
     <NavRow>
       <LogoWrap>

@@ -3,11 +3,10 @@ import { graphql } from 'gatsby'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
 import Thanks from '../components/Thanks'
-import Panel from '../components/Panel'
+import Panel, { LargeParagraph } from '../components/Panel'
 
 import cities from './_cities'
-import City from '../components/City'
-import Heading from '../components/Heading'
+import City, { Cities } from '../components/City'
 
 import { isFuture } from 'date-fns'
 
@@ -48,19 +47,32 @@ const IndexPage = ({ data = {} }) => {
   return (
     <Layout>
       <SEO title={site.title} description={site.description} />
+      <Panel>
+        <LargeParagraph>
+          QueerJS is a series of meetups where anyone is welcome to attend and support the speakers
+          and the idea but all the speakers will be Queer.
+          <br />
+          This meetup exists to give a voice to everyone, to make a safe space where everyone is
+          welcome.
+        </LargeParagraph>
+        <LargeParagraph>Join us! There will be food and stickers 🌈</LargeParagraph>
+      </Panel>
       {futureMeetups.length ? (
-        <Panel>
-          <Heading>Upcoming meetups</Heading>
-          {futureMeetups.map(city => (
-            <City {...city} key={city.city} />
-          ))}
+        <Panel wide heading="Upcoming meetups">
+          <Cities>
+            {futureMeetups.map(city => (
+              <City {...city} key={city.city} />
+            ))}
+          </Cities>
         </Panel>
       ) : null}
       {pastMeetups.length ? (
-        <Panel heading="Past Meetups">
-          {pastMeetups.map(city => (
-            <City {...city} key={city.city} past />
-          ))}
+        <Panel wide heading="Past Meetups">
+          <Cities>
+            {pastMeetups.map(city => (
+              <City {...city} key={city.city} past />
+            ))}
+          </Cities>
         </Panel>
       ) : null}
 

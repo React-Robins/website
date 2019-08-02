@@ -1,3 +1,5 @@
+import React from 'react'
+
 import { Link } from 'gatsby'
 import styled, { css } from 'styled-components'
 
@@ -85,19 +87,34 @@ export const Subtitle = styled.h2`
   }
 `
 
-export const Codelings = styled.div`
+const CodelingsOuter = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: -1;
+  max-width: 100%;
+  overflow: hidden;
+`
+const CodelingsInner = styled.div`
   font-family: ${props => props.theme.neutra};
   color: ${props => props.theme.contrastPurple};
   font-size: 6rem;
   letter-spacing: 0.75em;
-  position: absolute;
   transform: rotate(-3deg);
+  position: relative;
   left: -25vw;
   top: -1em;
   right: -25vw;
-  z-index: -1;
+  width: 150vw;
   line-height: 1em;
   height: 3em;
   overflow: hidden;
   text-align: right;
 `
+export const Codelings = () => (
+  <CodelingsOuter aria-hidden>
+    <CodelingsInner>{`~=~>&&<{=$%~%~= >}>[][ ]~=~>&&~ =~>& &<{==>}  ><{  =$$%  ~ =>  }  >[ ]`}</CodelingsInner>
+  </CodelingsOuter>
+)

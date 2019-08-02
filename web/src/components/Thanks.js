@@ -45,6 +45,10 @@ export default ({ thanks, mainOrganizer, site }) => {
       <Link state={{ site: site }} to="/flags">
         What's with all the flags?
       </Link>
+      <br />
+      Follow QueerJS on <a href="https://twitter.com/queerjs">Twitter</a>
+      <br />
+      <br />
     </>
   )
 }
