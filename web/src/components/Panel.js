@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 const PanelSection = styled.section`
-  margin: 60px 0 30px;
+  margin: 3em 0 1.5em;
+  max-width: 50em;
 `
 const Heading = styled.h2`
   font-size: 32px;

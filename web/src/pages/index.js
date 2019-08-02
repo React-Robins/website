@@ -7,6 +7,7 @@ import Panel from '../components/Panel'
 
 import cities from './_cities'
 import City from '../components/City'
+import Heading from '../components/Heading'
 
 import { isFuture } from 'date-fns'
 
@@ -47,11 +48,9 @@ const IndexPage = ({ data = {} }) => {
   return (
     <Layout>
       <SEO title={site.title} description={site.description} />
-      <main>
-        <h1 hidden>Welcome to {site.title}</h1>
-      </main>
       {futureMeetups.length ? (
-        <Panel heading="Upcoming Meetups">
+        <Panel>
+          <Heading>Upcoming meetups</Heading>
           {futureMeetups.map(city => (
             <City {...city} key={city.city} />
           ))}

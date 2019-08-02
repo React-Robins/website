@@ -6,7 +6,7 @@ export const Wrapper = styled(Link)`
   align-items: center;
   text-decoration: none;
   padding: 20px;
-  border: 3px solid #605367;
+  border: 3px solid ${props => props.theme.contrastPurple};
   justify-content: center;
   margin-bottom: -3px;
   flex-direction: column;
@@ -51,9 +51,9 @@ export const Name = styled.h2`
   font-family: 'NeutraText-Bold';
   ${props =>
     props.past &&
-    `
-    color: #605367
-  `}
+    css`
+      color: ${props => props.theme.light};
+    `}
 `
 
 export const MeetupDate = styled.p`
@@ -63,7 +63,7 @@ export const MeetupDate = styled.p`
   ${props =>
     props.past &&
     `
-    color: #605367
+    color: ${props => props.theme.lightPurple}
   `};
 `
 

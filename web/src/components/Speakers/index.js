@@ -2,7 +2,15 @@ import React from 'react'
 import Figure from '../Figure'
 import RainbowWithClicker from '../rainbow/RainbowWithClicker'
 
-import { InlineRainbow, SpeakerPhoto, CFP, SpeakersGrid, Unstyled, UnstyledLink } from './elements'
+import {
+  InlineRainbow,
+  SpeakerPhoto,
+  CFP,
+  CFPInner,
+  SpeakersGrid,
+  Unstyled,
+  UnstyledLink
+} from './elements'
 
 const Speakers = ({ noSpeak, speakers, cfp, dataset, organizers }) => {
   return (
@@ -40,7 +48,9 @@ const Speakers = ({ noSpeak, speakers, cfp, dataset, organizers }) => {
             <SpeakerPhoto>
               <RainbowWithClicker>
                 <CFP>
-                  <h2>You?</h2> <span>Speak at QueerJS</span>
+                  <CFPInner>
+                    <h2>You?</h2> <span>Speak at QueerJS</span>
+                  </CFPInner>
                 </CFP>
               </RainbowWithClicker>
             </SpeakerPhoto>
