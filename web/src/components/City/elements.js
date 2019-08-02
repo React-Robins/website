@@ -120,8 +120,10 @@ export const Host = styled.img`
     `};
 `
 
-export const CityList = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 4em;
+export const Cities = styled.div`
+  @media screen and (min-width: 56em) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4em;
+  }
 `

@@ -3,9 +3,7 @@ import useHover from '../../helpers/useHover'
 
 import { format } from 'date-fns'
 
-import { Wrapper, sizes, CityInfo, CityIcon, CityList, Name, MeetupDate, Host } from './elements'
-
-const Cities = ({ children }) => <CityList>{children}</CityList>
+import { Wrapper, sizes, CityInfo, CityIcon, Cities, Name, MeetupDate, Host } from './elements'
 
 const City = ({ past, city, link, date, icon, iconHover, hostIcon, hostName }) => {
   const [hoverRef, isHovering] = useHover()
