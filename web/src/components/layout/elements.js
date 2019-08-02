@@ -5,8 +5,12 @@ import animate from 'animate.css'
 
 export const theme = {
   darkPurple: '#1E1126',
+  contrastPurple: '#331A42',
   white: '#FFFFFF',
-  lightGrey: '#e6e2ff'
+  lightGrey: '#e6e2ff',
+  lightPurple: '#EAD6F7',
+  roboto: 'Roboto Mono',
+  neutra: 'NeutraText-Bold'
 }
 
 export const Global = createGlobalStyle`
@@ -58,9 +62,11 @@ figure {
 
 export const Wrapper = styled.main`
   width: 80%;
-  max-width: 720px;
+  max-width: 56em;
   margin: auto;
 `
+
+export const SubWrapper = styled.div``
 
 export const SideRainbow = styled(RainbowWithClicker)`
   position: fixed;
@@ -69,6 +75,6 @@ export const SideRainbow = styled(RainbowWithClicker)`
   top: 0;
   bottom: 0;
   @media (min-width: 720px) {
-    width: 8vw;
+    width: 6vw;
   }
 `

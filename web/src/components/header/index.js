@@ -1,41 +1,43 @@
 import React from 'react'
 
 import logo from './logo.svg'
+import text from './text.svg'
 import RainbowWithClicker from '../rainbow/RainbowWithClicker'
-import { Nav, Logo, Title, Subtitle } from './elements'
+import { Nav, Logo, Codelings, Subtitle, NavRow, NavLink, NavHref } from './elements'
+
+const codelings = `~=~>&&<{=$%~%~= >}>[][ ]~=~>&&~ =~>& &<{==>}  ><{  =$$%  ~ =>  }  >[ ]`
 
 const Header = ({ siteTitle }) => (
   <Nav>
-    <section>
-      <Title to="/">{siteTitle}</Title>
-      <Subtitle>A meetup for everyone where Queer Speakers take the stage</Subtitle>
-      <a
-        css={`
-          text-decoration: none;
-
-          > div {
-            padding: 10px;
-          }
-        `}
-        href="https://opencollective.com/queerjs"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <RainbowWithClicker stripes={['red']}>
-          <span
-            css={`
-              color: #1e1126;
-              font-weight: bold;
-            `}
+    <Codelings>{codelings}</Codelings>
+    <Subtitle>A meetup for everyone where Queer Speakers take the stage</Subtitle>
+    <NavRow>
+      <ul>
+        <li>
+          <NavLink to="/">Cities</NavLink>
+        </li>
+        <li>
+          <NavHref href="https://shop.queerjs.com" target="_blank" rel="noopener noreferrer">
+            Shop
+          </NavHref>
+        </li>
+        <li>
+          <NavHref
+            href="https://opencollective.com/queerjs"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Donate to our open collective
-          </span>
+          </NavHref>
+        </li>
+      </ul>
+      <div>
+        <Logo irrelevant src={text} />
+        <RainbowWithClicker stripes={['red']}>
+          <Logo src={logo} alt="Queer JS" />
         </RainbowWithClicker>
-      </a>
-    </section>
-    <RainbowWithClicker stripes={['red']}>
-      <Logo src={logo} alt="Queer JS" />
-    </RainbowWithClicker>
+      </div>
+    </NavRow>
   </Nav>
 )
 

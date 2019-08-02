@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../header'
 import { ThemeProvider } from 'styled-components'
-import { theme, Global, Wrapper, SideRainbow } from './elements'
+import { theme, Global, Wrapper, SubWrapper, SideRainbow } from './elements'
 
 const Layout = ({ children, siteTitle }) => (
   <ThemeProvider theme={theme}>
@@ -10,7 +10,7 @@ const Layout = ({ children, siteTitle }) => (
       <Global />
       <Wrapper>
         <Header siteTitle={siteTitle} />
-        {children}
+        <SubWrapper>{children}</SubWrapper>
       </Wrapper>
     </>
   </ThemeProvider>

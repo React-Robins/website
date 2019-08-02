@@ -7,6 +7,7 @@ import Attendees from '../components/Attendees'
 import Speakers from '../components/Speakers'
 import Thanks from '../components/Thanks'
 import Panel from '../components/Panel'
+import Heading from '../components/Heading'
 
 const Main = ({ city, dataset }) => {
   const { site, organizers, mainOrganizer, thanks, speakers, attendees, sponsors } = city
@@ -15,16 +16,10 @@ const Main = ({ city, dataset }) => {
     <Layout>
       <SEO title={site.title} description={site.description} />
       <main>
-        <h1 hidden>Welcome to {site.title}</h1>
+        <Heading sub="queerjs @">{site.location}</Heading>
         <Info site={site} dataset={dataset} />
         <Panel heading="What?">
-          <p
-            css={`
-              font-family: 'NeutraText-Bold';
-              font-size: 18px;
-              line-height: 28px;
-            `}
-          >
+          <p>
             This is a meetup where anyone is welcome to attend and support the speakers and the idea
             but all the speakers will be Queer.
             <br />
