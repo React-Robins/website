@@ -32,9 +32,8 @@ const Main = ({ city, dataset }) => {
             <br />
             This meetup exists to give a voice to everyone, to make a safe space where everyone is
             welcome.
-            <br />
-            Join us! There will be food and stickers 🌈
           </p>
+          <p>Join us! There will be food and stickers 🌈</p>
         </Panel>
         <Panel heading="Speakers">
           <Speakers dataset={dataset} cfp={site.cfp} speakers={speakers.filter(s => !s.mc)} />
