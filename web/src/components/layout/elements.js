@@ -58,6 +58,12 @@ figure {
     position: relative;
        padding-bottom: 100% !important;
 }
+
+`
+export const Container = styled.div`
+  overflow-x: hidden;
+  position: relative;
+  max-width: 100%;
 `
 
 export const Wrapper = styled.main`
