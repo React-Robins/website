@@ -33,15 +33,27 @@ export const SpeakerPhoto = styled.div`
   }
 `
 
+export const SpeakerCfpLink = styled.div``
+
 export const CFP = styled.div`
-  width: 213px;
-  height: 213px;
+  padding-top: 100%;
+  height: 0;
   align-items: center;
   display: flex;
   justify-content: center;
   position: relative;
   flex-direction: column;
   z-index: 9999;
+`
+export const CFPInner = styled.div`
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 `
 
 export const SpeakersGrid = styled.ul`

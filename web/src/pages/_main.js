@@ -9,6 +9,11 @@ import Thanks from '../components/Thanks'
 import Panel from '../components/Panel'
 import Heading from '../components/Heading'
 
+const capitalize = s => {
+  if (typeof s !== 'string') return ''
+  return s.charAt(0).toUpperCase() + s.slice(1)
+}
+
 const Main = ({ city, dataset }) => {
   const { site, organizers, mainOrganizer, thanks, speakers, attendees, sponsors } = city
 
@@ -16,7 +21,9 @@ const Main = ({ city, dataset }) => {
     <Layout>
       <SEO title={site.title} description={site.description} />
       <main>
-        <Heading sub="queerjs @">{site.location}</Heading>
+        <Heading sub="queerjs @">
+          {capitalize(dataset === 'production' ? 'berlin' : dataset)}
+        </Heading>
         <Info site={site} dataset={dataset} />
         <Panel heading="What?">
           <p>

@@ -15,7 +15,7 @@ const TitleTitle = styled.div`
 `
 
 const HugeTitle = styled.h1`
-  margin: 4rem 0;
+  margin: 4rem 0 2rem;
 `
 
 export default ({ children, sub }) => (

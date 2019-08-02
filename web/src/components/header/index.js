@@ -3,7 +3,7 @@ import React from 'react'
 import logo from './logo.svg'
 import text from './text.svg'
 import RainbowWithClicker from '../rainbow/RainbowWithClicker'
-import { Nav, Logo, Codelings, Subtitle, NavRow, NavLink, NavHref } from './elements'
+import { Nav, LogoWrap, Logo, Codelings, Subtitle, NavRow, NavLink, NavHref } from './elements'
 
 const codelings = `~=~>&&<{=$%~%~= >}>[][ ]~=~>&&~ =~>& &<{==>}  ><{  =$$%  ~ =>  }  >[ ]`
 
@@ -12,6 +12,13 @@ const Header = ({ siteTitle }) => (
     <Codelings>{codelings}</Codelings>
     <Subtitle>A meetup for everyone where Queer Speakers take the stage</Subtitle>
     <NavRow>
+      <LogoWrap>
+        <Logo irrelevant src={text} />
+        <RainbowWithClicker stripes={['red']}>
+          <Logo src={logo} alt="Queer JS" />
+        </RainbowWithClicker>
+      </LogoWrap>
+
       <ul>
         <li>
           <NavLink to="/">Cities</NavLink>
@@ -31,12 +38,6 @@ const Header = ({ siteTitle }) => (
           </NavHref>
         </li>
       </ul>
-      <div>
-        <Logo irrelevant src={text} />
-        <RainbowWithClicker stripes={['red']}>
-          <Logo src={logo} alt="Queer JS" />
-        </RainbowWithClicker>
-      </div>
     </NavRow>
   </Nav>
 )
