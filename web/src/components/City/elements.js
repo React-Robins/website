@@ -11,49 +11,53 @@ export const Name = styled.h2`
   font-family: 'NeutraText-Bold';
   position: relative;
   z-index: 1;
-  @supports (background-clip: text) {
-    background: linear-gradient(
-      to bottom,
-      #ff5d7d 0%,
-      #ff5d7d 16.6666666667%,
-      #ff764e 16.6666666667%,
-      #ff764e 33.3333333333%,
-      #ffc144 33.3333333333%,
-      #ffc144 50%,
-      #88df8e 50%,
-      #88df8e 66.6666666667%,
-      #00ccf2 66.6666666667%,
-      #00ccf2 83.3333333333%,
-      #b278d3 83.3333333333%,
-      #b278d3 100%
-    );
-    background-clip: text;
-    color: transparent;
-  }
-  @supports (-webkit-background-clip: text) {
-    background: linear-gradient(
-      to bottom,
-      #ff5d7d 0%,
-      #ff5d7d 16.6666666667%,
-      #ff764e 16.6666666667%,
-      #ff764e 33.3333333333%,
-      #ffc144 33.3333333333%,
-      #ffc144 50%,
-      #88df8e 50%,
-      #88df8e 66.6666666667%,
-      #00ccf2 66.6666666667%,
-      #00ccf2 83.3333333333%,
-      #b278d3 83.3333333333%,
-      #b278d3 100%
-    );
-    -webkit-background-clip: text;
-    color: transparent;
-  }
   ${props =>
     props.past &&
     css`
-      color: ${props => props.theme.contrastPurple};
+      color: ${props => props.theme.lightPurple};
     `};
+  ${props =>
+    !props.past &&
+    css`
+      @supports (background-clip: text) {
+        background: linear-gradient(
+          to bottom,
+          #ff5d7d 0%,
+          #ff5d7d 16.6666666667%,
+          #ff764e 16.6666666667%,
+          #ff764e 33.3333333333%,
+          #ffc144 33.3333333333%,
+          #ffc144 50%,
+          #88df8e 50%,
+          #88df8e 66.6666666667%,
+          #00ccf2 66.6666666667%,
+          #00ccf2 83.3333333333%,
+          #b278d3 83.3333333333%,
+          #b278d3 100%
+        );
+        background-clip: text;
+        color: transparent;
+      }
+      @supports (-webkit-background-clip: text) {
+        background: linear-gradient(
+          to bottom,
+          #ff5d7d 0%,
+          #ff5d7d 16.6666666667%,
+          #ff764e 16.6666666667%,
+          #ff764e 33.3333333333%,
+          #ffc144 33.3333333333%,
+          #ffc144 50%,
+          #88df8e 50%,
+          #88df8e 66.6666666667%,
+          #00ccf2 66.6666666667%,
+          #00ccf2 83.3333333333%,
+          #b278d3 83.3333333333%,
+          #b278d3 100%
+        );
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+    `}
 `
 export const Wrapper = styled(Link)`
   display: flex;
