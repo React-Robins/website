@@ -18,7 +18,7 @@ const Flag = styled(Rainbow)`
 
 const Box = styled.a`
   display: block;
-  border: 3px solid #605367;
+  border: 3px solid ${props => props.theme.contrastPurple};
   justify-content: center;
   margin-bottom: -3px;
   padding: 1em;
