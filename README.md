@@ -2,7 +2,7 @@
 
 We're a group of women and non-binary ReactJS enthusiasts in New York City (and beyond).
 
-![](src/images/react-ladies-screenshot.png)
+![Screenshot of React Ladies Site](react-ladies-site.png)
 
 ## Installation
 
@@ -10,29 +10,22 @@ Install the dependencies:
 
 ### `yarn install`
 
+### Set API key in environment
+
+   Add `MEETUP_API_KEY` env variable from here: https://secure.meetup.com/meetup_api/key/. Do not commit this value to GitHub.
+
 Run the development server:
 
-### `yarn dev`
+### `gatsby develop`
 
-Production build to `/public`:
+This website is based off of [gatsby-theme-meetup](https://github.com/matthieuauger/gatsby-theme-meetup). For more information about how to edit content view their README. **tldr;** the files that should be edited are:
 
-### `yarn build`
+```src/@matthieuauger/gatsby-theme-meetup/components
+src/@matthieuauger/gatsby-theme-meetup/pages
+src/@matthieuauger/gatsby-theme-meetup/images
+src/text-blocks
+```
 
-Cleanup cache (often fixes misc errors when run before `yarn dev`):
-
-### `yarn clean`
-
-## Content
-
-Each of the sections in the site are placed in `src/sections`. Data is usually separated out into objects/arrays to be rendered in the component.
-
-## SEO
-
-The component `src/components/common/SEO.js` handles all meta data and SEO content, modify the `SEO_DATA` variable to add the data automatically. For application manifest data and favicon, modify the `gatsby-plugin-manifest` configuration in `gatsby-config.js`.
-
-## Styling
-
-This project uses [styled-components]() to handle styling: `src/styles/theme.js` defines the styling base and `src/styles/GlobalStyles.js` includes basic element styles along with the CSS Reset.
 
 # Credit
 
