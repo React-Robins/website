@@ -30,5 +30,3 @@ src/text-blocks
 # Credit
 
 Monica Powell edited this website. Addt'l contributors are welcome :-)
-
-This site was built from the gatsby-absurd starter theme. The collection of illustrations, [absurd.design](https://absurd.design/) by [Diana Valeanu](https://twitter.com/diana_valeanu) is a very fascinating and beautiful project with some pretty thoughtful concepts.
