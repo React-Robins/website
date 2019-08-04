@@ -80,7 +80,7 @@ const CodeOfConduct = ({ location }) => {
               please notify a QueerJS organizer as soon as possible.
             </p>
             <p>
-              If you can’t find the organizer, reach out to {organizer.name} at
+              If you can’t find the organizer, reach out to {organizer.name} at{' '}
               {organizer.email} / {organizer.phoneNumber} / {organizer.twitterHandle}
             </p>
             <p>
