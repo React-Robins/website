@@ -1,56 +1,25 @@
-const path = require("path");
-
 module.exports = {
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-svgr`,
-    `gatsby-plugin-styled-components`,
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: '@matthieuauger/gatsby-theme-meetup',
       options: {
-        name: `team`,
-        path: `${__dirname}/src/images/team`
-      }
+        meetupName: 'React Ladies',
+        meetupHomepageHeadline:
+          'a community of women + non-binary React enthusiasts',
+        meetupDotComGroupUrlName: 'React-Ladies',
+        displayVideosLink: false,
+        //meetupVideosUrl = 'https://www.youtube.com/channel/UC66eQOycjMnaqzpbRUhEK2w'
+        talkProposalUrl: 'https://airtable.com/shrphJUHyS1h6UK0Y',
+        textBlocksPath: `${__dirname}/src/text-blocks`,
+        dateFormat: `dddd DD MMMM YYYY`,
+        translations: {
+          PROPOSE_A_TALK: 'Propose a talk',
+          FETCH_VIDEOS: 'See videos →',
+          LAST_MEETUPS: 'Previous events',
+          REGISTER_ON_MEETUP: 'Register on Meetup →',
+          DONATE: 'Donate',
+        },
+      },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `art`,
-        path: `${__dirname}/src/images/art`
-      }
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `React Ladies`,
-        short_name: `React Ladies`,
-        start_url: `/`,
-        background_color: `#cab4e6`,
-        theme_color: `#cab4e6`,
-        display: `minimal-ui`,
-        icon: `static/favicon.svg`
-      }
-    },
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [`average`, `prata\:400,700`]
-      }
-    },
-    {
-      resolve: `gatsby-plugin-alias-imports`,
-      options: {
-        alias: {
-          "@components": path.resolve(__dirname, "src/components"),
-          "@common": path.resolve(__dirname, "src/components/common"),
-          "@images": path.resolve(__dirname, "src/images"),
-          "@sections": path.resolve(__dirname, "src/components/sections"),
-          "@styles": path.resolve(__dirname, "src/styles/"),
-          "@static": path.resolve(__dirname, "static/")
-        }
-      }
-    }
-  ]
+  ],
 };
