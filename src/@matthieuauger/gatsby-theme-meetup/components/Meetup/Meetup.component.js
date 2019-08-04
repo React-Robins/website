@@ -32,7 +32,11 @@ const Meetup = ({
             <div className="meetup-informations-basic-highlight">
               {meetupInfo.venue.name}
             </div>
-            <div>{meetupInfo.venue.address_1}</div>
+
+            {meetupType === 'UPCOMING' && (
+              <div>{meetupInfo.venue.address_1}</div>
+            )}
+
             <div>{meetupInfo.venue.city}</div>
           </div>
         </div>
