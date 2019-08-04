@@ -1,4 +1,5 @@
 # React-Ladies
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c7e53b39-86fe-469c-900a-1d54536726d2/deploy-status)](https://app.netlify.com/sites/reactladies/deploys)
 
 We're a group of women and non-binary ReactJS enthusiasts in New York City (and beyond).
 
