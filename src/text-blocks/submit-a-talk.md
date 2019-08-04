@@ -13,7 +13,7 @@ Have you written or participated in an open source project related to the React 
 If you're interested in speaking we'd love to have you and encourage first time speakers
 
 <div class="call-to-action">
-  <a type="neutral" href="https://docs.google.com/forms/d/e/1FAIpQLScYo0W4QAkRHLj0fS_TXZXFuSUJ_cRlmyJCeRTPDQVt9RBNog/viewform" class="Buttonstyle__StyledButton-ltfqg3-0 buJYZG">Propose a Talk →
+  <a type="neutral" href="https://airtable.com/shrphJUHyS1h6UK0Y" class="Buttonstyle__StyledButton-ltfqg3-0 buJYZG">Propose a Talk →
   </a>
    
  
