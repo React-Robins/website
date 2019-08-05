@@ -51,7 +51,7 @@ const Meetup = ({
           <div
             className="meetup-informations-talks"
             dangerouslySetInnerHTML={{
-              __html: meetupInfo.description.slice(0, 250) + '...',
+              __html: meetupInfo.description.slice(0, 300) + '...',
             }}
           />
         )}
