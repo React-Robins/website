@@ -30,7 +30,7 @@ export default ({ sponsors }) => {
       {sponsors.map(sponsor => (
         <li>
           <a target="_blank" href={sponsor.link} rel="noopener noreferrer">
-            <SponsorImage src={sponsor.media.asset.url} alt={sponsor.name} />
+            <SponsorImage src={sponsor.media} alt={sponsor.name} />
           </a>
         </li>
       ))}

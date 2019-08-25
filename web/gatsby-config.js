@@ -22,63 +22,12 @@ module.exports = {
         }
       }
     },
+    'gatsby-transformer-javascript-frontmatter',
     {
-      resolve: 'gatsby-source-graphql',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        typeName: 'Berlin',
-        fieldName: 'berlin',
-        url: 'https://atggkqis.api.sanity.io/v1/graphql/production/default'
-      }
-    },
-    {
-      resolve: 'gatsby-source-graphql',
-      options: {
-        typeName: 'Barcelona',
-        fieldName: 'barcelona',
-        url: 'https://atggkqis.api.sanity.io/v1/graphql/barcelona/default'
-      }
-    },
-    {
-      resolve: 'gatsby-source-graphql',
-      options: {
-        typeName: 'sf',
-        fieldName: 'sf',
-        url: 'https://atggkqis.api.sanity.io/v1/graphql/sf/default'
-      }
-    },
-    {
-      resolve: 'gatsby-source-graphql',
-      options: {
-        typeName: 'Stockholm',
-        fieldName: 'stockholm',
-        url: 'https://atggkqis.api.sanity.io/v1/graphql/stockholm/default'
-      }
-    },
-    {
-      resolve: 'gatsby-source-graphql',
-      options: {
-        typeName: 'London',
-        fieldName: 'london',
-        url: 'https://atggkqis.api.sanity.io/v1/graphql/london/default'
-      }
-    },
-    {
-      resolve: 'gatsby-source-graphql',
-      options: {
-        typeName: 'Amsterdam',
-        fieldName: 'amsterdam',
-        url: 'https://atggkqis.api.sanity.io/v1/graphql/amsterdam/default'
+        path: `./src/data/`
       }
     }
-    // {
-    //   resolve: 'gatsby-source-sanity',
-    //   options: {
-    //     projectId: process.env.GATSBY_SANITY_PROJECT_ID || 'atggkqis',
-    //     dataset: 'production',
-    //     token: process.env.SANITY_READ_TOKEN,
-    //     watchMode: !isProd,
-    //     overlayDrafts: !isProd
-    //   }
-    // },
   ]
 }

@@ -1,8 +1,6 @@
 import React from 'react'
-import { graphql } from 'gatsby'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
-import Thanks from '../components/Thanks'
 import Panel, { LargeParagraph } from '../components/Panel'
 
 import cities from './_cities'
@@ -10,35 +8,7 @@ import City, { Cities } from '../components/City'
 
 import { isFuture } from 'date-fns'
 
-export const query = graphql`
-  query {
-    berlin {
-      site: SiteSettings(id: "siteSettings") {
-        title
-        description
-      }
-      mainOrganizer: allOrganizers {
-        name
-        main
-        phoneNumber
-        twitterHandle
-        email
-      }
-      organizers: allOrganizers {
-        id: _id
-        name
-        email
-        twitterHandle
-      }
-    }
-  }
-`
-
 const IndexPage = ({ data = {} }) => {
-  const {
-    berlin: { site, mainOrganizer }
-  } = data
-
   const sortedCities = cities.sort(({ date }, { date: otherDate }) => date - otherDate)
 
   const futureMeetups = sortedCities.filter(city => isFuture(city.date))
@@ -46,7 +16,10 @@ const IndexPage = ({ data = {} }) => {
 
   return (
     <Layout>
-      <SEO title={site.title} description={site.description} />
+      <SEO
+        title={'QueerJS'}
+        description={'A meetup for everyone where Queer Speakers take the stage'}
+      />
       <Panel>
         <LargeParagraph>
           QueerJS is a series of meetups where anyone is welcome to attend and support the speakers
@@ -76,7 +49,7 @@ const IndexPage = ({ data = {} }) => {
         </Panel>
       ) : null}
 
-      <Thanks
+      {/* <Thanks
         organizers={[]}
         thanks={[
           {
@@ -87,7 +60,7 @@ const IndexPage = ({ data = {} }) => {
         ]}
         site={site}
         mainOrganizer={mainOrganizer.find(o => o.main)}
-      />
+      /> */}
     </Layout>
   )
 }

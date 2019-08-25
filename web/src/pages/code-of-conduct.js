@@ -18,7 +18,6 @@ const defaultValues = {
 
 const CodeOfConduct = ({ location }) => {
   const { site, organizer } = location.state || defaultValues
-  console.log(location.state)
   return (
     <Layout>
       <SEO title={site.title} description={site.description} />
@@ -80,8 +79,8 @@ const CodeOfConduct = ({ location }) => {
               please notify a QueerJS organizer as soon as possible.
             </p>
             <p>
-              If you can’t find the organizer, reach out to {organizer.name} at{' '}
-              {organizer.email} / {organizer.phoneNumber} / {organizer.twitterHandle}
+              If you can’t find the organizer, reach out to {organizer.name} at {organizer.email} /{' '}
+              {organizer.phoneNumber} / {organizer.twitterHandle}
             </p>
             <p>
               Conference staff will be happy to help participants and assist those experiencing

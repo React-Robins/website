@@ -26,16 +26,12 @@ const Speakers = ({ noSpeak, speakers, cfp, dataset, organizers }) => {
           >
             <SpeakerPhoto>
               <InlineRainbow flag={human.colors} />
-              {organizers ? (
-                <img
-                  width="221"
-                  height="221"
-                  src={`https://avatars.io/twitter/${human.twitterLink}`}
-                  alt={human.name}
-                />
-              ) : (
-                <Figure dataset={dataset} node={human.photo} />
-              )}
+              <img
+                width="221"
+                height="221"
+                src={`https://avatars.io/twitter/${human.twitterLink}`}
+                alt={human.name}
+              />
             </SpeakerPhoto>
             <Unstyled>{human.name}</Unstyled>
             {human.location && <Unstyled>{human.location}</Unstyled>}
