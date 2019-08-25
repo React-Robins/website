@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
 import format from 'date-fns/format'
+import Airtable from 'airtable'
 
 import Flag from '../icons/flag'
 import Calendar from '../icons/calendar'
 
 import { Info, Button, RsvpButton, Form, Blinker, Bouncer } from './elements'
-import client from '../../helpers/sanity'
 
-export default ({ site, dataset }) => {
+var base = new Airtable({ apiKey: process.env.GATSBY_AIRTABLE_KEY }).base('appXX3u6yUPjqQFrE')
+
+export default ({ site, city }) => {
   const [open, setOpen] = useState(false)
   const [name, setName] = useState('')
   const [gh, setGH] = useState('')
@@ -16,16 +18,19 @@ export default ({ site, dataset }) => {
   const createUser = () => {
     if (name && gh) {
       const doc = {
-        _type: 'attendee',
+        city: city,
         name: name,
         ghLink: gh
       }
 
-      client(dataset)
-        .create(doc)
-        .then(res => {
-          console.log(`Human was created, document ID is ${res._id}`)
-        })
+      base('all').create(doc, function(err, record) {
+        if (err) {
+          console.error(err)
+          return
+        }
+        console.log(`Human was created, document ID is ${record.getId()}`)
+        console.log(record.getId())
+      })
     }
   }
 

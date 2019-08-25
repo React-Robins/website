@@ -1,5 +1,4 @@
 import React from 'react'
-import Figure from '../Figure'
 import RainbowWithClicker from '../rainbow/RainbowWithClicker'
 
 import {

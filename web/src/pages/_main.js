@@ -4,11 +4,12 @@ import Layout from '../containers/layout'
 import Sponsors from '../components/Sponsors'
 import Info from '../components/Info'
 import Speakers from '../components/Speakers'
+import Attendees from '../components/Attendees'
 import Thanks from '../components/Thanks'
 import Panel from '../components/Panel'
 import Heading from '../components/Heading'
 
-const Main = ({ city }) => {
+const Main = ({ city, attendees }) => {
   const { site, organizers, mainOrganizer, thanks, speakers, sponsors, info } = city
 
   return (
@@ -16,7 +17,7 @@ const Main = ({ city }) => {
       <SEO title={site.title} description={site.description} />
       <main>
         <Heading sub="queerjs @">{info.city}</Heading>
-        <Info site={site} />
+        <Info site={site} city={info.link} />
         <Panel heading="What?">
           <p>
             This is a meetup where anyone is welcome to attend and support the speakers and the idea
@@ -35,9 +36,10 @@ const Main = ({ city }) => {
             <Speakers noSpeak cfp={site.cfp} speakers={speakers.filter(s => s.mc)} />
           </Panel>
         ) : null}
-        {/* <Panel heading={`Attendees (${attendees.length})`}>
+        {console.log(attendees)}
+        <Panel heading={`Attendees (${attendees.length})`}>
           <Attendees attendees={attendees} />
-        </Panel> */}
+        </Panel>
 
         <Panel heading="Sponsors">
           <Sponsors sponsors={sponsors} />

@@ -4,13 +4,25 @@ import Main from '../pages/_main'
 
 export default ({ data = {} }) => {
   const {
-    javascriptFrontmatter: { frontmatter }
+    javascriptFrontmatter: { frontmatter },
+    allAirtable: { edges }
   } = data
-  return <Main city={frontmatter} />
+  return <Main city={frontmatter} attendees={edges.map(edge => edge.node)} />
 }
 
 export const query = graphql`
   query($slug: String!) {
+    allAirtable(filter: { data: { city: { eq: $slug } } }) {
+      edges {
+        node {
+          data {
+            city
+            ghLink
+            name
+          }
+        }
+      }
+    }
     javascriptFrontmatter(frontmatter: { info: { link: { eq: $slug } } }) {
       frontmatter {
         info {

@@ -1,9 +1,7 @@
 // Load variables from `.env` as soon as possible
 require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV || 'development'}`
+  path: `.env.production`
 })
-
-const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
   plugins: [
@@ -20,6 +18,19 @@ module.exports = {
             }
           ]
         }
+      }
+    },
+    {
+      resolve: `gatsby-source-airtable`,
+      options: {
+        apiKey: process.env.GATSBY_AIRTABLE_KEY,
+        tables: [
+          {
+            baseId: `appXX3u6yUPjqQFrE`,
+            tableName: `all`,
+            queryName: `attendees` // optional
+          }
+        ]
       }
     },
     'gatsby-transformer-javascript-frontmatter',
