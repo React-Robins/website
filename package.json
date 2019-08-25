@@ -2,7 +2,6 @@
   "private": true,
   "name": "queerjs-web",
   "version": "1.0.0",
-  "author": "Sanity <hello@sanity.io>",
   "scripts": {
     "build": "gatsby build",
     "clean-cache": "gatsby clean",

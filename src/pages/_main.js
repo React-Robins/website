@@ -36,7 +36,6 @@ const Main = ({ city, attendees }) => {
             <Speakers noSpeak cfp={site.cfp} speakers={speakers.filter(s => s.mc)} />
           </Panel>
         ) : null}
-        {console.log(attendees)}
         <Panel heading={`Attendees (${attendees.length})`}>
           <Attendees attendees={attendees} />
         </Panel>

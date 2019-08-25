@@ -29,7 +29,6 @@ export default ({ site, city }) => {
           return
         }
         console.log(`Human was created, document ID is ${record.getId()}`)
-        console.log(record.getId())
       })
     }
   }
