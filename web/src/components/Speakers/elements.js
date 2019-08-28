@@ -20,6 +20,7 @@ export const SpeakerPhoto = styled.div`
   border-radius: 100%;
   overflow: hidden;
   transition: 0.2s;
+  line-height: 0;
 
   &:hover {
     transform: scale(1.1) rotate(-5deg);
