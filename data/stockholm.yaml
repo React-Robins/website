@@ -1,0 +1,50 @@
+---
+info:
+  city: Stockholm
+  link: stockholm
+  date: 10/08/2019
+  hour: '18:00'
+  icon: icons/stockholm/stockholm.svg
+  iconHover: icons/stockholm/stockholm-hover.svg
+  hostIcon: icons/stockholm/klarna.svg
+  hostName: Klarna
+site:
+  city: Stocholm
+  location: Klarna
+  organizers:
+  googleMapsLink: https://www.google.com/maps/place/Klarna+Bank/@59.3371711,18.0623904,15z/data=!4m2!3m1!1s0x0:0x4fbbacb35803b406?sa=X&ved=2ahUKEwjR46rQzsrjAhVOKlAKHXwoDBgQ_BIwE3oECA4QCA
+  calendarLink: http://www.google.com/calendar/event?action=TEMPLATE&dates=20191008T160000Z%2F20191008T183000Z&text=QueerJS&location=Klarna%20Bank&details=
+  cfp: false
+mainOrganizer:
+  - name: Aveline Estié
+    main: true
+    phoneNumber: '+46762305887'
+    twitterHandle: avilene_
+    email: aa.estie@gmail.com
+organizers:
+  - id: ae2d4158-cd43-4196-b88e-cb2afdbf6b4b
+    name: Aveline Estié
+    email: aa.estie@gmail.com
+    twitterHandle: avilene_
+thanks: []
+sponsors:
+  - name: Klarna
+    link: https://www.klarna.com/
+    media: https://cdn.sanity.io/images/atggkqis/stockholm/e341846061bd2caef4b94863e6335b1ab4a7fa5d-135x75.png
+  - name: Samsung Internet
+    link: https://www.samsung.com/de/apps/samsung-internet/
+    media: https://cdn.sanity.io/images/atggkqis/stockholm/57785c7e03e369da149636a6be5813a74cf06a55-355x90.png
+speakers:
+  - name: Svetlana Sharipova
+    twitterLink: hellodeadline
+  - name: Yonatan Miller
+    twitterLink: shushugah
+  - name: Cynthia Maja Revström
+    twitterLink: bitcynth
+  - name: Shelley Vohr
+    twitterLink: codebytere
+  - mc: true
+    name: Sara Vieira
+    twitterLink: NikkitaFTW
+  - name: Aveline
+    twitterLink: Avilene_

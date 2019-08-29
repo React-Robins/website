@@ -1,0 +1,54 @@
+---
+info:
+  city: London
+  link: london
+  date: 09/20/2019
+  hour: '17:00'
+  icon: icons/london/london.svg
+  iconHover: icons/london/london-hover.svg
+  hostIcon: icons/london/microsoft.svg
+  hostName: Microsoft
+site:
+  city: London
+  location: Microsoft Reactor
+  organizers:
+  googleMapsLink: https://goo.gl/maps/jKnHZ3jd5ku1PPG46
+  calendarLink: http://www.google.com/calendar/event?action=TEMPLATE&dates=20190920T183000Z%2F20190920T213000Z&text=QueerJS&location=Microsoft%20Reactor&details=A%20meetup%20for%20everyone%20where%20Queer%20Speakers%20take%20the%20stage
+  cfp: false
+mainOrganizer:
+  - name: Laura González
+    main: true
+    phoneNumber: 07411728679
+    twitterHandle: freezydorito
+    email: lawr@lauragonzalez.cc
+organizers:
+  - id: 57871d45-32a9-476e-bc3b-58cb241b6cee
+    name: Laura González
+    email: lawr@lauragonzalez.cc
+    twitterHandle: freezydorito
+thanks: []
+sponsors:
+  - name: Microsoft
+    link: https://www.microsoft.com/
+    media: https://cdn.sanity.io/images/atggkqis/london/153b6040eb345b762464ef9fb3eb40f9187caa4d-400x400.png
+  - name: Samsung Internet
+    link: https://www.samsung.com/de/apps/samsung-internet/
+    media: https://cdn.sanity.io/images/atggkqis/london/062cc6c9edf62f567b0f65c13860fe8a6ea293df-355x90.svg
+speakers:
+  - name: Rachel Nabors
+    twitterLink: rachelnabors
+  - name: Olu Niyi-Awosusi
+    twitterLink: oluoluoxenfree
+  - name: Josh Hunt
+    twitterLink: joshhunt
+  - mc: true
+    name: Kate Beard
+    twitterLink: SBinLondon
+  - name: Bren Brightwell
+    twitterLink: quarterto
+  - id: ca8116af-e25b-4d3f-9505-74964a5d9da4
+    mc:
+    name: Anna Leach
+    twitterLink: annajleach
+  - name: Marcel Cutts
+    twitterLink: marcelcutts
