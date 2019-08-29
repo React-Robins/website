@@ -32,7 +32,6 @@ export const query = graphql`
       }
       site {
         location
-        date
         googleMapsLink
         calendarLink
         cfp
@@ -66,7 +65,6 @@ export const query = graphql`
         mc
         name
         twitterLink
-        photo
       }
     }
   }

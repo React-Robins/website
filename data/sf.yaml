@@ -28,11 +28,16 @@ sponsors:
 speakers:
   - name: Alejandra Villa
     twitterLink: AlxSavage
-    photo: https://cdn.sanity.io/images/atggkqis/sf/f6d1ce961326157b07502bf8a6c1f626dd57b6a3-962x1280-jpg
   - name: Stephanie Winn
     twitterLink: steph_happens
-    photo: https://cdn.sanity.io/images/atggkqis/sf/a52723c10cc829b8e28624fc3be41140d7ef3acf-400x400-png
   - mc: true
     name: Sara Vieira
     twitterLink: NikkitaFTW
-    photo: https://cdn.sanity.io/images/atggkqis/sf/e6233acd7a8974bc54db4e84110c7ef51791f6b5-960x960-jpg
+  - name: Anjana Vakil
+    twitterLink: AnjanaVakil
+  - name: Radhika Morabia
+    twitterLink: radhikamorabia
+  - name: Lily Scott
+    twitterLink: suchipi
+  - name: Nat Alison
+    twitterLink: tesseralis
