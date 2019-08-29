@@ -26,8 +26,8 @@ const Speakers = ({ noSpeak, speakers, cfp, dataset, organizers }) => {
             <SpeakerPhoto>
               <InlineRainbow flag={human.colors} />
               <img
-                width="221"
-                height="221"
+                width="240"
+                height="240"
                 src={`https://avatars.io/twitter/${human.twitterLink}`}
                 alt={human.name}
               />
