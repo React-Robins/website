@@ -17,7 +17,7 @@ const Main = ({ city, attendees }) => {
       <SEO title={site.title} description={site.description} />
       <main>
         <Heading sub="queerjs @">{info.city}</Heading>
-        <Info site={site} city={info.link} />
+        <Info site={site} info={info} city={info.link} />
         <Panel heading="What?">
           <p>
             This is a meetup where anyone is welcome to attend and support the speakers and the idea
@@ -47,9 +47,9 @@ const Main = ({ city, attendees }) => {
       <Panel heading="Special Thanks">
         <Thanks
           organizers={organizers}
-          thanks={thanks}
+          thanks={thanks || []}
           site={site}
-          mainOrganizer={mainOrganizer.find(o => o.main)}
+          mainOrganizer={(mainOrganizer || []).find(o => o.main)}
         />
       </Panel>
     </Layout>

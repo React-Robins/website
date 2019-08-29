@@ -33,6 +33,8 @@
     "gatsby-source-graphql": "2.1.0",
     "gatsby-transformer-javascript-frontmatter": "^2.1.5",
     "gatsby-transformer-json": "^2.2.5",
+    "gatsby-transformer-yaml": "^2.2.7",
+    "node-fetch": "^2.6.0",
     "styled-components": "4.3.2"
   }
 }

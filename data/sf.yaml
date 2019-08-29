@@ -1,0 +1,38 @@
+---
+info:
+  city: San Francisco
+  link: san-francisco
+  date: 11/02/2019
+  hour: '18:00'
+  icon: icons/sf/sf.svg
+  iconHover: icons/sf/sf-hover.svg
+  hostIcon: icons/sf/webflow.svg
+  hostName: Webflow
+site:
+  city: San Francisco
+  location: Webflow
+  organizers: []
+  googleMapsLink: https://www.google.com/maps/place/Webflow/@37.77068,-122.412894,17z/data=!4m13!1m7!3m6!1s0x808f7e2620538c9f:0x1956c7f529ee380b!2s398+11th+St,+San+Francisco,+CA+94103,+USA!3b1!8m2!3d37.7706795!4d-122.4128939!3m4!1s0x808f7e2dfcfcb397:0xbd614483fc75e307!8m2!3d37.77068!4d-122.412894
+  calendarLink: http://www.google.com/calendar/event?action=TEMPLATE&dates=20191102T10000Z%2F20191102T23000Z&text=QueerJS&location=Webflow&details=
+  cfp: true
+mainOrganizer: []
+organizers: []
+thanks: []
+sponsors:
+  - name: Samsung Internet
+    link: https://www.samsung.com/de/apps/samsung-internet/
+    media: https://cdn.sanity.io/images/atggkqis/sf/57785c7e03e369da149636a6be5813a74cf06a55-355x90.png
+  - name: Webflow
+    link: https://webflow.com/
+    media: https://cdn.sanity.io/images/atggkqis/sf/6fdddcb6a4b66758d4d551038da325bed9f22c90-809x204.png
+speakers:
+  - name: Alejandra Villa
+    twitterLink: AlxSavage
+    photo: https://cdn.sanity.io/images/atggkqis/sf/f6d1ce961326157b07502bf8a6c1f626dd57b6a3-962x1280-jpg
+  - name: Stephanie Winn
+    twitterLink: steph_happens
+    photo: https://cdn.sanity.io/images/atggkqis/sf/a52723c10cc829b8e28624fc3be41140d7ef3acf-400x400-png
+  - mc: true
+    name: Sara Vieira
+    twitterLink: NikkitaFTW
+    photo: https://cdn.sanity.io/images/atggkqis/sf/e6233acd7a8974bc54db4e84110c7ef51791f6b5-960x960-jpg

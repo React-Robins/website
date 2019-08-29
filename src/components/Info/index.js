@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import format from 'date-fns/format'
+import { format, parse } from 'date-fns'
 import Airtable from 'airtable'
 
 import Flag from '../icons/flag'
@@ -9,7 +9,7 @@ import { Info, Button, RsvpButton, Form, Blinker, Bouncer } from './elements'
 
 var base = new Airtable({ apiKey: process.env.GATSBY_AIRTABLE_KEY }).base('appXX3u6yUPjqQFrE')
 
-export default ({ site, city }) => {
+export default ({ site, city, info }) => {
   const [open, setOpen] = useState(false)
   const [name, setName] = useState('')
   const [gh, setGH] = useState('')
@@ -32,6 +32,7 @@ export default ({ site, city }) => {
       })
     }
   }
+  const date = parse(info.date, 'L', new Date())
 
   return (
     <>
@@ -45,7 +46,9 @@ export default ({ site, city }) => {
         </span>
 
         <span>
-          <a href={site.calendarLink}>{format(site.date, ['HH:mm Do [of] MMMM '])}</a>
+          <a href={site.calendarLink}>
+            {info.hour} {format(date, ['Do [of] MMMM '])}
+          </a>
         </span>
         <Calendar />
       </Info>

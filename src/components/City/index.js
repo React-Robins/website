@@ -11,15 +11,15 @@ const City = ({ past, city, link, date, icon, iconHover, hostIcon, hostName }) =
     <Wrapper to={link} innerRef={hoverRef}>
       <CityIcon>
         {isHovering && !past ? (
-          <img src={iconHover} className="animated bounceIn" css={sizes} alt={city} />
+          <img src={iconHover.publicURL} className="animated bounceIn" css={sizes} alt={city} />
         ) : (
-          <img css={sizes} src={icon} alt={city} />
+          <img css={sizes} src={icon.publicURL} alt={city} />
         )}
       </CityIcon>
       <CityInfo>
         <MeetupDate past={past}>{format(date, 'Do MMMM')}</MeetupDate>
         <Name past={past}>{city}</Name>
-        <Host past={past} src={hostIcon} alt={hostName} />
+        <Host past={past} src={hostIcon.publicURL} alt={hostName} />
       </CityInfo>
     </Wrapper>
   )

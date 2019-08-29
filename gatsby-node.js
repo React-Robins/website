@@ -4,26 +4,24 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const result = await graphql(`
     {
-      allJavascriptFrontmatter {
+      allEvent {
         edges {
           node {
             id
-            frontmatter {
-              info {
-                link
-              }
+            info {
+              link
             }
           }
         }
       }
     }
   `)
-  result.data.allJavascriptFrontmatter.edges.forEach(({ node }) => {
+  result.data.allEvent.edges.forEach(({ node }) => {
     createPage({
-      path: node.frontmatter.info.link,
+      path: node.info.link,
       component: path.resolve(`./src/templates/city.js`),
       context: {
-        slug: node.frontmatter.info.link
+        slug: node.info.link
       }
     })
   })

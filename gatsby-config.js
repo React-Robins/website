@@ -33,11 +33,17 @@ module.exports = {
         ]
       }
     },
-    'gatsby-transformer-javascript-frontmatter',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        path: `./src/data/`
+        path: 'data',
+        name: 'events'
+      }
+    },
+    {
+      resolve: 'gatsby-transformer-yaml',
+      options: {
+        typeName: 'Event'
       }
     }
   ]

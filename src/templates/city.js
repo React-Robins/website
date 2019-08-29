@@ -4,10 +4,10 @@ import Main from '../pages/_main'
 
 export default ({ data = {} }) => {
   const {
-    javascriptFrontmatter: { frontmatter },
+    event,
     allAirtable: { edges }
   } = data
-  return <Main city={frontmatter} attendees={edges.map(edge => edge.node)} />
+  return <Main city={event} attendees={edges.map(edge => edge.node)} />
 }
 
 export const query = graphql`
@@ -23,50 +23,50 @@ export const query = graphql`
         }
       }
     }
-    javascriptFrontmatter(frontmatter: { info: { link: { eq: $slug } } }) {
-      frontmatter {
-        info {
-          link
-          city
-        }
-        site {
-          location
-          date
-          googleMapsLink
-          calendarLink
-          cfp
-        }
-        mainOrganizer {
-          name
-          main
-          phoneNumber
-          twitterHandle
-          email
-        }
-        organizers {
-          id
-          name
-          email
-          twitterHandle
-        }
-        thanks {
-          id
-          link
-          name
-          reason
-        }
-        sponsors {
-          name
-          link
-          media
-        }
-        speakers {
-          id
-          mc
-          name
-          twitterLink
-          photo
-        }
+    event(info: { link: { eq: $slug } }) {
+      info {
+        link
+        city
+        hour
+        date
+      }
+      site {
+        location
+        date
+        googleMapsLink
+        calendarLink
+        cfp
+      }
+      mainOrganizer {
+        name
+        main
+        phoneNumber
+        twitterHandle
+        email
+      }
+      organizers {
+        id
+        name
+        email
+        twitterHandle
+      }
+      thanks {
+        id
+        link
+        name
+        reason
+      }
+      sponsors {
+        name
+        link
+        media
+      }
+      speakers {
+        id
+        mc
+        name
+        twitterLink
+        photo
       }
     }
   }

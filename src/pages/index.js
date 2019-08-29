@@ -2,17 +2,19 @@ import React from 'react'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
 import Panel, { LargeParagraph } from '../components/Panel'
-
-import cities from './_cities'
 import City, { Cities } from '../components/City'
 
-import { isFuture } from 'date-fns'
+import { isFuture, parse } from 'date-fns'
+import { graphql } from 'gatsby'
 
-const IndexPage = ({ data = {} }) => {
-  const sortedCities = cities.sort(({ date }, { date: otherDate }) => date - otherDate)
+const IndexPage = ({ data: { allEvent } }) => {
+  const getDate = date => parse(date, 'L', new Date())
+  const sortedCities = allEvent.edges.sort(
+    (a, b) => getDate(a.node.info.date) - getDate(b.node.info.date)
+  )
 
-  const futureMeetups = sortedCities.filter(city => isFuture(city.date))
-  const pastMeetups = sortedCities.filter(city => !isFuture(city.date))
+  const futureMeetups = sortedCities.filter(city => isFuture(city.node.info.date))
+  const pastMeetups = sortedCities.filter(city => !isFuture(city.node.info.date))
 
   return (
     <Layout>
@@ -33,8 +35,8 @@ const IndexPage = ({ data = {} }) => {
       {futureMeetups.length ? (
         <Panel wide heading="Upcoming meetups">
           <Cities>
-            {futureMeetups.map(city => (
-              <City {...city} key={city.city} />
+            {futureMeetups.map(({ node }) => (
+              <City {...node.info} key={node.id} />
             ))}
           </Cities>
         </Panel>
@@ -42,8 +44,8 @@ const IndexPage = ({ data = {} }) => {
       {pastMeetups.length ? (
         <Panel wide heading="Past Meetups">
           <Cities>
-            {pastMeetups.map(city => (
-              <City {...city} key={city.city} past />
+            {pastMeetups.map(({ node }) => (
+              <City {...node.info} past key={node.id} />
             ))}
           </Cities>
         </Panel>
@@ -66,3 +68,32 @@ const IndexPage = ({ data = {} }) => {
 }
 
 export default IndexPage
+
+export const query = graphql`
+  query {
+    allEvent {
+      edges {
+        node {
+          id
+          info {
+            city
+            link
+            date
+            hour
+            hostName
+            hour
+            icon {
+              publicURL
+            }
+            iconHover {
+              publicURL
+            }
+            hostIcon {
+              publicURL
+            }
+          }
+        }
+      }
+    }
+  }
+`
