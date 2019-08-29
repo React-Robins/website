@@ -1,0 +1,27 @@
+---
+info:
+  city: New York
+  link: new-york
+  date: 11/02/2019
+  hour: '18:00'
+  icon: icons/ny/ny.svg
+  iconHover: icons/ny/ny-hover.svg
+  hostIcon: icons/ny/microsoft.svg
+  hostName: Microsoft
+site:
+  city: New York
+  location: Microsoft HQ
+  googleMapsLink: https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS&location=11+Time+Square%2C+New+York%2C+NY+10036%2C+USA&dates=20191103T000000Z%2F20191103T050000Z
+  calendarLink: https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS&location=Microsoft%2BHQ&dates=20191103T000000Z%2F20191103T050000Z
+  cfp: true
+sponsors:
+  - name: Microsoft
+    link: https://www.microsoft.com/
+    media: https://cdn.sanity.io/images/atggkqis/london/153b6040eb345b762464ef9fb3eb40f9187caa4d-400x400.png
+speakers:
+  - name: Melody
+    twitterLink: pixelyunicorn
+  - name: Raphael Eidus
+    twitterLink: raphaelcodes
+  - name: Wesley de Souza
+    twitterLink: WesleydeSouza
