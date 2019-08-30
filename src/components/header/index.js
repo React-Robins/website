@@ -33,7 +33,12 @@ const Header = ({ siteTitle }) => (
           <NavLink to="/">Cities</NavLink>
         </li>
         <li>
-          <NavHref href="https://shop.queerjs.com" target="_blank" rel="noopener noreferrer">
+          <NavHref
+            href="https://shop.queerjs.com"
+            target="_blank"
+            title="QueerJS Shop"
+            rel="noopener noreferrer"
+          >
             Shop
           </NavHref>
         </li>
@@ -41,6 +46,7 @@ const Header = ({ siteTitle }) => (
           <NavHref
             href="https://opencollective.com/queerjs"
             target="_blank"
+            title="QueerJS Shop"
             rel="noopener noreferrer"
           >
             Donate to our open collective

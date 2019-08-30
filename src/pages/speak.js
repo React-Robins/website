@@ -26,11 +26,21 @@ export default () => {
           there, you can use one of our of issue templates to guide you through your talk
           submission. If you need any help with this process because you are new to GitHub, git or
           speaking in general, ping one of the organizers on{' '}
-          <a href="https://discord.gg/jhMwNfK" rel="noopener noreferrer" target="_blank">
+          <a
+            href="https://discord.gg/jhMwNfK"
+            rel="noopener noreferrer"
+            title="Discord Server"
+            target="_blank"
+          >
             Discord
           </a>{' '}
           or send us a message on{' '}
-          <a href="https://twitter.com/QueerJS" rel="noopener noreferrer" target="_blank">
+          <a
+            href="https://twitter.com/QueerJS"
+            rel="noopener noreferrer"
+            title="Twitter"
+            target="_blank"
+          >
             Twitter
           </a>
           . Happy to help any way we can!
@@ -40,7 +50,12 @@ export default () => {
           certainly can be). The most important thing is that you're excited about your topic.
           That's the amazing thing about public speaking - you get to share your passions with the
           world. Just keep in mind that all talks must follow our{' '}
-          <a href="https://queerjs.com/code-of-conduct/" rel="noopener noreferrer" target="_blank">
+          <a
+            href="https://queerjs.com/code-of-conduct/"
+            rel="noopener noreferrer"
+            title="Code of Conduct"
+            target="_blank"
+          >
             Code of Conduct
           </a>
           .
@@ -52,7 +67,12 @@ export default () => {
         </Panel>
         <Panel heading="Where does QueerJS happen?">
           We have a bunch of meetups being planned all over the globe 🌍 You can check the{' '}
-          <a href="https://queerjs.com/" rel="noopener noreferrer" target="_blank">
+          <a
+            href="https://queerjs.com/"
+            title="QueerJS website"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             QueerJS website
           </a>{' '}
           for a list of the upcoming (and past) meetups.
@@ -75,7 +95,10 @@ export default () => {
 
         <Panel heading="Speak 🎉">
           <RsvpButton>
-            <a href="https://github.com/queerjs/queerjs-talk-proposals/issues/new/choose">
+            <a
+              title="Proposals"
+              href="https://github.com/queerjs/queerjs-talk-proposals/issues/new/choose"
+            >
               <Blinker delay={0}>{'>'}</Blinker>
               <Blinker delay={1}>{'>'}</Blinker>
               <Blinker delay={2}>{'>'}</Blinker>

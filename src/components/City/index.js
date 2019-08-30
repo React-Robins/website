@@ -8,7 +8,13 @@ import { Wrapper, sizes, CityInfo, CityIcon, Cities, Name, MeetupDate, Host } fr
 const City = ({ past, city, link, date, icon, iconHover, hostIcon, hostName }) => {
   const [hoverRef, isHovering] = useHover()
   return (
-    <Wrapper to={link} innerRef={hoverRef}>
+    <Wrapper
+      itemscope
+      itemtype="http://schema.org/Event"
+      title={`QueerJS ${city}`}
+      to={link}
+      innerRef={hoverRef}
+    >
       <CityIcon>
         {isHovering && !past ? (
           <img src={iconHover.publicURL} className="animated bounceIn" css={sizes} alt={city} />
@@ -17,8 +23,12 @@ const City = ({ past, city, link, date, icon, iconHover, hostIcon, hostName }) =
         )}
       </CityIcon>
       <CityInfo>
-        <MeetupDate past={past}>{format(date, 'Do MMMM')}</MeetupDate>
-        <Name past={past}>{city}</Name>
+        <MeetupDate itemprop={date} content="2013-09-14T21:30" past={past}>
+          {format(date, 'Do MMMM')}
+        </MeetupDate>
+        <Name past={past} itemprop="name">
+          {city}
+        </Name>
         <Host past={past} src={hostIcon.publicURL} alt={hostName} />
       </CityInfo>
     </Wrapper>

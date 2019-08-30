@@ -19,7 +19,7 @@ export default ({ thanks, mainOrganizer, site }) => {
       <Thanks>
         {thanks.map(a => (
           <li key={a.id}>
-            <a href={a.link} target="_blank" rel="noopener noreferrer">
+            <a href={a.link} title={a.name} target="_blank" rel="noopener noreferrer">
               {a.name} for {a.reason}
             </a>
           </li>
@@ -46,7 +46,10 @@ export default ({ thanks, mainOrganizer, site }) => {
         What's with all the flags?
       </Link>
       <br />
-      Follow QueerJS on <a href="https://twitter.com/queerjs">Twitter</a>
+      Follow QueerJS on{' '}
+      <a href="https://twitter.com/queerjs" title="Follow us on Twitter">
+        Twitter
+      </a>
       <br />
       <br />
     </>

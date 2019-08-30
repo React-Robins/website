@@ -19,13 +19,13 @@ export default ({ site, city, info }) => {
         <Flag />
         <span>
           Location:{' '}
-          <a href={site.googleMapsLink} target="_blank" rel="noopener noreferrer">
+          <a href={site.googleMapsLink} target="_blank" title="Location" rel="noopener noreferrer">
             {site.location}
           </a>
         </span>
 
         <span>
-          <a href={site.calendarLink}>
+          <a href={site.calendarLink} title="Add to Calendar">
             {info.hour} {format(date, ['Do [of] MMMM '])}
           </a>
         </span>
