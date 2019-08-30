@@ -4,14 +4,12 @@ import Layout from '../containers/layout'
 import Panel from '../components/Panel'
 
 const CodeOfConduct = ({ location }) => {
-  const {
-    organizer = {
-      name: 'Sara Vieira',
-      phoneNumber: '+351 91 7296 830',
-      email: 'hey@iamsaravieira.com',
-      twitterHandle: '@NikkitaFTW'
-    }
-  } = location.state
+  const organizer = location.state.organizer || {
+    name: 'Sara Vieira',
+    phoneNumber: '+351 91 7296 830',
+    email: 'hey@iamsaravieira.com',
+    twitterHandle: '@NikkitaFTW'
+  }
   return (
     <Layout>
       <SEO
