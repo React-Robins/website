@@ -14,7 +14,10 @@ const Main = ({ city, attendees }) => {
 
   return (
     <Layout>
-      <SEO title={site.title} description={site.description} />
+      <SEO
+        title={`QueerJS - ${info.city}`}
+        description={'A meetup for everyone where Queer Speakers take the stage'}
+      />
       <main>
         <Heading sub="queerjs @">{info.city}</Heading>
         <Info site={site} info={info} city={info.link} />
