@@ -9,19 +9,15 @@
     "format": "prettier --write \"**/*.js\" \"!.cache/**\" \"!node_modules/**\" \"!public/**\""
   },
   "devDependencies": {
-    "@sanity/block-content-to-react": "2.0.6",
-    "@sanity/image-url": "0.140.12",
     "date-fns": "1.30.1",
     "dotenv": "8.0.0",
     "gatsby": "2.12.0",
     "gatsby-plugin-react-helmet": "3.1.0",
-    "gatsby-source-sanity": "5.0.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-helmet": "5.2.1"
   },
   "dependencies": {
-    "@sanity/client": "0.141.5",
     "airtable": "^0.7.1",
     "animate.css": "^3.7.2",
     "babel-plugin-styled-components": "1.10.6",
