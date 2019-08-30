@@ -77,5 +77,17 @@ export default {
       twitterLink: 'Avilene_',
       colors: biStripes
     }
+  ],
+  'New York': [
+    {
+      name: 'Melody ✨',
+      twitterLink: 'pixelyunicorn',
+      colors: phillyStripes
+    },
+    {
+      name: 'Tierney Cyren',
+      twitterLink: 'bitandbang',
+      colors: []
+    }
   ]
 }

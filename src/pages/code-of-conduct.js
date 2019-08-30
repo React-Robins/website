@@ -3,26 +3,23 @@ import SEO from '../components/seo'
 import Layout from '../containers/layout'
 import Panel from '../components/Panel'
 
-const defaultValues = {
-  site: {
-    title: 'QueerJS',
-    description: 'A meetup for everyone where Queer Speakers take the stage'
-  },
-  organizer: {
-    name: 'Sara Vieira',
-    phoneNumber: '+351 91 7296 830',
-    email: 'hey@iamsaravieira.com',
-    twitterHandle: '@NikkitaFTW'
-  }
-}
-
 const CodeOfConduct = ({ location }) => {
-  const { site, organizer } = location.state || defaultValues
+  const {
+    organizer = {
+      name: 'Sara Vieira',
+      phoneNumber: '+351 91 7296 830',
+      email: 'hey@iamsaravieira.com',
+      twitterHandle: '@NikkitaFTW'
+    }
+  } = location.state
   return (
     <Layout>
-      <SEO title={site.title} description={site.description} />
+      <SEO
+        title="QueerJS - Code Of Conduct"
+        description="A meetup for everyone where Queer Speakers take the stage"
+      />
       <main>
-        <h1 hidden>Welcome to {site.title}</h1>
+        <h1 hidden>Welcome to QueerJS</h1>
         <Panel heading="Code of Conduct">
           <section
             css={`
