@@ -8,6 +8,17 @@ import { Nav, LogoWrap, Logo, Codelings, Subtitle, NavRow, NavLink, NavHref } fr
 const Header = ({ siteTitle }) => (
   <Nav>
     <Codelings />
+    <h1
+      css={`
+        display: block;
+        overflow: hidden;
+        text-indent: 100%;
+        white-space: nowrap;
+        font-size: 2px;
+      `}
+    >
+      QueerJS
+    </h1>
     <Subtitle>A meetup for everyone where Queer Speakers take the stage</Subtitle>
     <NavRow>
       <LogoWrap>

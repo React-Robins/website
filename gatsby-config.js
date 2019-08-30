@@ -4,9 +4,14 @@ require('dotenv').config({
 })
 
 module.exports = {
+  siteMetadata: {
+    siteUrl: 'https://queerjs.com'
+  },
   plugins: [
     `gatsby-plugin-styled-components`,
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-robots-txt',
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-webfonts`,
       options: {

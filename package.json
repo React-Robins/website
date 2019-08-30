@@ -22,6 +22,8 @@
     "animate.css": "^3.7.2",
     "babel-plugin-styled-components": "1.10.6",
     "gatsby-image": "2.2.4",
+    "gatsby-plugin-robots-txt": "^1.5.0",
+    "gatsby-plugin-sitemap": "^2.2.9",
     "gatsby-plugin-styled-components": "3.1.0",
     "gatsby-plugin-webfonts": "1.0.12",
     "gatsby-source-airtable": "^2.0.8",
