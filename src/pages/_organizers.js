@@ -64,6 +64,18 @@ export default {
       colors: lesbianStripes
     }
   ],
+  'New York': [
+    {
+      name: 'Melody ✨',
+      twitterLink: 'pixelyunicorn',
+      colors: phillyStripes
+    },
+    {
+      name: 'Tierney Cyren',
+      twitterLink: 'bitandbang',
+      colors: []
+    }
+  ],
   'San Francisco': [
     {
       name: 'Alejandra Villa',
@@ -76,18 +88,6 @@ export default {
       name: 'Aveline Estié',
       twitterLink: 'Avilene_',
       colors: biStripes
-    }
-  ],
-  'New York': [
-    {
-      name: 'Melody ✨',
-      twitterLink: 'pixelyunicorn',
-      colors: phillyStripes
-    },
-    {
-      name: 'Tierney Cyren',
-      twitterLink: 'bitandbang',
-      colors: []
     }
   ]
 }
