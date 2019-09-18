@@ -3,7 +3,7 @@ info:
   city: London
   link: london
   date: 09/20/2019
-  hour: '17:00'
+  hour: '18:30'
   icon: icons/london/london.svg
   iconHover: icons/london/london-hover.svg
   hostIcon: icons/london/microsoft.svg
