@@ -32,6 +32,7 @@ export default ({ onSubmit, city }) => {
     <Form
       onSubmit={e => {
         e.preventDefault()
+        createUser()
         onSubmit()
       }}
     >
@@ -41,6 +42,7 @@ export default ({ onSubmit, city }) => {
           required
           id="name"
           type="text"
+          pattern="[a-zA-Z0-9]+"
           value={name}
           onChange={e => setName(e.target.value)}
         />
@@ -51,6 +53,7 @@ export default ({ onSubmit, city }) => {
           required
           id="gh"
           type="text"
+          pattern="[A-Za-z0-9-]{1,30}"
           value={gh}
           onChange={e => setGH(e.target.value.trim())}
         />
@@ -64,6 +67,7 @@ export default ({ onSubmit, city }) => {
         <input
           id="plus-one"
           type="checkbox"
+          pattern="[a-zA-Z0-9]+"
           value={plus}
           css={`
             width: auto !important;
@@ -86,7 +90,7 @@ export default ({ onSubmit, city }) => {
         </label>
       )}
 
-      <Button onClick={createUser}>I AM IN 🎉</Button>
+      <Button>I AM IN 🎉</Button>
     </Form>
   )
 }
