@@ -117,7 +117,7 @@ export const ListItem = styled.li`
     width: 53px;
     height: 85px;
     position: absolute;
-    top: -13px;
+    top: -20px;
     z-index: 99;
   }
 `
