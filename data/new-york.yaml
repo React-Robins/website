@@ -22,12 +22,13 @@ sponsors:
 speakers:
   - name: Melody ✨
     twitterLink: pixelyunicorn
-    talk: React Hooks
+    talk: how javascript made me gay
   - name: Raphael Eidus
     twitterLink: raphaelcodes
-    talk: Understanding Technical Decision Making
+    talk: technical decision making
   - name: Wes Souza
     twitterLink: WesleydeSouza
+    talk: "something!"
   - name: Jolene Langlinais
     twitterLink: jolanglinais
-    talk: Git Workflow Etiquette
+    talk: Git workflow etiquette
