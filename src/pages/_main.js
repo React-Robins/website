@@ -20,7 +20,7 @@ const Main = ({ city, attendees }) => {
       />
       <main>
         <Heading sub="queerjs @">{info.city}</Heading>
-        <Info site={site} info={info} city={info.link} />
+        <Info attendeesNumber={attendees.length} site={site} info={info} city={info.link} />
         <Panel heading="What?">
           <p>
             This is a meetup where anyone is welcome to attend and support the speakers and the idea

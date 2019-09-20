@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { format, parse } from 'date-fns'
+import { format, parse, isPast } from 'date-fns'
 
 import RSVP from './Form'
 import Flag from '../icons/flag'
@@ -7,11 +7,13 @@ import Calendar from '../icons/calendar'
 
 import { Info, RsvpButton, Blinker, Bouncer } from './elements'
 
-export default ({ site, city, info }) => {
+export default ({ site, city, info, attendeesNumber }) => {
   const [open, setOpen] = useState(false)
   const [submitted, setSubmitted] = useState(false)
 
   const date = parse(info.date, 'L', new Date())
+  const closeRSVP =
+    attendeesNumber >= info.maxCapacity || info.rsvpsClosed || isPast(parse(info.date))
 
   return (
     <>
@@ -35,22 +37,28 @@ export default ({ site, city, info }) => {
         <RsvpButton
           onClick={() => setOpen(true)}
           style={
-            submitted
+            submitted || closeRSVP
               ? {
                   pointerEvents: 'none'
                 }
               : {}
           }
         >
-          <Blinker delay={0}>{'>'}</Blinker>
-          <Blinker delay={1}>{'>'}</Blinker>
-          <Blinker delay={2}>{'>'}</Blinker>
-          <Blinker delay={3}>{'>'}</Blinker>{' '}
-          {!submitted ? <Bouncer>RSVP NOW</Bouncer> : <Bouncer>YOU ARE AWESOME</Bouncer>}{' '}
-          <Blinker delay={3}>{'<'}</Blinker>
-          <Blinker delay={2}>{'<'}</Blinker>
-          <Blinker delay={1}>{'<'}</Blinker>
-          <Blinker delay={0}>{'<'}</Blinker>
+          {!closeRSVP ? (
+            <>
+              <Blinker delay={0}>{'>'}</Blinker>
+              <Blinker delay={1}>{'>'}</Blinker>
+              <Blinker delay={2}>{'>'}</Blinker>
+              <Blinker delay={3}>{'>'}</Blinker>{' '}
+              {!submitted ? <Bouncer>RSVP NOW</Bouncer> : <Bouncer>YOU ARE AWESOME</Bouncer>}{' '}
+              <Blinker delay={3}>{'<'}</Blinker>
+              <Blinker delay={2}>{'<'}</Blinker>
+              <Blinker delay={1}>{'<'}</Blinker>
+              <Blinker delay={0}>{'<'}</Blinker>
+            </>
+          ) : (
+            'RSVPs are now closed'
+          )}
         </RsvpButton>
       ) : (
         <RSVP

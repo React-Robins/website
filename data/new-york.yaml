@@ -8,6 +8,8 @@ info:
   iconHover: icons/ny/ny-hover.svg
   hostIcon: icons/ny/microsoft.svg
   hostName: Microsoft
+  rsvpsClosed: false
+  maxCapacity: 100
 site:
   city: New York
   location: Microsoft Times Square

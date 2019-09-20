@@ -29,6 +29,8 @@ export const query = graphql`
         city
         hour
         date
+        maxCapacity
+        rsvpsClosed
       }
       site {
         location
