@@ -19,7 +19,7 @@ const Speakers = ({ noSpeak, speakers, cfp }) => {
         <ListItem
           talk={human.talk}
           key={human.id}
-          data-tooltip={`I'll be speaking about ${human.talk}!`}
+          data-tooltip={`I'm speaking about ${human.talk}!`}
         >
           <UnstyledLink
             as="a"

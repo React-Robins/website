@@ -123,5 +123,6 @@ export const ListItem = styled.li`
     top: -4px;
     right: 25%;
     z-index: 99;
+    pointer-events: none;
   }
 `
