@@ -67,6 +67,7 @@ export const query = graphql`
         mc
         name
         twitterLink
+        talk
       }
     }
   }
