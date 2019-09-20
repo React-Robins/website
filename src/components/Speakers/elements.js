@@ -22,6 +22,10 @@ export const SpeakerPhoto = styled.div`
   transition: 0.2s;
   line-height: 0;
 
+  > ${InlineRainbow} {
+    border-radius: 100%;
+  }
+
   &:hover {
     transform: scale(1.1) rotate(-5deg);
 
