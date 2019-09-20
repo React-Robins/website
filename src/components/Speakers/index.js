@@ -8,14 +8,19 @@ import {
   CFPInner,
   SpeakersGrid,
   Unstyled,
+  ListItem,
   UnstyledLink
 } from './elements'
 
-const Speakers = ({ noSpeak, speakers, cfp, dataset, organizers }) => {
+const Speakers = ({ noSpeak, speakers, cfp }) => {
   return (
     <SpeakersGrid>
       {speakers.map(human => (
-        <li key={human.id}>
+        <ListItem
+          talk={human.talk}
+          key={human.id}
+          data-tooltip={`I will be speaking about ${human.talk}`}
+        >
           <UnstyledLink
             as="a"
             href={`https://twitter.com/${human.twitterLink}`}
@@ -35,7 +40,7 @@ const Speakers = ({ noSpeak, speakers, cfp, dataset, organizers }) => {
             <Unstyled>{human.name}</Unstyled>
             {human.location && <Unstyled>{human.location}</Unstyled>}
           </UnstyledLink>
-        </li>
+        </ListItem>
       ))}
       {cfp && !noSpeak && (
         <li>
