@@ -22,10 +22,11 @@ sponsors:
 speakers:
   - name: Melody ✨
     twitterLink: pixelyunicorn
-    talk: React Hooks
   - name: Raphael Eidus
     twitterLink: raphaelcodes
+    talk: Understanding Technical Decision Making
   - name: Wes Souza
     twitterLink: WesleydeSouza
   - name: Jolene Langlinais
     twitterLink: jolanglinais
+    talk: Git Workflow Etiquette
