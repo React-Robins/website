@@ -10,13 +10,13 @@ info:
   hostName: Microsoft
 site:
   city: New York
-  location: Microsoft HQ
-  googleMapsLink: https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS&location=11+Time+Square%2C+New+York%2C+NY+10036%2C+USA&dates=20191103T000000Z%2F20191103T050000Z
+  location: Microsoft Times Square
+  googleMapsLink: https://goo.gl/maps/2PrTpvgpixJGu2SZ7
   calendarLink: https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS&location=Microsoft%2BHQ&dates=20191103T000000Z%2F20191103T050000Z
 sponsors:
   - name: Microsoft
     link: https://www.microsoft.com/
-    media: https://i.imgur.com/PHXWKbN.png
+    media: https://i.imgur.com/NqR9w63.png
 speakers:
   - name: Melody ✨
     twitterLink: pixelyunicorn
