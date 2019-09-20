@@ -36,6 +36,10 @@ export default ({ onSubmit, city }) => {
         onSubmit()
       }}
     >
+      <p>
+        If you are not conformable showing your photo and link please put `QueerJS` in the Github
+        Username input
+      </p>
       <label htmlFor="name">
         Name
         <input
