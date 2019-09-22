@@ -13,7 +13,11 @@ export default ({ site, city, info, attendeesNumber }) => {
 
   const date = parse(info.date, 'L', new Date())
   const closeRSVP =
-    attendeesNumber >= info.maxCapacity || info.rsvpsClosed || isPast(parse(info.date))
+    (info.maxCapacity && attendeesNumber >= info.maxCapacity) ||
+    info.rsvpsClosed ||
+    isPast(parse(info.date))
+
+  console.log(attendeesNumber >= info.maxCapacity, info.rsvpsClosed || isPast(parse(info.date)))
 
   return (
     <>

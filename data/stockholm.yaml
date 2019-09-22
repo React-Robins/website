@@ -37,9 +37,15 @@ sponsors:
 speakers:
   - name: Yonatan Miller
     twitterLink: shushugah
+    talk: Queer History of Computing
   - name: Cynthia Maja Revström
+    talk: Adventures in WHOIS
     twitterLink: bitcynth
   - name: Shelley Vohr
     twitterLink: codebytere
+  - name: Quil
+    twitterLink: qteatime
+    link: https://robotlolita.me/
+    talk: Helping Your Compiler Help You
   - name: Aveline
     twitterLink: Avilene_

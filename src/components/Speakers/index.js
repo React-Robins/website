@@ -23,7 +23,7 @@ const Speakers = ({ noSpeak, speakers, cfp }) => {
         >
           <UnstyledLink
             as="a"
-            href={`https://twitter.com/${human.twitterLink}`}
+            href={human.link || `https://twitter.com/${human.twitterLink}`}
             target="_blank"
             rel="noopener noreferrer"
             title={human.name}
