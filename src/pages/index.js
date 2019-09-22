@@ -30,7 +30,12 @@ const IndexPage = ({ data: { allEvent } }) => {
           This meetup exists to give a voice to everyone, to make a safe space where everyone is
           welcome.
         </LargeParagraph>
-        <LargeParagraph>Join us! There will be food and stickers 🌈</LargeParagraph>
+        <LargeParagraph>
+          Join us! There will be food and stickers{' '}
+          <span role="img" aria-label="Queer Rainbow">
+            🌈
+          </span>
+        </LargeParagraph>
       </Panel>
       {futureMeetups.length ? (
         <Panel wide heading="Upcoming meetups">

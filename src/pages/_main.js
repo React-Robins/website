@@ -18,7 +18,7 @@ const Main = ({ city, attendees }) => {
         title={`QueerJS - ${info.city}`}
         description={'A meetup for everyone where Queer Speakers take the stage'}
       />
-      <main>
+      <section>
         <Heading sub="queerjs @">{info.city}</Heading>
         <Info attendeesNumber={attendees.length} site={site} info={info} city={info.link} />
         <Panel heading="What?">
@@ -29,7 +29,12 @@ const Main = ({ city, attendees }) => {
             This meetup exists to give a voice to everyone, to make a safe space where everyone is
             welcome.
           </p>
-          <p>Join us! There will be food and stickers 🌈</p>
+          <p>
+            Join us! There will be food and stickers{' '}
+            <span role="img" aria-label="Queer Rainbow">
+              🌈
+            </span>
+          </p>
         </Panel>
         <Panel heading="Speakers">
           <Speakers cfp={site.cfp} speakers={speakers.filter(s => !s.mc)} />
@@ -46,7 +51,7 @@ const Main = ({ city, attendees }) => {
         <Panel heading="Sponsors">
           <Sponsors sponsors={sponsors} />
         </Panel>
-      </main>
+      </section>
       <Panel heading="Special Thanks">
         <Thanks
           organizers={organizers}

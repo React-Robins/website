@@ -19,7 +19,10 @@ export default () => {
         <h1 hidden>Welcome to {site.title}</h1>
         <Panel heading="Speaking at QueerJS">
           First of all, thank you for thinking about submitting a talk to an upcoming QueerJS event.
-          We're happy you're here 🌈
+          We're happy you're here{' '}
+          <span role="img" aria-label="Queer Rainbow">
+            🌈
+          </span>
         </Panel>
         <Panel heading="How do I submit a talk?">
           Click the shiny button at the bottom! That will lead you to our GitHub repo and from
@@ -66,7 +69,11 @@ export default () => {
           present, please let us know so we can adjust the schedule or coordinate with the venue.
         </Panel>
         <Panel heading="Where does QueerJS happen?">
-          We have a bunch of meetups being planned all over the globe 🌍 You can check the{' '}
+          We have a bunch of meetups being planned all over the globe{' '}
+          <span role="img" aria-label="earth">
+            🌍
+          </span>{' '}
+          You can check the{' '}
           <a
             href="https://queerjs.com/"
             title="QueerJS website"

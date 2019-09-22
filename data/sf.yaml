@@ -29,6 +29,7 @@ speakers:
     twitterLink: AlxSavage
   - name: Stephanie Winn
     twitterLink: steph_happens
+    talk: Out of the closet- Building a virtual closet
   - mc: true
     name: Sara Vieira
     twitterLink: NikkitaFTW
@@ -38,5 +39,6 @@ speakers:
     twitterLink: radhikamorabia
   - name: Lily Scott
     twitterLink: suchipi
+    talk: Presenting and discovering our identities through social software
   - name: Nat Alison
     twitterLink: tesseralis

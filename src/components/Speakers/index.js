@@ -18,7 +18,7 @@ const Speakers = ({ noSpeak, speakers, cfp }) => {
       {speakers.map(human => (
         <ListItem
           talk={human.talk}
-          key={human.id}
+          key={human.twitterLink}
           data-tooltip={`I'm speaking about ${human.talk}!`}
         >
           <UnstyledLink
@@ -34,7 +34,7 @@ const Speakers = ({ noSpeak, speakers, cfp }) => {
                 width="240"
                 height="240"
                 src={`https://avatars.io/twitter/${human.twitterLink}`}
-                alt={human.name}
+                alt={`${human.name} photo`}
               />
             </SpeakerPhoto>
             <Unstyled>{human.name}</Unstyled>

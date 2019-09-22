@@ -94,7 +94,12 @@ export default ({ onSubmit, city }) => {
         </label>
       )}
 
-      <Button>I AM IN 🎉</Button>
+      <Button>
+        I AM IN{' '}
+        <span role="img" aria-label="Party">
+          🎉
+        </span>
+      </Button>
     </Form>
   )
 }

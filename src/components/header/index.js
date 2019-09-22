@@ -22,7 +22,7 @@ const Header = ({ siteTitle }) => (
     <Subtitle>A meetup for everyone where Queer Speakers take the stage</Subtitle>
     <NavRow>
       <LogoWrap>
-        <Logo irrelevant src={text} />
+        <Logo irrelevant alt="" src={text} />
         <RainbowWithClicker stripes={['red']}>
           <Logo src={logo} alt="Queer JS" />
         </RainbowWithClicker>

@@ -28,7 +28,7 @@ export default ({ sponsors }) => {
   return (
     <Grid>
       {sponsors.map(sponsor => (
-        <li>
+        <li key={sponsor.name}>
           <a target="_blank" title={sponsor.name} href={sponsor.link} rel="noopener noreferrer">
             <SponsorImage src={sponsor.media} alt={sponsor.name} />
           </a>

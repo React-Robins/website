@@ -17,8 +17,6 @@ export default ({ site, city, info, attendeesNumber }) => {
     info.rsvpsClosed ||
     isPast(parse(info.date))
 
-  console.log(attendeesNumber >= info.maxCapacity, info.rsvpsClosed || isPast(parse(info.date)))
-
   return (
     <>
       <Info>
