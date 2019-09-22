@@ -34,7 +34,7 @@ const Speakers = ({ noSpeak, speakers, cfp }) => {
                 width="240"
                 height="240"
                 src={`https://avatars.io/twitter/${human.twitterLink}`}
-                alt={`${human.name} photo`}
+                alt="Speaker"
               />
             </SpeakerPhoto>
             <Unstyled>{human.name}</Unstyled>
