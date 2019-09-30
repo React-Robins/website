@@ -46,7 +46,7 @@ export default ({ onSubmit, city }) => {
           required
           id="name"
           type="text"
-          pattern="[a-zA-Z0-9]+"
+          minLength="2"
           value={name}
           onChange={e => setName(e.target.value)}
         />
