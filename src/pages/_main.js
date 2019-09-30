@@ -52,7 +52,8 @@ const Main = ({ city, attendees }) => {
           <Sponsors sponsors={sponsors} />
         </Panel>
       </section>
-      <Panel heading="Special Thanks">
+
+      <Panel heading={thanks ? 'Special Thanks' : null}>
         <Thanks
           organizers={organizers}
           thanks={thanks || []}
