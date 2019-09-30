@@ -1,0 +1,31 @@
+---
+info:
+  city: Toronto
+  link: Toronto
+  date: 11/12/2019
+  hour: '18:30'
+  icon: icons/toronto/toronto.svg
+  iconHover: icons/toronto/toronto-hover.svg
+  hostIcon: icons/toronto/rangle.svg
+  hostName: Rangle
+site:
+  cfp: true
+  city: Toronto
+  location: Rangle
+  organizers: []
+  googleMapsLink: https://www.google.com/maps/place/Rangle.io/@43.6431721,-79.3822201,15z/data=!4m2!3m1!1s0x0:0xfa62ff9d72c3ed07?sa=X&ved=2ahUKEwiv96DTnvTkAhWsGTQIHXhjBpoQ_BIwDHoECAkQCA
+  calendarLink: https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS+Toronto&location=18+York+St%2C+Toronto%2C+ON+M5J+2T8%2C+Canada&dates=20191112T173000Z%2F20191112T200000Z
+# mainOrganizer:
+#   - name: Aveline Estié
+#     main: true
+#     phoneNumber: '+46762305887'
+#     twitterHandle: avilene_
+#     email: aa.estie@gmail.com
+sponsors:
+  - name: Rangle
+    link: https://rangle.io/
+    media: https://rangle.io/images/mstile-310x310.png
+speakers:
+  - name: SaraVieira
+    twitterLink: NikkitaFTW
+    # talk:
