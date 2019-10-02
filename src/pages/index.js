@@ -4,7 +4,7 @@ import Layout from '../containers/layout'
 import Panel, { LargeParagraph } from '../components/Panel'
 import City, { Cities } from '../components/City'
 
-import { isFuture, parse } from 'date-fns'
+import { isPast, parse } from 'date-fns'
 import { graphql } from 'gatsby'
 
 const IndexPage = ({ data: { allEvent } }) => {
@@ -13,8 +13,8 @@ const IndexPage = ({ data: { allEvent } }) => {
     (a, b) => getDate(a.node.info.date) - getDate(b.node.info.date)
   )
 
-  const futureMeetups = sortedCities.filter(city => isFuture(city.node.info.date))
-  const pastMeetups = sortedCities.filter(city => !isFuture(city.node.info.date))
+  const futureMeetups = sortedCities.filter(city => !isPast(city.node.info.date))
+  const pastMeetups = sortedCities.filter(city => isPast(city.node.info.date))
 
   return (
     <Layout>
