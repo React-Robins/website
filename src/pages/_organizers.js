@@ -4,7 +4,8 @@ import {
   biStripes,
   fluidStripes,
   lesbianStripes,
-  phillyStripes
+  phillyStripes,
+  transStripes
 } from '../helpers/useRainbow'
 
 export default {
@@ -88,6 +89,13 @@ export default {
       name: 'Aveline Estié',
       twitterLink: 'Avilene_',
       colors: biStripes
+    }
+  ],
+  Toronto: [
+    {
+      name: 'June Epstein',
+      twitterLink: 'thejuneepstein',
+      colors: transStripes
     }
   ]
 }
