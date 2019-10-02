@@ -4,7 +4,7 @@ import Layout from '../containers/layout'
 import Panel, { LargeParagraph } from '../components/Panel'
 import City, { Cities } from '../components/City'
 
-import { isFuture, parse } from 'date-fns'
+import { isFuture, isToday, parse } from 'date-fns'
 import { graphql } from 'gatsby'
 
 const IndexPage = ({ data: { allEvent } }) => {
