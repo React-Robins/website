@@ -8,6 +8,7 @@ info:
   iconHover: icons/paris/paris-hover.svg
   hostIcon: icons/paris/dashlane.svg
   hostName: Dashlane
+  maxCapacity: 80
 site:
   city: Paris
   location: Dashlane
