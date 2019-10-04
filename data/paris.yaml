@@ -20,11 +20,6 @@ mainOrganizer:
     phoneNumber: '+33 783059652'
     twitterHandle: PolaDuco
     email: paola.ducolin@dashlane.com
-organizers:
-  - id: 00000000000
-    name: Paola Ducolin
-    email: paola.ducolin@dashlane.com
-    twitterHandle: PolaDuco
 thanks: []
 sponsors:
   - name: Dashlane
@@ -33,4 +28,4 @@ sponsors:
 speakers:
   - name: Paola Ducolin
     twitterLink: PolaDuco
-
+    talk: Coding for refactoring
