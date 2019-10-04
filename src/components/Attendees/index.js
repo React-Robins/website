@@ -6,9 +6,10 @@ import shuffle from '../../helpers/shuffle'
 const dedupeAttendees = attendeesArray => {
   const list = []
   const deduped = attendeesArray.reduce((acc, current) => {
-    const cleanGhLink = current.data.ghLink.startsWith('@')
-      ? current.data.ghLink.slice(1)
-      : current.data.ghLink
+    const cleanGhLink =
+      current.data.ghLink && current.data.ghLink.startsWith('@')
+        ? current.data.ghLink.slice(1)
+        : current.data.ghLink
 
     if (list.includes(cleanGhLink)) {
       return acc
@@ -31,7 +32,8 @@ export default ({ attendees }) => {
       {shuffle(dedupedAttendees).map(({ data: a }) => {
         // Pretty ugly but this way we do not get duplicate https://github.com urls
 
-        const cleanGhLink = a.ghLink.startsWith('@') ? a.ghLink.slice(1) : a.ghLink
+        const cleanGhLink =
+          a.ghLink && a.ghLink.startsWith('@') ? a.ghLink.slice(1) : a.ghLink || 'queerjs'
 
         const ghLink = `https://github.com/${cleanGhLink.trim().replace('https://github.com/', '')}`
         return (
