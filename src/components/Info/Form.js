@@ -37,14 +37,15 @@ export default ({ onSubmit, city }) => {
       }}
     >
       <p>
-        If you are not conformable showing your photo and link please put `QueerJS` in the Github
-        Username input
+        If you're not comfortable showing your photo and link please put `QueerJS` in the `Github
+        Username` input field.
       </p>
       <label htmlFor="name">
-        Name
+        Your Name
         <input
           required
           id="name"
+          placeholder="Name"
           type="text"
           minLength="2"
           value={name}
@@ -57,8 +58,10 @@ export default ({ onSubmit, city }) => {
           required
           id="gh"
           type="text"
+          placeholder="QueerJS"
           pattern="[A-Za-z0-9-]{1,30}"
           value={gh}
+          onInvalid={e => e.target.setCustomValidity(`Your username, e.g. 'QueerJS' for 'https://github.com/queerjs'`)}
           onChange={e => setGH(e.target.value.trim())}
         />
       </label>
