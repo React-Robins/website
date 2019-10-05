@@ -93,9 +93,19 @@ export default {
   ],
   Toronto: [
     {
+      name: 'Em Lazer-Walker',
+      twitterLink: 'lazerwalker',
+      colors: transStripes
+    },
+    {
       name: 'June Epstein',
       twitterLink: 'thejuneepstein',
       colors: transStripes
+    },
+    {
+      name: 'Laura',
+      twitterLink: 'LC_butWithCode',
+      colors: biStripes
     }
   ]
 }
