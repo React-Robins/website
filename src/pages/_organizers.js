@@ -9,7 +9,7 @@ import {
 } from '../helpers/useRainbow'
 
 export default {
-  main: [
+  'Core Team': [
     {
       name: 'Sara Vieira',
       twitterLink: 'NikkitaFTW',
