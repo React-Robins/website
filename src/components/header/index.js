@@ -49,9 +49,10 @@ const Header = ({ siteTitle }) => (
             title="QueerJS Shop"
             rel="noopener noreferrer"
           >
-            Donate to our open collective
+            Donate
           </NavHref>
         </li>
+        <li><NavLink to="/organizers">Organizers</NavLink> </li>
       </ul>
     </NavRow>
   </Nav>

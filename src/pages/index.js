@@ -59,19 +59,6 @@ const IndexPage = ({ data: { allEvent } }) => {
           </Cities>
         </Panel>
       ) : null}
-
-      {/* <Thanks
-        organizers={[]}
-        thanks={[
-          {
-            link: 'https://www.flaticon.com',
-            name: 'Thank you to flaticon',
-            reason: 'icons'
-          }
-        ]}
-        site={site}
-        mainOrganizer={mainOrganizer.find(o => o.main)}
-      /> */}
     </Layout>
   )
 }
