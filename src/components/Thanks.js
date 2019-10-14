@@ -31,17 +31,6 @@ export default ({ thanks, mainOrganizer, site }) => {
       </Link>
       .
       <br />
-      Organized by a{' '}
-      <Link
-        css={`
-          padding-bottom: 40px;
-        `}
-        state={{ site: site }}
-        to="/organizers"
-      >
-        bunch of humans
-      </Link>
-      <br />
       <Link state={{ site: site }} to="/flags">
         What's with all the flags?
       </Link>
