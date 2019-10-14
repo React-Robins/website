@@ -15,12 +15,6 @@ site:
   organizers: []
   googleMapsLink: https://www.google.com/maps/place/Rangle.io/@43.6431721,-79.3822201,15z/data=!4m2!3m1!1s0x0:0xfa62ff9d72c3ed07?sa=X&ved=2ahUKEwiv96DTnvTkAhWsGTQIHXhjBpoQ_BIwDHoECAkQCA
   calendarLink: https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS+Toronto&location=18+York+St%2C+Toronto%2C+ON+M5J+2T8%2C+Canada&dates=20191112T173000Z%2F20191112T200000Z
-# mainOrganizer:
-#   - name: Aveline Estié
-#     main: true
-#     phoneNumber: '+46762305887'
-#     twitterHandle: avilene_
-#     email: aa.estie@gmail.com
 sponsors:
   - name: Rangle
     link: https://rangle.io/
@@ -29,3 +23,6 @@ speakers:
   - name: Meagan Moore
     twitterLink: _mdjm
     talk: bookmarklets in your browser
+  - name: Cayce Fischer
+    twitterLink: autotectonic
+    talk: making techno with ancient algorithms (and JS)
