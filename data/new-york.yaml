@@ -20,6 +20,9 @@ sponsors:
   - name: Microsoft
     link: https://www.microsoft.com/
     media: https://i.imgur.com/NqR9w63.png
+  - name: Heroku
+    link: https://www.heroku.com/
+    media: https://i.imgur.com/2BONYjO.png
 speakers:
   - name: Melody ✨
     twitterLink: pixelyunicorn
@@ -29,7 +32,7 @@ speakers:
     talk: technical decision making
   - name: Wes Souza
     twitterLink: WesleydeSouza
-    talk: "something!"
+    talk: 'something!'
   - name: Jolene Langlinais
     twitterLink: jolanglinais
     talk: Git workflow etiquette
