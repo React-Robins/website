@@ -30,6 +30,11 @@ export default {
       name: 'Carolyn Stransky',
       twitterLink: 'carolstran',
       colors: biStripes
+    },
+    {
+      name: 'Shelley Vohr',
+      twitterLink: 'codebytere',
+      colors: gayStripes
     }
   ],
   amsterdam: [
