@@ -15,7 +15,7 @@ site:
   location: Microsoft Times Square
   googleMapsLink: https://goo.gl/maps/2PrTpvgpixJGu2SZ7
   calendarLink: https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS&location=Microsoft%2BHQ&dates=20191103T000000Z%2F20191103T050000Z
-  cfp: true
+  cfp: false
 sponsors:
   - name: Microsoft
     link: https://www.microsoft.com/
@@ -36,3 +36,6 @@ speakers:
   - name: Jolene Langlinais
     twitterLink: jolanglinais
     talk: Git workflow etiquette
+  - name: Diana Rodriguez
+    twitterLink: cotufa82
+    talk: the road to an artificial pancreas
