@@ -80,7 +80,7 @@ const leatherStripes = [
   blueStripe,
   blackStripe
 ].map(toSizedPastelStrip)
-const nonBinaryStripes = ['#FDF333', '#FEFEFE', '#9858CF', '#2D2D2D'].map(toSizedPastelStrip)
+export const nonBinaryStripes = ['#FDF333', '#FEFEFE', '#9858CF', '#2D2D2D'].map(toSizedPastelStrip)
 const panStripes = ['#FF008E', '#FFD800', '#00B3FF'].map(toSizedPastelStrip)
 export const phillyStripes = [
   '#000',

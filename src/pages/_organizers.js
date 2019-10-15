@@ -5,7 +5,8 @@ import {
   fluidStripes,
   lesbianStripes,
   phillyStripes,
-  transStripes
+  transStripes,
+  nonBinaryStripes
 } from '../helpers/useRainbow'
 
 export default {
@@ -96,6 +97,11 @@ export default {
       name: 'Em Lazer-Walker',
       twitterLink: 'lazerwalker',
       colors: transStripes
+    },
+    {
+      name: 'Jackie Lealess',
+      twitterLink: 'jlealess',
+      colors: nonBinaryStripes
     },
     {
       name: 'June Epstein',
