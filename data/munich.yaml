@@ -28,4 +28,7 @@ sponsors:
   - name: Heroku
     link: https://www.heroku.com/
     media: https://i.imgur.com/2BONYjO.png
-speakers: []
+speakers:
+  - mc: true
+    name: Carolyn Stransky
+    twitterLink: carolstran
