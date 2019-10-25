@@ -25,14 +25,15 @@ sponsors:
     link: https://webflow.com/
     media: https://i.imgur.com/FeE8C40.png
 speakers:
-  - name: Alejandra Villa
-    twitterLink: AlxSavage
+  - mc: true
+    name: Shelley Vohr
+    twitterLink: codebytere
+  - mc: true
+    name: Laura González
+    twitterLink: freezydorito
   - name: Stephanie Winn
     twitterLink: steph_happens
     talk: Out of the closet- Building a virtual closet
-  - mc: true
-    name: Sara Vieira
-    twitterLink: NikkitaFTW
   - name: Anjana Vakil
     twitterLink: AnjanaVakil
   - name: Radhika Morabia
