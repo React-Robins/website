@@ -27,6 +27,11 @@ export default {
       colors: biStripes
     },
     {
+      name: 'Alejandra Villa',
+      twitterLink: 'AlxSavage',
+      colors: gayStripes
+    },
+    {
       name: 'Carolyn Stransky',
       twitterLink: 'carolstran',
       colors: biStripes
@@ -81,13 +86,6 @@ export default {
       name: 'Tierney Cyren',
       twitterLink: 'bitandbang',
       colors: []
-    }
-  ],
-  'San Francisco': [
-    {
-      name: 'Alejandra Villa',
-      twitterLink: 'AlxSavage',
-      colors: gayStripes
     }
   ],
   Stockholm: [
