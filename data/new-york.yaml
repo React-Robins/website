@@ -30,6 +30,7 @@ speakers:
   - name: Melody ✨
     twitterLink: pixelyunicorn
     talk: how javascript made me gay
+    mc: true
   - name: Raphael Eidus
     twitterLink: raphaelcodes
     talk: technical decision making
