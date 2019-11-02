@@ -9,7 +9,7 @@ info:
   hostIcon: icons/ny/microsoft.svg
   hostName: Microsoft
   rsvpsClosed: false
-  maxCapacity: 100
+  maxCapacity: 101
 site:
   city: New York
   location: Microsoft Times Square
