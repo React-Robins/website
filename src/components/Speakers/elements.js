@@ -106,7 +106,7 @@ export const ListItem = styled.li`
     background: #1e1126;
     width: 220px;
     padding: 20px;
-    transform: translateY(-85%);
+    transform: translateY(-90%);
     border-radius: 10px;
     border: 3px solid white;
     transition: opacity 200ms ease;
