@@ -3,7 +3,7 @@ info:
   city: San Francisco
   link: san-francisco
   date: 11/02/2019
-  hour: '15:00'
+  hour: '15:00 (stream) 18:00 (live talks)'
   icon: icons/sf/sf.svg
   iconHover: icons/sf/sf-hover.svg
   hostIcon: icons/sf/webflow.svg
