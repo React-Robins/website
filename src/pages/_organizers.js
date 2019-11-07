@@ -22,11 +22,6 @@ export default {
       colors: aceStripes
     },
     {
-      name: 'Kate Beard',
-      twitterLink: 'SBinLondon',
-      colors: biStripes
-    },
-    {
       name: 'Alejandra Villa',
       twitterLink: 'AlxSavage',
       colors: gayStripes
@@ -74,6 +69,13 @@ export default {
       name: 'Calabria',
       twitterLink: 'Zurribulle',
       colors: lesbianStripes
+    }
+  ],
+  london: [
+    {
+      name: 'Kate Beard',
+      twitterLink: 'SBinLondon',
+      colors: biStripes
     }
   ],
   'New York': [
