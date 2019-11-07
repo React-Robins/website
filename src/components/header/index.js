@@ -53,6 +53,7 @@ const Header = ({ siteTitle }) => (
           </NavHref>
         </li>
         <li><NavLink to="/organizers">Organizers</NavLink> </li>
+        <li><NavLink to="/faq">FAQ</NavLink> </li>
       </ul>
     </NavRow>
   </Nav>

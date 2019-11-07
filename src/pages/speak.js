@@ -68,22 +68,6 @@ export default () => {
           lightning talks. So do whatever you feel most comfortable with! If you need more time to
           present, please let us know so we can adjust the schedule or coordinate with the venue.
         </Panel>
-        <Panel heading="Where does QueerJS happen?">
-          We have a bunch of meetups being planned all over the globe{' '}
-          <span role="img" aria-label="earth">
-            🌍
-          </span>{' '}
-          You can check the{' '}
-          <a
-            href="https://queerjs.com/"
-            title="QueerJS website"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            QueerJS website
-          </a>{' '}
-          for a list of the upcoming (and past) meetups.
-        </Panel>
         <Panel heading="What if the lineup for the location I want to speak at is full?">
           It's very, very likely that if we host a QueerJS in a city, we'll do it again in the same
           city one day. So we'd still encourage you to submit your talk. That way, you'll be at the

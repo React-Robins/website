@@ -12,14 +12,17 @@ const capitalize = s => {
 }
 
 const OrganizersPage = () => {
+  const { site } = {
+    site: {
+      title: 'QueerJS',
+      description: 'A meetup for everyone where Queer Speakers take the stage'
+    }
+  }
   return (
     <Layout>
-      <SEO
-        title="QueerJS - Organizers"
-        description="A meetup for everyone where Queer Speakers take the stage"
-      />
+      <SEO title={site.title} description={site.description} />
       <main>
-        <h1 hidden>Welcome to QueerJS</h1>
+        <h1 hidden>Welcome to {site.title}</h1>
         <Panel heading="Organizers">
           <p>
             Nothing can be organized by only one person and there is a team helping QueerJS be a
