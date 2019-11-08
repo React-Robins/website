@@ -9,6 +9,7 @@ info:
   hostIcon: icons/paris/dashlane.svg
   hostName: Dashlane
   maxCapacity: 25
+  cfp: true
 site:
   city: Paris
   location: Dashlane
@@ -29,7 +30,4 @@ sponsors:
   - name: Heroku
     link: https://www.heroku.com/
     media: https://i.imgur.com/2BONYjO.png
-speakers:
-  - name: Paola Ducolin
-    twitterLink: PolaDuco
-    talk: Coding for refactoring
+speakers: []
