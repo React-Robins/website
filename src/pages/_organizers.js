@@ -97,6 +97,20 @@ export default {
       colors: biStripes
     }
   ],
+  Paris: [
+    {
+      name: 'Paola Ducolin',
+      twitterLink: 'PolaDuco',
+      colors: []
+    }
+  ],
+  Lisbon: [
+    {
+      name: 'Paola Ducolin',
+      twitterLink: 'PolaDuco',
+      colors: []
+    }
+  ],
   Toronto: [
     {
       name: 'Em Lazer-Walker',
