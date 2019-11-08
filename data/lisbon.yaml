@@ -9,9 +9,9 @@ info:
   hostIcon: icons/paris/dashlane.svg
   hostName: Dashlane
   maxCapacity: 25
-  cfp: true
 site:
-  city: Paris
+  cfp: true
+  city: Lisbon
   location: Dashlane
   organizers:
   googleMapsLink: https://goo.gl/maps/M8HCf3JqZ787HUzi8
