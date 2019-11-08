@@ -1,0 +1,33 @@
+---
+info:
+  city: Lisbon
+  link: lisbon
+  date: 12/17/2019
+  hour: '19:00'
+  icon: icons/lisbon/lisbon.svg
+  iconHover: icons/lisbon/lisbon-hover.svg
+  hostIcon: icons/paris/dashlane.svg
+  hostName: Dashlane
+  maxCapacity: 25
+site:
+  cfp: true
+  city: Lisbon
+  location: Dashlane
+  organizers:
+  googleMapsLink: https://goo.gl/maps/M8HCf3JqZ787HUzi8
+  calendarLink: https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS+Lisbon&location=Dashlane+R.+Garrett+12+2%C2%BA+piso%2C+1200-219+Lisboa%2C+Portugal&dates=20191217T180000Z%2F20191217T210000Z
+mainOrganizer:
+  - name: Paola Ducolin
+    main: true
+    phoneNumber: '+33 783059652'
+    twitterHandle: PolaDuco
+    email: paola.ducolin@dashlane.com
+thanks: []
+sponsors:
+  - name: Dashlane
+    link: https://www.dashlane.com/
+    media: https://cdn.dribbble.com/users/2023831/screenshots/4438878/dashlane-app-icon.png
+  - name: Heroku
+    link: https://www.heroku.com/
+    media: https://i.imgur.com/2BONYjO.png
+speakers: []

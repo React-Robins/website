@@ -53,7 +53,7 @@ const Main = ({ city, attendees }) => {
         </Panel>
       </section>
 
-      <Panel heading={thanks ? 'Special Thanks' : null}>
+      <Panel heading={thanks && thanks.length ? 'Special Thanks' : null}>
         <Thanks
           organizers={organizers}
           thanks={thanks || []}
