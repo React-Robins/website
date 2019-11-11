@@ -78,9 +78,9 @@ const CodeOfConduct = () => {
             </p>
             <p>
               If you can’t find the organizer, please{' '}
-              <a href="/report" rel="noopener noreferrer" title="Code of Conduct">
+              <Link to="/report" title="Code of Conduct">
                 Report an Issue
-              </a>
+              </Link>
               .
             </p>
             <p>

@@ -40,9 +40,9 @@ const Report = () => {
               <li>- Send a DM to {contactInfo.twitterHandle}</li>
               <li>
                 - Let a{' '}
-                <a href="/organizers" rel="noopener noreferrer" title="Code of Conduct">
+                <Link to="/organizers" title="Code of Conduct">
                   Core Team
-                </a>{' '}
+                </Link>{' '}
                 organizer know, either in person or via Twitter.
               </li>
               <li>- Send an email to {contactInfo.email}</li>
