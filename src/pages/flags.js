@@ -58,7 +58,6 @@ const OrganizersPage = ({ location }) => {
         </Panel>
       </main>
       <Thanks
-        organizers={[]}
         thanks={[
           {
             link: 'https://www.flaticon.com',
@@ -66,7 +65,6 @@ const OrganizersPage = ({ location }) => {
             reason: 'icons'
           }
         ]}
-        site={site}
       />
     </Layout>
   )

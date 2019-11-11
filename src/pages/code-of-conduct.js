@@ -3,13 +3,7 @@ import SEO from '../components/seo'
 import Layout from '../containers/layout'
 import Panel from '../components/Panel'
 
-const CodeOfConduct = ({ location }) => {
-  const organizer = (location.state || {}).organizer || {
-    name: 'Sara Vieira',
-    phoneNumber: '+351 91 7296 830',
-    email: 'hey@iamsaravieira.com',
-    twitterHandle: '@NikkitaFTW'
-  }
+const CodeOfConduct = () => {
   return (
     <Layout>
       <SEO
@@ -33,7 +27,14 @@ const CodeOfConduct = ({ location }) => {
               from all participants to help ensuring a safe environment for everybody.
             </p>
             <p>
-              Need Help? Contact {organizer.name} {organizer.phoneNumber}
+              {' '}
+              <a
+                href="/report"
+                rel="noopener noreferrer"
+                title="Code of Conduct"
+              >
+                Report an Issue
+              </a>.
             </p>
 
             <h2>The Quick Version</h2>
@@ -74,8 +75,15 @@ const CodeOfConduct = ({ location }) => {
               please notify a QueerJS organizer as soon as possible.
             </p>
             <p>
-              If you can’t find the organizer, reach out to {organizer.name} at {organizer.email} /{' '}
-              {organizer.phoneNumber} / {organizer.twitterHandle}
+              If you can’t find the organizer, please
+              {' '}
+              <a
+                href="/report"
+                rel="noopener noreferrer"
+                title="Code of Conduct"
+              >
+                Report an Issue
+              </a>.
             </p>
             <p>
               Conference staff will be happy to help participants and assist those experiencing
