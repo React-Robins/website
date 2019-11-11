@@ -1,5 +1,6 @@
 import React from 'react'
 import SEO from '../components/seo'
+import { Link } from 'gatsby'
 import Layout from '../containers/layout'
 import Panel from '../components/Panel'
 
@@ -28,13 +29,10 @@ const CodeOfConduct = () => {
             </p>
             <p>
               {' '}
-              <a
-                href="/report"
-                rel="noopener noreferrer"
-                title="Code of Conduct"
-              >
+              <Link to="/report" title="Code of Conduct">
                 Report an Issue
-              </a>.
+              </Link>
+              .
             </p>
 
             <h2>The Quick Version</h2>
@@ -75,15 +73,11 @@ const CodeOfConduct = () => {
               please notify a QueerJS organizer as soon as possible.
             </p>
             <p>
-              If you can’t find the organizer, please
-              {' '}
-              <a
-                href="/report"
-                rel="noopener noreferrer"
-                title="Code of Conduct"
-              >
+              If you can’t find the organizer, please{' '}
+              <a href="/report" rel="noopener noreferrer" title="Code of Conduct">
                 Report an Issue
-              </a>.
+              </a>
+              .
             </p>
             <p>
               Conference staff will be happy to help participants and assist those experiencing

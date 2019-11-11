@@ -70,6 +70,9 @@ export const Wrapper = styled.main`
   width: 80%;
   max-width: 56em;
   margin: auto;
+  display: grid;
+  grid-template-rows: auto 1fr 100px;
+  height: 100%;
 `
 
 export const SubWrapper = styled.div``

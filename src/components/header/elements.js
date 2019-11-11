@@ -4,7 +4,6 @@ import { Link } from 'gatsby'
 import styled, { css } from 'styled-components'
 
 export const Nav = styled.nav`
-  margin: auto;
   padding: 3em 0 1.5em;
   @media screen and (max-width: 38em) {
     padding: 0.5em 0 0;
