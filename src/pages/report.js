@@ -30,7 +30,7 @@ const Report = () => {
               <Link to="/code-of-conduct" title="Code of Conduct">
                 Code of Conduct
               </Link>
-              ! .
+              !
             </p>
             <p>
               In the unfortunate case that you see someone violating the code of conduct, here are

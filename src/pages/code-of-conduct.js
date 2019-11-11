@@ -11,7 +11,11 @@ const CodeOfConduct = () => {
         title="QueerJS - Code Of Conduct"
         description="A meetup for everyone where Queer Speakers take the stage"
       />
-      <main>
+      <main
+        css={`
+          margin-bottom: 40px;
+        `}
+      >
         <h1 hidden>Welcome to QueerJS</h1>
         <Panel heading="Code of Conduct">
           <section
