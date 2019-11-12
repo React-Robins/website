@@ -1,22 +1,21 @@
 import React from 'react'
 import SEO from '../components/seo'
+import { Link } from 'gatsby'
 import Layout from '../containers/layout'
 import Panel from '../components/Panel'
 
-const CodeOfConduct = ({ location }) => {
-  const organizer = (location.state || {}).organizer || {
-    name: 'Sara Vieira',
-    phoneNumber: '+351 91 7296 830',
-    email: 'hey@iamsaravieira.com',
-    twitterHandle: '@NikkitaFTW'
-  }
+const CodeOfConduct = () => {
   return (
     <Layout>
       <SEO
         title="QueerJS - Code Of Conduct"
         description="A meetup for everyone where Queer Speakers take the stage"
       />
-      <main>
+      <main
+        css={`
+          margin-bottom: 40px;
+        `}
+      >
         <h1 hidden>Welcome to QueerJS</h1>
         <Panel heading="Code of Conduct">
           <section
@@ -33,7 +32,11 @@ const CodeOfConduct = ({ location }) => {
               from all participants to help ensuring a safe environment for everybody.
             </p>
             <p>
-              Need Help? Contact {organizer.name} {organizer.phoneNumber}
+              {' '}
+              <Link to="/report" title="Code of Conduct">
+                Report an Issue
+              </Link>
+              .
             </p>
 
             <h2>The Quick Version</h2>
@@ -74,8 +77,11 @@ const CodeOfConduct = ({ location }) => {
               please notify a QueerJS organizer as soon as possible.
             </p>
             <p>
-              If you can’t find the organizer, reach out to {organizer.name} at {organizer.email} /{' '}
-              {organizer.phoneNumber} / {organizer.twitterHandle}
+              If you can’t find the organizer, please{' '}
+              <Link to="/report" title="Code of Conduct">
+                Report an Issue
+              </Link>
+              .
             </p>
             <p>
               Conference staff will be happy to help participants and assist those experiencing

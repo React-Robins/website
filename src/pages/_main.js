@@ -10,7 +10,7 @@ import Panel from '../components/Panel'
 import Heading from '../components/Heading'
 
 const Main = ({ city, attendees }) => {
-  const { site, organizers, mainOrganizer, thanks, speakers, sponsors, info } = city
+  const { site, thanks, speakers, sponsors, info } = city
 
   return (
     <Layout>
@@ -54,12 +54,7 @@ const Main = ({ city, attendees }) => {
       </section>
 
       <Panel heading={thanks && thanks.length ? 'Special Thanks' : null}>
-        <Thanks
-          organizers={organizers}
-          thanks={thanks || []}
-          site={site}
-          mainOrganizer={(mainOrganizer || []).find(o => o.main)}
-        />
+        <Thanks thanks={thanks || []} />
       </Panel>
     </Layout>
   )
