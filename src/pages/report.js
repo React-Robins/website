@@ -45,7 +45,7 @@ const Report = () => {
                 </Link>{' '}
                 organizer know, either in person or via Twitter.
               </li>
-              <li>- Send an email to {contactInfo.email}</li>
+              <li>- Send an email to <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a></li>
             </ul>
           </section>
         </Panel>
