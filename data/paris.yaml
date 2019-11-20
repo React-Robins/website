@@ -14,7 +14,7 @@ site:
   location: Dashlane
   organizers:
   googleMapsLink: https://goo.gl/maps/6gGc1zP15WSLqH6N7
-  calendarLink: https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS+Paris&location=21+Rue+Pierre+Picard%2C+75018+Paris&dates=20191204T180000Z%2F20191204T200000Z
+  calendarLink: https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS+Paris&location=Dashlane+21+Rue+Pierre+Picard%2C+75018+Paris&dates=20191203T180000Z%2F20191203T210000Z
 mainOrganizer:
   - name: Paola Ducolin
     main: true
