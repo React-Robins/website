@@ -1,0 +1,37 @@
+---
+info:
+  city: Cologne
+  link: cologne
+  date: 02/06/2020
+  hour: '18:00'
+  icon: icons/cologne/cologne.svg
+  iconHover: icons/cologne/cologne-hover.svg
+  hostIcon: icons/cologne/dunckelfeld.png
+  hostName: Dunckelfeld
+site:
+  cfp: true
+  city: Cologne
+  location: Dunckelfeld
+  organizers: []
+  googleMapsLink: https://goo.gl/maps/DYNhdDSxFqZwR2Wj9
+  calendarLink: https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS+Cologne&location=Dunckelfeld%2C+Krefelder+Str.+18a%2C+50670+K%C3%B6ln%2C+Germany&dates=20200206T170000Z%2F20200206T200000Z
+mainOrganizer:
+  - name: Carolyn Stransky
+    main: true
+    phoneNumber: '+49 15758788733'
+    twitterHandle: carolstran
+    email: carolyn@queerjs.com
+sponsors:
+  - name: Dunckelfeld
+    link: https://www.dunckelfeld.de/en/
+    media: https://1c7490c0055723b2affc-8f475f2fa394bc8453917e1fb7321b33.ssl.cf1.rackcdn.com/6683592_1511898260.png
+  - name: 'Think About!'
+    link: https://think-about.io/
+    media: https://think-about.io/images/logo.svg
+  - name: Heroku
+    link: https://www.heroku.com/
+    media: https://i.imgur.com/2BONYjO.png
+speakers:
+  - mc: true
+    name: Carolyn Stransky
+    twitterLink: carolstran
