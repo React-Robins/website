@@ -37,7 +37,7 @@ export default ({ site, city, info, attendeesNumber }) => {
       </Info>
       {!open ? (
         <RsvpButton
-          onClick={() => setOpen(true)}
+          onClick={() => (!site.rsvpLink ? setOpen(true) : () => {})}
           style={
             submitted || closeRSVP
               ? {
@@ -52,7 +52,15 @@ export default ({ site, city, info, attendeesNumber }) => {
               <Blinker delay={1}>{'>'}</Blinker>
               <Blinker delay={2}>{'>'}</Blinker>
               <Blinker delay={3}>{'>'}</Blinker>{' '}
-              {!submitted ? <Bouncer>RSVP NOW</Bouncer> : <Bouncer>YOU ARE AWESOME</Bouncer>}{' '}
+              {site.rsvpLink && (
+                <Bouncer>
+                  <a target="_blank" rel="noopener noreferrer" href={site.rsvpLink}>
+                    RSVP NOW
+                  </a>
+                </Bouncer>
+              )}
+              {!site.rsvpLink && !submitted ? <Bouncer>RSVP NOW</Bouncer> : null}{' '}
+              {!site.rsvpLink && submitted ? <Bouncer>YOU ARE AWESOME</Bouncer> : null}
               <Blinker delay={3}>{'<'}</Blinker>
               <Blinker delay={2}>{'<'}</Blinker>
               <Blinker delay={1}>{'<'}</Blinker>

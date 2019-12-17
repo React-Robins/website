@@ -36,6 +36,7 @@ export const query = graphql`
         location
         googleMapsLink
         calendarLink
+        rsvpLink
         cfp
       }
       mainOrganizer {

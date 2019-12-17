@@ -20,6 +20,7 @@ const Grid = styled.ul`
 `
 
 const SponsorImage = styled.img`
+  min-width: 70px;
   max-height: 80px;
   max-width: 200px;
 `
