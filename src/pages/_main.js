@@ -44,10 +44,11 @@ const Main = ({ city, attendees }) => {
             <Speakers noSpeak cfp={site.cfp} speakers={speakers.filter(s => s.mc)} />
           </Panel>
         ) : null}
-        <Panel heading={`Attendees (${attendees.length})`}>
-          <Attendees attendees={attendees} />
-        </Panel>
-
+        {!site.rsvpLink ? (
+          <Panel heading={`Attendees (${attendees.length})`}>
+            <Attendees attendees={attendees} />
+          </Panel>
+        ) : null}
         <Panel heading="Sponsors">
           <Sponsors sponsors={sponsors} />
         </Panel>
