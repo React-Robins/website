@@ -15,6 +15,7 @@ site:
   organizers: []
   googleMapsLink: https://goo.gl/maps/DYNhdDSxFqZwR2Wj9
   calendarLink: https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS+Cologne&location=Dunckelfeld%2C+Krefelder+Str.+18a%2C+50670+K%C3%B6ln%2C+Germany&dates=20200206T170000Z%2F20200206T200000Z
+  rsvpLink: https://www.meetup.com/Think-About-about-Tech-Design-and-their-impact-on-Society/events/267159487/
 mainOrganizer:
   - name: Carolyn Stransky
     main: true
