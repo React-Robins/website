@@ -4,7 +4,9 @@
 
 To run this site locally,
 
-1. Run the following in terminal: 
+1. Create a file in the project root called `.env.production` with the contents `GATSBY_AIRTABLE_KEY=somekey`. `somekey` needs to be a valid AirTable API key; if you're part of QueerJS and need the real API key, ask another organizer to give it to you.
+
+2. Run the following in terminal: 
 
 ```sh
 npm i
@@ -18,7 +20,7 @@ yarn install
 yarn run dev
 ```
 
-2. Navigate to `http://localhost:8000`.
+3. Navigate to `http://localhost:8000`.
 
 ## Adding a New Meetup City
 
