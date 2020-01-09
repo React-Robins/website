@@ -16,6 +16,7 @@ const IndexPage = ({ data: { allEvent } }) => {
   const futureMeetups = sortedCities.filter(
     city => isFuture(city.node.info.date) || isToday(city.node.info.date)
   )
+  console.log(futureMeetups)
   const pastMeetups = sortedCities.filter(
     city => !isFuture(city.node.info.date) && !isToday(city.node.info.date)
   )
@@ -30,7 +31,8 @@ const IndexPage = ({ data: { allEvent } }) => {
         <LargeParagraph>
           QueerJS is a meetup series where everyone is encouraged to attend and support the speakers
           and the idea, but where all speakers are queer.
-          <br/><br/>
+          <br />
+          <br />
           This meetup exists to give a voice to everyone and to make a safe space where everyone is
           welcome.
         </LargeParagraph>

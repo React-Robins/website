@@ -3,7 +3,7 @@ info:
   city: Toronto
   link: toronto
   date: 11/12/2019
-  hour: '18:30'
+  hour: "18:30"
   icon: icons/toronto/toronto.svg
   iconHover: icons/toronto/toronto-hover.svg
   hostIcon: icons/toronto/rangle.svg

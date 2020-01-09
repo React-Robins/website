@@ -1,0 +1,31 @@
+---
+info:
+  city: Toronto Social
+  link: TOSocial
+  date: 01/21/2020
+  hour: "18:00"
+  icon: icons/toronto/toronto.svg
+  iconHover: icons/toronto/toronto-hover.svg
+  hostIcon: icons/toronto/glad-day.jpg
+  hostName: Glad Day Bookshop
+site:
+  cfp: false
+  city: Toronto
+  location: Glad Day Bookshop
+  organizers: []
+  thanks:
+    - id: 7e61667e-40cd-477e-9bcf-847a1265dae5
+      link: https://www.gladdaybookshop.com/
+      name: Glad Day Bookshop
+      reason: for hosting our first social meetup!
+  googleMapsLink: https://www.google.com/maps/place/Glad+Day+Bookshop/@43.6653168,-79.3806071,15z/data=!4m5!3m4!1s0x0:0xc521ff5ccfb7bc5a!8m2!3d43.6653168!4d-79.3806071
+  calendarLink: https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS+Toronto+Social&details=A+cozy+gathering+for+Toronto+Queers+in+tech%21&location=Glad+Day+Bookshop%0A499+Church+St%0AToronto%2C+ON+%0AM4Y+2C6&dates=20200121T230000Z%2F20200122T020000Z
+sponsors:
+  - name: Glad Day Bookshop
+    link: https://www.gladdaybookshop.com/
+    media: https://cdn.shopify.com/s/files/1/0220/8638/t/5/assets/logo.png?v=16609565161753001055
+
+speakers:
+  - name:
+    twitterLink:
+    talk:
