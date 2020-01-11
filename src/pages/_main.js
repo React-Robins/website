@@ -22,13 +22,17 @@ const Main = ({ city, attendees }) => {
         <Heading sub="queerjs @">{info.city}</Heading>
         <Info attendeesNumber={attendees.length} site={site} info={info} city={info.link} />
         <Panel heading="What?">
-          <p>
-            This is a meetup where anyone is welcome to attend and support the speakers and the idea
-            but all the speakers will be Queer.
-            <br />
-            This meetup exists to give a voice to everyone, to make a safe space where everyone is
-            welcome.
-          </p>
+          {site.customDescription ? (
+            <p>{site.customDescription}</p>
+          ) : (
+            <p>
+              This is a meetup where anyone is welcome to attend and support the speakers and the
+              idea but all the speakers will be Queer.
+              <br />
+              This meetup exists to give a voice to everyone, to make a safe space where everyone is
+              welcome.
+            </p>
+          )}
           <p>
             Join us! There will be food and stickers{' '}
             <span role="img" aria-label="Queer Rainbow">

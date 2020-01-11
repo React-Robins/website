@@ -38,6 +38,7 @@ export const query = graphql`
         calendarLink
         rsvpLink
         cfp
+        customDescription
       }
       mainOrganizer {
         name
