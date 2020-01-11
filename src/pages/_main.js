@@ -36,9 +36,11 @@ const Main = ({ city, attendees }) => {
             </span>
           </p>
         </Panel>
-        <Panel heading="Speakers">
-          <Speakers cfp={site.cfp} speakers={speakers.filter(s => !s.mc)} />
-        </Panel>
+        {speakers.length > 0 || site.cfp ? (
+          <Panel heading="Speakers">
+            <Speakers cfp={site.cfp} speakers={speakers.filter(s => !s.mc)} />
+          </Panel>
+        ) : null}
         {speakers.filter(s => s.mc).length ? (
           <Panel heading="MC">
             <Speakers noSpeak cfp={site.cfp} speakers={speakers.filter(s => s.mc)} />
