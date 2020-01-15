@@ -73,8 +73,6 @@ export const query = graphql`
         node {
           id
           info {
-            what
-            food
             city
             link
             date
