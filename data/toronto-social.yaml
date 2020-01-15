@@ -3,16 +3,16 @@ info:
   city: Toronto Social
   link: toronto-social
   date: 01/21/2020
-  hour: "18:00"
+  hour: '18:00'
   icon: icons/toronto/toronto.svg
   iconHover: icons/toronto/toronto-hover.svg
   hostIcon: icons/toronto/glad-day.jpg
   hostName: Glad Day Bookshop
+  food: false
 site:
   cfp: false
   city: Toronto
   location: Glad Day Bookshop
-  customDescription: No speakers or agenda, just a chance for Queer people (and supportive allies) to mingle and chat!
   organizers: []
   thanks:
     - id: 7e61667e-40cd-477e-9bcf-847a1265dae5
@@ -25,5 +25,4 @@ sponsors:
   - name: Glad Day Bookshop
     link: https://www.gladdaybookshop.com/
     media: https://cdn.shopify.com/s/files/1/0220/8638/t/5/assets/logo.png?v=16609565161753001055
-
 speakers: []
