@@ -9,6 +9,7 @@ info:
   hostIcon: icons/paris/dashlane.svg
   hostName: Dashlane
   maxCapacity: 80
+  food: true
 site:
   city: Paris
   location: Dashlane

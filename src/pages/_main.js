@@ -34,7 +34,7 @@ const Main = ({ city, attendees }) => {
             </p>
           )}
           <p>
-            Join us! There will be food and stickers{' '}
+            Join us! There will be {info.food ? 'food and' : ''} stickers{' '}
             <span role="img" aria-label="Queer Rainbow">
               🌈
             </span>

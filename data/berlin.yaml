@@ -2,16 +2,18 @@
 info:
   city: Berlin
   link: berlin
-  date: 07/23/2019
+  date: 03/26/2020
   hour: '18:00'
   icon: icons/berlin/berlin.svg
   iconHover: icons/berlin/berlin-hover.svg
   hostIcon: icons/berlin/coup.svg
   hostName: Co.up Community
+  food: false
 site:
+  cfp: true
   location: Co-up, Berlin
   googleMapsLink: https://goo.gl/maps/VV6YUwPJaT79ESGG9
-  calendarLink: https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS&location=Adalbertstra%C3%9Fe+8%2C+10999+Berlin&dates=20190723T170000Z%2F20190723T193000Z
+  calendarLink: https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS+Berlin&location=Co.up+Coworking+Space%2C+https%3A%2F%2Fgoo.gl%2Fmaps%2FVV6YUwPJaT79ESGG9&dates=20200326T170000Z%2F20200326T200000Z
 mainOrganizer:
   - name: Sara Vieira
     main: true
@@ -29,25 +31,7 @@ thanks:
     name: co.up
     reason: Space
 sponsors:
-  - name: Samsung Internet
-    link: https://www.samsung.com/de/apps/samsung-internet/
-    media: https://i.imgur.com/Tr8asD5.png
-  - name: GitNation
-    link: https://gitnation.org/
-    media: https://i.imgur.com/0s0sBSC.png
-  - name: Jason Lengstorf
-    link: https://lengstorf.com/
-    media: https://i.imgur.com/CDumE1w.png
-speakers:
-  - name: Pilar Andrea Huidobro Peltier
-    twitterLink: tamacodechi
-  - name: Charlie Owen
-    twitterLink: sonniesedge
-  - name: Ada Rose Cannon
-    twitterLink: Lady_Ada_King
-  - name: Steven Langbroek
-    twitterLink: stevendotjs
-  - name: Irina Shestak
-    twitterLink: _lrlna
-  - name: Kate Beard
-    twitterLink: SBinLondon
+  - name: Heroku
+    link: https://www.heroku.com/
+    media: https://i.imgur.com/2BONYjO.png
+speakers: []

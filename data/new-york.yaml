@@ -9,6 +9,7 @@ info:
   hostIcon: icons/ny/microsoft.svg
   hostName: Microsoft
   rsvpsClosed: false
+  food: true
   maxCapacity: 101
 site:
   city: New York

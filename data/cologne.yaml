@@ -8,6 +8,7 @@ info:
   iconHover: icons/cologne/cologne-hover.svg
   hostIcon: icons/cologne/dunckelfeld.png
   hostName: Dunckelfeld
+  food: true
 site:
   cfp: true
   city: Cologne
@@ -37,3 +38,5 @@ speakers:
     twitterLink: AlxSavage
   - name: Nils Binder
     twitterLink: supremebeing09
+  - name: David Bailey
+    twitterLink: davidbailey00

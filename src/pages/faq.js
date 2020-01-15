@@ -102,7 +102,7 @@ const FAQPage = () => {
             rel="noopener noreferrer"
             title="Email"
           >
-            hello@queerjs.org
+            hello@queerjs.com
           </a>!
         </Panel>
       </main>
