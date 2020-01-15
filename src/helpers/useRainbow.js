@@ -92,7 +92,7 @@ export const phillyStripes = [
   '#064EFF',
   '#750687'
 ].map(toSizedPastelStrip)
-const polyStripes = ['#F71BB9', '#08D569', '#1C91F6'].map(toSizedPastelStrip)
+const polysexualStripes = ['#F71BB9', '#08D569', '#1C91F6'].map(toSizedPastelStrip)
 export const transStripes = ['#55CDFC', '#F7A8B8', '#DDD', '#F7A8B8', '#55CDFC'].map(
   toSizedPastelStrip
 )
@@ -158,7 +158,11 @@ export const allStripes = [
     name: `Philly's pride flag`,
     wiki: 'https://en.wikipedia.org/wiki/LGBT_symbols#cite_ref-Philadelphia_93-0'
   },
-  { stripes: polyStripes, name: 'Poly', wiki: 'https://en.wikipedia.org/wiki/Polyamory' },
+  {
+    stripes: polysexualStripes,
+    name: 'Polysexual',
+    wiki: 'https://rationalwiki.org/wiki/Polysexuality'
+  },
   {
     stripes: transStripes,
     name: 'Trans',
