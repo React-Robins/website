@@ -27,7 +27,6 @@ export const query = graphql`
       info {
         link
         city
-        what
         food
         hour
         date
@@ -40,6 +39,7 @@ export const query = graphql`
         calendarLink
         rsvpLink
         cfp
+        customDescription
       }
       mainOrganizer {
         name

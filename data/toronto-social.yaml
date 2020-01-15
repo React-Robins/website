@@ -8,7 +8,6 @@ info:
   iconHover: icons/toronto/toronto-hover.svg
   hostIcon: icons/toronto/glad-day.jpg
   hostName: Glad Day Bookshop
-  what: Hey, this is just going to be a thing were you come hang out at Glad Day.
   food: false
 site:
   cfp: false

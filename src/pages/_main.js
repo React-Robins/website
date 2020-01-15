@@ -22,9 +22,8 @@ const Main = ({ city, attendees }) => {
         <Heading sub="queerjs @">{info.city}</Heading>
         <Info attendeesNumber={attendees.length} site={site} info={info} city={info.link} />
         <Panel heading="What?">
-          {console.log(info)}
-          {info.what ? (
-            <p>{info.what}</p>
+          {site.customDescription ? (
+            <p>{site.customDescription}</p>
           ) : (
             <p>
               This is a meetup where anyone is welcome to attend and support the speakers and the
@@ -41,9 +40,11 @@ const Main = ({ city, attendees }) => {
             </span>
           </p>
         </Panel>
-        <Panel heading="Speakers">
-          <Speakers cfp={site.cfp} speakers={speakers.filter(s => !s.mc)} />
-        </Panel>
+        {speakers.length > 0 || site.cfp ? (
+          <Panel heading="Speakers">
+            <Speakers cfp={site.cfp} speakers={speakers.filter(s => !s.mc)} />
+          </Panel>
+        ) : null}
         {speakers.filter(s => s.mc).length ? (
           <Panel heading="MC">
             <Speakers noSpeak cfp={site.cfp} speakers={speakers.filter(s => s.mc)} />
