@@ -16,7 +16,7 @@ const IndexPage = ({ data: { allEvent } }) => {
   const futureMeetups = sortedCities.filter(
     city => isFuture(city.node.info.date) || isToday(city.node.info.date)
   )
-  console.log(futureMeetups)
+
   const pastMeetups = sortedCities.filter(
     city => !isFuture(city.node.info.date) && !isToday(city.node.info.date)
   )

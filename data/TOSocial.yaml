@@ -2,8 +2,8 @@
 info:
   city: Toronto Social
   link: TOSocial
-  date: 01/21/2020
-  hour: "18:00"
+  date: 21/01/2020
+  hour: '18:00'
   icon: icons/toronto/toronto.svg
   iconHover: icons/toronto/toronto-hover.svg
   hostIcon: icons/toronto/glad-day.jpg
