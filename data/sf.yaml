@@ -8,6 +8,7 @@ info:
   iconHover: icons/sf/sf-hover.svg
   hostIcon: icons/sf/webflow.svg
   hostName: Webflow
+  food: true
 site:
   city: San Francisco
   location: Webflow

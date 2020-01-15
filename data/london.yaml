@@ -8,6 +8,7 @@ info:
   iconHover: icons/london/london-hover.svg
   hostIcon: icons/london/microsoft.svg
   hostName: Microsoft
+  food: true
 site:
   city: London
   location: Microsoft Reactor

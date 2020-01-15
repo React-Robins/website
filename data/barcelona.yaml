@@ -8,6 +8,7 @@ info:
   iconHover: icons/barcelona/barcelona-hover.svg
   hostIcon: icons/barcelona/itnig.svg
   hostName: itnig
+  food: false
 site:
   city: Barcelona
   location: Itnig
@@ -24,7 +25,7 @@ sponsors:
 speakers:
   - name: Daniel Ehrenberg
     twitterLink: littledan
-  - name: Sara Vieira 
+  - name: Sara Vieira
     twitterLink: NikkitaFTW
   - name: Calabria
     twitterLink: Zurribulle

@@ -8,6 +8,7 @@ info:
   iconHover: icons/munich/munich-hover.svg
   hostIcon: icons/munich/mayflower.png
   hostName: Mayflower GmbH
+  food: true
 site:
   cfp: true
   city: Munich

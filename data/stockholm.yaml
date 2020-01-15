@@ -8,6 +8,7 @@ info:
   iconHover: icons/stockholm/stockholm-hover.svg
   hostIcon: icons/stockholm/klarna.svg
   hostName: Klarna
+  food: true
 site:
   city: Stocholm
   location: Klarna

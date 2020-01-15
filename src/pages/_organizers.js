@@ -128,7 +128,7 @@ export default {
       colors: transStripes
     },
     {
-      name: 'Laura',
+      name: 'Laura C',
       twitterLink: 'LC_butWithCode',
       colors: biStripes
     }

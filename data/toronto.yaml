@@ -8,6 +8,7 @@ info:
   iconHover: icons/toronto/toronto-hover.svg
   hostIcon: icons/toronto/rangle.svg
   hostName: Rangle
+  food: true
 site:
   cfp: true
   city: Toronto
