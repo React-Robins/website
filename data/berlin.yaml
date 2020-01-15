@@ -8,6 +8,7 @@ info:
   iconHover: icons/berlin/berlin-hover.svg
   hostIcon: icons/berlin/coup.svg
   hostName: Co.up Community
+  food: false
 site:
   cfp: true
   location: Co-up, Berlin

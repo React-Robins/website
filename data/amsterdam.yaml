@@ -8,6 +8,7 @@ info:
   iconHover: icons/amsterdam/amsterdam-hover.svg
   hostIcon: icons/amsterdam/booking.svg
   hostName: Booking.com
+  food: true
 site:
   city: Amsterdam
   location: Booking

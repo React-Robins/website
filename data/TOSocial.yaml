@@ -2,12 +2,14 @@
 info:
   city: Toronto Social
   link: TOSocial
-  date: 21/01/2020
+  date: 01/21/2020
   hour: '18:00'
   icon: icons/toronto/toronto.svg
   iconHover: icons/toronto/toronto-hover.svg
   hostIcon: icons/toronto/glad-day.jpg
   hostName: Glad Day Bookshop
+  what: Hey, this is just going to be a thing were you come hang out at Glad Day.
+  food: false
 site:
   cfp: false
   city: Toronto
@@ -24,8 +26,4 @@ sponsors:
   - name: Glad Day Bookshop
     link: https://www.gladdaybookshop.com/
     media: https://cdn.shopify.com/s/files/1/0220/8638/t/5/assets/logo.png?v=16609565161753001055
-
-speakers:
-  - name:
-    twitterLink:
-    talk:
+speakers: []

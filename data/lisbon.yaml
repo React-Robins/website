@@ -9,6 +9,7 @@ info:
   hostIcon: icons/paris/dashlane.svg
   hostName: Dashlane
   maxCapacity: 25
+  food: true
 site:
   cfp: true
   city: Lisbon

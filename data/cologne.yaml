@@ -8,6 +8,7 @@ info:
   iconHover: icons/cologne/cologne-hover.svg
   hostIcon: icons/cologne/dunckelfeld.png
   hostName: Dunckelfeld
+  food: true
 site:
   cfp: true
   city: Cologne
