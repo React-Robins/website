@@ -75,7 +75,7 @@ export default () => {
         </Panel>
         <Panel heading="Can you pay for my flights? ">
           Actually, there's a good chance that we can if you're coming from a reasonable distance
-          (total cost is less than 300 EUR). If you'd like to speak at an upcoming meetup and need
+          (total cost is less than 200 EUR). If you'd like to speak at an upcoming meetup and need
           travel assistance for any reason, please mention it in your talk proposal and we'll let
           you know if it's possible.
         </Panel>
