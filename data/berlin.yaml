@@ -34,4 +34,7 @@ sponsors:
   - name: Heroku
     link: https://www.heroku.com/
     media: https://i.imgur.com/2BONYjO.png
-speakers: []
+speakers:
+  - name: Sophie Au
+    twitterLink: SolviAu
+    talk: building in accessibility from the start
