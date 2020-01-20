@@ -1,42 +1,31 @@
 ---
-info:
-  city: Paris
-  link: paris
-  date: 12/03/2019
-  hour: '19:00'
-  icon: icons/paris/paris.svg
-  iconHover: icons/paris/paris-hover.svg
-  hostIcon: icons/paris/dashlane.svg
-  hostName: Dashlane
-  maxCapacity: 80
-  food: true
-site:
-  city: Paris
-  location: Dashlane
-  organizers:
-  googleMapsLink: https://goo.gl/maps/6gGc1zP15WSLqH6N7
-  calendarLink: https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS+Paris&location=Dashlane+21+Rue+Pierre+Picard%2C+75018+Paris&dates=20191203T180000Z%2F20191203T210000Z
-mainOrganizer:
-  - name: Paola Ducolin
-    main: true
-    phoneNumber: '+33 783059652'
-    twitterHandle: PolaDuco
-    email: paola.ducolin@dashlane.com
-thanks: []
-sponsors:
-  - name: Dashlane
-    link: https://www.dashlane.com/
-    media: https://cdn.dribbble.com/users/2023831/screenshots/4438878/dashlane-app-icon.png
-  - name: Heroku
-    link: https://www.heroku.com/
-    media: https://i.imgur.com/2BONYjO.png
-speakers:
-  - name: Paola Ducolin
-    twitterLink: PolaDuco
-    talk: Coding for refactoring
-  - name: Charlie Gerard
-    twitterLink: devdevcharlie
-    talk: playing air drums in JavaScript
-  - name: Stefania Rosca
-    twitterLink: Stefania_Rosca
-    talk: the importance of community when transitioning to tech
+  info:
+    city: Paris
+    link: paris-ncraft-2020
+    date: 28/05/2020
+    hour: '18:30'
+    icon: icons/paris/paris.svg
+    iconHover: icons/paris/paris-hover.svg
+    hostIcon: icons/paris/logo_newcrafts_blanc.png
+    hostName: NewCrafts
+    maxCapacity: 50
+    food: true
+  site:
+    city: Paris
+    location: NEW CAP Event Center
+    organizers:
+    googleMapsLink: https://g.page/NEWCAP-Event-Center?share
+    calendarLink: https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS+Paris&location=NEW+CAP+Event+Center%2C+3+Quai+de+Grenelle%2C+75015+Paris&dates=20200528T163000Z%2F20200528T190000Z
+  mainOrganizer:
+    - name: Paola Ducolin
+      main: true
+      phoneNumber: '+33 783059652'
+      twitterHandle: PolaDuco
+      email: paola.ducolin@dashlane.com
+  thanks: []
+  sponsors:
+    - name: NewCrafts
+      link: https://ncrafts.io/
+      media: icons/paris/logo_newcrafts_blanc.png
+  speakers: []
+  
