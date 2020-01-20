@@ -11,6 +11,7 @@
     maxCapacity: 50
     food: true
   site:
+    cfp: true
     city: Paris
     location: NEW CAP Event Center
     organizers:
