@@ -37,15 +37,15 @@ const Report = () => {
               some ways you can report it to us:
             </p>
             <ul>
-              <li>- Send a DM to {contactInfo.twitterHandle}</li>
+              <li> Send a DM to {contactInfo.twitterHandle}</li>
               <li>
-                - Let a{' '}
+                Let a{' '}
                 <Link to="/organizers" title="Code of Conduct">
                   Core Team
                 </Link>{' '}
                 organizer know, either in person or via Twitter.
               </li>
-              <li>- Send an email to <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a></li>
+              <li> Send an email to <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a></li>
             </ul>
           </section>
         </Panel>

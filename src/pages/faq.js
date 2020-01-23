@@ -1,6 +1,7 @@
 import React from 'react'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
+import { Link } from 'gatsby'
 import Panel from '../components/Panel'
 
 const FAQPage = () => {
@@ -24,31 +25,9 @@ const FAQPage = () => {
           </a> for more information about how you can propose a talk to a future iteration of QueerJS.
         </Panel>
         <Panel heading="How can I get involved?">
-          There are a lot of ways you could get involved with QueerJS! We're always looking for new locations to
-          host meetups, as well as folks on the ground to act as local organizers and MCs.
-          <br/><br/>
-          Involvement might mean working with your employers to provide a space, organizing catering for meetup
-          attendees, ensuring that there is a livestream or opportunity to record the speakers, and generally working
-          to ensure that the meetup runs smoothly.
-          <br/><br/>
-          If you think you'd like to do this, we'd love to work with you to make
-          it happen - please contact us via {' '}
-          <a
-            href="https://twitter.com/QueerJS"
-            rel="noopener noreferrer"
-            title="Twitter"
-            target="_blank"
-          >
-            Twitter
-          </a>
-          , or email us at {' '}
-          <a
-            href="hello@queerjs.com"
-            rel="noopener noreferrer"
-            title="Email"
-          >
-            hello@queerjs.org
-          </a>!
+          There are a lot of ways you could get involved with QueerJS! See{' '}
+          <Link to="/getting-involved"> Getting Involved </Link>
+          for more information.
         </Panel>
         <Panel heading="Where does QueerJS happen?">
           We have a bunch of meetups being planned all over the globe{' '}

@@ -41,15 +41,6 @@ body > div > div {
   height: 100%;
 }
 
-ul li {
-  list-style: none;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
 figure {
   margin: 0;
 }

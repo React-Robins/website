@@ -86,6 +86,7 @@ export const UnstyledLink = styled(Link)`
 
 export const ListItem = styled.li`
   position: relative;
+  list-style: none;
   ${props =>
     !props.talk &&
     `

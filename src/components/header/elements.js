@@ -21,6 +21,8 @@ export const NavRow = styled.section`
   ul,
   li {
     display: inline;
+    margin: 0;
+    padding: 0;
   }
   ul {
     @media screen and (max-width: 38em) {

@@ -1,6 +1,7 @@
 import React from 'react'
 import SEO from '../components/seo'
 import Layout from '../containers/layout'
+import { Link } from 'gatsby'
 import Panel from '../components/Panel'
 import Speakers from '../components/Speakers'
 
@@ -25,10 +26,13 @@ const OrganizersPage = () => {
         <h1 hidden>Welcome to {site.title}</h1>
         <Panel heading="Organizers">
           <p>
-            Nothing can be organized by only one person and there is a team helping QueerJS be a
+            Nothing can be organized by only one person - there is a team helping QueerJS be a
             safe space all over the world.
           </p>
-          <p>The cities indicate what events they helped organize</p>
+          <p>The cities indicate what events they helped organize. Want to help organize a
+            meetup in your own city? See some of the ways you can{' '}
+            <Link to="/getting-involved"> get involved</Link>.
+          </p>
           <p
             css={`
               margin-bottom: 40px;

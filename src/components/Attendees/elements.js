@@ -27,4 +27,8 @@ export const Attendees = styled.ul`
       background-color: rgb(230, 230, 230);
     }
   }
+  li {
+    list-style: none;
+  }
 `
+
