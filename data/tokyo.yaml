@@ -15,7 +15,7 @@ site:
   location: Microsoft Shinagawa
   organizers: []
   googleMapsLink: https://www.google.com/maps/place/%E6%97%A5%E6%9C%AC%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%82%BD%E3%83%95%E3%83%88%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE/@35.626638,139.7405616,15z/data=!4m5!3m4!1s0x0:0xe464accc1e5e8aa4!8m2!3d35.626638!4d139.7405616
-  calendarLink: 
+  calendarLink: https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS+Tokyo+Meetup&details=First+ever+QueerJS+event+in+Tokyo.&location=Microsoft+Shinagawa&dates=20200324T100000Z%2F20200323T123000Z
 mainOrganizer:
   - name: Rachel Ponce
     main: true
