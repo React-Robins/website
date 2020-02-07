@@ -2,14 +2,17 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Grid = styled.ul`
+  padding: 0;
   display: grid;
   grid-gap: 20px;
+
   @media (min-width: 400px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
   @media (min-width: 800px) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
   li {
     background: ${props => props.theme.white};
     padding: 20px;

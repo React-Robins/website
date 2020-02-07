@@ -3,9 +3,9 @@ info:
   city: Tokyo
   link: tokyo
   date: 03/24/2020
-  hour: "19:00"
-  icon: 
-  iconHover: 
+  hour: '19:00'
+  icon: icons/tokyo/tokyo.svg
+  iconHover: icons/tokyo/tokyo-hover.svg
   hostIcon: icons/tokyo/microsoft.svg
   hostName: Microsoft
   food: false
@@ -25,5 +25,4 @@ sponsors:
   - name: Microsoft
     link: https://www.microsoft.com/
     media: https://i.imgur.com/NqR9w63.png
-
 speakers: []
