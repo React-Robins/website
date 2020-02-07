@@ -28,5 +28,8 @@
     - name: NewCrafts
       link: https://ncrafts.io/
       media: https://pbs.twimg.com/profile_images/1065610855604252672/q3HvTFdY_400x400.jpg
-  speakers: []
-  
+  speakers:
+      - name: David Nowinsky
+        twitterLink: davinov
+      - name: Guillaume Bogard
+        twitterLink: bogardguillaume  
