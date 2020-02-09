@@ -111,6 +111,13 @@ export default {
       colors: []
     }
   ],
+  Tokyo: [
+    {
+      name: 'Rachel Ponce',
+      twitterLink: 't0ky0rachel',
+      colors: gayStripes
+    }
+  ],
   Toronto: [
     {
       name: 'Em Lazer-Walker',
