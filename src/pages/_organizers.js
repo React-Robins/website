@@ -116,6 +116,11 @@ export default {
       name: 'Rachel Ponce',
       twitterLink: 't0ky0rachel',
       colors: gayStripes
+    },
+    {
+      name: 'Kristina Yasuda',
+      twitterLink: 'kristinayasuda',
+      colors: []
     }
   ],
   Toronto: [
