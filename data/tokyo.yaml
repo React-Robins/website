@@ -28,4 +28,7 @@ sponsors:
   - name: Microsoft
     link: https://www.microsoft.com/
     media: https://i.imgur.com/NqR9w63.png
-speakers: []
+speakers:
+  - name: Thomas Logan
+    twitterLink: TechThomas
+    talk: virtual reality and social representation
