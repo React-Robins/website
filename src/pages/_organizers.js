@@ -35,6 +35,11 @@ export default {
       name: 'Shelley Vohr',
       twitterLink: 'codebytere',
       colors: gayStripes
+    },
+    {
+      name: 'Paola Ducolin',
+      twitterLink: 'PolaDuco',
+      colors: gayStripes
     }
   ],
   amsterdam: [
@@ -78,13 +83,6 @@ export default {
       colors: biStripes
     }
   ],
-  Lisbon: [
-    {
-      name: 'Paola Ducolin',
-      twitterLink: 'PolaDuco',
-      colors: []
-    }
-  ],
   'New York': [
     {
       name: 'Melody ✨',
@@ -102,13 +100,6 @@ export default {
       name: 'Aveline Estié',
       twitterLink: 'Avilene_',
       colors: biStripes
-    }
-  ],
-  Paris: [
-    {
-      name: 'Paola Ducolin',
-      twitterLink: 'PolaDuco',
-      colors: []
     }
   ],
   Tokyo: [
