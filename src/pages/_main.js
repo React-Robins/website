@@ -4,13 +4,14 @@ import Layout from '../containers/layout'
 import Sponsors from '../components/Sponsors'
 import Info from '../components/Info'
 import Speakers from '../components/Speakers'
+import Organizers from '../components/Organizers'
 import Attendees from '../components/Attendees'
 import Thanks from '../components/Thanks'
 import Panel from '../components/Panel'
 import Heading from '../components/Heading'
 
 const Main = ({ city, attendees }) => {
-  const { site, thanks, speakers, sponsors, info } = city
+  const { site, thanks, speakers, sponsors, info, mainOrganizer } = city
 
   return (
     <Layout>
@@ -58,6 +59,11 @@ const Main = ({ city, attendees }) => {
         <Panel heading="Sponsors">
           <Sponsors sponsors={sponsors} />
         </Panel>
+        {mainOrganizer && mainOrganizer.length > 0 ? (
+          <Panel heading={mainOrganizer.length > 1 ? "Organizers" : "Organizer"}>
+            <Organizers organizers={mainOrganizer} />
+          </Panel>
+        ) : null}
       </section>
 
       <Panel heading={thanks && thanks.length ? 'Special Thanks' : null}>
