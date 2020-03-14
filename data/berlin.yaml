@@ -2,18 +2,23 @@
 info:
   city: Berlin
   link: berlin
-  date: 03/26/2020
+  date: 06/01/2020
+  bySeason: Summer 2020
   hour: '18:00'
   icon: icons/berlin/berlin.svg
   iconHover: icons/berlin/berlin-hover.svg
   hostIcon: icons/berlin/coup.svg
   hostName: Co.up Community
+  rsvpsClosed: true
   food: false
 site:
   cfp: true
   location: Co-up, Berlin
-  googleMapsLink: https://goo.gl/maps/VV6YUwPJaT79ESGG9
-  calendarLink: https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS+Berlin&location=Co.up+Coworking+Space%2C+https%3A%2F%2Fgoo.gl%2Fmaps%2FVV6YUwPJaT79ESGG9&dates=20200326T170000Z%2F20200326T200000Z
+  googleMapsLink:
+  calendarLink:
+announcement:
+  heading: Postponed
+  text: Due to the current situation regarding COVID-19, this event has been postponed. Please check back here for news regarding a new date and time. We hope to see you all this summer!
 mainOrganizer:
   - name: Sara Vieira
     main: true
