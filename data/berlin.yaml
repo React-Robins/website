@@ -8,12 +8,12 @@ info:
   icon: icons/berlin/berlin.svg
   iconHover: icons/berlin/berlin-hover.svg
   hostIcon: icons/berlin/coup.svg
-  hostName: Co.up Community
+  hostName: co.up
   rsvpsClosed: true
   food: false
 site:
-  cfp: true
-  location: Co-up, Berlin
+  cfp: false
+  location: co.up
   googleMapsLink:
   calendarLink:
 announcement:
@@ -39,9 +39,4 @@ sponsors:
   - name: Heroku
     link: https://www.heroku.com/
     media: https://i.imgur.com/2BONYjO.png
-speakers:
-  - name: Sophie Au
-    twitterLink: SolviAu
-    talk: building in accessibility from the start
-  - name: Lisa Kramarenko
-    twitterLink: infinitebloop_
+speakers: []
