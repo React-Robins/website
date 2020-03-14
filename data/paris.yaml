@@ -1,38 +1,39 @@
 ---
-  info:
-    city: Paris
-    link: paris
-    date: 05/28/2020
-    hour: '18:30'
-    icon: icons/paris/paris.svg
-    iconHover: icons/paris/paris-hover.svg
-    hostIcon: icons/paris/logo_newcrafts_blanc.png
-    hostName: NewCrafts
-    maxCapacity: 50
-    food: true
-  site:
-    cfp: true
-    city: Paris
-    location: NEW CAP Event Center
-    organizers:
-    googleMapsLink: https://g.page/NEWCAP-Event-Center?share
-    calendarLink: https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS+Paris&location=NEW+CAP+Event+Center%2C+3+Quai+de+Grenelle%2C+75015+Paris&dates=20200528T163000Z%2F20200528T190000Z
-  mainOrganizer:
-    - name: Paola Ducolin
-      main: true
-      phoneNumber: '+33 783059652'
-      twitterHandle: PolaDuco
-      email: paola.ducolin@queerjs.com
-  thanks: []
-  sponsors:
-    - name: NewCrafts
-      link: https://ncrafts.io/
-      media: https://pbs.twimg.com/profile_images/1065610855604252672/q3HvTFdY_400x400.jpg
-  speakers:
-      - name: David Nowinsky
-        twitterLink: davinov
-      - name: Guillaume Bogard
-        twitterLink: bogardguillaume  
-      - mc: true
-        name: Paola Ducolin
-        twitterLink: PolaDuco
+info:
+  city: Paris
+  link: paris
+  date: 07/01/2020
+  bySeason: Summer 2020
+  hour: '18:30'
+  icon: icons/paris/paris.svg
+  iconHover: icons/paris/paris-hover.svg
+  hostIcon: icons/paris/shrug.png
+  hostName: TBD
+  rsvpsClosed: true
+  food: true
+site:
+  cfp: false
+  city: Paris
+  location: TBD
+  organizers:
+  googleMapsLink:
+  calendarLink:
+announcement:
+  heading: Postponed
+  text: Due to the current situation regarding COVID-19, this event has been postponed. Please check back here for news regarding a new date and time. We hope to see you all later this year!
+mainOrganizer:
+  - name: Paola Ducolin
+    main: true
+    phoneNumber: '+33 783059652'
+    twitterHandle: PolaDuco
+    email: paola.ducolin@queerjs.com
+thanks: []
+sponsors: []
+speakers:
+  - name: David Nowinsky
+    twitterLink: davinov
+  - name: Guillaume Bogard
+    twitterLink: bogardguillaume
+  - mc: true
+    name: Paola Ducolin
+    twitterLink: PolaDuco
