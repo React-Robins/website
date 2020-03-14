@@ -9,10 +9,10 @@ const City = ({ past, city, link, date, icon, iconHover, hostIcon, hostName }) =
   const [hoverRef, isHovering] = useHover()
   return (
     <Wrapper
-      itemscope
-      itemtype="http://schema.org/Event"
+      itemScope
+      itemType="http://schema.org/Event"
       title={`QueerJS ${city}`}
-      to={link}
+      to={`/${link}`}
       innerRef={hoverRef}
     >
       <CityIcon>
