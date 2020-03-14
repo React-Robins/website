@@ -76,6 +76,7 @@ export const query = graphql`
             city
             link
             date
+            bySeason
             hour
             hostName
             hour

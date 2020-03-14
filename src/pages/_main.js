@@ -9,9 +9,10 @@ import Attendees from '../components/Attendees'
 import Thanks from '../components/Thanks'
 import Panel from '../components/Panel'
 import Heading from '../components/Heading'
+import Announcement from '../components/Announcement'
 
 const Main = ({ city, attendees }) => {
-  const { site, thanks, speakers, sponsors, info, mainOrganizer } = city
+  const { site, thanks, speakers, sponsors, info, mainOrganizer, announcement } = city
 
   return (
     <Layout>
@@ -21,6 +22,9 @@ const Main = ({ city, attendees }) => {
       />
       <section>
         <Heading sub="queerjs @">{info.city}</Heading>
+        { announcement &&
+          <Announcement message={announcement} />
+        }
         <Info attendeesNumber={attendees.length} site={site} info={info} city={info.link} />
         <Panel heading="What?">
           {site.customDescription ? (

@@ -30,6 +30,7 @@ export const query = graphql`
         food
         hour
         date
+        bySeason
         maxCapacity
         rsvpsClosed
       }
@@ -40,6 +41,10 @@ export const query = graphql`
         rsvpLink
         cfp
         customDescription
+      }
+      announcement {
+        heading
+        text
       }
       mainOrganizer {
         name
