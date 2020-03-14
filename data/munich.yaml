@@ -7,8 +7,8 @@ info:
   hour: '17:00'
   icon: icons/munich/munich.svg
   iconHover: icons/munich/munich-hover.svg
-  hostIcon: icons/munich/mayflower.png
-  hostName: Mayflower GmbH
+  hostIcon: icons/munich/shrug.png
+  hostName: TBD
   rsvpsClosed: true
   food: true
 site:
@@ -27,11 +27,5 @@ mainOrganizer:
     phoneNumber: '+49 15758788733'
     twitterHandle: carolstran
     email: carolyn@queerjs.com
-sponsors:
-  - name: Mayflower GmbH
-    link: https://mayflower.de/
-    media: https://mayflower.de/wp-content/uploads/2014/04/Mayflower-Logo-880.png
-  - name: Heroku
-    link: https://www.heroku.com/
-    media: https://i.imgur.com/2BONYjO.png
+sponsors: []
 speakers: []
