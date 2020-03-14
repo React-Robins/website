@@ -2,37 +2,30 @@
 info:
   city: Munich
   link: munich
-  date: 04/14/2020
+  date: 09/01/2020
+  bySeason: Autumn 2020
   hour: '17:00'
   icon: icons/munich/munich.svg
   iconHover: icons/munich/munich-hover.svg
-  hostIcon: icons/munich/mayflower.png
-  hostName: Mayflower GmbH
+  hostIcon: icons/munich/shrug.png
+  hostName: TBD
+  rsvpsClosed: true
   food: true
 site:
-  cfp: true
+  cfp: false
   city: Munich
-  location: Mayflower GmbH
+  location: TBD
   organizers: []
-  googleMapsLink: https://goo.gl/maps/tAyKgnf6jZRHciCb6
-  calendarLink: https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS+Munich&location=Mayflower+GmbH%2C+Landsberger+Str.+314%2C+80687+M%C3%BCnchen&dates=20200414T150000Z%2F20200414T180000Z
+  googleMapsLink: 
+  calendarLink: 
+announcement:
+  heading: Postponed
+  text: Due to the current situation regarding COVID-19, this event has been postponed. Please check back here for news regarding a new date and time. We hope to see you all later this year!
 mainOrganizer:
   - name: Carolyn Stransky
     main: true
     phoneNumber: '+49 15758788733'
     twitterHandle: carolstran
     email: carolyn@queerjs.com
-sponsors:
-  - name: Mayflower GmbH
-    link: https://mayflower.de/
-    media: https://mayflower.de/wp-content/uploads/2014/04/Mayflower-Logo-880.png
-  - name: Heroku
-    link: https://www.heroku.com/
-    media: https://i.imgur.com/2BONYjO.png
-speakers:
-  - name: Yonatan Miller
-    twitterLink: shushugah
-    talk: queer history of resistance in computing
-  - name: Nils Weber
-    twitterLink: vimkat
-    talk: letting your editor do the work
+sponsors: []
+speakers: []
