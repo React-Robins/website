@@ -41,6 +41,10 @@ export const query = graphql`
         cfp
         customDescription
       }
+      announcement {
+        heading
+        text
+      }
       mainOrganizer {
         name
         main
