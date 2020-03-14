@@ -10,10 +10,10 @@ const City = ({ past, city, link, date, bySeason, icon, iconHover, hostIcon, hos
 
   return (
     <Wrapper
-      itemscope
-      itemtype="http://schema.org/Event"
+      itemScope
+      itemType="http://schema.org/Event"
       title={`QueerJS ${city}`}
-      to={link}
+      to={`/${link}`}
       innerRef={hoverRef}
     >
       <CityIcon>
