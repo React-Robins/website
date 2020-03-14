@@ -2,7 +2,8 @@
 info:
   city: Tokyo
   link: tokyo
-  date: 03/24/2020
+  date: 6/1/2020
+  bySeason: Summer 2020
   hour: '19:00'
   icon: icons/tokyo/tokyo.svg
   iconHover: icons/tokyo/tokyo-hover.svg
