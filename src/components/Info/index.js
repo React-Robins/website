@@ -29,9 +29,13 @@ export default ({ site, city, info, attendeesNumber }) => {
         </span>
 
         <span>
-          <a href={site.calendarLink} title="Add to Calendar">
-            {info.hour} {format(date, ['Do [of] MMMM '])}
-          </a>
+          {info.bySeason ?
+            <p>{info.bySeason}</p>
+          :
+            <a href={site.calendarLink} title="Add to Calendar">
+              {info.hour} {format(date, ['Do [of] MMMM '])}
+            </a>
+          }
         </span>
         <Calendar />
       </Info>

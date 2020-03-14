@@ -30,6 +30,7 @@ export const query = graphql`
         food
         hour
         date
+        bySeason
         maxCapacity
         rsvpsClosed
       }
