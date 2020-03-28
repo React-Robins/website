@@ -27,11 +27,6 @@ export default {
       colors: gayStripes
     },
     {
-      name: 'Carolyn Stransky',
-      twitterLink: 'carolstran',
-      colors: biStripes
-    },
-    {
       name: 'Shelley Vohr',
       twitterLink: 'codebytere',
       colors: gayStripes
