@@ -1,0 +1,36 @@
+---
+info:
+  city: The Internet
+  link: online-2020-04
+  date: 05/02/2020
+  hour: '16:00 UTC'
+  icon: icons/online/online.svg
+  iconHover: icons/online/online-hover.svg
+  rsvpsClosed: false
+  food: false
+site:
+  cfp: true
+  location: twitch.tv/queerjs
+  googleMapsLink:
+  calendarLink: https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS+May&details=Missing+your+favourite+meetup%3F+Join+us+on+Twitch+for+a+live+stream+of+the+first+fully-remote+QueerJS%21&dates=20200502T160000Z%2F20200502T180000Z
+announcement:
+  heading: QueerJS Online
+  text: Missing your favourite meetup? Join us on Twitch for a live stream of the first fully-remote QueerJS!
+mainOrganizer:
+  - name: Sara Vieira
+    main: true
+    phoneNumber: '+351 91 729 6830'
+    twitterHandle: '@NikkitaFTW'
+    email: hey@iamsaravieira.com
+organizers:
+  - name: Paola Ducolin
+    twitterHandle: PolaDuco
+    email: paola.ducolin@queerjs.com
+  - name: Melody ✨
+    twitterHandle: pixelyunicorn
+  - name: Ash Kyd
+    email: ash@kyd.com.au
+    twitterHandle: ashkyd
+thanks:
+sponsors: []
+speakers: []

@@ -34,7 +34,7 @@ const City = ({ past, city, link, date, bySeason, icon, iconHover, hostIcon, hos
         <Name past={past} itemprop="name">
           {city}
         </Name>
-        <Host past={past} src={hostIcon.publicURL} alt={hostName} />
+        {hostIcon && <Host past={past} src={hostIcon.publicURL} alt={hostName} />}
       </CityInfo>
     </Wrapper>
   )
