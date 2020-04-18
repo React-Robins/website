@@ -34,16 +34,6 @@ const Header = ({ siteTitle }) => (
         </li>
         <li>
           <NavHref
-            href="https://shop.queerjs.com"
-            target="_blank"
-            title="QueerJS Shop"
-            rel="noopener noreferrer"
-          >
-            Shop
-          </NavHref>
-        </li>
-        <li>
-          <NavHref
             href="https://opencollective.com/queerjs"
             target="_blank"
             title="Donate to QueerJS"
