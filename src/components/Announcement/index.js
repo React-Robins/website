@@ -6,6 +6,7 @@ const DistinctiveDiv = styled.div`
   color: ${props => props.theme.darkPurple};
   margin-bottom: 2.5rem;
   padding: 0.5rem;
+  text-align: center;
 `
 
 const BoldTitle = styled.h2`
