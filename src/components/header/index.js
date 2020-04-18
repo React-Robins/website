@@ -30,7 +30,7 @@ const Header = ({ siteTitle }) => (
 
       <ul>
         <li>
-          <NavLink to="/">Cities</NavLink>
+          <NavLink to="/">Meetups</NavLink>
         </li>
         <li>
           <NavHref
