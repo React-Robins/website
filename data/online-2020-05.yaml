@@ -33,4 +33,6 @@ organizers:
     twitterHandle: ashkyd
 thanks:
 sponsors: []
-speakers: []
+speakers:
+  - name: Guillaume Bogard
+    twitterLink: bogardguillaume
