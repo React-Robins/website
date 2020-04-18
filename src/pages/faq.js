@@ -14,7 +14,7 @@ const FAQPage = () => {
       <main>
         <h1 hidden>Welcome to QueerJS</h1>
         <Panel heading="FAQ"></Panel>
-        <Panel heading="How do I speak at QueerJS?">
+        <Panel heading="How do I speak at QueerJS?" id="how-to-speak">
           We'd love for you to speak at a meetup! Please see {' '}  
           <a
             href="/speak"
@@ -24,13 +24,13 @@ const FAQPage = () => {
             Speaking at QueerJS
           </a> for more information about how you can propose a talk to a future iteration of QueerJS.
         </Panel>
-        <Panel heading="How can I get involved?">
+        <Panel heading="How can I get involved?" id="get-involved">
           There are a lot of ways you could get involved with QueerJS! See{' '}
           <Link to="/getting-involved"> Getting Involved </Link>
           for more information.
         </Panel>
-        <Panel heading="Where does QueerJS happen?">
-          We have a bunch of meetups being planned all over the globe{' '}
+        <Panel heading="Where does QueerJS happen?" id="locations">
+          We have a bunch of meetups being planned online and all over the globe{' '}
           <span role="img" aria-label="earth">
             🌍
           </span>{' '}
@@ -44,7 +44,7 @@ const FAQPage = () => {
           </a>{' '}
           page for a list of the upcoming (and past) meetups.
         </Panel>
-        <Panel heading="Can I print and redistribute the meetup stickers?">
+        <Panel heading="Can I print and redistribute the meetup stickers?" id="stickers">
           Yes! They're all open source and you can find them in our {' '}
           <a
             href="https://github.com/queerjs/brand-assets"
@@ -56,7 +56,7 @@ const FAQPage = () => {
           </a>{' '}
           repository on GitHub.
         </Panel>
-        <Panel heading="Any other questions?">
+        <Panel heading="Any other questions?" id="questions">
           Please {' '}
           <a
             href="https://github.com/queerjs/info/issues/new"

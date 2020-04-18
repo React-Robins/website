@@ -17,14 +17,14 @@ export default () => {
       <SEO title={site.title} description={site.description} />
       <main>
         <h1 hidden>Welcome to {site.title}</h1>
-        <Panel heading="Speaking at QueerJS">
+        <Panel heading="Speaking at QueerJS" id="speaking">
           First of all, thank you for thinking about submitting a talk to an upcoming QueerJS event.
           We're happy you're here{' '}
           <span role="img" aria-label="Queer Rainbow">
             🌈
           </span>
         </Panel>
-        <Panel heading="How do I submit a talk?">
+        <Panel heading="How do I submit a talk?" id="submit-a-talk">
           Click the shiny button at the bottom! That will lead you to our GitHub repo and from
           there, you can use one of our of issue templates to guide you through your talk
           submission. If you need any help with this process because you are new to GitHub, git or
@@ -48,7 +48,7 @@ export default () => {
           </a>
           . Happy to help any way we can!
         </Panel>
-        <Panel heading="What should I talk about?">
+        <Panel heading="What should I talk about?" id="topics">
           Anything you're passionate about, really. The talks don't have to be technical (but they
           certainly can be). The most important thing is that you're excited about your topic.
           That's the amazing thing about public speaking - you get to share your passions with the
@@ -63,12 +63,12 @@ export default () => {
           </a>
           .
         </Panel>
-        <Panel heading="How long should my talk be?">
+        <Panel heading="How long should my talk be?" id="length">
           At every event, we plan to have a mix of longer 20-25 minute talks and 5-10 minute
           lightning talks. So do whatever you feel most comfortable with! If you need more time to
           present, please let us know so we can adjust the schedule or coordinate with the venue.
         </Panel>
-        <Panel heading="What if the lineup for the location I want to speak at is full?">
+        <Panel heading="What if the lineup for the location I want to speak at is full?" id="contention">
           It's very, very likely that if we host a QueerJS in a city, we'll do it again in the same
           city one day. So we'd still encourage you to submit your talk. That way, you'll be at the
           top of the list for the next edition!
@@ -79,11 +79,11 @@ export default () => {
           travel assistance for any reason, please mention it in your talk proposal and we'll let
           you know if it's possible.
         </Panel>
-        <Panel heading=" What's the talk selection process?">
+        <Panel heading="What's the talk selection process?" id="talk-selection">
           Talk slots are first come, first served (for the most part). After you open your issue,
           one of the organizers will reach out and let you know the next steps!
         </Panel>
-        <Panel heading="How should I prepare for an online talk?">
+        <Panel heading="How should I prepare for an online talk?" id="online-meetup-prep">
           There are several things to consider with an online talk.
           
           <p>Do you want to present live the audience, or pre-record your talk? Each have benefits and drawbacks but the choice is up to you.</p>
@@ -104,7 +104,7 @@ export default () => {
           </ol>
         </Panel>
 
-        <Panel heading="Speak 🎉">
+        <Panel heading="Speak 🎉" id="speak">
           <RsvpButton>
             <a
               title="Proposals"
