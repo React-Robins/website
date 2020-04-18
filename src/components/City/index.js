@@ -1,5 +1,6 @@
 import React from 'react'
 import useHover from '../../helpers/useHover'
+import Helmet from 'react-helmet';
 
 import { format } from 'date-fns'
 
@@ -21,6 +22,11 @@ const City = ({ past, city, link, date, bySeason, icon, iconHover, hostIcon, hos
           <img src={iconHover.publicURL} className="animated bounceIn" css={sizes} alt={city} />
         ) : (
           <img css={sizes} src={icon.publicURL} alt={city} />
+        )}
+        {!past && (
+          <Helmet>
+            <link rel="preload" href={iconHover.publicURL} as="image" />
+          </Helmet>
         )}
       </CityIcon>
       <CityInfo>
