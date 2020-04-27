@@ -5,3 +5,7 @@
 [[redirects]]
   from = "/sf"
   to = "/san-francisco"
+
+[[redirects]]
+  from = "/online-2020-04"
+  to = "/online-2020-16"
