@@ -9,7 +9,7 @@ info:
   rsvpsClosed: false
   food: false
 site:
-  cfp: true
+  cfp: false
   location: twitch.tv/queerjs
   googleMapsLink:
   calendarLink: https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS+May&details=Missing+your+favourite+meetup%3F+Join+us+on+Twitch+for+a+live+stream+of+the+first+fully-remote+QueerJS%21&dates=20200516T160000Z%2F20200516T190000Z
@@ -36,3 +36,8 @@ sponsors: []
 speakers:
   - name: Guillaume Bogard
     twitterLink: bogardguillaume
+  - name: Anna Lytical
+    twitterLink: theannalytical
+  - name: AndyTuba
+    twitterLink: andytuba
+    talk: Why 🙏Ain't High-Five, but 🏳️⍰ is Pride
