@@ -22,6 +22,14 @@ mainOrganizer:
     phoneNumber: '+491789183962'
     twitterHandle: '@NikkitaFTW'
     email: hey@iamsaravieira.com
+  - name: Paola Ducolin
+    twitterHandle: PolaDuco
+    email: paola.ducolin@queerjs.com
+  - name: Melody ✨
+    twitterHandle: pixelyunicorn
+  - name: Ash Kyd
+    email: ash@kyd.com.au
+    twitterHandle: ashkyd
 organizers:
   - name: Paola Ducolin
     twitterHandle: PolaDuco
