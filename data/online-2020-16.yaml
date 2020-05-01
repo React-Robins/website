@@ -15,7 +15,7 @@ site:
   calendarLink: https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS+May&details=Missing+your+favourite+meetup%3F+Join+us+on+Twitch+for+a+live+stream+of+the+first+fully-remote+QueerJS%21&dates=20200516T160000Z%2F20200516T190000Z
 announcement:
   heading: QueerJS Online
-  text: Missing your favourite meetup? Join us on Twitch for a live stream of the first fully-remote QueerJS!
+  text: Missing your favorite meetup? Join us on Twitch for a live stream of the first fully-remote QueerJS!
 mainOrganizer:
   - name: Sara Vieira
     main: true
