@@ -101,7 +101,7 @@ export default () => {
           <ol>
             <li>We use Skype for the livestream. If you want to call an organizer to get comfortable with the features, get in touch!</li>
             <li>Ensure your technical set up is ready ahead of time. We will run a quick test of this before the stream.</li>
-            <li>*For Mac*: ensure Skype has permission to record your screen. To do this, open Settings &raquo; Security &amp; Privacy &raquo; check zoom.us</li>
+            <li>*For Mac*: ensure Skype has permission to record your screen. To do this, open Settings &raquo; Security &amp; Privacy &raquo; check "Skype"</li>
           </ol>
         </Panel>
 
