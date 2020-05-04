@@ -40,15 +40,22 @@ organizers:
     email: ash@kyd.com.au
     twitterHandle: ashkyd
 thanks:
-sponsors: []
+sponsors:
+  - name: Dashlane
+    link: https://www.dashlane.com/
+    media: https://i.pcmag.com/imagery/reviews/02w0ZoGI9mMXt0hkS1Jbk12-8.fit_scale.size_1028x578.v_1580234566.png
 speakers:
   - name: Guillaume Bogard
     twitterLink: bogardguillaume
+    talk: Type-safe, functional React with ReasonML
   - name: Anna Lytical
     twitterLink: theannalytical
   - name: AndyTuba
     twitterLink: andytuba
     talk: Why 🙏Ain't High-Five, but 🏳️⍰ is Pride
+  - name: Charlie Gerard
+    twitterLink: devdevcharlie
+    talk: Quarantine without a Switch - Making your own fun in JavaScript
   - name: Elisabeth Fainstein
     twitterLink: Officier_Azarov
     talk: 'Electronic Tales: computer culture for everyone'
