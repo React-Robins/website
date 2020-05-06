@@ -9,15 +9,13 @@ import {
   UnstyledLink
 } from './elements'
 
-const size = 100;
+const size = 100
 
 const Organizers = ({ organizers }) => {
   return (
     <OrganizersGrid size={size}>
-      {organizers.map(human => (
-        <ListItem
-          key={human.twitterHandle}
-        >
+      {organizers.map((human) => (
+        <ListItem key={human.twitterHandle}>
           <UnstyledLink
             as="a"
             href={`https://twitter.com/${human.twitterHandle}`}
@@ -30,7 +28,7 @@ const Organizers = ({ organizers }) => {
               <img
                 width={size + 'px'}
                 height={size + 'px'}
-                src={`https://avatars.io/twitter/${human.twitterHandle}`}
+                src={`https://twitter-avatar.now.sh/${human.twitterHandle}`}
                 alt="Organizer"
               />
             </OrganizerPhoto>

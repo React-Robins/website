@@ -15,7 +15,7 @@ import {
 const Speakers = ({ noSpeak, speakers, cfp }) => {
   return (
     <SpeakersGrid>
-      {speakers.map(human => (
+      {speakers.map((human) => (
         <ListItem
           talk={human.talk}
           key={human.twitterLink}
@@ -33,7 +33,7 @@ const Speakers = ({ noSpeak, speakers, cfp }) => {
               <img
                 width="240"
                 height="240"
-                src={`https://avatars.io/twitter/${human.twitterLink}`}
+                src={`https://twitter-avatar.now.sh/${human.twitterLink}`}
                 alt="Speaker"
               />
             </SpeakerPhoto>
