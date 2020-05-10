@@ -28,8 +28,8 @@ const CodeOfConduct = () => {
               agree with the following code of conduct.
             </p>
             <p>
-              Organizers will enforce this code throughout the event. We are expecting cooperation
-              from all participants to help ensuring a safe environment for everybody.
+              Organizers enforce this code throughout the event. We expect cooperation
+              from all participants to help ensure a safe environment for everybody.
             </p>
             <p>
               {' '}
@@ -84,8 +84,8 @@ const CodeOfConduct = () => {
               .
             </p>
             <p>
-              Conference staff will be happy to help participants and assist those experiencing
-              harassment by providing safe environment, arranging needed transport, accommodation or
+              Meetup staff are happy to help participants and assist people experiencing
+              harassment by providing safe environment, arranging transport, accommodation or
               otherwise assist in the situation.
             </p>
             <p>
