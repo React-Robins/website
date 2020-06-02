@@ -35,6 +35,11 @@ export default {
       name: 'Paola Ducolin',
       twitterLink: 'PolaDuco',
       colors: gayStripes
+    },
+    {
+      name: 'Carolyn Stransky',
+      twitterLink: 'carolstran',
+      colors: phillyStripes
     }
   ],
   amsterdam: [
