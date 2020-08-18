@@ -17,11 +17,6 @@ export default {
       colors: gayStripes
     },
     {
-      name: 'Laura Gonzalez',
-      twitterLink: 'freezydorito',
-      colors: aceStripes
-    },
-    {
       name: 'Alejandra Villa',
       twitterLink: 'AlxSavage',
       colors: gayStripes
@@ -44,9 +39,9 @@ export default {
   ],
   amsterdam: [
     {
-      name: 'Paul Verbeek-Mast',
-      twitterLink: 'paul_v_m',
-      colors: fluidStripes
+      name: 'Jayne Mast',
+      twitterLink: 'jayne_mast',
+      colors: transStripes
     },
     {
       name: 'Lian Li',
