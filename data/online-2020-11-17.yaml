@@ -1,0 +1,31 @@
+---
+info:
+  city: The Internet
+  link: online-2020-11-17
+  date: 11/17/2020
+  hour: '19:00 CET'
+  icon: icons/online/online.svg
+  iconHover: icons/online/online-hover.svg
+  rsvpsClosed: false
+  food: false
+site:
+  cfp: true
+  location: twitch.tv/queerjs
+  googleMapsLink:
+  calendarLink: https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS+Online&details=Join+us+on+Twitch+for+your+favourite+meetup&location=The+internet&dates=20201117T180000Z%2F20201117T193000Z
+announcement:
+  heading: QueerJS Online
+  text: Missing your favourite meetup? Join us on Twitch for a live stream of a fully-remote QueerJS!
+mainOrganizer:
+  - name: Paola Ducolin
+    main: true
+    phoneNumber: '+33783059652'
+    twitterHandle: PolaDuco
+    email: paola.ducolin@queerjs.com
+thanks:
+sponsors: []
+speakers:
+  - name: Paul Louis Hery
+    twitterLink: plhery
+  - name: Bianca Gostin
+    twitterLink: BiancaGostin
