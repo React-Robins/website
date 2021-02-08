@@ -7,7 +7,8 @@ import { Link } from 'gatsby'
 const Report = () => {
   const contactInfo = {
     email: 'coc@queerjs.com',
-    twitterHandle: '@QueerJS'
+    twitterHandle: '@QueerJS',
+    githubHandle: 'queerjs'
   }
 
   return (

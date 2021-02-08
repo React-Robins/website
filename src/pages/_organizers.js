@@ -14,26 +14,31 @@ export default {
     {
       name: 'Sara Vieira',
       twitterLink: 'NikkitaFTW',
+      githubLink: 'SaraVieira',
       colors: gayStripes
     },
     {
       name: 'Alejandra Villa',
       twitterLink: 'AlxSavage',
+      githubLink: 'AlxSavage',
       colors: gayStripes
     },
     {
       name: 'Shelley Vohr',
       twitterLink: 'codebytere',
+      githubLink: 'codebytere',
       colors: gayStripes
     },
     {
       name: 'Paola Ducolin',
       twitterLink: 'PolaDuco',
+      githubLink: 'pducolin',
       colors: gayStripes
     },
     {
       name: 'Carolyn Stransky',
       twitterLink: 'carolstran',
+      githubLink: 'carolstran',
       colors: phillyStripes
     }
   ],
@@ -41,11 +46,13 @@ export default {
     {
       name: 'Jayne Mast',
       twitterLink: 'jayne_mast',
+      githubLink: 'jayne-mast',
       colors: transStripes
     },
     {
       name: 'Lian Li',
       twitterLink: 'Chimney42',
+      githubLink: 'Chimney42',
       colors: phillyStripes
     }
   ],
@@ -53,21 +60,25 @@ export default {
     {
       name: 'Jeremias Menichelli',
       twitterLink: 'jeremenichelli',
+      twitterLink: 'jeremenichelli',
       colors: []
     },
     {
       name: 'Daniel Ehrenberg',
       twitterLink: 'littledan',
+      githubLink: 'littledan',
       colors: gayStripes
     },
     {
       name: 'Ignacio Villanueva',
       twitterLink: 'IgnaciodeNuevo',
+      githubLink: 'ignaciodenuevo',
       colors: biStripes
     },
     {
       name: 'Calabria',
       twitterLink: 'Zurribulle',
+      githubLink: 'FCalabria',
       colors: lesbianStripes
     }
   ],
@@ -75,6 +86,7 @@ export default {
     {
       name: 'Kate Beard',
       twitterLink: 'SBinLondon',
+      githubLink: 'sbinlondon',
       colors: biStripes
     }
   ],
@@ -82,11 +94,13 @@ export default {
     {
       name: 'Melody ✨',
       twitterLink: 'pixelyunicorn',
+      githubLink: 'pixelyunicorn',
       colors: phillyStripes
     },
     {
       name: 'Tierney Cyren',
       twitterLink: 'bitandbang',
+      githubLink: 'bnb',
       colors: []
     }
   ],
@@ -94,6 +108,7 @@ export default {
     {
       name: 'Aveline Estié',
       twitterLink: 'Avilene_',
+      githubLink: 'avilene',
       colors: biStripes
     }
   ],
@@ -101,6 +116,7 @@ export default {
     {
       name: 'Rachel Ponce',
       twitterLink: 't0ky0rachel',
+      githubLink: 'tokyorachel',
       colors: gayStripes
     },
     {
@@ -113,16 +129,19 @@ export default {
     {
       name: 'Em Lazer-Walker',
       twitterLink: 'lazerwalker',
+      githubLink: 'lazerwalker',
       colors: transStripes
     },
     {
       name: 'Jackie Lealess',
       twitterLink: 'jlealess',
+      githubLink: 'jlealess',
       colors: nonBinaryStripes
     },
     {
       name: 'June Epstein',
       twitterLink: 'thejuneepstein',
+      githubLink: 'BobaFatale',
       colors: transStripes
     },
     {
