@@ -52,12 +52,14 @@ export const query = graphql`
         phoneNumber
         twitterHandle
         email
+        githubHandle
       }
       organizers {
         id
         name
         email
         twitterHandle
+        githubHandle
       }
       thanks {
         id
@@ -77,6 +79,7 @@ export const query = graphql`
         twitterLink
         talk
         link
+        githubLink
       }
     }
   }
