@@ -1,0 +1,33 @@
+---
+info:
+  city: The Internet
+  link: online-2021-march
+  date: 03/30/2021
+  hour: '22:30 CET'
+  icon: icons/online/online.svg
+  iconHover: icons/online/online-hover.svg
+  rsvpsClosed: false
+  food: false
+site:
+  cfp: true
+  location: twitch.tv/queerjs
+  googleMapsLink:
+  calendarLink: https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS+Online&details=Join+us+on+Twitch+for+your+favourite+meetup&location=The+internet&dates=20210330T213000Z%2F20201117T230000Z
+announcement:
+  heading: QueerJS Online
+  text: Missing your favourite meetup? Join us on Twitch for a live stream of a fully-remote QueerJS!
+mainOrganizer:
+  - name: 'Melody ✨'
+    main: true
+    phoneNumber: ''
+    twitterHandle: pixelyunicorn
+    email: paola.ducolin@queerjs.com
+thanks:
+sponsors: []
+speakers:
+  - name: Lea Rosema
+    talk: Painting cute 2D animations with GLSL
+    twitterLink: terabaud
+  - name: 'Melody ✨'
+    talk: Web Accessibility
+    twitterLink: pixelyunicorn
