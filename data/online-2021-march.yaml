@@ -21,6 +21,7 @@ mainOrganizer:
     main: true
     phoneNumber: ''
     twitterHandle: pixelyunicorn
+    githubLink: pixelyunicorn
     email: coc@queerjs.com
 thanks:
 sponsors: []
@@ -28,6 +29,8 @@ speakers:
   - name: Lea Rosema
     talk: Painting cute 2D animations with GLSL
     twitterLink: terabaud
+    githubLink: terabaud
   - name: 'Melody ✨'
     talk: Web Accessibility
     twitterLink: pixelyunicorn
+    githubLink: pixelyunicorn

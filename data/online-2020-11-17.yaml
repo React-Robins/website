@@ -18,6 +18,7 @@ announcement:
   text: Missing your favourite meetup? Join us on Twitch for a live stream of a fully-remote QueerJS!
 mainOrganizer:
   - name: Paola Ducolin
+    githubLink: pducolin
     main: true
     phoneNumber: '+33783059652'
     twitterHandle: PolaDuco

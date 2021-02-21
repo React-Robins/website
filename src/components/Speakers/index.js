@@ -29,13 +29,19 @@ const Speakers = ({ noSpeak, speakers, cfp }) => {
             title={human.name}
           >
             <SpeakerPhoto>
-              <InlineRainbow flag={human.colors} />
-              <img
-                width="240"
-                height="240"
-                src={`https://twitter-avatar.now.sh/${human.twitterLink}`}
-                alt="Speaker"
-              />
+              {human.githubLink ? (
+                <>
+                  <InlineRainbow flag={human.colors} />
+                  <img
+                    width="240"
+                    height="240"
+                    src={`https://github.com/${human.githubLink}.png`}
+                    alt="Speaker"
+                  />
+                </>
+              ) : (
+                <RainbowWithClicker />
+              )}
             </SpeakerPhoto>
             <Unstyled>{human.name}</Unstyled>
             {human.location && <Unstyled>{human.location}</Unstyled>}
