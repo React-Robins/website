@@ -7,7 +7,7 @@ export default ({ data = {} }) => {
     event,
     allAirtable: { edges }
   } = data
-  return <Main city={event} attendees={edges.map(edge => edge.node)} />
+  return <Main city={event} attendees={edges.map((edge) => edge.node)} />
 }
 
 export const query = graphql`
@@ -52,14 +52,14 @@ export const query = graphql`
         phoneNumber
         twitterHandle
         email
-        githubHandle
+        githubLink
       }
       organizers {
         id
         name
         email
         twitterHandle
-        githubHandle
+        githubLink
       }
       thanks {
         id
