@@ -27,6 +27,7 @@ mainOrganizer:
     phoneNumber: '+33 783059652'
     twitterHandle: PolaDuco
     email: paola.ducolin@queerjs.com
+    githubLink: pducolin
 thanks: []
 sponsors: []
 speakers:
@@ -37,3 +38,4 @@ speakers:
   - mc: true
     name: Paola Ducolin
     twitterLink: PolaDuco
+    githubLink: pducolin

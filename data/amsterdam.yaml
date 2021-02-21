@@ -16,7 +16,7 @@ site:
   googleMapsLink: https://www.google.com/maps/place/Booking.com+HQ+AMS9/@52.3653734,4.8423399,13z/data=!4m8!1m2!2m1!1sbooking+amsterdam!3m4!1s0x47c6099590ae1d19:0x37f9e7921bb19b73!8m2!3d52.3655546!4d4.8985397
   calendarLink: http://www.google.com/calendar/event?action=TEMPLATE&dates=20191002T153000Z%2F20191002T190000Z&text=QueerJS%20Amsterdam&location=Booking.com%20HQ%2C%20Herengracht%2C%20Amsterdam&details=
 mainOrganizer:
-  - name: Jane Mast
+  - name: Jayne Mast
     main: true
     phoneNumber: '+31 642349200'
     twitterHandle: jayne_mast
@@ -24,7 +24,7 @@ mainOrganizer:
     email: jayne@confrere.com
 organizers:
   - id: 9c131910-d935-4e75-b988-5db4990c0d16
-    name: Jane Mast
+    name: Jayne Mast
     email: jayne@confrere.com
     twitterHandle: jayne_mast
     githubLink: jayne-mast
@@ -40,7 +40,7 @@ speakers:
   - name: Sanne Kalkman
     twitterLink: sannekalkman
     githubLink: sannek
-  - name: Jane Mast
+  - name: Jayne Mast
     twitterLink: jayne_mast
     githubLink: jayne-mast
   - name: Ash Kyd
