@@ -28,7 +28,7 @@ const Organizers = ({ organizers }) => {
               <img
                 width={size + 'px'}
                 height={size + 'px'}
-                src={`https://twitter-avatar.now.sh/${human.twitterHandle}`}
+                src={`https://github.com/${human.githubLink}.png`}
                 alt="Organizer"
               />
             </OrganizerPhoto>
