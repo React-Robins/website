@@ -46,8 +46,8 @@ speakers:
   #   talk: An introduction to graph databases
   #   twitterLink: morganc_smith
   #   githubLink: glitchgirl 
-  # - name: Rebecca Bakels
-  #   pronouns: 'she/her'
-  #   talk: Going from Retail Manager to Software Engineer in 6 Months
-  #   twitterLink: LadyMoses2
-  #   githubLink: RebeccaBakels 
+  - name: Rebecca Bakels
+    pronouns: 'she/her'
+    talk: Going from Retail Manager to Software Engineer in 6 Months
+    twitterLink: LadyMoses2
+    githubLink: RebeccaBakels 
