@@ -9,7 +9,7 @@ info:
   rsvpsClosed: false
   food: false
 site:
-  cfp: true
+  cfp: false
   location: twitch.tv/queerjs
   googleMapsLink:
   calendarLink: https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS+Online&details=Join+us+on+Twitch+for+your+favourite+meetup&location=The+internet&dates=20210330T183000Z%2F20210330T200000Z
@@ -27,10 +27,27 @@ thanks:
 sponsors: []
 speakers:
   - name: Lea Rosema
+    pronouns: 'she/her'
     talk: Painting cute 2D animations with GLSL
     twitterLink: terabaud
     githubLink: terabaud
-  - name: 'Melody ✨'
-    talk: Web Accessibility
-    twitterLink: pixelyunicorn
-    githubLink: pixelyunicorn
+  - name: sporeball
+    pronouns: 'she/her'
+    talk: 'Making things for fun (but maybe not for profit)'
+    twitterLink: sporeball
+    githubLink: sporeball
+  # - name: Jae Anne Bach Hardie
+  #   pronouns: 'she/her'
+  #   talk: What Records and Tuples could do for you
+  #   twitterLink: dulcedejae
+  #   githubLink: jbachhardie 
+  # - name: Morgan Smith
+  #   pronouns: 'she/they'
+  #   talk: An introduction to graph databases
+  #   twitterLink: morganc_smith
+  #   githubLink: glitchgirl 
+  # - name: Rebecca Bakels
+  #   pronouns: 'she/her'
+  #   talk: Going from Retail Manager to Software Engineer in 6 Months
+  #   twitterLink: LadyMoses2
+  #   githubLink: RebeccaBakels 
