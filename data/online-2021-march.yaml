@@ -41,11 +41,11 @@ speakers:
   #   talk: What Records and Tuples could do for you
   #   twitterLink: dulcedejae
   #   githubLink: jbachhardie 
-  # - name: Morgan Smith
-  #   pronouns: 'she/they'
-  #   talk: An introduction to graph databases
-  #   twitterLink: morganc_smith
-  #   githubLink: glitchgirl 
+  - name: Morgan Smith
+    pronouns: 'she/they'
+    talk: An introduction to graph databases
+    twitterLink: morganc_smith
+    githubLink: glitchgirl 
   - name: Rebecca Bakels
     pronouns: 'she/her'
     talk: Going from Retail Manager to Software Engineer in 6 Months
