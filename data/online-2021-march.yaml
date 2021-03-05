@@ -36,11 +36,11 @@ speakers:
     talk: 'Making things for fun (but maybe not for profit)'
     twitterLink: sporeball
     githubLink: sporeball
-  # - name: Jae Anne Bach Hardie
-  #   pronouns: 'she/her'
-  #   talk: What Records and Tuples could do for you
-  #   twitterLink: dulcedejae
-  #   githubLink: jbachhardie 
+  - name: Jae Anne Bach Hardie
+    pronouns: 'she/her'
+    talk: What Records and Tuples could do for you
+    twitterLink: dulcedejae
+    githubLink: jbachhardie 
   - name: Morgan Smith
     pronouns: 'she/they'
     talk: An introduction to graph databases
