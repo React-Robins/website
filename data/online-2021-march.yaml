@@ -24,7 +24,10 @@ mainOrganizer:
     githubLink: pixelyunicorn
     email: coc@queerjs.com
 thanks:
-sponsors: []
+sponsors: 
+  - name: Datadog
+    link: https://www.datadoghq.com/
+    media: https://imgur.com/JwSPVvx
 speakers:
   - name: Lea Rosema
     pronouns: 'she/her'
