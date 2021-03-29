@@ -7,6 +7,7 @@ info:
   icon: icons/online/online.svg
   iconHover: icons/online/online-hover.svg
   hostIcon: icons/online/logo_datadog.svg
+  hostName: Datadog
   rsvpsClosed: false
   food: false
 site:
