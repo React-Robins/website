@@ -1,0 +1,28 @@
+---
+info:
+  city: The Internet
+  link: online-2021-may
+  date: 05/19/2021
+  hour: '12:00 EDT / 18:00 CEST'
+  icon: icons/online/online.svg
+  iconHover: icons/online/online-hover.svg
+  rsvpsClosed: false
+  food: false
+site:
+  cfp: true
+  location: twitch.tv/queerjs
+  googleMapsLink:
+  calendarLink: https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS+Online&details=Join+us+on+Twitch+for+your+favourite+online+meetup%21+https%3A%2F%2Ftwitch.tv%2Fqueerjs&dates=20210519T160000Z%2F20210519T180000Z
+announcement:
+  heading: QueerJS Online
+  text: Missing your favourite meetup? Join us on Twitch for a live stream of a fully-remote QueerJS!
+mainOrganizer:
+  - name: 'Melody ✨'
+    main: true
+    phoneNumber: ''
+    twitterHandle: pixelyunicorn
+    githubLink: pixelyunicorn
+    email: coc@queerjs.com
+thanks:
+sponsors: 
+speakers:
