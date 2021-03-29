@@ -30,7 +30,7 @@ export default () => {
           submission. If you need any help with this process because you are new to GitHub, git or
           speaking in general, ping one of the organizers on{' '}
           <a
-            href="https://discord.gg/jhMwNfK"
+            href="https://discord.gg/queerjs"
             rel="noopener noreferrer"
             title="Discord Server"
             target="_blank"
