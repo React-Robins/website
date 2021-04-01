@@ -29,7 +29,7 @@ const GettingInvolvedPage = () => {
             </a>
             , or email us at {' '}
             <a
-              href="hello@queerjs.com"
+              href="mailto:hello@queerjs.com"
               rel="noopener noreferrer"
               title="Email"
             >
