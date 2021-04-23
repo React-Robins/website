@@ -11,9 +11,7 @@ Install the dependencies:
 
 ### `yarn install`
 
-### Set API key in environment
-
-   Add `MEETUP_API_KEY` env variable from here: https://secure.meetup.com/meetup_api/key/. Do not commit this value to GitHub.
+Note:  Do NOT add `MEETUP_API_KEY` env variable as this method will no longer work.
 
 Run the development server:
 
