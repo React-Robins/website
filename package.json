@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "name": "reactladies-web",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "gatsby build",
+    "clean-cache": "gatsby clean",
+    "dev": "npm run clean-cache && gatsby develop",
+    "format": "prettier --write \"**/*.js\" \"!.cache/**\" \"!node_modules/**\" \"!public/**\""
+  },
+  "devDependencies": {
+    "date-fns": "1.30.1",
+    "dotenv": "8.0.0",
+    "gatsby": "^2.18.18",
+    "gatsby-plugin-react-helmet": "3.1.0",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-helmet": "5.2.1"
+  },
+  "dependencies": {
+    "airtable": "^0.7.1",
+    "animate.css": "^3.7.2",
+    "babel-plugin-styled-components": "1.10.6",
+    "gatsby-cli": "^2.8.23",
+    "gatsby-image": "2.2.4",
+    "gatsby-plugin-robots-txt": "^1.5.0",
+    "gatsby-plugin-sitemap": "^2.2.9",
+    "gatsby-plugin-styled-components": "3.1.0",
+    "gatsby-plugin-webfonts": "1.0.12",
+    "gatsby-source-airtable": "^2.0.12",
+    "gatsby-source-filesystem": "^2.1.18",
+    "gatsby-source-graphql": "2.1.0",
+    "gatsby-transformer-javascript-frontmatter": "^2.1.5",
+    "gatsby-transformer-yaml": "^2.2.7",
+    "styled-components": "4.3.2"
+  }
+}

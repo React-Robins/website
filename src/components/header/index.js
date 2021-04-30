@@ -1,0 +1,51 @@
+import React from 'react'
+import { Nav, LogoWrap, Codelings, Subtitle, NavRow, NavLink, NavHref } from './elements'
+
+const Header = ({ siteTitle }) => (
+  <Nav>
+    <Codelings />
+    <h1
+      css={`
+        display: block;
+        overflow: hidden;
+        text-indent: 100%;
+        white-space: nowrap;
+        font-size: 2px;
+      `}
+    >
+      QueerJS
+    </h1>
+    <Subtitle>A supportive community for women and non-binary React enthusiasts</Subtitle>
+    <NavRow>
+      <LogoWrap>React Ladies</LogoWrap>
+
+      <ul>
+        <li>
+          <NavLink to="/">Events</NavLink>
+        </li>
+        <li>
+          <NavHref
+            href="https://opencollective.com/react-ladies"
+            target="_blank"
+            title="Donate to QueerJS"
+            rel="noopener noreferrer"
+          >
+            Donate
+          </NavHref>
+        </li>
+        <li>
+          <NavLink to="/organizers">Organizers</NavLink>{' '}
+        </li>
+        {/* TODO: Add a React Ladies FAQ
+           <li>
+          <NavLink to="/faq">FAQ</NavLink>{' '}
+         </li> */}
+        <li>
+          <NavHref href="/discord">Discord</NavHref>{' '}
+        </li>
+      </ul>
+    </NavRow>
+  </Nav>
+)
+
+export default Header
