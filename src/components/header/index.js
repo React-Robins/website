@@ -1,9 +1,5 @@
 import React from 'react'
-
-import logo from './logo.svg'
-import text from './text.svg'
-import RainbowWithClicker from '../rainbow/RainbowWithClicker'
-import { Nav, LogoWrap, Logo, Codelings, Subtitle, NavRow, NavLink, NavHref } from './elements'
+import { Nav, LogoWrap, Codelings, Subtitle, NavRow, NavLink, NavHref } from './elements'
 
 const Header = ({ siteTitle }) => (
   <Nav>
@@ -19,22 +15,17 @@ const Header = ({ siteTitle }) => (
     >
       QueerJS
     </h1>
-    <Subtitle>A meetup for everyone where Queer Speakers take the stage</Subtitle>
+    <Subtitle>A supportive community for women and non-binary React enthusiasts</Subtitle>
     <NavRow>
-      <LogoWrap>
-        <Logo irrelevant alt="" src={text} />
-        <RainbowWithClicker stripes={['red']}>
-          <Logo src={logo} alt="Queer JS" />
-        </RainbowWithClicker>
-      </LogoWrap>
+      <LogoWrap>React Ladies</LogoWrap>
 
       <ul>
         <li>
-          <NavLink to="/">Meetups</NavLink>
+          <NavLink to="/">Events</NavLink>
         </li>
         <li>
           <NavHref
-            href="https://opencollective.com/queerjs"
+            href="https://opencollective.com/react-ladies"
             target="_blank"
             title="Donate to QueerJS"
             rel="noopener noreferrer"
@@ -42,9 +33,16 @@ const Header = ({ siteTitle }) => (
             Donate
           </NavHref>
         </li>
-        <li><NavLink to="/organizers">Organizers</NavLink> </li>
-        <li><NavLink to="/faq">FAQ</NavLink> </li>
-        <li><NavHref href="/discord">Discord</NavHref> </li>
+        <li>
+          <NavLink to="/organizers">Organizers</NavLink>{' '}
+        </li>
+        {/* TODO: Add a React Ladies FAQ
+           <li>
+          <NavLink to="/faq">FAQ</NavLink>{' '}
+         </li> */}
+        <li>
+          <NavHref href="/discord">Discord</NavHref>{' '}
+        </li>
       </ul>
     </NavRow>
   </Nav>

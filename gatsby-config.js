@@ -5,7 +5,7 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://queerjs.com'
+    siteUrl: 'https://reactladies.com'
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -31,8 +31,8 @@ module.exports = {
         apiKey: process.env.GATSBY_AIRTABLE_KEY,
         tables: [
           {
-            baseId: `appXX3u6yUPjqQFrE`,
-            tableName: `all`,
+            baseId: process.env.GATSBY_AIRTABLE_BASE,
+            tableName: `registration`,
             queryName: `attendees` // optional
           }
         ]

@@ -18,13 +18,11 @@ const Main = ({ city, attendees }) => {
     <Layout>
       <SEO
         title={`QueerJS - ${info.city}`}
-        description={'A meetup for everyone where Queer Speakers take the stage'}
+        description={'A supportive community for women and non-binary React enthusiasts'}
       />
       <section>
         <Heading sub="queerjs @">{info.city}</Heading>
-        { announcement &&
-          <Announcement message={announcement} />
-        }
+        {announcement && <Announcement message={announcement} />}
         <Info attendeesNumber={attendees.length} site={site} info={info} city={info.link} />
         <Panel heading="What?">
           {site.customDescription ? (
@@ -64,7 +62,7 @@ const Main = ({ city, attendees }) => {
           <Sponsors sponsors={sponsors} />
         </Panel>
         {mainOrganizer && mainOrganizer.length > 0 ? (
-          <Panel heading={mainOrganizer.length > 1 ? "Organizers" : "Organizer"}>
+          <Panel heading={mainOrganizer.length > 1 ? 'Organizers' : 'Organizer'}>
             <Organizers organizers={mainOrganizer} />
           </Panel>
         ) : null}

@@ -9,20 +9,17 @@ const FAQPage = () => {
     <Layout>
       <SEO
         title="QueerJS - Organizers"
-        description="A meetup for everyone where Queer Speakers take the stage"
+        description="A supportive community for women and non-binary React enthusiasts"
       />
       <main>
         <h1 hidden>Welcome to QueerJS</h1>
         <Panel heading="FAQ"></Panel>
         <Panel heading="How do I speak at QueerJS?" id="how-to-speak">
-          We'd love for you to speak at a meetup! Please see {' '}  
-          <a
-            href="/speak"
-            rel="noopener noreferrer"
-            title="Speak"
-          >
+          We'd love for you to speak at a meetup! Please see{' '}
+          <a href="/speak" rel="noopener noreferrer" title="Speak">
             Speaking at QueerJS
-          </a> for more information about how you can propose a talk to a future iteration of QueerJS.
+          </a>{' '}
+          for more information about how you can propose a talk to a future iteration of QueerJS.
         </Panel>
         <Panel heading="How can I get involved?" id="get-involved">
           There are a lot of ways you could get involved with QueerJS! See{' '}
@@ -35,17 +32,13 @@ const FAQPage = () => {
             🌍
           </span>{' '}
           You can check the{' '}
-          <a
-            href="/"
-            title="Cities"
-            rel="noopener noreferrer"
-          >
+          <a href="/" title="Cities" rel="noopener noreferrer">
             Cities
           </a>{' '}
           page for a list of the upcoming (and past) meetups.
         </Panel>
         <Panel heading="Can I print and redistribute the meetup stickers?" id="stickers">
-          Yes! They're all open source and you can find them in our {' '}
+          Yes! They're all open source and you can find them in our{' '}
           <a
             href="https://github.com/queerjs/brand-assets"
             title="Brand Assets"
@@ -57,16 +50,16 @@ const FAQPage = () => {
           repository on GitHub.
         </Panel>
         <Panel heading="Any other questions?" id="questions">
-          Please {' '}
+          Please{' '}
           <a
             href="https://github.com/queerjs/info/issues/new"
             rel="noopener noreferrer"
             title="QueerJS Info"
             target="_blank"
           >
-          open an issue
+            open an issue
           </a>
-          , send us a message on {' '}
+          , send us a message on{' '}
           <a
             href="https://twitter.com/QueerJS"
             rel="noopener noreferrer"
@@ -75,14 +68,11 @@ const FAQPage = () => {
           >
             Twitter
           </a>
-          , or email us at {' '}
-          <a
-            href="mailto:hello@queerjs.com"
-            rel="noopener noreferrer"
-            title="Email"
-          >
+          , or email us at{' '}
+          <a href="mailto:hello@queerjs.com" rel="noopener noreferrer" title="Email">
             hello@queerjs.com
-          </a>!
+          </a>
+          !
         </Panel>
       </main>
     </Layout>

@@ -24,26 +24,17 @@ const IndexPage = ({ data: { allEvent } }) => {
     <Layout>
       <SEO
         title={'QueerJS'}
-        description={'A meetup for everyone where Queer Speakers take the stage'}
+        description={'A supportive community for women and non-binary React enthusiasts'}
       />
       <Panel>
         <LargeParagraph>
-          QueerJS is a meetup series where everyone is encouraged to attend and support the speakers
-          and the idea, but where all speakers are queer.
-          <br />
-          <br />
-          This meetup exists to give a voice to everyone and to make a safe space where everyone is
-          welcome.
-        </LargeParagraph>
-        <LargeParagraph>
-          Join us! There will be food and stickers{' '}
-          <span role="img" aria-label="Queer Rainbow">
-            🌈
-          </span>
+          React Ladies is a supportive community for women and non-binary React enthusiasts with any
+          level of programming experience to grow as technologists and meet other React developers.
+          We center our events around JavaScript and other technologies within the React ecosystem.
         </LargeParagraph>
       </Panel>
       {futureMeetups.length ? (
-        <Panel wide heading="Upcoming meetups">
+        <Panel wide heading="Upcoming Events">
           <Cities>
             {futureMeetups.map(({ node }) => (
               <City {...node.info} key={node.id} />
@@ -76,7 +67,7 @@ export const query = graphql`
             city
             link
             date
-            bySeason
+            # bySeason
             hour
             hostName
             hour

@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "queerjs-web",
+  "name": "reactladies-web",
   "version": "1.0.0",
   "scripts": {
     "build": "gatsby build",

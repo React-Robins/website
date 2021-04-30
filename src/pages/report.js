@@ -15,7 +15,7 @@ const Report = () => {
     <Layout>
       <SEO
         title="QueerJS - Code Of Conduct"
-        description="A meetup for everyone where Queer Speakers take the stage"
+        description="A supportive community for women and non-binary React enthusiasts"
       />
       <main>
         <h1 hidden>Welcome to QueerJS</h1>
@@ -46,7 +46,10 @@ const Report = () => {
                 </Link>{' '}
                 organizer know, either in person or via Twitter.
               </li>
-              <li> Send an email to <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a></li>
+              <li>
+                {' '}
+                Send an email to <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
+              </li>
             </ul>
           </section>
         </Panel>

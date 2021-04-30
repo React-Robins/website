@@ -9,7 +9,7 @@ const CodeOfConduct = () => {
     <Layout>
       <SEO
         title="QueerJS - Code Of Conduct"
-        description="A meetup for everyone where Queer Speakers take the stage"
+        description="A supportive community for women and non-binary React enthusiasts"
       />
       <main
         css={`
@@ -28,8 +28,8 @@ const CodeOfConduct = () => {
               agree with the following code of conduct.
             </p>
             <p>
-              Organizers enforce this code throughout the event. We expect cooperation
-              from all participants to help ensure a safe environment for everybody.
+              Organizers enforce this code throughout the event. We expect cooperation from all
+              participants to help ensure a safe environment for everybody.
             </p>
             <p>
               {' '}
@@ -84,9 +84,9 @@ const CodeOfConduct = () => {
               .
             </p>
             <p>
-              Meetup staff are happy to help participants and assist people experiencing
-              harassment by providing safe environment, arranging transport, accommodation or
-              otherwise assist in the situation.
+              Meetup staff are happy to help participants and assist people experiencing harassment
+              by providing safe environment, arranging transport, accommodation or otherwise assist
+              in the situation.
             </p>
             <p>
               We expect all community participants (contributors, paid or otherwise; sponsors; and

@@ -9,7 +9,7 @@ export default () => {
   const { site } = {
     site: {
       title: 'QueerJS',
-      description: 'A meetup for everyone where Queer Speakers take the stage'
+      description: 'A supportive community for women and non-binary React enthusiasts'
     }
   }
   return (
@@ -68,7 +68,10 @@ export default () => {
           lightning talks. So do whatever you feel most comfortable with! If you need more time to
           present, please let us know so we can adjust the schedule or coordinate with the venue.
         </Panel>
-        <Panel heading="What if the lineup for the location I want to speak at is full?" id="contention">
+        <Panel
+          heading="What if the lineup for the location I want to speak at is full?"
+          id="contention"
+        >
           It's very, very likely that if we host a QueerJS in a city, we'll do it again in the same
           city one day. So we'd still encourage you to submit your talk. That way, you'll be at the
           top of the list for the next edition!
@@ -85,23 +88,44 @@ export default () => {
         </Panel>
         <Panel heading="How should I prepare for an online talk?" id="online-meetup-prep">
           There are several things to consider with an online talk.
-          
-          <p>Do you want to present live the audience, or pre-record your talk? Each have benefits and drawbacks but the choice is up to you.</p>
-          
+          <p>
+            Do you want to present live the audience, or pre-record your talk? Each have benefits
+            and drawbacks but the choice is up to you.
+          </p>
           <dl>
             <dt>Live presentation</dt>
-            <dd>This is the best way to engage with your audience. Be wary that the stream may be delayed by a minute or more, so you will need to be creative with how you engage folks. You are welcome to post polls/games to the Twitch chat, for instance.</dd>
+            <dd>
+              This is the best way to engage with your audience. Be wary that the stream may be
+              delayed by a minute or more, so you will need to be creative with how you engage
+              folks. You are welcome to post polls/games to the Twitch chat, for instance.
+            </dd>
             <dt>Pre-recorded stream</dt>
-            <dd>This is the best way to ensure your recording & technical setup is perfect. If you want to take this route, please provide a high quality mp4 before the meetup and the streamer will queue it for you. You will still be able to participate in Q&amp;A afterward.</dd>
+            <dd>
+              This is the best way to ensure your recording & technical setup is perfect. If you
+              want to take this route, please provide a high quality mp4 before the meetup and the
+              streamer will queue it for you. You will still be able to participate in Q&amp;A
+              afterward.
+            </dd>
           </dl>
-          
-          <p>At the end of your talk we will include a Q&amp;A session with the MC via Zoom, which will include any questions and comments from the audience. If you want to opt out of this, please let us know.</p>
-          
+          <p>
+            At the end of your talk we will include a Q&amp;A session with the MC via Zoom, which
+            will include any questions and comments from the audience. If you want to opt out of
+            this, please let us know.
+          </p>
           <p>Technical considerations:</p>
           <ol>
-            <li>We use Skype for the livestream. If you want to call an organizer to get comfortable with the features, get in touch!</li>
-            <li>Ensure your technical set up is ready ahead of time. We will run a quick test of this before the stream.</li>
-            <li>*For Mac*: ensure Skype has permission to record your screen. To do this, open Settings &raquo; Security &amp; Privacy &raquo; check "Skype"</li>
+            <li>
+              We use Skype for the livestream. If you want to call an organizer to get comfortable
+              with the features, get in touch!
+            </li>
+            <li>
+              Ensure your technical set up is ready ahead of time. We will run a quick test of this
+              before the stream.
+            </li>
+            <li>
+              *For Mac*: ensure Skype has permission to record your screen. To do this, open
+              Settings &raquo; Security &amp; Privacy &raquo; check "Skype"
+            </li>
           </ol>
         </Panel>
 
