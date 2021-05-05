@@ -34,7 +34,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: 'twitter:creator',
-          content: '@Nikkitaftw'
+          content: '@reactjsladies'
         },
         {
           name: 'twitter:title',
@@ -44,34 +44,34 @@ function SEO({ description, lang, meta, title }) {
           name: 'twitter:description',
           content: description
         },
-        {
-          name: 'twitter:image',
-          content:
-            'https://rawcdn.githack.com/SaraVieira/queerjs/c97e919e49430435a96c2b9193ea814b795acb68/web/src/assets/gayjs.png'
-        },
-        {
-          name: 'og:image',
-          content:
-            'https://rawcdn.githack.com/SaraVieira/queerjs/c97e919e49430435a96c2b9193ea814b795acb68/web/src/assets/gayjs.png'
-        },
+        // {
+        //   name: 'twitter:image',
+        //   content:
+        //     ''
+        // },
+        // {
+        //   name: 'og:image',
+        //   content:
+        //     ''
+        // },
         {
           name: 'twitter:site',
-          content: 'https://queerjs.com'
+          content: 'https://reactladies.com'
         },
         {
           name: 'og:url',
-          content: 'https://queerjs.com'
-        },
-        {
-          name: 'image',
-          content:
-            'https://rawcdn.githack.com/SaraVieira/queerjs/c97e919e49430435a96c2b9193ea814b795acb68/web/src/assets/gayjs.png'
-        },
-        {
-          name: 'og:image',
-          content:
-            'https://rawcdn.githack.com/SaraVieira/queerjs/c97e919e49430435a96c2b9193ea814b795acb68/web/src/assets/gayjs.png'
+          content: 'https://reactladies.com'
         }
+        // {
+        //   name: 'image',
+        //   content:
+        //     ''
+        // },
+        // {
+        //   name: 'og:image',
+        //   content:
+        //     ''
+        // }
       ].concat(meta)}
     />
   )

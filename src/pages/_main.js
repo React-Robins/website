@@ -9,42 +9,35 @@ import Attendees from '../components/Attendees'
 import Thanks from '../components/Thanks'
 import Panel from '../components/Panel'
 import Heading from '../components/Heading'
-import Announcement from '../components/Announcement'
+//import Announcement from '../components/Announcement'
 
 const Main = ({ city, attendees }) => {
-  const { site, thanks, speakers, sponsors, info, mainOrganizer, announcement } = city
+  // announcement
+  const { site, thanks, speakers, sponsors, info, mainOrganizer } = city
 
   return (
     <Layout>
       <SEO
-        title={`QueerJS - ${info.city}`}
-        description={'A meetup for everyone where Queer Speakers take the stage'}
+        title={`React Ladies - ${info.city}`}
+        description={'A supportive community for women and non-binary React enthusiasts'}
       />
       <section>
-        <Heading sub="queerjs @">{info.city}</Heading>
-        { announcement &&
-          <Announcement message={announcement} />
-        }
-        <Info attendeesNumber={attendees.length} site={site} info={info} city={info.link} />
-        <Panel heading="What?">
+        <Heading sub="Join React Ladies @">{info.city}</Heading>
+        <Panel>
           {site.customDescription ? (
             <p>{site.customDescription}</p>
           ) : (
             <p>
-              This is a meetup where anyone is welcome to attend and support the speakers and the
-              idea but all the speakers will be Queer.
-              <br />
-              This meetup exists to give a voice to everyone, to make a safe space where everyone is
-              welcome.
+              React Ladies is a supportive community for women and non-binary React enthusiasts with
+              any level of programming experience to grow as technologists and meet other React
+              developers. We center our events around JavaScript and other technologies within the
+              React ecosystem.
             </p>
           )}
-          <p>
-            Join us! There will be {info.food ? 'food and' : ''} stickers{' '}
-            <span role="img" aria-label="Queer Rainbow">
-              🌈
-            </span>
-          </p>
         </Panel>
+        {/*announcement && <Announcement message={announcement} />*/}
+        <Info attendeesNumber={attendees.length} site={site} info={info} city={info.link} />
+
         {speakers.length > 0 || site.cfp ? (
           <Panel heading="Speakers">
             <Speakers cfp={site.cfp} speakers={speakers.filter(s => !s.mc)} />
@@ -64,7 +57,7 @@ const Main = ({ city, attendees }) => {
           <Sponsors sponsors={sponsors} />
         </Panel>
         {mainOrganizer && mainOrganizer.length > 0 ? (
-          <Panel heading={mainOrganizer.length > 1 ? "Organizers" : "Organizer"}>
+          <Panel heading={mainOrganizer.length > 1 ? 'Organizers' : 'Organizer'}>
             <Organizers organizers={mainOrganizer} />
           </Panel>
         ) : null}

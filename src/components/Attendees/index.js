@@ -33,7 +33,7 @@ export default ({ attendees }) => {
         // Pretty ugly but this way we do not get duplicate https://github.com urls
 
         const cleanGhLink =
-          a.ghLink && a.ghLink.startsWith('@') ? a.ghLink.slice(1) : a.ghLink || 'queerjs'
+          a.ghLink && a.ghLink.startsWith('@') ? a.ghLink.slice(1) : a.ghLink || 'react-ladies'
 
         const ghLink = `https://github.com/${cleanGhLink.trim().replace('https://github.com/', '')}`
         return (

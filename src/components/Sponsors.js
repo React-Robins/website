@@ -14,7 +14,7 @@ const Grid = styled.ul`
   }
 
   li {
-    background: ${props => props.theme.white};
+    background: ${props => props.theme.boldAqua};
     padding: 20px;
     display: flex;
     align-items: center;

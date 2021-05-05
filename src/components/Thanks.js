@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Thanks = styled.ul`
   list-style: none;
-  color: ${props => props.theme.lightGrey};
+  color: ${props => props.theme.boldPurple};
   font-size: 0.8em;
   margin: 20px 0 40px;
 

@@ -39,12 +39,15 @@ export const Logo = styled.img`
 
 export const LogoWrap = styled.div`
   flex-shrink: 0;
+  svg {
+    height: 2.5em;
+  }
 `
 
 export const Title = styled(Link)`
   font-size: 36px;
   font-family: ${props => props.theme.neutra};
-  color: ${props => props.theme.lightGrey};
+  color: ${props => props.theme.boldPurple};
   letter-spacing: -1.2px;
   text-decoration: none;
 
@@ -80,7 +83,7 @@ export const NavLink = styled(Link)`
 export const Subtitle = styled.h2`
   font-size: 0.8rem;
   font-family: ${props => props.theme.roboto};
-  color: ${props => props.theme.lightPurple};
+  color: ${props => props.theme.boldBlue};
   margin: 0;
   font-weight: 400;
   @media screen and (max-width: 38em) {
@@ -100,7 +103,7 @@ const CodelingsOuter = styled.div`
 `
 const CodelingsInner = styled.div`
   font-family: ${props => props.theme.neutra};
-  color: ${props => props.theme.contrastPurple};
+  color: ${props => props.theme.contrastAqua};
   font-size: 6rem;
   letter-spacing: 0.75em;
   transform: rotate(-3deg);
@@ -116,6 +119,6 @@ const CodelingsInner = styled.div`
 `
 export const Codelings = () => (
   <CodelingsOuter aria-hidden>
-    <CodelingsInner>{`~=~>&&<{=$%~%~= >}>[][ ]~=~>&&~ =~>& &<{==>}  ><{  =$$%  ~ =>  }  >[ ]`}</CodelingsInner>
+    <CodelingsInner>{`(&& React Ladies ==> React Ladies ==>  && React Ladies ==> )`}</CodelingsInner>
   </CodelingsOuter>
 )

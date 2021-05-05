@@ -5,7 +5,7 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://queerjs.com'
+    siteUrl: 'https://reactladies.com'
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -18,7 +18,7 @@ module.exports = {
         fonts: {
           google: [
             {
-              family: 'Roboto Mono',
+              family: 'Space Mono',
               variants: ['300', '400', '500']
             }
           ]
@@ -28,11 +28,11 @@ module.exports = {
     {
       resolve: `gatsby-source-airtable`,
       options: {
-        apiKey: process.env.GATSBY_AIRTABLE_KEY,
+        apiKey: process.env.AIRTABLE_KEY,
         tables: [
           {
-            baseId: `appXX3u6yUPjqQFrE`,
-            tableName: `all`,
+            baseId: process.env.AIRTABLE_BASE,
+            tableName: process.env.AIRTABLE_TABLE,
             queryName: `attendees` // optional
           }
         ]

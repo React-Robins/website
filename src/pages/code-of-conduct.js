@@ -8,15 +8,15 @@ const CodeOfConduct = () => {
   return (
     <Layout>
       <SEO
-        title="QueerJS - Code Of Conduct"
-        description="A meetup for everyone where Queer Speakers take the stage"
+        title="React Ladies - Code Of Conduct"
+        description="A supportive community for women and non-binary React enthusiasts"
       />
       <main
         css={`
           margin-bottom: 40px;
         `}
       >
-        <h1 hidden>Welcome to QueerJS</h1>
+        <h1 hidden>Welcome to React Ladies</h1>
         <Panel heading="Code of Conduct">
           <section
             css={`
@@ -24,12 +24,12 @@ const CodeOfConduct = () => {
             `}
           >
             <p>
-              All attendees, speakers, sponsors and volunteers at QueerJS meetup are required to
-              agree with the following code of conduct.
+              All attendees, speakers, sponsors and volunteers at React Ladies meetup are required
+              to agree with the following code of conduct.
             </p>
             <p>
-              Organizers enforce this code throughout the event. We expect cooperation
-              from all participants to help ensure a safe environment for everybody.
+              Organizers enforce this code throughout the event. We expect cooperation from all
+              participants to help ensure a safe environment for everybody.
             </p>
             <p>
               {' '}
@@ -41,7 +41,7 @@ const CodeOfConduct = () => {
 
             <h2>The Quick Version</h2>
             <p>
-              Here at QueerJS meetup, we are dedicated to providing a harassment-free meetup
+              Here at React Ladies meetup, we are dedicated to providing a harassment-free meetup
               experience for everyone, regardless of gender, sexual orientation, disability,
               physical appearance, body size, race, or religion (or lack thereof).
             </p>
@@ -74,7 +74,7 @@ const CodeOfConduct = () => {
             </p>
             <p>
               If you are subject to or witness unacceptable behavior, or have any other concerns,
-              please notify a QueerJS organizer as soon as possible.
+              please notify a React Ladies organizer as soon as possible.
             </p>
             <p>
               If you can’t find the organizer, please{' '}
@@ -84,9 +84,9 @@ const CodeOfConduct = () => {
               .
             </p>
             <p>
-              Meetup staff are happy to help participants and assist people experiencing
-              harassment by providing safe environment, arranging transport, accommodation or
-              otherwise assist in the situation.
+              Meetup staff are happy to help participants and assist people experiencing harassment
+              by providing safe environment, arranging transport, accommodation or otherwise assist
+              in the situation.
             </p>
             <p>
               We expect all community participants (contributors, paid or otherwise; sponsors; and

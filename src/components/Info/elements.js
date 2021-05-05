@@ -3,10 +3,10 @@ import styled, { keyframes } from 'styled-components'
 export const Info = styled.div`
   display: flex;
   flex-direction: row;
-  border: 3px solid ${props => props.theme.white};
+  border: 3px solid ${props => props.theme.boldAqua};
   align-items: center;
   margin-bottom: 10px;
-  font-family: 'Roboto Mono';
+  font-family: 'Space Mono';
   position: relative;
   justify-content: space-between;
 
@@ -15,21 +15,22 @@ export const Info = styled.div`
     padding: 1em 1.5em;
 
     &:not(:first-of-type) {
-      border-left: 3px solid ${props => props.theme.white};
+      border-left: 3px solid ${props => props.theme.boldAqua};
     }
   }
 `
 
 export const Button = styled.button`
   padding: 1em;
-  background: ${props => props.theme.white};
+  background: ${props => props.theme.boldAqua};
   -webkit-appearance: none;
   border: none;
   width: 100%;
-  font-family: 'Roboto Mono';
+  font-family: 'Space Mono';
   font-weight: 600;
   font-size: 1em;
   cursor: pointer;
+  border-radius: 10px;
 
   &:hover {
     transform: scale(1.025);
@@ -38,18 +39,18 @@ export const Button = styled.button`
 
 export const RsvpButton = styled(Button)`
   padding: 1em;
-  background: ${props => props.theme.white};
+  background: ${props => props.theme.boldAqua};
   -webkit-appearance: none;
   border: none;
   width: 100%;
-  font-family: 'Roboto Mono';
+  font-family: 'Space Mono';
   font-weight: 600;
   margin-bottom: 50px;
   font-size: 1em;
   cursor: pointer;
 
   a {
-    color: ${props => props.theme.darkPurple};
+    color: ${props => props.theme.offWhite};
   }
 
   &:hover {
@@ -62,11 +63,11 @@ export const RsvpButton = styled(Button)`
 `
 
 export const Form = styled.form`
-  color: ${props => props.theme.white};
+  color: ${props => props.theme.boldAqua};
   -webkit-appearance: none;
-  border: 3px solid ${props => props.theme.white};
+  border: 3px solid ${props => props.theme.boldAqua};
   width: 100%;
-  font-family: 'Roboto Mono';
+  font-family: 'Space Mono';
   font-weight: 600;
   margin-bottom: 50px;
   padding: 4em;
@@ -76,7 +77,7 @@ export const Form = styled.form`
 
   input {
     padding: 8px 12px;
-    border: 1px solid ${props => props.theme.lightGrey};
+    border: 1px solid ${props => props.theme.boldPurple};
     margin: 5px 0 20px;
     width: 100%;
     display: block;

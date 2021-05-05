@@ -15,7 +15,7 @@ import {
 const Speakers = ({ noSpeak, speakers, cfp }) => {
   return (
     <SpeakersGrid>
-      {speakers.map((human) => (
+      {speakers.map(human => (
         <ListItem
           talk={human.talk}
           key={human.twitterLink}
@@ -50,12 +50,12 @@ const Speakers = ({ noSpeak, speakers, cfp }) => {
       ))}
       {cfp && !noSpeak && (
         <li>
-          <UnstyledLink to="/speak" title="Speak at QueerJS">
+          <UnstyledLink to="/speak" title="Speak at React Ladies">
             <SpeakerPhoto>
               <RainbowWithClicker>
                 <CFP>
                   <CFPInner>
-                    <h2>You?</h2> <span>Speak at QueerJS</span>
+                    <h2>You?</h2> <span>Speak at React Ladies</span>
                   </CFPInner>
                 </CFP>
               </RainbowWithClicker>

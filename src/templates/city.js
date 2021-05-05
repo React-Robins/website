@@ -7,7 +7,7 @@ export default ({ data = {} }) => {
     event,
     allAirtable: { edges }
   } = data
-  return <Main city={event} attendees={edges.map((edge) => edge.node)} />
+  return <Main city={event} attendees={edges.map(edge => edge.node)} />
 }
 
 export const query = graphql`
@@ -30,17 +30,17 @@ export const query = graphql`
         food
         hour
         date
-        bySeason
-        maxCapacity
+        #   bySeason
+        # maxCapacity
         rsvpsClosed
       }
       site {
         location
-        googleMapsLink
+        #   googleMapsLink
         calendarLink
-        rsvpLink
+        # rsvpLink
         cfp
-        customDescription
+        #  customDescription
       }
       announcement {
         heading
@@ -55,30 +55,31 @@ export const query = graphql`
         githubLink
       }
       organizers {
-        id
+        #   id
         name
         email
         twitterHandle
         githubLink
       }
-      thanks {
-        id
-        link
-        name
-        reason
-      }
+      # thanks {
+      #   id
+      #   link
+      #   name
+      #   reason
+      # }
       sponsors {
         name
         link
         media
       }
       speakers {
-        id
-        mc
+        # id
+
+        # mc
         name
         twitterLink
         talk
-        link
+        # link
         githubLink
       }
     }

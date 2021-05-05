@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const TitleChip = styled.div`
-  color: ${props => props.theme.lightPurple};
+  color: ${props => props.theme.boldBlue};
   font-size: 1rem;
   letter-spacing: 0;
   font-weight: 400;

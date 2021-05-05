@@ -1,11 +1,12 @@
 {
   "private": true,
-  "name": "queerjs-web",
-  "version": "1.0.0",
+  "name": "reactladies-web",
+  "version": "2.0.0",
   "scripts": {
     "build": "gatsby build",
     "clean-cache": "gatsby clean",
     "dev": "npm run clean-cache && gatsby develop",
+    "start": "netlify dev",
     "format": "prettier --write \"**/*.js\" \"!.cache/**\" \"!node_modules/**\" \"!public/**\""
   },
   "devDependencies": {

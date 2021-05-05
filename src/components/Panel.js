@@ -12,11 +12,11 @@ const PanelSection = styled.section`
 
 const Permalink = styled.a`
   position: absolute;
-  font-size: .75em;
-  text-decoration:none;
-  transition: all .1s;
-  display:inline-block;
-  padding:1em;
+  font-size: 0.75em;
+  text-decoration: none;
+  transition: all 0.1s;
+  display: inline-block;
+  padding: 1em;
   margin: -1em 0 0 -2.5em;
 `
 
@@ -36,7 +36,9 @@ const Panel = ({ heading, children, id, wide = false }) => (
     {heading && (
       <Heading>
         {id && (
-          <Permalink href={`#${id}`} aria-label="Copy link">📎</Permalink>
+          <Permalink href={`#${id}`} aria-label="Copy link">
+            📎
+          </Permalink>
         )}
         {heading}
       </Heading>
@@ -47,7 +49,11 @@ const Panel = ({ heading, children, id, wide = false }) => (
 
 export const LargeParagraph = styled.p`
   font-size: 1.25em;
-  color: ${props => props.theme.lightPurple};
+  color: ${props => props.theme.boldBlue};
 `
 
+export const BoldText = styled.span`
+  font-size: 1.5em;
+  font-weight: bold;
+`
 export default Panel

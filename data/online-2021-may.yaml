@@ -1,28 +1,60 @@
 ---
 info:
-  city: The Internet
+  city: Spring Kick Off
   link: online-2021-may
-  date: 05/26/2021
-  hour: '12:00 EDT / 18:00 CEST'
-  icon: icons/online/online.svg
-  iconHover: icons/online/online-hover.svg
+  date: 05/28/2021
+  hour: '12:00PM EST'
+  icon: icons/online/react-logo.svg
+  # iconHover: icons/online/online-hover.svg
+  hostIcon: icons/online/logo_salesloft.svg
+  hostName: SalesLoft
   rsvpsClosed: false
   food: false
 site:
-  cfp: true
-  location: twitch.tv/queerjs
+  cfp: false
+  location: Zoom (link via e-mail)
   googleMapsLink:
-  calendarLink: https://www.google.com/calendar/render?action=TEMPLATE&text=QueerJS+Online&details=Join+us+on+Twitch+for+your+favourite+online+meetup%21+https%3A%2F%2Ftwitch.tv%2Fqueerjs&dates=20210526T160000Z%2F20210526T180000Z
+  calendarLink: https://calendar.google.com/calendar/u/0/r/eventedit?dates=20210528T160000Z/20210528T173000Z&text=React+Ladies+Spring+Kick+Off&location=Zoom+link+via+e-mail&details=React+Ladies+is+a+supportive+community+for+women+and+non-binary+React+enthusiasts+with+any+level+of+programming+experience+to+grow+as+technologists+and+meet+other+React+developers.+We+center+our+events+around+JavaScript+and+other+technologies+within+the+React+ecosystem.&sf=true
 announcement:
-  heading: QueerJS Online
-  text: Missing your favourite meetup? Join us on Twitch for a live stream of a fully-remote QueerJS!
+  heading: React Ladies
+  text: Join our community of women and non-binary React developers at our upcoming kickoff event!
 mainOrganizer:
-  - name: 'Melody ✨'
+  - name: 'Monica Powell'
     main: true
     phoneNumber: ''
-    twitterHandle: pixelyunicorn
-    githubLink: pixelyunicorn
-    email: coc@queerjs.com
+    twitterHandle: indigitalcolor
+    githubLink: m0nica
+    email: monica@aboutmonica.com
+  - name: 'Shaundai Person'
+    main: false
+    phoneNumber: ''
+    twitterHandle: shaundai
+    githubLink: shaundai
+  - name: 'Adrianna Valdivia'
+    main: false
+    phoneNumber: ''
+    twitterHandle: driannavaldivia
+    githubLink: avaldivi
+  - name: 'Sylwia Vargas'
+    main: false
+    phoneNumber: ''
+    twitterHandle: SylwiaVargas
+    githubLink: SylwiaVargas
+
+organizers:
+  - id: ae2d4158-cd43-4196-b88e-cb2afdbf6b4b
+    name: Monica Powell
+    email: monica@aboutmonica.com
+    twitterHandle: m0nica
+    githubLink: m0nica
 thanks:
-sponsors: []
-speakers: []
+sponsors:
+  - name: SalesLoft
+    link: https://salesloft.com
+    media: https://salesloft.com/wp-content/themes/studioscience-salesloft/images/SalesLoft-logo@2x.png
+speakers:
+  - name: Shaundai Person
+    pronouns: 'she/her'
+    talk: How to Stand Out as a Non-Traditional Applicant
+    twitterLink: shaundai
+    githubLink: shaundai

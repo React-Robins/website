@@ -6,19 +6,19 @@ import { Link } from 'gatsby'
 
 const Report = () => {
   const contactInfo = {
-    email: 'coc@queerjs.com',
-    twitterHandle: '@QueerJS',
-    githubHandle: 'queerjs'
+    email: 'monica@aboutmonica.com',
+    twitterHandle: '@ReactJSLadies',
+    githubHandle: 'react-ladies'
   }
 
   return (
     <Layout>
       <SEO
-        title="QueerJS - Code Of Conduct"
-        description="A meetup for everyone where Queer Speakers take the stage"
+        title="React Ladies - Code Of Conduct"
+        description="A supportive community for women and non-binary React enthusiasts"
       />
       <main>
-        <h1 hidden>Welcome to QueerJS</h1>
+        <h1 hidden>Welcome to React Ladies</h1>
         <Panel heading="Code of Conduct - Report An Issue">
           <section
             css={`
@@ -26,7 +26,7 @@ const Report = () => {
             `}
           >
             <p>
-              We want QueerJS to be a safe and inclusive environment. That’s why we ask our
+              We want React Ladies to be a safe and inclusive environment. That’s why we ask our
               attendees to follow our{' '}
               <Link to="/code-of-conduct" title="Code of Conduct">
                 Code of Conduct
@@ -46,7 +46,10 @@ const Report = () => {
                 </Link>{' '}
                 organizer know, either in person or via Twitter.
               </li>
-              <li> Send an email to <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a></li>
+              <li>
+                {' '}
+                Send an email to <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
+              </li>
             </ul>
           </section>
         </Panel>

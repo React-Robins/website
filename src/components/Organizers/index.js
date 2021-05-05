@@ -1,20 +1,13 @@
 import React from 'react'
 
-import {
-  InlineRainbow,
-  OrganizerPhoto,
-  OrganizersGrid,
-  Unstyled,
-  ListItem,
-  UnstyledLink
-} from './elements'
+import { OrganizerPhoto, OrganizersGrid, Unstyled, ListItem, UnstyledLink } from './elements'
 
 const size = 100
 
 const Organizers = ({ organizers }) => {
   return (
     <OrganizersGrid size={size}>
-      {organizers.map((human) => (
+      {organizers.map(human => (
         <ListItem key={human.twitterHandle}>
           <UnstyledLink
             as="a"
@@ -24,7 +17,6 @@ const Organizers = ({ organizers }) => {
             title={human.name}
           >
             <OrganizerPhoto size={size}>
-              <InlineRainbow flag={human.colors} />
               <img
                 width={size + 'px'}
                 height={size + 'px'}

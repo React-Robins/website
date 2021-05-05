@@ -1,30 +1,34 @@
 import React, { useState } from 'react'
-import createRecord from '../../helpers/airtable'
 import { Button, Form } from './elements'
 
 export default ({ onSubmit, city }) => {
   const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
   const [gh, setGH] = useState('')
   const [plusOne, setPlusOne] = useState(false)
   const [plusOneName, setPlusOneName] = useState('')
   const [plusOneGH, setPlusOneGH] = useState('')
+  // TODO: use error to change the front end state, right now it just fails silently if there was an issue persisting the data to Airtable.
+  const [error, setError] = useState(false)
 
   const createUser = () => {
-    if (name && gh) {
+    if (name && email) {
       if (plusOne && !plusOneName) return
 
-      createRecord({
-        city: city,
-        name: name,
-        ghLink: gh || 'QueerJS'
-      })
+      fetch(
+        `/.netlify/functions/register?name=${name}&github=${gh ||
+          'react-ladies'}&city=${city}&email=${encodeURI(email)}`
+      )
+        .then(res => res.text())
+        .then(text => setError(text.includes('Error')))
 
       if (plusOne) {
-        createRecord({
-          city: city,
-          name: plusOneName,
-          ghLink: plusOneGH || 'QueerJS'
-        })
+        fetch(
+          `/.netlify/functions/register?name=${plusOneName}&github=${plusOneGH ||
+            'react-ladies'}&city=${city}`
+        )
+          .then(res => res.text())
+          .then(text => console.log(text))
       }
     }
   }
@@ -38,8 +42,8 @@ export default ({ onSubmit, city }) => {
       }}
     >
       <p>
-        If you're not comfortable showing your photo and link, you may leave the `GitHub Handle` field blank and it will default
-        to `QueerJS`.
+        If you're not comfortable showing your photo and link, you may leave the `GitHub Handle`
+        field blank and it will default to `react-ladies`.
       </p>
       <label htmlFor="name">
         Your Name
@@ -58,32 +62,49 @@ export default ({ onSubmit, city }) => {
         <input
           id="gh"
           type="text"
-          placeholder="QueerJS"
+          placeholder="react-ladies"
           pattern="[A-Za-z0-9-]{1,30}"
           value={gh}
-          onInvalid={e => e.target.setCustomValidity(`A GitHub handle, e.g. 'QueerJS' for 'https://github.com/queerjs'`)}
+          onInvalid={e =>
+            e.target.setCustomValidity(
+              `A GitHub handle, e.g. 'react-ladies' for 'https://github.com/react-ladies'`
+            )
+          }
           onChange={e => setGH(e.target.value.trim())}
         />
       </label>
-      <label
-        htmlFor="plus-one"
-        css={`
-          display: flex;
-        `}
-      >
+      <label htmlFor="email">
+        E-Mail Address
         <input
-          id="plus-one"
-          type="checkbox"
-          pattern="[a-zA-Z0-9]+"
-          value={plusOne}
-          css={`
-            width: auto !important;
-            margin-right: 12px !important;
-          `}
-          onChange={e => setPlusOne(e.target.checked)}
+          required
+          id="email"
+          type="email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          value={email}
+          onInvalid={e => e.target.setCustomValidity(`Please provide a valid e-mail address.`)}
+          onChange={e => setEmail(e.target.value.trim())}
         />
-        <span>I am taking a plus one</span>
       </label>
+      {/* TODO: PlusOne functionality should only be enabled for in-person events. */}
+      {/*     <label
+                                               htmlFor="plus-one"
+                                               css={`
+                                                 display: flex;
+                                               `}
+                                             >
+                                               <input
+                                                 id="plus-one"
+                                                 type="checkbox"
+                                                 pattern="[a-zA-Z0-9]+"
+                                                 value={plusOne}
+                                                 css={`
+                                                   width: auto !important;
+                                                   margin-right: 12px !important;
+                                                 `}
+                                                 onChange={e => setPlusOne(e.target.checked)}
+                                               />
+                                               <span>I am taking a plus one</span>
+                                        </label>*/}
       {plusOne && (
         <label htmlFor="plus-one-name">
           +1 Name
@@ -102,10 +123,14 @@ export default ({ onSubmit, city }) => {
           <input
             id="plus-one-gh"
             type="text"
-            placeholder="QueerJS"
+            placeholder="ReactLadies"
             pattern="[A-Za-z0-9-]{1,30}"
             value={plusOneGH}
-            onInvalid={e => e.target.setCustomValidity(`A GitHub handle, e.g. 'QueerJS' for 'https://github.com/queerjs'`)}
+            onInvalid={e =>
+              e.target.setCustomValidity(
+                `A GitHub handle, e.g. 'react-ladies' for 'https://github.com/react-ladies'`
+              )
+            }
             onChange={e => setPlusOneGH(e.target.value.trim())}
           />
         </label>
