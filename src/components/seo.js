@@ -1,6 +1,11 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
+import defaultMetaImage from '../assets/react-ladies.png'
+
+const siteUrl = siteUrl
+const socialImage = `${siteUrl}${defaultMetaImage}`
+
 function SEO({ description, lang, meta, title }) {
   return (
     <Helmet
@@ -44,34 +49,31 @@ function SEO({ description, lang, meta, title }) {
           name: 'twitter:description',
           content: description
         },
-        // {
-        //   name: 'twitter:image',
-        //   content:
-        //     ''
-        // },
-        // {
-        //   name: 'og:image',
-        //   content:
-        //     ''
-        // },
+        {
+          name: 'twitter:image',
+          content: socialImage
+        },
+        {
+          name: 'og:image',
+          content: socialImage
+        },
+
         {
           name: 'twitter:site',
-          content: 'https://reactladies.com'
+          content: siteUrl
         },
         {
           name: 'og:url',
-          content: 'https://reactladies.com'
+          content: siteUrl
+        },
+        {
+          name: 'image',
+          content: socialImage
+        },
+        {
+          name: 'og:image',
+          content: socialImage
         }
-        // {
-        //   name: 'image',
-        //   content:
-        //     ''
-        // },
-        // {
-        //   name: 'og:image',
-        //   content:
-        //     ''
-        // }
       ].concat(meta)}
     />
   )
