@@ -2,19 +2,19 @@
 info:
   city: Spring Kick Off
   link: online-2021-may
-  date: 06/15/2021
+  date: 06/10/2021
   hour: '12:00PM EST'
   icon: icons/online/react-logo.svg
   # iconHover: icons/online/online-hover.svg
   hostIcon: icons/online/logo_salesloft.svg
   hostName: SalesLoft
-  rsvpsClosed: true
+  rsvpsClosed: false
   food: false
 site:
   cfp: false
   location: Zoom (link via e-mail)
   googleMapsLink:
-  calendarLink: https://calendar.google.com/calendar/u/0/r/eventedit?dates=20210528T160000Z/20210528T173000Z&text=React+Ladies+Spring+Kick+Off&location=Zoom+link+via+e-mail&details=React+Ladies+is+a+supportive+community+for+women+and+non-binary+React+enthusiasts+with+any+level+of+programming+experience+to+grow+as+technologists+and+meet+other+React+developers.+We+center+our+events+around+JavaScript+and+other+technologies+within+the+React+ecosystem.&sf=true
+  calendarLink: https://calendar.google.com/calendar/u/0/r/eventedit?dates=20210610T160000Z/20210610T173000Z&text=React+Ladies+Spring+Kick+Off&location=Zoom+link+via+e-mail&details=React+Ladies+is+a+supportive+community+for+women+and+non-binary+React+enthusiasts+with+any+level+of+programming+experience+to+grow+as+technologists+and+meet+other+React+developers.+We+center+our+events+around+JavaScript+and+other+technologies+within+the+React+ecosystem.&sf=true
 announcement:
   heading: React Ladies
   text: Join our community of women and non-binary React developers at our upcoming kickoff event!
