@@ -71,6 +71,7 @@ export default ({ onSubmit, city }) => {
             )
           }
           onChange={e => setGH(e.target.value.trim())}
+          onInput={e => e.target.setCustomValidity('')}
         />
       </label>
       <label htmlFor="email">
@@ -84,6 +85,7 @@ export default ({ onSubmit, city }) => {
           value={email}
           onInvalid={e => e.target.setCustomValidity(`Please provide a valid e-mail address.`)}
           onChange={e => setEmail(e.target.value.trim())}
+          onInput={e => e.target.setCustomValidity('')}
         />
       </label>
       {/* TODO: PlusOne functionality should only be enabled for in-person events. */}
@@ -133,6 +135,7 @@ export default ({ onSubmit, city }) => {
               )
             }
             onChange={e => setPlusOneGH(e.target.value.trim())}
+            onInput={e => e.target.setCustomValidity('')}
           />
         </label>
       )}
