@@ -15,27 +15,31 @@ export default ({ onSubmit, city }) => {
     if (name && email) {
       if (plusOne && !plusOneName) return
 
+      // encodeURI does not encode special character, instead used
+      // encodeURIComponent which encodes all special characters.
       fetch(
-        `/.netlify/functions/register?name=${name}&github=${gh ||
-          'react-ladies'}&city=${city}&email=${encodeURI(email)}`
+        `/.netlify/functions/register?name=${name}&github=${
+          gh || 'react-ladies'
+        }&city=${city}&email=${encodeURIComponent(email)}`
       )
-        .then(res => res.text())
-        .then(text => setError(text.includes('Error')))
+        .then((res) => res.text())
+        .then((text) => setError(text.includes('Error')))
 
       if (plusOne) {
         fetch(
-          `/.netlify/functions/register?name=${plusOneName}&github=${plusOneGH ||
-            'react-ladies'}&city=${city}`
+          `/.netlify/functions/register?name=${plusOneName}&github=${
+            plusOneGH || 'react-ladies'
+          }&city=${city}`
         )
-          .then(res => res.text())
-          .then(text => console.log(text))
+          .then((res) => res.text())
+          .then((text) => console.log(text))
       }
     }
   }
 
   return (
     <Form
-      onSubmit={e => {
+      onSubmit={(e) => {
         e.preventDefault()
         createUser()
         onSubmit()
@@ -54,7 +58,7 @@ export default ({ onSubmit, city }) => {
           type="text"
           minLength="2"
           value={name}
-          onChange={e => setName(e.target.value)}
+          onChange={(e) => setName(e.target.value)}
         />
       </label>
       <label htmlFor="gh">
@@ -65,13 +69,13 @@ export default ({ onSubmit, city }) => {
           placeholder="react-ladies"
           pattern="[A-Za-z0-9-]{1,30}"
           value={gh}
-          onInvalid={e =>
+          onInvalid={(e) =>
             e.target.setCustomValidity(
               `A GitHub handle, e.g. 'react-ladies' for 'https://github.com/react-ladies'`
             )
           }
-          onChange={e => setGH(e.target.value.trim())}
-          onInput={e => e.target.setCustomValidity('')}
+          onChange={(e) => setGH(e.target.value.trim())}
+          onInput={(e) => e.target.setCustomValidity('')}
         />
       </label>
       <label htmlFor="email">
@@ -80,12 +84,11 @@ export default ({ onSubmit, city }) => {
           required
           id="email"
           type="email"
-          // TODO: re-add + sign as a valid pattern before the @ symbol
-          pattern="[a-z0-9._%-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          pattern="[a-z0-9._+%-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
           value={email}
-          onInvalid={e => e.target.setCustomValidity(`Please provide a valid e-mail address.`)}
-          onChange={e => setEmail(e.target.value.trim())}
-          onInput={e => e.target.setCustomValidity('')}
+          onInvalid={(e) => e.target.setCustomValidity(`Please provide a valid e-mail address.`)}
+          onChange={(e) => setEmail(e.target.value.trim())}
+          onInput={(e) => e.target.setCustomValidity('')}
         />
       </label>
       {/* TODO: PlusOne functionality should only be enabled for in-person events. */}
@@ -116,7 +119,7 @@ export default ({ onSubmit, city }) => {
             id="plus-one-name"
             type="text"
             value={plusOneName}
-            onChange={e => setPlusOneName(e.target.value.trim())}
+            onChange={(e) => setPlusOneName(e.target.value.trim())}
           />
         </label>
       )}
@@ -129,13 +132,13 @@ export default ({ onSubmit, city }) => {
             placeholder="ReactLadies"
             pattern="[A-Za-z0-9-]{1,30}"
             value={plusOneGH}
-            onInvalid={e =>
+            onInvalid={(e) =>
               e.target.setCustomValidity(
                 `A GitHub handle, e.g. 'react-ladies' for 'https://github.com/react-ladies'`
               )
             }
-            onChange={e => setPlusOneGH(e.target.value.trim())}
-            onInput={e => e.target.setCustomValidity('')}
+            onChange={(e) => setPlusOneGH(e.target.value.trim())}
+            onInput={(e) => e.target.setCustomValidity('')}
           />
         </label>
       )}
