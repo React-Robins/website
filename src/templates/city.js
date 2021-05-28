@@ -2,7 +2,6 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Main from '../pages/_main'
 
-// the redirection to event wasn;t working so passed the query
 export default ({ data = { query } }) => {
   const {
     event,
