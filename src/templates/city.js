@@ -2,16 +2,17 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Main from '../pages/_main'
 
-export default ({ data = {} }) => {
+// the redirection to event wasn;t working so passed the query
+export default ({ data = { query } }) => {
   const {
     event,
     allAirtable: { edges }
   } = data
-  return <Main city={event} attendees={edges.map(edge => edge.node)} />
+  return <Main city={event} attendees={edges.map((edge) => edge.node)} />
 }
 
 export const query = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     allAirtable(filter: { data: { city: { eq: $slug } } }) {
       edges {
         node {

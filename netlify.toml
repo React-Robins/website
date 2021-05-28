@@ -1,3 +1,6 @@
+[build]
+  functions = "functions/"
+
 [[redirects]]
   from = "/discord"
   to = "https://discord.gg/wGpgHrsW3Q" 
