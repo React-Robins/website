@@ -1,6 +1,6 @@
 ---
 info:
-  city: Spring Kick Off
+  city: Summer Kick Off
   link: online-2021-june
   date: 06/10/2021
   hour: '12:00PM EST'
@@ -14,7 +14,7 @@ site:
   cfp: false
   location: Zoom (link via e-mail)
   googleMapsLink:
-  calendarLink: https://calendar.google.com/calendar/u/0/r/eventedit?dates=20210610T160000Z/20210610T173000Z&text=React+Ladies+Spring+Kick+Off&location=Zoom+link+via+e-mail&details=React+Ladies+is+a+supportive+community+for+women+and+non-binary+React+enthusiasts+with+any+level+of+programming+experience+to+grow+as+technologists+and+meet+other+React+developers.+We+center+our+events+around+JavaScript+and+other+technologies+within+the+React+ecosystem.&sf=true
+  calendarLink: https://calendar.google.com/calendar/u/0/r/eventedit?dates=20210610T160000Z/20210610T173000Z&text=React+Ladies+Summer+Kick+Off&location=Zoom+link+via+e-mail&details=React+Ladies+is+a+supportive+community+for+women+and+non-binary+React+enthusiasts+with+any+level+of+programming+experience+to+grow+as+technologists+and+meet+other+React+developers.+We+center+our+events+around+JavaScript+and+other+technologies+within+the+React+ecosystem.&sf=true
 announcement:
   heading: React Ladies
   text: Join our community of women and non-binary React developers at our upcoming kickoff event!
