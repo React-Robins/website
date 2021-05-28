@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 
 import defaultMetaImage from '../assets/react-ladies.png'
 
-const siteUrl = siteUrl
+const siteUrl = 'https://reactladies.com'
 const socialImage = `${siteUrl}${defaultMetaImage}`
 
 function SEO({ description, lang, meta, title }) {
