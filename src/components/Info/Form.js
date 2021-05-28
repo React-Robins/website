@@ -84,7 +84,6 @@ export default ({ onSubmit, city }) => {
           required
           id="email"
           type="email"
-          // TODO: re-add + sign as a valid pattern before the @ symbol
           pattern="[a-z0-9._+%-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
           value={email}
           onInvalid={(e) => e.target.setCustomValidity(`Please provide a valid e-mail address.`)}
