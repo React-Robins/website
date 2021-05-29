@@ -1,7 +1,7 @@
 const Airtable = require('airtable')
 const base = new Airtable({ apiKey: process.env.AIRTABLE_KEY }).base(process.env.AIRTABLE_BASE)
 
-exports.handler = async function(event) {
+exports.handler = async function (event) {
   // ?name=Katherine Johnson&github=nasa&city=online-2021-may
   const { name, github = 'react-ladies', city, email } = event.queryStringParameters
 
@@ -23,7 +23,7 @@ exports.handler = async function(event) {
         ghLink: github,
         email: decodeURI(email)
       })
-      .then(record => {
+      .then((record) => {
         return {
           statusCode: 200,
           body: `Successfully added ${event.queryStringParameters.name}. document ID is ${record.id}`
@@ -34,7 +34,7 @@ exports.handler = async function(event) {
     console.log(errorMsg)
     return {
       statusCode: 500,
-      body: errorMsg
+      body: JSON(errorMsg)
     }
   }
 }

@@ -3,7 +3,7 @@ import styled, { keyframes } from 'styled-components'
 export const Info = styled.div`
   display: flex;
   flex-direction: row;
-  border: 3px solid ${props => props.theme.boldAqua};
+  border: 3px solid ${(props) => props.theme.boldAqua};
   align-items: center;
   margin-bottom: 10px;
   font-family: 'Space Mono';
@@ -15,14 +15,14 @@ export const Info = styled.div`
     padding: 1em 1.5em;
 
     &:not(:first-of-type) {
-      border-left: 3px solid ${props => props.theme.boldAqua};
+      border-left: 3px solid ${(props) => props.theme.boldAqua};
     }
   }
 `
 
 export const Button = styled.button`
   padding: 1em;
-  background: ${props => props.theme.boldAqua};
+  background: ${(props) => props.theme.boldAqua};
   -webkit-appearance: none;
   border: none;
   width: 100%;
@@ -39,7 +39,7 @@ export const Button = styled.button`
 
 export const RsvpButton = styled(Button)`
   padding: 1em;
-  background: ${props => props.theme.boldAqua};
+  background: ${(props) => props.theme.boldAqua};
   -webkit-appearance: none;
   border: none;
   width: 100%;
@@ -50,7 +50,7 @@ export const RsvpButton = styled(Button)`
   cursor: pointer;
 
   a {
-    color: ${props => props.theme.offWhite};
+    color: ${(props) => props.theme.offWhite};
   }
 
   &:hover {
@@ -63,9 +63,9 @@ export const RsvpButton = styled(Button)`
 `
 
 export const Form = styled.form`
-  color: ${props => props.theme.boldAqua};
+  color: ${(props) => props.theme.boldAqua};
   -webkit-appearance: none;
-  border: 3px solid ${props => props.theme.boldAqua};
+  border: 3px solid ${(props) => props.theme.boldAqua};
   width: 100%;
   font-family: 'Space Mono';
   font-weight: 600;
@@ -77,7 +77,7 @@ export const Form = styled.form`
 
   input {
     padding: 8px 12px;
-    border: 1px solid ${props => props.theme.boldPurple};
+    border: 1px solid ${(props) => props.theme.boldPurple};
     margin: 5px 0 20px;
     width: 100%;
     display: block;
@@ -102,7 +102,7 @@ export const blink = keyframes`
 `
 
 export const Blinker = styled.span`
-  animation: ${blink} 0.5s ${p => p.delay / 10}s linear infinite alternate;
+  animation: ${blink} 0.5s ${(p) => p.delay / 10}s linear infinite alternate;
   display: inline-block;
 `
 
@@ -118,4 +118,24 @@ export const bounc = keyframes`
 export const Bouncer = styled.strong`
   animation: ${bounc} 0.5s linear infinite alternate;
   display: inline-block;
+`
+export const AlertBox = styled.div`
+  margin: 10px 0;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f8d7da;
+  color: #92353d;
+`
+export const AlertCloseBtn = styled.span`
+  &:hover {
+    color: black;
+  }
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
 `

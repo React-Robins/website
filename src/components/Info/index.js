@@ -8,6 +8,7 @@ import { Info, RsvpButton, Blinker, Bouncer } from './elements'
 export default ({ site, city, info, attendeesNumber }) => {
   const [open, setOpen] = useState(false)
   const [submitted, setSubmitted] = useState(false)
+  const [error, setError] = useState({ message: '' })
 
   const date = parse(info.date, 'L', new Date())
   const closeRSVP =
@@ -73,10 +74,10 @@ export default ({ site, city, info, attendeesNumber }) => {
       ) : (
         <RSVP
           city={city}
-          onSubmit={() => {
-            setOpen(false)
-            setSubmitted(true)
-          }}
+          error={error}
+          setError={setError}
+          setOpen={setOpen}
+          setSubmitted={setSubmitted}
         />
       )}
     </>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { Button, Form } from './elements'
+import { Button, Form, AlertBox, AlertCloseBtn } from './elements'
 
-export default ({ onSubmit, city }) => {
+export default ({ onSubmit, city, setError, error, setOpen, setSubmitted }) => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [gh, setGH] = useState('')
@@ -9,7 +9,6 @@ export default ({ onSubmit, city }) => {
   const [plusOneName, setPlusOneName] = useState('')
   const [plusOneGH, setPlusOneGH] = useState('')
   // TODO: use error to change the front end state, right now it just fails silently if there was an issue persisting the data to Airtable.
-  const [error, setError] = useState(false)
 
   const createUser = () => {
     if (name && email) {
@@ -21,9 +20,18 @@ export default ({ onSubmit, city }) => {
         `/.netlify/functions/register?name=${name}&github=${
           gh || 'react-ladies'
         }&city=${city}&email=${encodeURIComponent(email)}`
-      )
-        .then((res) => res.text())
-        .then((text) => setError(text.includes('Error')))
+      ).then((res) => {
+        //
+        if (res && res.status === 500) {
+          setError({ message: res })
+          setOpen(true)
+          setSubmitted(false)
+        } else {
+          setError({ message: '' })
+          setOpen(false)
+          setSubmitted(true)
+        }
+      })
 
       if (plusOne) {
         fetch(
@@ -42,7 +50,6 @@ export default ({ onSubmit, city }) => {
       onSubmit={(e) => {
         e.preventDefault()
         createUser()
-        onSubmit()
       }}
     >
       <p>
@@ -142,13 +149,20 @@ export default ({ onSubmit, city }) => {
           />
         </label>
       )}
-
       <Button>
         I AM IN{' '}
         <span role="img" aria-label="Party">
           🎉
         </span>
       </Button>
+      //? this box displays the error text. A custom text is being diplayed but, can be changed to
+      //? the error message in the response
+      {error.message !== '' && (
+        <AlertBox class="alert">
+          <AlertCloseBtn class="closebtn">&times;</AlertCloseBtn>
+          <strong>Error!</strong>Something went wrong, please resubmit the form.
+        </AlertBox>
+      )}
     </Form>
   )
 }
