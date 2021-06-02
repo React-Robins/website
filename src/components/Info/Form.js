@@ -9,7 +9,7 @@ const formReducer = (state, action) => {
   return { ...state, [type]: payload }
 }
 
-export default ({ city, error }) => {
+export default ({ onSubmit, city, error }) => {
 
   const initialState = {
     name: '',
@@ -64,7 +64,7 @@ export default ({ city, error }) => {
       onSubmit={(e) => {
         e.preventDefault()
         createUser()
-        console.log(formState)
+        onSubmit()
       }}
     >
       <p>
