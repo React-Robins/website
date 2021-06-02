@@ -1,7 +1,5 @@
-import React from 'react'
-import { useContext } from 'react'
-import { useReducer } from 'react'
-import { StatusDispatch } from '.'
+import React, { useContext, useReducer } from 'react'
+import { StatusDispatch } from './index'
 import { Button, Form, AlertBox, AlertCloseBtn } from './elements'
 
 const formReducer = (state, action) => {
@@ -15,7 +13,7 @@ export default ({ city, error }) => {
     name: '',
     email: '',
     gh: '',
-    plusOne: '',
+    plusOne: false,
     plusOneName: '',
     plusOneGH: ''
   }
@@ -123,7 +121,7 @@ export default ({ city, error }) => {
                                                  id="plus-one"
                                                  type="checkbox"
                                                  pattern="[a-zA-Z0-9]+"
-                                                 value={formState.plusOne}
+                                                 value={plusOne}
                                                  css={`
                                                    width: auto !important;
                                                    margin-right: 12px !important;
@@ -132,19 +130,19 @@ export default ({ city, error }) => {
                                                />
                                                <span>I am taking a plus one</span>
                                         </label>*/}
-      {formState.plusOne && (
+      {plusOne && (
         <label htmlFor="plus-one-name">
           +1 Name
           <input
             required
             id="plus-one-name"
             type="text"
-            value={formState.plusOneName}
+            value={plusOneName}
             onChange={(e) => formDispatch({ type: "plusOneName", payload: e.target.value.trim() })}
           />
         </label>
       )}
-      {formState.plusOne && (
+      {plusOne && (
         <label htmlFor="plus-one-gh">
           +1 Github Handle
           <input
@@ -152,7 +150,7 @@ export default ({ city, error }) => {
             type="text"
             placeholder="ReactLadies"
             pattern="[A-Za-z0-9-]{1,30}"
-            value={formState.plusOneGH}
+            value={plusOneGH}
             onInvalid={(e) =>
               e.target.setCustomValidity(
                 `A GitHub handle, e.g. 'react-ladies' for 'https://github.com/react-ladies'`

@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
+import React, { useReducer } from 'react'
 import { format, parse, isPast } from 'date-fns'
 import RSVP from './Form'
 import { Info, RsvpButton, Blinker, Bouncer } from './elements'
-import { useReducer } from 'react'
 
 const reducer = (state, action) => {
   const { type, payload } = action
@@ -19,14 +18,13 @@ export default ({ site, city, info, attendeesNumber }) => {
     error: { message: '' }
   }
 
-  const [state, dispatch] = useReducer(reducer, initialState)
+  const [{ open, submitted }, dispatch] = useReducer(reducer, initialState)
 
   const date = parse(info.date, 'L', new Date())
   const closeRSVP =
     (info.maxCapacity && attendeesNumber >= info.maxCapacity) ||
     info.rsvpsClosed ||
     isPast(parse(info.date))
-  console.log(state)
   return (
     <>
       <Info>
@@ -47,11 +45,11 @@ export default ({ site, city, info, attendeesNumber }) => {
           )}
         </span>
       </Info>
-      {!state.open ? (
+      {!open ? (
         <RsvpButton
           onClick={() => (!site.rsvpLink ? dispatch({ type: "open", payload: true }) : () => { })}
           style={
-            state.submitted || closeRSVP
+            submitted || closeRSVP
               ? {
                 pointerEvents: 'none'
               }
@@ -71,8 +69,8 @@ export default ({ site, city, info, attendeesNumber }) => {
                   </a>
                 </Bouncer>
               )}
-              {!site.rsvpLink && !state.submitted ? <Bouncer>RSVP NOW</Bouncer> : null}{' '}
-              {!site.rsvpLink && state.submitted ? <Bouncer>YOU ARE AWESOME</Bouncer> : null}
+              {!site.rsvpLink && !submitted ? <Bouncer>RSVP NOW</Bouncer> : null}{' '}
+              {!site.rsvpLink && submitted ? <Bouncer>YOU ARE AWESOME</Bouncer> : null}
               <Blinker delay={3}>{'<'}</Blinker>
               <Blinker delay={2}>{'<'}</Blinker>
               <Blinker delay={1}>{'<'}</Blinker>
@@ -86,7 +84,7 @@ export default ({ site, city, info, attendeesNumber }) => {
         <StatusDispatch.Provider value={dispatch}>
           <RSVP
             city={city}
-            error={state.error}
+            error={error}
             dispatch
           />
         </StatusDispatch.Provider>
