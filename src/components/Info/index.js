@@ -1,21 +1,32 @@
 import React, { useState } from 'react'
 import { format, parse, isPast } from 'date-fns'
-
 import RSVP from './Form'
-
 import { Info, RsvpButton, Blinker, Bouncer } from './elements'
+import { useReducer } from 'react'
+
+const reducer = (state, action) => {
+  const { type, payload } = action
+  return { ...state, [type]: payload }
+}
+
+export const StatusDispatch = React.createContext(null)
 
 export default ({ site, city, info, attendeesNumber }) => {
-  const [open, setOpen] = useState(false)
-  const [submitted, setSubmitted] = useState(false)
-  const [error, setError] = useState({ message: '' })
+
+  const initialState = {
+    open: false,
+    submitted: false,
+    error: { message: '' }
+  }
+
+  const [state, dispatch] = useReducer(reducer, initialState)
 
   const date = parse(info.date, 'L', new Date())
   const closeRSVP =
     (info.maxCapacity && attendeesNumber >= info.maxCapacity) ||
     info.rsvpsClosed ||
     isPast(parse(info.date))
-
+  console.log(state)
   return (
     <>
       <Info>
@@ -36,14 +47,14 @@ export default ({ site, city, info, attendeesNumber }) => {
           )}
         </span>
       </Info>
-      {!open ? (
+      {!state.open ? (
         <RsvpButton
-          onClick={() => (!site.rsvpLink ? setOpen(true) : () => {})}
+          onClick={() => (!site.rsvpLink ? dispatch({ type: "open", payload: true }) : () => { })}
           style={
-            submitted || closeRSVP
+            state.submitted || closeRSVP
               ? {
-                  pointerEvents: 'none'
-                }
+                pointerEvents: 'none'
+              }
               : {}
           }
         >
@@ -60,8 +71,8 @@ export default ({ site, city, info, attendeesNumber }) => {
                   </a>
                 </Bouncer>
               )}
-              {!site.rsvpLink && !submitted ? <Bouncer>RSVP NOW</Bouncer> : null}{' '}
-              {!site.rsvpLink && submitted ? <Bouncer>YOU ARE AWESOME</Bouncer> : null}
+              {!site.rsvpLink && !state.submitted ? <Bouncer>RSVP NOW</Bouncer> : null}{' '}
+              {!site.rsvpLink && state.submitted ? <Bouncer>YOU ARE AWESOME</Bouncer> : null}
               <Blinker delay={3}>{'<'}</Blinker>
               <Blinker delay={2}>{'<'}</Blinker>
               <Blinker delay={1}>{'<'}</Blinker>
@@ -72,13 +83,13 @@ export default ({ site, city, info, attendeesNumber }) => {
           )}
         </RsvpButton>
       ) : (
-        <RSVP
-          city={city}
-          error={error}
-          setError={setError}
-          setOpen={setOpen}
-          setSubmitted={setSubmitted}
-        />
+        <StatusDispatch.Provider value={dispatch}>
+          <RSVP
+            city={city}
+            error={state.error}
+            dispatch
+          />
+        </StatusDispatch.Provider>
       )}
     </>
   )

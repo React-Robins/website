@@ -1,14 +1,30 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { useContext } from 'react'
+import { useReducer } from 'react'
+import { StatusDispatch } from '.'
 import { Button, Form, AlertBox, AlertCloseBtn } from './elements'
 
-export default ({ onSubmit, city, setError, error, setOpen, setSubmitted }) => {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [gh, setGH] = useState('')
-  const [plusOne, setPlusOne] = useState(false)
-  const [plusOneName, setPlusOneName] = useState('')
-  const [plusOneGH, setPlusOneGH] = useState('')
-  // TODO: use error to change the front end state, right now it just fails silently if there was an issue persisting the data to Airtable.
+const formReducer = (state, action) => {
+  const { type, payload } = action
+  return { ...state, [type]: payload }
+}
+
+export default ({ city, error }) => {
+
+  const initialState = {
+    name: '',
+    email: '',
+    gh: '',
+    plusOne: '',
+    plusOneName: '',
+    plusOneGH: ''
+  }
+
+  const [formState, formDispatch] = useReducer(formReducer, initialState)
+
+  const { name, email, gh, plusOne, plusOneName, plusOneGH } = formState
+
+  const dispatch = useContext(StatusDispatch)
 
   const createUser = () => {
     if (name && email) {
@@ -17,26 +33,24 @@ export default ({ onSubmit, city, setError, error, setOpen, setSubmitted }) => {
       // encodeURI does not encode special character, instead used
       // encodeURIComponent which encodes all special characters.
       fetch(
-        `/.netlify/functions/register?name=${name}&github=${
-          gh || 'react-ladies'
+        `/.netlify/functions/register?name=${name}&github=${gh || 'react-ladies'
         }&city=${city}&email=${encodeURIComponent(email)}`
       ).then((res) => {
         //
         if (res && res.status === 500) {
-          setError({ message: res })
-          setOpen(true)
-          setSubmitted(false)
+          dispatch({ type: "error", payload: { message: res } })
+          dispatch({ type: "open", payload: true })
+          dispatch({ type: "submitted", payload: false })
         } else {
-          setError({ message: '' })
-          setOpen(false)
-          setSubmitted(true)
+          dispatch({ type: "error", payload: { message: '' } })
+          dispatch({ type: "open", payload: false })
+          dispatch({ type: "submitted", payload: true })
         }
       })
 
       if (plusOne) {
         fetch(
-          `/.netlify/functions/register?name=${plusOneName}&github=${
-            plusOneGH || 'react-ladies'
+          `/.netlify/functions/register?name=${plusOneName}&github=${plusOneGH || 'react-ladies'
           }&city=${city}`
         )
           .then((res) => res.text())
@@ -50,6 +64,7 @@ export default ({ onSubmit, city, setError, error, setOpen, setSubmitted }) => {
       onSubmit={(e) => {
         e.preventDefault()
         createUser()
+        console.log(formState)
       }}
     >
       <p>
@@ -65,7 +80,7 @@ export default ({ onSubmit, city, setError, error, setOpen, setSubmitted }) => {
           type="text"
           minLength="2"
           value={name}
-          onChange={(e) => setName(e.target.value)}
+          onChange={(e) => formDispatch({ type: "name", payload: e.target.value })}
         />
       </label>
       <label htmlFor="gh">
@@ -81,7 +96,7 @@ export default ({ onSubmit, city, setError, error, setOpen, setSubmitted }) => {
               `A GitHub handle, e.g. 'react-ladies' for 'https://github.com/react-ladies'`
             )
           }
-          onChange={(e) => setGH(e.target.value.trim())}
+          onChange={(e) => formDispatch({ type: "gh", payload: e.target.value.trim() })}
           onInput={(e) => e.target.setCustomValidity('')}
         />
       </label>
@@ -94,7 +109,7 @@ export default ({ onSubmit, city, setError, error, setOpen, setSubmitted }) => {
           pattern="[a-z0-9._+%-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
           value={email}
           onInvalid={(e) => e.target.setCustomValidity(`Please provide a valid e-mail address.`)}
-          onChange={(e) => setEmail(e.target.value.trim())}
+          onChange={(e) => formDispatch({ type: "email", payload: e.target.value.trim() })}
           onInput={(e) => e.target.setCustomValidity('')}
         />
       </label>
@@ -109,7 +124,7 @@ export default ({ onSubmit, city, setError, error, setOpen, setSubmitted }) => {
                                                  id="plus-one"
                                                  type="checkbox"
                                                  pattern="[a-zA-Z0-9]+"
-                                                 value={plusOne}
+                                                 value={formState.plusOne}
                                                  css={`
                                                    width: auto !important;
                                                    margin-right: 12px !important;
@@ -118,19 +133,19 @@ export default ({ onSubmit, city, setError, error, setOpen, setSubmitted }) => {
                                                />
                                                <span>I am taking a plus one</span>
                                         </label>*/}
-      {plusOne && (
+      {formState.plusOne && (
         <label htmlFor="plus-one-name">
           +1 Name
           <input
             required
             id="plus-one-name"
             type="text"
-            value={plusOneName}
-            onChange={(e) => setPlusOneName(e.target.value.trim())}
+            value={formState.plusOneName}
+            onChange={(e) => formDispatch({ type: "plusOneName", payload: e.target.value.trim() })}
           />
         </label>
       )}
-      {plusOne && (
+      {formState.plusOne && (
         <label htmlFor="plus-one-gh">
           +1 Github Handle
           <input
@@ -138,13 +153,13 @@ export default ({ onSubmit, city, setError, error, setOpen, setSubmitted }) => {
             type="text"
             placeholder="ReactLadies"
             pattern="[A-Za-z0-9-]{1,30}"
-            value={plusOneGH}
+            value={formState.plusOneGH}
             onInvalid={(e) =>
               e.target.setCustomValidity(
                 `A GitHub handle, e.g. 'react-ladies' for 'https://github.com/react-ladies'`
               )
             }
-            onChange={(e) => setPlusOneGH(e.target.value.trim())}
+            onChange={(e) => formDispatch({ type: "plusOneGH", payload: e.target.value.trim() })}
             onInput={(e) => e.target.setCustomValidity('')}
           />
         </label>
@@ -155,8 +170,6 @@ export default ({ onSubmit, city, setError, error, setOpen, setSubmitted }) => {
           🎉
         </span>
       </Button>
-      //? this box displays the error text. A custom text is being diplayed but, can be changed to
-      //? the error message in the response
       {error.message !== '' && (
         <AlertBox class="alert">
           <AlertCloseBtn class="closebtn">&times;</AlertCloseBtn>
