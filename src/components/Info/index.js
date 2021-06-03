@@ -12,14 +12,16 @@ export const StatusDispatch = React.createContext(null)
 
 export default ({ site, city, info, attendeesNumber }) => {
 
+  console.log(site)
   const initialState = {
     open: false,
     submitted: false,
     error: { message: '' }
   }
 
-  const [{ open, submitted }, dispatch] = useReducer(reducer, initialState)
+  const [state, dispatch] = useReducer(reducer, initialState)
 
+  const { open, submitted, error } = state
   const date = parse(info.date, 'L', new Date())
   const closeRSVP =
     (info.maxCapacity && attendeesNumber >= info.maxCapacity) ||
