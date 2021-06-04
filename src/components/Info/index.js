@@ -1,20 +1,32 @@
-import React, { useState } from 'react'
+import React, { useReducer } from 'react'
 import { format, parse, isPast } from 'date-fns'
-
 import RSVP from './Form'
-
 import { Info, RsvpButton, Blinker, Bouncer } from './elements'
 
-export default ({ site, city, info, attendeesNumber }) => {
-  const [open, setOpen] = useState(false)
-  const [submitted, setSubmitted] = useState(false)
+const reducer = (state, action) => {
+  const { type, payload } = action
+  return { ...state, [type]: payload }
+}
 
+export const StatusDispatch = React.createContext(null)
+
+export default ({ site, city, info, attendeesNumber }) => {
+
+  console.log(site)
+  const initialState = {
+    open: false,
+    submitted: false,
+    error: { message: '' }
+  }
+
+  const [state, dispatch] = useReducer(reducer, initialState)
+
+  const { open, submitted, error } = state
   const date = parse(info.date, 'L', new Date())
   const closeRSVP =
     (info.maxCapacity && attendeesNumber >= info.maxCapacity) ||
     info.rsvpsClosed ||
     isPast(parse(info.date))
-
   return (
     <>
       <Info>
@@ -37,12 +49,12 @@ export default ({ site, city, info, attendeesNumber }) => {
       </Info>
       {!open ? (
         <RsvpButton
-          onClick={() => (!site.rsvpLink ? setOpen(true) : () => {})}
+          onClick={() => (!site.rsvpLink ? dispatch({ type: "open", payload: true }) : () => { })}
           style={
             submitted || closeRSVP
               ? {
-                  pointerEvents: 'none'
-                }
+                pointerEvents: 'none'
+              }
               : {}
           }
         >
@@ -71,13 +83,13 @@ export default ({ site, city, info, attendeesNumber }) => {
           )}
         </RsvpButton>
       ) : (
-        <RSVP
-          city={city}
-          onSubmit={() => {
-            setOpen(false)
-            setSubmitted(true)
-          }}
-        />
+        <StatusDispatch.Provider value={dispatch}>
+          <RSVP
+            city={city}
+            error={error}
+            dispatch
+          />
+        </StatusDispatch.Provider>
       )}
     </>
   )
