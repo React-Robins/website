@@ -5,9 +5,9 @@ info:
   date: 07/13/2021
   hour: '12:00PM EST'
   icon: icons/online/react-logo.svg
-  # iconHover: icons/online/online-hover.svg
-  # hostIcon: icons/online/logo_salesloft.svg
- # hostName: SalesLoft
+  iconHover: icons/online/online-hover.svg
+  hostIcon: icons/online/logo_salesloft.svg
+  hostName: SalesLoft
   rsvpsClosed: true
   food: false
 site:
@@ -48,13 +48,13 @@ organizers:
     twitterHandle: m0nica
     githubLink: m0nica
 thanks:
-# sponsors:
- # - name: SalesLoft
-  #  link: https://salesloft.com
- #   media: https://salesloft.com/wp-content/themes/studioscience-salesloft/images/SalesLoft-logo@2x.png
-# speakers:
-#  - name: Shaundai Person
-#    pronouns: 'she/her'
-#    talk: How to Stand Out as a Non-Traditional Applicant
- #   twitterLink: shaundai
- #   githubLink: shaundai
+ sponsors:
+  - name: SalesLoft
+    link: https://salesloft.com
+    media: https://salesloft.com/wp-content/themes/studioscience-salesloft/images/SalesLoft-logo@2x.png
+ speakers:
+  - name: TBD
+    pronouns: 'she/her'
+    talk: TBD
+ #   twitterLink: TBD
+ #   githubLink: TBD
