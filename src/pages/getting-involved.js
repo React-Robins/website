@@ -28,12 +28,8 @@ const GettingInvolvedPage = () => {
               Twitter
             </a>
             , or email us at{' '}
-            <a
-              href="mailto:monica+reactladies@aboutmonica.com"
-              rel="noopener noreferrer"
-              title="Email"
-            >
-              monica+reactladies@aboutmonica.com
+            <a href="mailto:community@reactladies.com" rel="noopener noreferrer" title="Email">
+              community@reactladies.com
             </a>
             !
           </LargeParagraph>
