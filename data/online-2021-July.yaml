@@ -52,9 +52,9 @@ thanks:
     - name: SalesLoft
       link: https://salesloft.com
       media: https://salesloft.com/wp-content/themes/studioscience-salesloft/images/SalesLoft-logo@2x.png
-  speakers:
-    - name: Denisse Damian
-      pronouns: 'she/her'
-      talk: Creating a Static Resume with Gatsby and Netlify
-      twitterLink: denissedamian
-  #   githubLink: TBD
+speakers:
+  - name: Denisse Damian
+    pronouns: 'she/her'
+    talk: Creating a Static Resume with Gatsby and Netlify
+    twitterLink: denissedamian
+  #  githubLink: TBD
