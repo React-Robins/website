@@ -1,14 +1,14 @@
 ---
 info:
   city: July Meetup!
-  link: online-2021-june
+  link: online-2021-july
   date: 07/13/2021
   hour: '12:00PM EST'
   icon: icons/online/react-logo.svg
   iconHover: icons/online/online-hover.svg
   hostIcon: icons/online/logo_salesloft.svg
   hostName: SalesLoft
-  rsvpsClosed: true
+  rsvpsClosed: false
   food: false
 site:
   cfp: false
@@ -48,13 +48,13 @@ organizers:
     twitterHandle: m0nica
     githubLink: m0nica
 thanks:
-  sponsors:
-    - name: SalesLoft
-      link: https://salesloft.com
-      media: https://salesloft.com/wp-content/themes/studioscience-salesloft/images/SalesLoft-logo@2x.png
+sponsors:
+  - name: SalesLoft
+    link: https://salesloft.com
+    media: https://salesloft.com/wp-content/themes/studioscience-salesloft/images/SalesLoft-logo@2x.png
 speakers:
   - name: Denisse Damian
     pronouns: 'she/her'
     talk: Creating a Static Resume with Gatsby and Netlify
     twitterLink: denissedamian
-  #  githubLink: TBD
+    githubLink: react-ladies
