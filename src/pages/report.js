@@ -1,15 +1,15 @@
-import React from 'react'
-import SEO from '../components/seo'
-import Layout from '../containers/layout'
-import Panel from '../components/Panel'
-import { Link } from 'gatsby'
+import React from 'react';
+import SEO from '../components/seo';
+import Layout from '../containers/layout';
+import Panel from '../components/Panel';
+import { Link } from 'gatsby';
 
 const Report = () => {
   const contactInfo = {
-    email: 'monica@aboutmonica.com',
+    email: 'community@reactladies.com',
     twitterHandle: '@ReactJSLadies',
-    githubHandle: 'react-ladies'
-  }
+    githubHandle: 'react-ladies',
+  };
 
   return (
     <Layout>
@@ -26,16 +26,16 @@ const Report = () => {
             `}
           >
             <p>
-              We want React Ladies to be a safe and inclusive environment. That’s why we ask our
-              attendees to follow our{' '}
+              We want React Ladies to be a safe and inclusive environment.
+              That’s why we ask our attendees to follow our{' '}
               <Link to="/code-of-conduct" title="Code of Conduct">
                 Code of Conduct
               </Link>
               !
             </p>
             <p>
-              In the unfortunate case that you see someone violating the code of conduct, here are
-              some ways you can report it to us:
+              In the unfortunate case that you see someone violating the code of
+              conduct, here are some ways you can report it to us:
             </p>
             <ul>
               <li> Send a DM to {contactInfo.twitterHandle}</li>
@@ -48,14 +48,15 @@ const Report = () => {
               </li>
               <li>
                 {' '}
-                Send an email to <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
+                Send an email to{' '}
+                <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
               </li>
             </ul>
           </section>
         </Panel>
       </main>
     </Layout>
-  )
-}
+  );
+};
 
-export default Report
+export default Report;

@@ -39,10 +39,9 @@ const Header = ({ siteTitle }) => (
         <li>
           <NavLink to="/organizers">Organizers</NavLink>{' '}
         </li>
-        {/* TODO: Add a React Ladies FAQ
-           <li>
+        <li>
           <NavLink to="/faq">FAQ</NavLink>{' '}
-         </li> */}
+        </li>
         <li>
           <NavHref href="/discord">Discord</NavHref>{' '}
         </li>
