@@ -14,7 +14,7 @@ site:
   cfp: false
   location: Zoom (link via e-mail)
   googleMapsLink:
-#  calendarLink: https://calendar.google.com/calendar/u/0/r/eventedit?dates=20210610T160000Z/20210610T173000Z&text=React+Ladies+Summer+Kick+Off&location=Zoom+link+via+e-mail&details=React+Ladies+is+a+supportive+community+for+women+and+non-binary+React+enthusiasts+with+any+level+of+programming+experience+to+grow+as+technologists+and+meet+other+React+developers.+We+center+our+events+around+JavaScript+and+other+technologies+within+the+React+ecosystem.&sf=true
+  calendarLink: https://calendar.google.com/event?action=TEMPLATE&tmeid=MWUyM2dnMmNvczVlaDY3ZTgwNDQ3NmU4a2YgY29tbXVuaXR5QHJlYWN0bGFkaWVzLmNvbQ&tmsrc=community%40reactladies.com
 announcement:
   heading: React Ladies
   text: Join our community of women and non-binary React developers at our upcoming kickoff event!
@@ -48,13 +48,13 @@ organizers:
     twitterHandle: m0nica
     githubLink: m0nica
 thanks:
- sponsors:
-  - name: SalesLoft
-    link: https://salesloft.com
-    media: https://salesloft.com/wp-content/themes/studioscience-salesloft/images/SalesLoft-logo@2x.png
- speakers:
-  - name: TBD
-    pronouns: 'she/her'
-    talk: TBD
- #   twitterLink: TBD
- #   githubLink: TBD
+  sponsors:
+    - name: SalesLoft
+      link: https://salesloft.com
+      media: https://salesloft.com/wp-content/themes/studioscience-salesloft/images/SalesLoft-logo@2x.png
+  speakers:
+    - name: Denisse Damian
+      pronouns: 'she/her'
+      talk: Creating a Static Resume with Gatsby and Netlify
+      twitterLink: denissedamian
+  #   githubLink: TBD
