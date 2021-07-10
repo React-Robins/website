@@ -16,7 +16,8 @@ const Footer = () => {
       </a>
       <br />
       <br />
-      Credits: This website was originally{' '}
+      This site is powered by{" "}
+        <a href="https://www.netlify.com" title="Visit Netlify">Netlify</a> and was originally{' '}
       <span role="img" aria-label="fork">
         🍴
       </span>
