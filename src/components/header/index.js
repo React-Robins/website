@@ -40,9 +40,6 @@ const Header = ({ siteTitle }) => (
           <NavLink to="/organizers">Organizers</NavLink>{' '}
         </li>
         <li>
-          <NavLink to="/faq">FAQ</NavLink>{' '}
-        </li>
-        <li>
           <NavHref href="/discord">Discord</NavHref>{' '}
         </li>
         <li>
@@ -52,7 +49,7 @@ const Header = ({ siteTitle }) => (
             title="Submit a Talk"
             rel="noopener noreferrer"
           >
-            CFP
+            Submit a Talk
           </NavHref>
         </li>
       </ul>
