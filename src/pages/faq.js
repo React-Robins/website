@@ -15,9 +15,15 @@ const FAQPage = () => {
         <h1 hidden>Welcome to React Ladies</h1>
         <Panel heading="FAQ"></Panel>
         <Panel heading="How do I speak at an upcoming React Ladies event?" id="how-to-speak">
-          Thank you for your interest in speaking to our community. Please submit a talk proposal on{' '}
-          <a href="https://github.com/react-ladies/react-ladies-talk-proposals/issues/new/choose">
-            GitHub
+          Thank you for your interest in speaking to our community. Please submit a talk proposal
+          through our{' '}
+          <a
+            href="https://airtable.com/shrphJUHyS1h6UK0Y"
+            target="_blank"
+            title="Form to submit a talk"
+            rel="noopener noreferrer"
+          >
+            form
           </a>
           . If you have any questions do not hesistate to reach out to us!
         </Panel>
@@ -35,7 +41,7 @@ const FAQPage = () => {
             target="_blank"
           >
             Twitter
-          </a>
+          </a>{' '}
           or email us at{' '}
           <a href="mailto:community@reactladies.com" rel="noopener noreferrer" title="Email">
             community@reactladies.com
