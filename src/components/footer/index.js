@@ -10,14 +10,21 @@ const Footer = () => {
       .
       <br />
       <br />
-      Follow React Ladies on{' '}
+      Have a question? Check out our{' '}
+      <a href="https://reactladies.com/faq" title="Frequently Asked Questions">
+        FAQs
+      </a>{' '}
+      or Follow React Ladies on{' '}
       <a href="https://twitter.com/reactjsladies" title="Follow us on Twitter">
         Twitter
       </a>
       <br />
       <br />
-      This site is powered by{" "}
-        <a href="https://www.netlify.com" title="Visit Netlify">Netlify</a> and was originally{' '}
+      This site is powered by{' '}
+      <a href="https://www.netlify.com" title="Visit Netlify">
+        Netlify
+      </a>{' '}
+      and was originally{' '}
       <span role="img" aria-label="fork">
         🍴
       </span>
