@@ -8,7 +8,7 @@ const CodeOfConduct = () => {
   return (
     <Layout>
       <SEO
-        title="React Ladies - Code Of Conduct"
+        title="React Robins - Code Of Conduct"
         description="A supportive community for women and non-binary React enthusiasts"
       />
       <main
@@ -16,7 +16,7 @@ const CodeOfConduct = () => {
           margin-bottom: 40px;
         `}
       >
-        <h1 hidden>Welcome to React Ladies</h1>
+        <h1 hidden>Welcome to React Robins</h1>
         <Panel heading="Code of Conduct">
           <section
             css={`
@@ -24,7 +24,7 @@ const CodeOfConduct = () => {
             `}
           >
             <p>
-              All attendees, speakers, sponsors and volunteers at React Ladies meetup are required
+              All attendees, speakers, sponsors and volunteers at React Robins meetup are required
               to agree with the following code of conduct.
             </p>
             <p>
@@ -41,7 +41,7 @@ const CodeOfConduct = () => {
 
             <h2>The Quick Version</h2>
             <p>
-              Here at React Ladies meetup, we are dedicated to providing a harassment-free meetup
+              Here at React Robins meetup, we are dedicated to providing a harassment-free meetup
               experience for everyone, regardless of gender, sexual orientation, disability,
               physical appearance, body size, race, or religion (or lack thereof).
             </p>
@@ -74,7 +74,7 @@ const CodeOfConduct = () => {
             </p>
             <p>
               If you are subject to or witness unacceptable behavior, or have any other concerns,
-              please notify a React Ladies organizer as soon as possible.
+              please notify a React Robins organizer as soon as possible.
             </p>
             <p>
               If you can’t find the organizer, please{' '}

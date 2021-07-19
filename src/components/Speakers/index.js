@@ -50,12 +50,12 @@ const Speakers = ({ noSpeak, speakers, cfp }) => {
       ))}
       {cfp && !noSpeak && (
         <li>
-          <UnstyledLink to="/speak" title="Speak at React Ladies">
+          <UnstyledLink to="/speak" title="Speak at React Robins">
             <SpeakerPhoto>
               <RainbowWithClicker>
                 <CFP>
                   <CFPInner>
-                    <h2>You?</h2> <span>Speak at React Ladies</span>
+                    <h2>You?</h2> <span>Speak at React Robins</span>
                   </CFPInner>
                 </CFP>
               </RainbowWithClicker>

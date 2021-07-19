@@ -13,7 +13,7 @@ const City = ({ past, city, link, date, bySeason, icon, hostIcon, hostName }) =>
     <Wrapper
       itemScope
       itemType="http://schema.org/Event"
-      title={`React Ladies ${city}`}
+      title={`React Robins ${city}`}
       to={`/${link}`}
       // sinnerRef={hoverRef}
     >

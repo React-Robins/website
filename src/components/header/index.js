@@ -14,12 +14,12 @@ const Header = ({ siteTitle }) => (
         font-size: 2px;
       `}
     >
-      React Ladies
+      React Robins
     </h1>
     <Subtitle>A supportive community for women and non-binary React enthusiasts</Subtitle>
     <NavRow>
       <LogoWrap>
-        React Ladies <ReactLogo />
+        React Robins <ReactLogo />
       </LogoWrap>
 
       <ul>
@@ -30,7 +30,7 @@ const Header = ({ siteTitle }) => (
           <NavHref
             href="https://opencollective.com/react-ladies"
             target="_blank"
-            title="Donate to React Ladies"
+            title="Donate to React Robins"
             rel="noopener noreferrer"
           >
             Donate

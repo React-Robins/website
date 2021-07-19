@@ -16,7 +16,7 @@ site:
   googleMapsLink:
   calendarLink: https://calendar.google.com/calendar/u/0/r/eventedit?dates=20210610T160000Z/20210610T173000Z&text=React+Ladies+Summer+Kick+Off&location=Zoom+link+via+e-mail&details=React+Ladies+is+a+supportive+community+for+women+and+non-binary+React+enthusiasts+with+any+level+of+programming+experience+to+grow+as+technologists+and+meet+other+React+developers.+We+center+our+events+around+JavaScript+and+other+technologies+within+the+React+ecosystem.&sf=true
 announcement:
-  heading: React Ladies
+  heading: React Robins
   text: Join our community of women and non-binary React developers at our upcoming kickoff event!
 mainOrganizer:
   - name: 'Monica Powell'

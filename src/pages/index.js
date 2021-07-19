@@ -23,12 +23,12 @@ const IndexPage = ({ data: { allEvent } }) => {
   return (
     <Layout>
       <SEO
-        title={'React Ladies'}
+        title={'React Robins'}
         description={'A supportive community for women and non-binary React enthusiasts'}
       />
       <Panel>
         <LargeParagraph>
-          <BoldText>React Ladies</BoldText> is a supportive community for women and non-binary React
+          <BoldText>React Robins</BoldText> is a supportive community for women and non-binary React
           enthusiasts with any level of programming experience to grow   as technologists and meet
           other React developers. We center our events around JavaScript and other technologies
           within the React ecosystem.

@@ -8,13 +8,13 @@ const FAQPage = () => {
   return (
     <Layout>
       <SEO
-        title="React Ladies - FAQ"
+        title="React Robins - FAQ"
         description="A supportive community for women and non-binary React enthusiasts"
       />
       <main>
-        <h1 hidden>Welcome to React Ladies</h1>
+        <h1 hidden>Welcome to React Robins</h1>
         <Panel heading="FAQ"></Panel>
-        <Panel heading="How do I speak at an upcoming React Ladies event?" id="how-to-speak">
+        <Panel heading="How do I speak at an upcoming React Robins event?" id="how-to-speak">
           Thank you for your interest in speaking to our community. Please submit a talk proposal on{' '}
           <a href="https://github.com/react-ladies/react-ladies-talk-proposals/issues/new/choose">
             GitHub
