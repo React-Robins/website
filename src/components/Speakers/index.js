@@ -9,14 +9,15 @@ import {
   SpeakersGrid,
   Unstyled,
   ListItem,
-  UnstyledLink
+  UnstyledLink,
+  SpeakerDetails
 } from './elements'
 
 const Speakers = ({ noSpeak, speakers, cfp }) => {
   return (
     <SpeakersGrid>
       {speakers.map((human) => (
-        <>
+        <SpeakerDetails>
           <ListItem
             talk={human.talk}
             key={human.twitterLink}
@@ -53,7 +54,7 @@ const Speakers = ({ noSpeak, speakers, cfp }) => {
             </UnstyledLink>
           </ListItem>
           {human.bio && <p>{human.bio}</p>}
-        </>
+        </SpeakerDetails>
       ))}
       {cfp && !noSpeak && (
         <li>
