@@ -38,7 +38,7 @@ const Speakers = ({ noSpeak, speakers, cfp }) => {
                       height="240"
                       src={
                         human.headshot
-                          ? human.headshot
+                          ? human.headshot.publicURL
                           : `https://github.com/${human.githubLink}.png`
                       }
                       alt="Speaker"
