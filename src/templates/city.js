@@ -81,6 +81,8 @@ export const query = graphql`
         talk
         # link
         githubLink
+        bio
+        headshot
       }
     }
   }
