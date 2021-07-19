@@ -82,7 +82,9 @@ export const query = graphql`
         # link
         githubLink
         bio
-        headshot
+        headshot {
+          publicURL
+        }
       }
     }
   }
