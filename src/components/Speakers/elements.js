@@ -90,7 +90,7 @@ export const UnstyledLink = styled(Link)`
 export const ListItem = styled.li`
   position: relative;
   list-style: none;
-  ${props =>
+  ${(props) =>
     !props.talk &&
     `
     &:before {display: none}
@@ -133,4 +133,9 @@ export const ListItem = styled.li`
     z-index: 99;
     pointer-events: none;
   }
+`
+
+export const SpeakerDetails = styled.div`
+  display: flex;
+  flex-direction: column;
 `
