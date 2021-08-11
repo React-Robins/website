@@ -1,0 +1,67 @@
+---
+info:
+  city: August Meetup!
+  link: online-2021-august
+  date: 08/25/2021
+  hour: '12:00PM EST'
+  icon: icons/online/react-logo.svg
+  # iconHover: icons/online/online-hover.svg
+  hostIcon: icons/online/logo_salesloft.svg
+  hostName: SalesLoft
+  rsvpsClosed: false
+  food: false
+site:
+  cfp: false
+  location: Zoom (link via e-mail)
+  googleMapsLink:
+  calendarLink: https://calendar.google.com/calendar/u/0/r/eventedit?dates=20210610T160000Z/20210610T173000Z&text=React+Ladies+Summer+Kick+Off&location=Zoom+link+via+e-mail&details=React+Ladies+is+a+supportive+community+for+women+and+non-binary+React+enthusiasts+with+any+level+of+programming+experience+to+grow+as+technologists+and+meet+other+React+developers.+We+center+our+events+around+JavaScript+and+other+technologies+within+the+React+ecosystem.&sf=true
+announcement:
+  heading: React Ladies
+  text: Join our community of women and non-binary React developers at our upcoming kickoff event!
+mainOrganizer:
+  - name: 'Monica Powell'
+    main: true
+    phoneNumber: ''
+    twitterHandle: indigitalcolor
+    githubLink: m0nica
+    email: monica@aboutmonica.com
+  - name: 'Shaundai Person'
+    main: true
+    phoneNumber: ''
+    twitterHandle: shaundai
+    githubLink: shaundai
+  - name: 'Adrianna Valdivia'
+    main: false
+    phoneNumber: ''
+    twitterHandle: driannavaldivia
+    githubLink: avaldivi
+  - name: 'Sylwia Vargas'
+    main: false
+    phoneNumber: ''
+    twitterHandle: SylwiaVargas
+    githubLink: SylwiaVargas
+
+organizers:
+  - id: ae2d4158-cd43-4196-b88e-cb2afdbf6b4b
+    name: Monica Powell
+    email: monica@aboutmonica.com
+    twitterHandle: m0nica
+    githubLink: m0nica
+thanks:
+sponsors:
+  - name: SalesLoft
+    link: https://salesloft.com
+    media: https://salesloft.com/wp-content/themes/studioscience-salesloft/images/SalesLoft-logo@2x.png
+speakers:
+  - name: Ceora Ford
+    pronouns: 'she/her'
+    talk: Why Eleventy Is Super Cool
+    twitterLink: ceeoreo_
+    githubLink: ceeoreo
+  - name: Alex Morozoff
+    pronouns: 'she/her'
+    talk: Smart NLP Components
+    twitterLink: Baneyro
+    bio: 'Alex Morozoff is an NYC-based software engineer currently working at Google. Her professional interests are machine learning and data visualization. She has previously worked at Tableau, Microsoft, and several startups. When not working, she enjoys fly fishing and graphic design.'
+    headshot: 'headshots/aj_morozoff.png'
+    githubLink: ajmorozoff
