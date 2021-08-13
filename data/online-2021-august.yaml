@@ -55,9 +55,10 @@ sponsors:
 speakers:
   - name: Ceora Ford
     pronouns: 'she/her'
-    talk: Why Eleventy Is Super Cool
+    talk: Why Eleventy Is Awesome
     twitterLink: ceeoreo_
     githubLink: ceeoreo
+    bio: Ceora is a developer advocate based in Philadelphia.  She creates educational content focused on making the tech industry more accessible to everyone. She's worked with CodeSandbox, DigitalOcean, egghead.io, and Apollo GraphQL. Outside of tech, she spends way too much time watching anime, listening to K-pop, and trying to memorize the lyrics to Hamilton songs.
   - name: Alex Morozoff
     pronouns: 'she/her'
     talk: Smart NLP Components
