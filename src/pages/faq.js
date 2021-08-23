@@ -25,7 +25,10 @@ const FAQPage = () => {
           Check out our page on <Link to="/getting-involved">getting involved</Link> with React
           Ladies for more information.
         </Panel>
-
+        <Panel heading="Was React Robins previously React Ladies?" id="get-involved">
+          Yes! In order to create a more inclusive environment, we changed our name so that we can
+          be more supportive towards all React enthusiasts.
+        </Panel>
         <Panel heading="Any other questions?" id="questions">
           Please send us a message on{' '}
           <a
