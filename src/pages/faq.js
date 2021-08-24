@@ -8,13 +8,13 @@ const FAQPage = () => {
   return (
     <Layout>
       <SEO
-        title="React Ladies - FAQ"
+        title="React Robins - FAQ"
         description="A supportive community for women and non-binary React enthusiasts"
       />
       <main>
-        <h1 hidden>Welcome to React Ladies</h1>
+        <h1 hidden>Welcome to React Robins</h1>
         <Panel heading="FAQ"></Panel>
-        <Panel heading="How do I speak at an upcoming React Ladies event?" id="how-to-speak">
+        <Panel heading="How do I speak at an upcoming React Robins event?" id="how-to-speak">
           Thank you for your interest in speaking to our community. Please submit a talk proposal on{' '}
           <a href="https://github.com/react-ladies/react-ladies-talk-proposals/issues/new/choose">
             GitHub
@@ -25,7 +25,10 @@ const FAQPage = () => {
           Check out our page on <Link to="/getting-involved">getting involved</Link> with React
           Ladies for more information.
         </Panel>
-
+        <Panel heading="Was React Robins previously React Ladies?" id="get-involved">
+          Yes! In order to create a more inclusive environment, we changed our name so that we can
+          be more supportive towards all React enthusiasts.
+        </Panel>
         <Panel heading="Any other questions?" id="questions">
           Please send us a message on{' '}
           <a

@@ -14,11 +14,11 @@ const Report = () => {
   return (
     <Layout>
       <SEO
-        title="React Ladies - Code Of Conduct"
+        title="React Robins - Code Of Conduct"
         description="A supportive community for women and non-binary React enthusiasts"
       />
       <main>
-        <h1 hidden>Welcome to React Ladies</h1>
+        <h1 hidden>Welcome to React Robins</h1>
         <Panel heading="Code of Conduct - Report An Issue">
           <section
             css={`
@@ -26,7 +26,7 @@ const Report = () => {
             `}
           >
             <p>
-              We want React Ladies to be a safe and inclusive environment.
+              We want React Robins to be a safe and inclusive environment.
               That’s why we ask our attendees to follow our{' '}
               <Link to="/code-of-conduct" title="Code of Conduct">
                 Code of Conduct
