@@ -28,7 +28,7 @@ const Header = ({ siteTitle }) => (
         </li>
         <li>
           <NavHref
-            href="https://opencollective.com/react-ladies"
+            href="https://opencollective.com/react-robins"
             target="_blank"
             title="Donate to React Robins"
             rel="noopener noreferrer"
