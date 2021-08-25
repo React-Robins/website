@@ -26,7 +26,7 @@ export default () => {
           need any help with this process because you are new to GitHub, git or speaking in general,
           ping one of the organizers on Discord or send us a message on{' '}
           <a
-            href="https://twitter.com/reactjsladies"
+            href="https://twitter.com/ReactJSRobins"
             rel="noopener noreferrer"
             title="Twitter"
             target="_blank"

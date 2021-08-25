@@ -11,13 +11,16 @@ const Footer = () => {
       <br />
       <br />
       Follow React Robins on{' '}
-      <a href="https://twitter.com/reactjsladies" title="Follow us on Twitter">
+      <a href="https://twitter.com/ReactJSRobins" title="Follow us on Twitter">
         Twitter
       </a>
       <br />
       <br />
-      This site is powered by{" "}
-        <a href="https://www.netlify.com" title="Visit Netlify">Netlify</a> and was originally{' '}
+      This site is powered by{' '}
+      <a href="https://www.netlify.com" title="Visit Netlify">
+        Netlify
+      </a>{' '}
+      and was originally{' '}
       <span role="img" aria-label="fork">
         🍴
       </span>

@@ -32,7 +32,7 @@ const FAQPage = () => {
         <Panel heading="Any other questions?" id="questions">
           Please send us a message on{' '}
           <a
-            href="https://twitter.com/reactjsladies"
+            href="https://twitter.com/ReactJSRobins"
             rel="noopener noreferrer"
             title="Twitter"
             target="_blank"

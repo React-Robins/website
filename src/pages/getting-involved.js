@@ -20,7 +20,7 @@ const GettingInvolvedPage = () => {
             If you think you'd like to do this, we'd love to work with you to make it happen -
             please contact us via{' '}
             <a
-              href="https://twitter.com/ReactJSLadies"
+              href="https://twitter.com/ReactJSRobins"
               rel="noopener noreferrer"
               title="Twitter"
               target="_blank"

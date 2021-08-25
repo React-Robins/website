@@ -39,7 +39,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: 'twitter:creator',
-          content: '@reactjsladies'
+          content: '@ReactJSRobins'
         },
         {
           name: 'twitter:title',
