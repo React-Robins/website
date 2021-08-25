@@ -8,7 +8,7 @@ info:
   # iconHover: icons/online/online-hover.svg
   hostIcon: icons/online/logo_salesloft.svg
   hostName: SalesLoft
-  rsvpsClosed: false
+  rsvpsClosed: true
   food: false
 site:
   cfp: false
