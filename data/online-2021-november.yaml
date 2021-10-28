@@ -2,7 +2,7 @@
 info:
   city: November Meetup - Open Source
   link: online-2021-november
-  date: 11/05/2021
+  date: 11/04/2021
   hour: '05:00PM EST'
   icon: icons/online/react-logo.svg
   # iconHover: icons/online/online-hover.svg
@@ -14,7 +14,7 @@ site:
   cfp: false
   location: Zoom (link via e-mail)
   googleMapsLink:
-  calendarLink: https://calendar.google.com/calendar/u/0/r/eventedit?dates=20210610T160000Z/20210610T173000Z&text=React+Ladies+Summer+Kick+Off&location=Zoom+link+via+e-mail&details=React+Ladies+is+a+supportive+community+for+women+and+non-binary+React+enthusiasts+with+any+level+of+programming+experience+to+grow+as+technologists+and+meet+other+React+developers.+We+center+our+events+around+JavaScript+and+other+technologies+within+the+React+ecosystem.&sf=true
+  calendarLink: https://calendar.google.com/event?action=TEMPLATE&tmeid=NjI0dWthMjZlZm1hcnBhOGUwZjNzcW5rZ2IgY19uOXNqbGthNDIzMWdmMGIwZ3Q4bjQ5NWpzc0Bn&tmsrc=c_n9sjlka4231gf0b0gt8n495jss%40group.calendar.google.com
 announcement:
   heading: React Robins
   text: Join our community of women and non-binary React developers and how you can get started in Open Source!
