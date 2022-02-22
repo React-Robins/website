@@ -14,7 +14,7 @@ const Grid = styled.ul`
   }
 
   li {
-    background: ${props => props.theme.boldAqua};
+    background: ${(props) => props.theme.boldAqua};
     padding: 20px;
     display: flex;
     align-items: center;
@@ -29,9 +29,10 @@ const SponsorImage = styled.img`
 `
 
 export default ({ sponsors }) => {
+  if (!sponsors) return <></>
   return (
     <Grid>
-      {sponsors.map(sponsor => (
+      {sponsors.map((sponsor) => (
         <li key={sponsor.name}>
           <a target="_blank" title={sponsor.name} href={sponsor.link} rel="noopener noreferrer">
             <SponsorImage src={sponsor.media} alt={sponsor.name} />
