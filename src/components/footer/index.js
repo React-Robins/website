@@ -10,7 +10,11 @@ const Footer = () => {
       .
       <br />
       <br />
-      Follow React Robins on{' '}
+      Have a question? Check out our{' '}
+      <a href="/faq" title="Frequently Asked Questions">
+        FAQs
+      </a>{' '}
+      or Follow React Robins on{' '}
       <a href="https://twitter.com/ReactJSRobins" title="Follow us on Twitter">
         Twitter
       </a>
