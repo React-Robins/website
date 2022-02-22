@@ -1,0 +1,63 @@
+info:
+  city: Algorithm Practice
+  link: online-2022-march
+  date: 03/12/2022
+  hour: '5:30PM EST'
+  icon: icons/online/react-logo.svg
+  rsvpsClosed: false
+  food: false
+site:
+  cfp: false
+  location: React Robins Discord Server.
+  googleMapsLink:
+  # calendarLink: https://calendar.google.com/calendar/u/0/r/eventedit?dates=20210610T160000Z/20210610T173000Z&text=React+Ladies+Summer+Kick+Off&location=Zoom+link+via+e-mail&details=React+Ladies+is+a+supportive+community+for+women+and+non-binary+React+enthusiasts+with+any+level+of+programming+experience+to+grow+as+technologists+and+meet+other+React+developers.+We+center+our+events+around+JavaScript+and+other+technologies+within+the+React+ecosystem.&sf=true
+  customDescription:
+    Join React Robins for a collaborative, problem solving session to practice solving algorithms.We'll be meeting in the React Robins discount server (which can be joined at https://www.reactrobins.com/discord) and you will need to create a free account on www.binarysearch.com to participate.
+
+    React Robins is a supportive community for women and non-binary React enthusiasts with
+    any level of programming experience to grow as technologists and meet other React
+    developers. We center our events around JavaScript and other technologies within the
+    React ecosystem.
+announcement:
+  heading: React Robins
+  text: Join our community of women and non-binary React developers at our upcoming kickoff event!
+mainOrganizer:
+  - name: 'Monica Powell'
+    main: true
+    phoneNumber: ''
+    twitterHandle: indigitalcolor
+    githubLink: m0nica
+    email: monica@aboutmonica.com
+  - name: 'Shaundai Person'
+    main: true
+    phoneNumber: ''
+    twitterHandle: shaundai
+    githubLink: shaundai
+  - name: 'Adrianna Valdivia'
+    main: false
+    phoneNumber: ''
+    twitterHandle: driannavaldivia
+    githubLink: avaldivi
+  - name: 'Sylwia Vargas'
+    main: false
+    phoneNumber: ''
+    twitterHandle: SylwiaVargas
+    githubLink: SylwiaVargas
+
+organizers:
+  - id: ae2d4158-cd43-4196-b88e-cb2afdbf6b4b
+    name: Monica Powell
+    email: monica@aboutmonica.com
+    twitterHandle: m0nica
+    githubLink: m0nica
+# thanks:
+# # sponsors:
+# #   - name: SalesLoft
+# #     link: https://salesloft.com
+# #     media: https://salesloft.com/wp-content/themes/studioscience-salesloft/images/SalesLoft-logo@2x.png
+speakers:
+  - name: Monica Powell
+    pronouns: 'she/her'
+    talk: Getting Started with BinarySearch.com
+    twitterLink: indigitalcolor
+    githubLink: m0nica
