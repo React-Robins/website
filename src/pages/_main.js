@@ -18,17 +18,17 @@ const Main = ({ city, attendees }) => {
   return (
     <Layout>
       <SEO
-        title={`React Ladies - ${info.city}`}
+        title={`React Robins - ${info.city}`}
         description={'A supportive community for women and non-binary React enthusiasts'}
       />
       <section>
-        <Heading sub="Join React Ladies @">{info.city}</Heading>
+        <Heading sub="Join React Robins @">{info.city}</Heading>
         <Panel>
           {site.customDescription ? (
             <p>{site.customDescription}</p>
           ) : (
             <p>
-              React Ladies is a supportive community for women and non-binary React enthusiasts with
+              React Robins is a supportive community for women and non-binary React enthusiasts with
               any level of programming experience to grow as technologists and meet other React
               developers. We center our events around JavaScript and other technologies within the
               React ecosystem.

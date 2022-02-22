@@ -5,17 +5,17 @@ import { FooterWrap } from './elements'
 const Footer = () => {
   return (
     <FooterWrap>
-      All React Ladies community members should review and abide by our{' '}
+      All React Robins community members should review and abide by our{' '}
       <Link to="/code-of-conduct"> Code of Conduct</Link>
       .
       <br />
       <br />
       Have a question? Check out our{' '}
-      <a href="https://reactladies.com/faq" title="Frequently Asked Questions">
+      <a href="/faq" title="Frequently Asked Questions">
         FAQs
       </a>{' '}
-      or Follow React Ladies on{' '}
-      <a href="https://twitter.com/reactjsladies" title="Follow us on Twitter">
+      or Follow React Robins on{' '}
+      <a href="https://twitter.com/ReactJSRobins" title="Follow us on Twitter">
         Twitter
       </a>
       <br />

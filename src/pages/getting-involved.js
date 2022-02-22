@@ -8,19 +8,19 @@ const GettingInvolvedPage = () => {
   return (
     <Layout>
       <SEO
-        title="React Ladies - Getting Involved"
+        title="React Robins - Getting Involved"
         description="A supportive community for women and non-binary React enthusiasts"
       />
       <main>
         <Panel>
           <LargeParagraph>
-            There are a lot of ways you could get involved with React Ladies!
+            There are a lot of ways you could get involved with React Robins!
             <br />
             <br />
             If you think you'd like to do this, we'd love to work with you to make it happen -
             please contact us via{' '}
             <a
-              href="https://twitter.com/ReactJSLadies"
+              href="https://twitter.com/ReactJSRobins"
               rel="noopener noreferrer"
               title="Twitter"
               target="_blank"

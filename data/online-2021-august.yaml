@@ -1,8 +1,8 @@
 ---
 info:
-  city: Summer Kick Off
-  link: online-2021-june
-  date: 06/10/2021
+  city: August Meetup!
+  link: online-2021-august
+  date: 08/25/2021
   hour: '12:00PM EST'
   icon: icons/online/react-logo.svg
   # iconHover: icons/online/online-hover.svg
@@ -16,7 +16,7 @@ site:
   googleMapsLink:
   calendarLink: https://calendar.google.com/calendar/u/0/r/eventedit?dates=20210610T160000Z/20210610T173000Z&text=React+Ladies+Summer+Kick+Off&location=Zoom+link+via+e-mail&details=React+Ladies+is+a+supportive+community+for+women+and+non-binary+React+enthusiasts+with+any+level+of+programming+experience+to+grow+as+technologists+and+meet+other+React+developers.+We+center+our+events+around+JavaScript+and+other+technologies+within+the+React+ecosystem.&sf=true
 announcement:
-  heading: React Robins
+  heading: React Ladies
   text: Join our community of women and non-binary React developers at our upcoming kickoff event!
 mainOrganizer:
   - name: 'Monica Powell'
@@ -26,7 +26,7 @@ mainOrganizer:
     githubLink: m0nica
     email: monica@aboutmonica.com
   - name: 'Shaundai Person'
-    main: false
+    main: true
     phoneNumber: ''
     twitterHandle: shaundai
     githubLink: shaundai
@@ -53,8 +53,16 @@ sponsors:
     link: https://salesloft.com
     media: https://salesloft.com/wp-content/themes/studioscience-salesloft/images/SalesLoft-logo@2x.png
 speakers:
-  - name: Shaundai Person
+  - name: Ceora Ford
     pronouns: 'she/her'
-    talk: How to Stand Out as a Non-Traditional Applicant
-    twitterLink: shaundai
-    githubLink: shaundai
+    talk: Why Eleventy Is Awesome
+    twitterLink: ceeoreo_
+    githubLink: ceeoreo
+    bio: Ceora is a developer advocate based in Philadelphia.  She creates educational content focused on making the tech industry more accessible to everyone. She's worked with CodeSandbox, DigitalOcean, egghead.io, and Apollo GraphQL. Outside of tech, she spends way too much time watching anime, listening to K-pop, and trying to memorize the lyrics to Hamilton songs.
+  - name: Alex Morozoff
+    pronouns: 'she/her'
+    talk: Smart NLP Components
+    twitterLink: Baneyro
+    bio: 'Alex Morozoff is an NYC-based software engineer currently working at Google. Her professional interests are machine learning and data visualization. She has previously worked at Tableau, Microsoft, and several startups. When not working, she enjoys fly fishing and graphic design.'
+    headshot: 'headshots/aj_morozoff.png'
+    githubLink: ajmorozoff

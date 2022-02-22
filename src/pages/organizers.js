@@ -15,7 +15,7 @@ const capitalize = s => {
 const OrganizersPage = () => {
   const { site } = {
     site: {
-      title: 'React Ladies',
+      title: 'React Robins',
       description: 'A supportive community for women and non-binary React enthusiasts'
     }
   }
@@ -26,7 +26,7 @@ const OrganizersPage = () => {
         <h1 hidden>Welcome to {site.title}</h1>
         <Panel heading="Organizers">
           <p>
-            Meet the team behind React Ladies 👋🏾 and let us know if you are interested in
+            Meet the team behind React Robins 👋🏾 and let us know if you are interested in
             <Link to="/getting-involved"> getting involved</Link>.
           </p>
           <p

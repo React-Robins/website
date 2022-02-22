@@ -119,6 +119,6 @@ const CodelingsInner = styled.div`
 `
 export const Codelings = () => (
   <CodelingsOuter aria-hidden>
-    <CodelingsInner>{`(&& React Ladies ==> React Ladies ==>  && React Ladies ==> )`}</CodelingsInner>
+    <CodelingsInner>{`(&& React Robins ==> React Robins ==>  && React Robins ==> )`}</CodelingsInner>
   </CodelingsOuter>
 )

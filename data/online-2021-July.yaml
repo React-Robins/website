@@ -2,13 +2,13 @@
 info:
   city: July Meetup!
   link: online-2021-july
-  date: 07/13/2021
+  date: 07/28/2021
   hour: '12:00PM EST'
   icon: icons/online/react-logo.svg
   iconHover: icons/online/online-hover.svg
   hostIcon: icons/online/logo_salesloft.svg
   hostName: SalesLoft
-  rsvpsClosed: false
+  rsvpsClosed: true
   food: false
 site:
   cfp: false
@@ -16,7 +16,7 @@ site:
   googleMapsLink:
   calendarLink: https://calendar.google.com/event?action=TEMPLATE&tmeid=MWUyM2dnMmNvczVlaDY3ZTgwNDQ3NmU4a2YgY29tbXVuaXR5QHJlYWN0bGFkaWVzLmNvbQ&tmsrc=community%40reactladies.com
 announcement:
-  heading: React Ladies
+  heading: React Robins
   text: Join our community of women and non-binary React developers at our upcoming kickoff event!
 mainOrganizer:
   - name: 'Monica Powell'
@@ -57,4 +57,7 @@ speakers:
     pronouns: 'she/her'
     talk: Creating a Static Resume with Gatsby and Netlify
     twitterLink: denissedamian
+    bio: 'Denisse is a Mexican Computer Scientist who worked during her undergraduate as a Front-End Developer. She currently works as a Site Reliability Engineer at Wizeline and is an upcoming graduate student at the University of 
+California at Berkeley.'
+    headshot: 'headshots/denisse_damian.jpg'
     githubLink: react-ladies
