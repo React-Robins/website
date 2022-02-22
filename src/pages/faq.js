@@ -18,7 +18,7 @@ const FAQPage = () => {
           Thank you for your interest in speaking to our community. Please submit a talk proposal
           through our{' '}
           <a
-            href="https://airtable.com/shrphJUHyS1h6UK0Y"
+            href="/submit-talk"
             target="_blank"
             title="Form to submit a talk"
             rel="noopener noreferrer"

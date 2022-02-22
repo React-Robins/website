@@ -44,7 +44,7 @@ const Header = ({ siteTitle }) => (
         </li>
         <li>
           <NavHref
-            href="https://airtable.com/shrphJUHyS1h6UK0Y"
+            href="/submit-talk"
             target="_blank"
             title="Submit a Talk"
             rel="noopener noreferrer"
