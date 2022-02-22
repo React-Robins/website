@@ -10,7 +10,7 @@ site:
   cfp: false
   location: React Robins Discord Server.
   googleMapsLink:
-  # calendarLink: https://calendar.google.com/calendar/u/0/r/eventedit?dates=20210610T160000Z/20210610T173000Z&text=React+Ladies+Summer+Kick+Off&location=Zoom+link+via+e-mail&details=React+Ladies+is+a+supportive+community+for+women+and+non-binary+React+enthusiasts+with+any+level+of+programming+experience+to+grow+as+technologists+and+meet+other+React+developers.+We+center+our+events+around+JavaScript+and+other+technologies+within+the+React+ecosystem.&sf=true
+  calendarLink: https://calendar.google.com/event?action=TEMPLATE&tmeid=NGIzcDE3bWFodWFqY2I3b2xjNnJhNHVybGQgY29tbXVuaXR5QHJlYWN0bGFkaWVzLmNvbQ&tmsrc=community%40reactladies.com
   customDescription:
     Join React Robins for a collaborative, problem solving session to practice solving algorithms.We'll be meeting in the React Robins discount server (which can be joined at https://www.reactrobins.com/discord) and you will need to create a free account on www.binarysearch.com to participate.
 
