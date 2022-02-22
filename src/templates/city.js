@@ -40,7 +40,7 @@ export const query = graphql`
         calendarLink
         # rsvpLink
         cfp
-        customDescription
+        #  customDescription
       }
       announcement {
         heading

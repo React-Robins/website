@@ -40,12 +40,12 @@ const Main = ({ city, attendees }) => {
 
         {speakers.length > 0 || site.cfp ? (
           <Panel heading="Speakers">
-            <Speakers cfp={site.cfp} speakers={speakers.filter((s) => !s.mc)} />
+            <Speakers cfp={site.cfp} speakers={speakers.filter(s => !s.mc)} />
           </Panel>
         ) : null}
-        {speakers.filter((s) => s.mc).length ? (
+        {speakers.filter(s => s.mc).length ? (
           <Panel heading="MC">
-            <Speakers noSpeak cfp={site.cfp} speakers={speakers.filter((s) => s.mc)} />
+            <Speakers noSpeak cfp={site.cfp} speakers={speakers.filter(s => s.mc)} />
           </Panel>
         ) : null}
         {!site.rsvpLink ? (
@@ -53,12 +53,9 @@ const Main = ({ city, attendees }) => {
             <Attendees attendees={attendees} />
           </Panel>
         ) : null}
-        {sponsors && (
-          <Panel heading="Sponsors">
-            <Sponsors sponsors={sponsors} />
-          </Panel>
-        )}
-
+        <Panel heading="Sponsors">
+          <Sponsors sponsors={sponsors} />
+        </Panel>
         {mainOrganizer && mainOrganizer.length > 0 ? (
           <Panel heading={mainOrganizer.length > 1 ? 'Organizers' : 'Organizer'}>
             <Organizers organizers={mainOrganizer} />
