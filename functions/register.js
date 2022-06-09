@@ -3,7 +3,7 @@ const base = new Airtable({ apiKey: process.env.AIRTABLE_KEY }).base(process.env
 
 exports.handler = async function (event) {
   // ?name=Katherine Johnson&github=nasa&city=online-2021-may
-  const { name, github = 'react-ladies', city, email } = event.queryStringParameters
+  const { name, github = 'react-robins', city, email } = event.queryStringParameters
 
   console.log('email', decodeURI(email))
 

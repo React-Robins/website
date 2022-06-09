@@ -8,7 +8,7 @@ const Report = () => {
   const contactInfo = {
     email: 'community@reactladies.com',
     twitterHandle: '@ReactJSRobins',
-    githubHandle: 'react-ladies'
+    githubHandle: 'react-robins'
   }
 
   return (

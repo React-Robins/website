@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
-import defaultMetaImage from '../assets/react-ladies.png'
+import defaultMetaImage from '../assets/react-robins.png'
 
 const siteUrl = 'https://reactladies.com'
 const socialImage = `${siteUrl}${defaultMetaImage}`

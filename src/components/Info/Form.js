@@ -31,7 +31,7 @@ export default ({ city, error }) => {
       // encodeURI does not encode special character, instead used
       // encodeURIComponent which encodes all special characters.
       fetch(
-        `/.netlify/functions/register?name=${name}&github=${gh || 'react-ladies'
+        `/.netlify/functions/register?name=${name}&github=${gh || 'react-robins'
         }&city=${city}&email=${encodeURIComponent(email)}`
       ).then((res) => {
         //
@@ -48,7 +48,7 @@ export default ({ city, error }) => {
 
       if (plusOne) {
         fetch(
-          `/.netlify/functions/register?name=${plusOneName}&github=${plusOneGH || 'react-ladies'
+          `/.netlify/functions/register?name=${plusOneName}&github=${plusOneGH || 'react-robins'
           }&city=${city}`
         )
           .then((res) => res.text())
@@ -66,7 +66,7 @@ export default ({ city, error }) => {
     >
       <p>
         If you're not comfortable showing your photo and link, you may leave the `GitHub Handle`
-        field blank and it will default to `react-ladies`.
+        field blank and it will default to `react-robins`.
       </p>
       <label htmlFor="name">
         Your Name
@@ -85,12 +85,12 @@ export default ({ city, error }) => {
         <input
           id="gh"
           type="text"
-          placeholder="react-ladies"
+          placeholder="react-robins"
           pattern="[A-Za-z0-9-]{1,30}"
           value={gh}
           onInvalid={(e) =>
             e.target.setCustomValidity(
-              `A GitHub handle, e.g. 'react-ladies' for 'https://github.com/react-ladies'`
+              `A GitHub handle, e.g. 'react-robins' for 'https://github.com/react-robins'`
             )
           }
           onChange={(e) => formDispatch({ type: "gh", payload: e.target.value.trim() })}
@@ -153,7 +153,7 @@ export default ({ city, error }) => {
             value={plusOneGH}
             onInvalid={(e) =>
               e.target.setCustomValidity(
-                `A GitHub handle, e.g. 'react-ladies' for 'https://github.com/react-ladies'`
+                `A GitHub handle, e.g. 'react-robins' for 'https://github.com/react-robins'`
               )
             }
             onChange={(e) => formDispatch({ type: "plusOneGH", payload: e.target.value.trim() })}

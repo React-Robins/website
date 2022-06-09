@@ -38,7 +38,7 @@ If you'd like to run the site without setting up Netlify functions locally then 
 - Go to data and make a new YAML file for your location
 - Website to make google calendar links: https://decomaan.github.io/google-calendar-link-generator/
 
-If you discover any bugs in this site, please [file an issue](https://github.com/react-ladies/website/issues/new).
+If you discover any bugs in this site, please [file an issue](https://github.com/react-robins/website/issues/new).
 
 This website was originally based off of a fork of -> https://github.com/queerjs/website. 
 
