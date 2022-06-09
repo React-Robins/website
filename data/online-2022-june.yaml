@@ -1,0 +1,48 @@
+info:
+  city: Algorithm Practice
+  link: online-2022-june
+  date: 06/23/2022
+  hour: '5:30PM EST'
+  icon: icons/online/react-logo.svg
+  rsvpsClosed: false
+  food: false
+site:
+  cfp: false
+  location: React Robins Discord Server.
+  googleMapsLink:
+  calendarLink: https://calendar.google.com/event?action=TEMPLATE&tmeid=NGIzcDE3bWFodWFqY2I3b2xjNnJhNHVybGQgY29tbXVuaXR5QHJlYWN0bGFkaWVzLmNvbQ&tmsrc=community%40reactladies.com
+  customDescription:
+    Join React Robins for a collaborative, problem solving session to practice solving algorithms.We'll be meeting in the React Robins Discord server (which can be joined at https://www.reactrobins.com/discord) and you will need to create a free account on www.binarysearch.com to participate.
+
+    React Robins is a supportive community for women and non-binary React enthusiasts with
+    any level of programming experience to grow as technologists and meet other React
+    developers. We center our events around JavaScript and other technologies within the
+    React ecosystem.
+announcement:
+  heading: React Robins
+  text: Join our community of women and non-binary React developers at our upcoming kickoff event!
+mainOrganizer:
+  - name: 'Monica Powell'
+    main: true
+    phoneNumber: ''
+    twitterHandle: indigitalcolor
+    githubLink: m0nica
+    email: monica@aboutmonica.com
+  - name: 'Sylwia Vargas'
+    main: false
+    phoneNumber: ''
+    twitterHandle: SylwiaVargas
+    githubLink: SylwiaVargas
+
+organizers:
+  - id: ae2d4158-cd43-4196-b88e-cb2afdbf6b4b
+    name: Monica Powell
+    email: monica@aboutmonica.com
+    twitterHandle: m0nica
+    githubLink: m0nica
+speakers:
+  - name: Monica Powell
+    pronouns: 'she/her'
+    talk: Getting Started with BinarySearch.com
+    twitterLink: indigitalcolor
+    githubLink: m0nica
